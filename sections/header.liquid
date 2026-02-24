@@ -231,10 +231,9 @@ $( document ).ready(function() {
       {% endif %}
     {% endif %}
 
-    {%- render 'header-search', input_id: 'Search-In-Modal' -%}
 
     <div style="gap:15px;" class="header__icons">
-
+    {%- render 'header-search', input_id: 'Search-In-Modal' -%}
       <a href="{{ routes.account_url }}" class="header__icon">
         <span class="icon">{{- 'icon-account.svg' | inline_asset_content -}}</span>
       </a>
@@ -253,7 +252,6 @@ $( document ).ready(function() {
       </a>
     </div>
   </div>
- <div class="mobile-search-only page-width">{%- render 'header-search-mobile', input_id: 'Search-In-Modal' -%}</div>
 </header>
   <!-- Bottom Bar (Menu with full-width background) -->
   {% if section.settings.menu != blank %}
