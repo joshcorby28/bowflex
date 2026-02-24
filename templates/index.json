@@ -45,9 +45,31 @@
       ],
       "name": "Swiper Hero Split",
       "settings": {}
+    },
+    "cta_bar_3ccn7H": {
+      "type": "CTA-bar",
+      "blocks": {
+        "cta_Ja7Bbc": {
+          "type": "cta",
+          "settings": {
+            "text": "For a limited time only → Save up to $500!",
+            "link": "#",
+            "button_text": "Shop Now"
+          }
+        }
+      },
+      "block_order": [
+        "cta_Ja7Bbc"
+      ],
+      "name": "CTA Bar",
+      "settings": {
+        "color_scheme": "scheme-5",
+        "show_line_separator": true
+      }
     }
   },
   "order": [
-    "swiper_hero_xmHPW8"
+    "swiper_hero_xmHPW8",
+    "cta_bar_3ccn7H"
   ]
 }
