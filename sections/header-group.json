@@ -17,7 +17,7 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "Welcome to our store",
+            "text": "For a limited time only → Save up to $500!",
             "link": ""
           }
         }
@@ -28,7 +28,7 @@
       "settings": {
         "auto_rotate": false,
         "change_slides_speed": 5,
-        "color_scheme": "",
+        "color_scheme": "scheme-5",
         "show_line_separator": true,
         "show_social": false,
         "enable_country_selector": false,
@@ -43,6 +43,8 @@
         "menu_type_desktop": "dropdown",
         "sticky_header_type": "on-scroll-up",
         "show_line_separator": true,
+        "highlight-text": "WHAT THE DUNK - Exclusive Offers!",
+        "highlight-link": "",
         "color_scheme": "scheme-1",
         "menu_color_scheme": "",
         "enable_country_selector": true,
@@ -50,7 +52,9 @@
         "mobile_logo_position": "center",
         "margin_bottom": 0,
         "padding_top": 20,
-        "padding_bottom": 20
+        "padding_bottom": 20,
+        "bottom_button_text": "Shop Now",
+        "bottom_button_link": ""
       }
     }
   },
