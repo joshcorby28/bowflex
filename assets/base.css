@@ -2152,6 +2152,7 @@ input[type='checkbox'] {
   height: 100%;
   display: flex;
   justify-content: center;
+  padding: 15px;
   flex-wrap: wrap;
   align-content: center;
   grid-area: announcements;
