@@ -15,8 +15,19 @@
 }
 .swiper-pagination {
     width:fit-content !important;
-    left:120px !important;
+    left:0px !important;
+    position: relative !important;
         display: flex;
     align-items: center;
-    bottom:30px !important;
+    bottom:0px !important;
+}
+
+.swiper-controls {
+    display: flex;
+    gap:20px;
+    position: absolute;
+    left: 120px;
+    align-items: center;
+    bottom: 30px;
+    justify-content: center;
 }
