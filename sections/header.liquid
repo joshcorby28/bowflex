@@ -201,10 +201,6 @@ $( document ).ready(function() {
       
     {% endif %}
 
-    {%- if section.settings.logo_position != 'middle-center' -%}
-      {% if request.page_type == 'index' %}
-        <h1 class="header__heading">
-      {% endif %}
         <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
           {% if settings.logo %}
             <div class="header__heading-logo-wrapper">
@@ -222,15 +218,8 @@ $( document ).ready(function() {
                 preload: true
               }}
             </div>
-          {% else %}
-            <span class="h2">{{ shop.name }}</span>
           {% endif %}
         </a>
-      {% if request.page_type == 'index' %}
-        </h1>
-      {% endif %}
-    {% endif %}
-
 
     <div style="gap:15px;" class="header__icons">
     {%- render 'header-search', input_id: 'Search-In-Modal' -%}
