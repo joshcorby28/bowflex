@@ -24,10 +24,24 @@
             "button_label": "Shop Now",
             "button_link": ""
           }
+        },
+        "slide_pVaTN4": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Screenshot_2026-02-24_at_15.22.43.png",
+            "badge": "New",
+            "badge_color": "#b4ff63",
+            "heading": "Upgrade your training",
+            "subtext": "Get the Max Total 16 for only $1,999 with $500 Off + Free Shipping",
+            "small_text": "Limited time only",
+            "button_label": "Shop Now",
+            "button_link": ""
+          }
         }
       },
       "block_order": [
-        "slide_UqYVdX"
+        "slide_UqYVdX",
+        "slide_pVaTN4"
       ],
       "name": "Swiper Hero Split",
       "settings": {}
