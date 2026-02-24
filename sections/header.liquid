@@ -235,6 +235,9 @@ $( document ).ready(function() {
         {%- endif -%}
       </div>
         <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
+        {% if cart != empty %}
+          <div class="cart-price">{{ cart.total_price | money }}</div>
+        {% endif %}
       </a>
     </div>
   </div>
