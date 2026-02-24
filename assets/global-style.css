@@ -31,3 +31,9 @@
     bottom: 30px;
     justify-content: center;
 }
+
+.swiper-controls button {
+    background:none;
+    border:none;
+    color:#404040;
+}
