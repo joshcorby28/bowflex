@@ -105,12 +105,56 @@
         "padding_top": 72,
         "padding_bottom": 72
       }
+    },
+    "rich_text_YTkxYq": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_nV7RdR": {
+          "type": "heading",
+          "settings": {
+            "heading": "Upgrade Your Training",
+            "heading_size": "h1"
+          }
+        },
+        "text_86fyFV": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Save up to $500! Shop our limited-time sale prices.</p>"
+          }
+        },
+        "button_BNL3fq": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Sale",
+            "button_link": "#",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_nV7RdR",
+        "text_86fyFV",
+        "button_BNL3fq"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-4",
+        "full_width": true,
+        "padding_top": 72,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "swiper_hero_xmHPW8",
     "cta_bar_3ccn7H",
     "custom_liquid_G9fb6f",
-    "featured_collection_T7NDHP"
+    "featured_collection_T7NDHP",
+    "rich_text_YTkxYq"
   ]
 }
