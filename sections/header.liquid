@@ -236,14 +236,14 @@ $( document ).ready(function() {
     <div style="gap:15px;" class="header__icons">
 
       <a href="{{ routes.account_url }}" class="header__icon">
-        <span class="icon">/span>
+        <span class="icon">{{- 'icon-account.svg' | inline_asset_content -}}</span>
       </a>
       <a href="{{ routes.cart_url }}" class="header__icon cart-main-icon" style="width:100%; gap:10px; justify-content:space-between;" id="cart-icon-bubble">
         <div class="cart-icon-container">
         {%- if cart == empty -%}
-          {% render 'icon-cart-empty' %}
+          {{- 'icon-cart.svg' | inline_asset_content -}}
         {%- else -%}
-          {% render 'icon-cart' %}
+           {{- 'icon-cart.svg' | inline_asset_content -}}
         {%- endif -%}
       </div>
         <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
