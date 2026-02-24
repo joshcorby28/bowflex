@@ -1,14 +1,14 @@
 /* Swiper Buttons */
 .swiper-pagination-bullet-active {
-    background: #404040;
-    height: 9px;
-    border-radius: 10px;
-    width: 80px;
+    background: #404040 !important;
+    height: 9px !important;
+    border-radius: 10px !important;
+    width: 80px !important;
 }
 
-swiper-pagination-bullet {
-        background: #D4D4D4;
-    height: 4px;
-    border-radius: 10px;
-    width: 80px;
+.swiper-pagination-bullet {
+        background: #D4D4D4 !important;
+    height: 4px !important;
+    border-radius: 10px !important;
+    width: 80px !important;
 }
