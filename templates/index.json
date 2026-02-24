@@ -81,7 +81,7 @@
       "type": "featured-collection",
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
-        "collection": "",
+        "collection": "frontpage",
         "products_to_show": 12,
         "title": "Build your gym, your way.",
         "heading_size": "h1",
