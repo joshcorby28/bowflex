@@ -31,3 +31,20 @@
     bottom: 30px;
     justify-content: center;
 }
+
+/* Buttons */
+
+.global-black-button {
+letter-spacing: -0.04rem;
+    line-height: 1;
+    padding: 6px 20px 4px 20px;
+    text-decoration: none;
+    border-radius: 3px;
+    border: 2px solid transparent;
+    background: var(--color-black);
+    color: var(--color-white);
+    font-weight: 400;
+    flex-shrink: 0;
+    font-size: .875rem;
+
+}
