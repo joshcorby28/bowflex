@@ -3,6 +3,11 @@
   href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
 />
 
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
 <section class="swiper-hero">
   <div class="swiper swiper-hero-slider">
     <div class="swiper-wrapper">
@@ -57,10 +62,11 @@
     </div>
 
 <div class="swiper-controls">
-   <button class="swiper-toggle" aria-label="Pause autoplay">
-    ❚❚
+      <button class="swiper-toggle" aria-label="Pause autoplay">
+    <i class="fa-regular fa-circle-pause"></i>
   </button>
   <div class="swiper-pagination"></div>
+
 </div>
   </div>
 </section>
@@ -90,15 +96,20 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   const toggleBtn = document.querySelector('.swiper-toggle');
+  const icon = toggleBtn.querySelector('i');
 
   toggleBtn.addEventListener('click', () => {
     if (swiper.autoplay.running) {
       swiper.autoplay.stop();
-      toggleBtn.textContent = '▶';
+
+      icon.classList.remove('fa-circle-pause');
+      icon.classList.add('fa-circle-play');
       toggleBtn.setAttribute('aria-label', 'Play autoplay');
     } else {
       swiper.autoplay.start();
-      toggleBtn.textContent = '❚❚';
+
+      icon.classList.remove('fa-circle-play');
+      icon.classList.add('fa-circle-pause');
       toggleBtn.setAttribute('aria-label', 'Pause autoplay');
     }
   });
