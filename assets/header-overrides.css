@@ -66,30 +66,8 @@
   text-decoration: none;
   flex-direction: column;
 }
-.smarte-header-overrides .field .search__input {
-  background-color: #f6f6f6;
-  border: 1px solid black;
-  border-radius: 8px;
-}
 .smarte-header-overrides .header__heading-link {
   padding: 0;
-}
-.smarte-header-overrides .smarte-header-search {
-  width: 500px;
-  border-bottom: 1px solid #071739;
-  background: var(--Gren-White, #fff);
-  margin-right: 20px;
-  text-decoration: none;
-}
-.smarte-header-overrides .smarte-header-search span {
-  display: flex;
-  font-size: 14px;
-  font-weight: normal;
-  justify-content: space-between;
-}
-.smarte-header-overrides .smarte-header-search span:before {
-  content: "Search thousands of every day supplements...";
-  font-size: 14px;
 }
 
 @media screen and (max-width: 1024px) {
