@@ -2152,7 +2152,7 @@ input[type='checkbox'] {
   height: 100%;
   display: flex;
   justify-content: center;
-  padding: 15px;
+  padding: 10px;
   flex-wrap: wrap;
   align-content: center;
   grid-area: announcements;
@@ -2249,6 +2249,7 @@ input[type='checkbox'] {
   text-align: center;
   padding: 1rem 0;
   margin: 0;
+  font-size:20px;
   letter-spacing: 0.1rem;
   min-height: 3.8rem;
 }
