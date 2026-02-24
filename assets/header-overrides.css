@@ -1,0 +1,127 @@
+.smarte-header-overrides .mega-menu__list .mega-menu__link--level-2 {
+  font-size: 20px !important;
+  color: #071739;
+  letter-spacing: 0;
+}
+.smarte-header-overrides .mega-menu__list .mega-menu__link {
+  color: #071739;
+  font-size: 14px;
+}
+.smarte-header-overrides .header__icons .icon {
+  width: 22px;
+  height: 22px;
+}
+.smarte-header-overrides .header__icons .icon:hover {
+  color: #f18a02;
+}
+.smarte-header-overrides .header__icons .header__icon--account {
+  display: flex;
+  text-decoration: none;
+  flex-direction: column;
+}
+.smarte-header-overrides .header__icons .header__icon--track {
+  display: flex;
+  text-decoration: none;
+  flex-direction: column;
+}
+.smarte-header-overrides .header__icons .header__icon--reorder {
+  display: flex;
+  text-decoration: none;
+  flex-direction: column;
+}
+.smarte-header-overrides .header__icons .icon-text {
+  color: #1b1b1b;
+  letter-spacing: 0;
+  font-size: 13px;
+}
+.smarte-header-overrides .header__icons .cart-main-icon {
+  border-radius: 100px;
+  padding: 5px;
+  text-decoration: none;
+  background: rgba(205, 213, 219, 0.5);
+}
+.smarte-header-overrides .header__icons .cart-main-icon .cart-icon-container {
+  border-radius: 100px;
+  background: var(--Meta-White, #fff);
+  width: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+}
+.smarte-header-overrides .header__icons .cart-main-icon .cart-price {
+  color: #071739;
+  position: relative;
+  right: 10px;
+  font-size: 14px;
+  text-decoration: none;
+}
+.smarte-header-overrides .header__icons .header__icon--wishlist {
+  display: flex;
+  text-decoration: none;
+  flex-direction: column;
+}
+.smarte-header-overrides .header__icons .header__icon--contact {
+  display: flex;
+  text-decoration: none;
+  flex-direction: column;
+}
+.smarte-header-overrides .field .search__input {
+  background-color: #f6f6f6;
+  border: 1px solid black;
+  border-radius: 8px;
+}
+.smarte-header-overrides .header__heading-link {
+  padding: 0;
+}
+.smarte-header-overrides .smarte-header-search {
+  width: 500px;
+  border-bottom: 1px solid #071739;
+  background: var(--Gren-White, #fff);
+  margin-right: 20px;
+  text-decoration: none;
+}
+.smarte-header-overrides .smarte-header-search span {
+  display: flex;
+  font-size: 14px;
+  font-weight: normal;
+  justify-content: space-between;
+}
+.smarte-header-overrides .smarte-header-search span:before {
+  content: "Search thousands of every day supplements...";
+  font-size: 14px;
+}
+
+@media screen and (max-width: 1024px) {
+  .smarte-header-overrides .header__icons {
+    margin-left: 0;
+    gap: 10px;
+    padding-right: 0 !important;
+  }
+  .smarte-header-overrides .header__icons .header__icon {
+    width: 3rem;
+  }
+  .smarte-header-overrides .header__icons .icon {
+    font-size: 16px;
+  }
+  .smarte-header-overrides .header__icons .cart-count-bubble {
+    bottom: 2rem;
+  }
+  .header-bottom {
+    display: none;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .smarte-header-overrides .header__icons {
+    padding-right: 0;
+  }
+  .smarte-header-overrides .header__icons .icon {
+    font-size: 19px;
+  }
+  .smarte-header-overrides .header__icons .cart-count-bubble {
+    bottom: 2.7rem;
+    left: 3rem;
+  }
+}
+
+/*# sourceMappingURL=smarte-header-overrides.css.map */
