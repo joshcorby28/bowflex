@@ -7,9 +7,10 @@
 }
 
 .swiper-pagination-bullet {
-    background: #D4D4D4 !important;
+    background:rgb(230, 230, 230) !important;
     height: 4px;
     border-radius: 10px !important;
+    opacity:1 !important;
     width: 80px !important;
 }
 .swiper-pagination {
