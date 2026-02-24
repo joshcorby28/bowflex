@@ -68,3 +68,22 @@
     display: flex;
 
 }
+
+.global-border-button {
+    letter-spacing: -.04rem;
+    line-height: 1;
+    height: 50px;
+    padding: 10px 70px;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 3px;
+    border: 1px solid  #1b1b1b;;
+    background:transparent;
+    color:  #1b1b1b;
+    align-items: center;
+    flex-shrink: 0;
+    justify-content: center;
+    display: flex;
+
+}
