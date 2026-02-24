@@ -41,10 +41,10 @@ letter-spacing: -0.04rem;
     text-decoration: none;
     border-radius: 3px;
     border: 2px solid transparent;
-    background: var(--color-black);
-    color: var(--color-white);
+    background: #1b1b1b;
+    color: #fff;
     font-weight: 400;
     flex-shrink: 0;
-    font-size: .875rem;
+    font-size: 14px;
 
 }
