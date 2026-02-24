@@ -14,4 +14,6 @@
 }
 .swiper-pagination {
     width:fit-content !important;
+    left:120px !important;
+    bottom:30px !important;
 }
