@@ -34,28 +34,7 @@
   letter-spacing: 0;
   font-size: 13px;
 }
-.smarte-header-overrides .header__icons .cart-main-icon {
-  border-radius: 100px;
-  padding: 5px;
-  text-decoration: none;
-  background: rgba(205, 213, 219, 0.5);
-}
-.smarte-header-overrides .header__icons .cart-main-icon .cart-icon-container {
-  border-radius: 100px;
-  background: var(--Meta-White, #fff);
-  width: 32px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 32px;
-}
-.smarte-header-overrides .header__icons .cart-main-icon .cart-price {
-  color: #071739;
-  position: relative;
-  right: 10px;
-  font-size: 14px;
-  text-decoration: none;
-}
+
 .smarte-header-overrides .header__icons .header__icon--wishlist {
   display: flex;
   text-decoration: none;
