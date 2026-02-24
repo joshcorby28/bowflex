@@ -12,3 +12,6 @@
     border-radius: 10px !important;
     width: 80px !important;
 }
+.swiper-pagination {
+    width:fit-content !important;
+}
