@@ -2249,6 +2249,7 @@ input[type='checkbox'] {
   text-align: center;
   padding: 1rem 0;
   margin: 0;
+  margin-right:20px;
   letter-spacing: 0.1rem;
   min-height: 3.8rem;
 }
