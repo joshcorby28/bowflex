@@ -226,7 +226,7 @@ $( document ).ready(function() {
       <a href="{{ routes.account_url }}" class="header__icon">
         <span class="icon">{{- 'icon-account.svg' | inline_asset_content -}}</span>
       </a>
-      <a href="{{ routes.cart_url }}" class="header__icon cart-main-icon" style="width:100%; gap:10px; justify-content:flex-end;" id="cart-icon-bubble">
+      <a href="{{ routes.cart_url }}" class="header__icon cart-main-icon" style="width:100%; gap:10px; justify-content:space-between;" id="cart-icon-bubble">
         <div class="cart-icon-container">
         {%- if cart == empty -%}
           {{- 'icon-cart.svg' | inline_asset_content -}}
@@ -280,7 +280,7 @@ justify-content: space-between;}
 	background: transparent;
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: flex-end;
 	padding-top: 24px;
 	padding-bottom: 24px;
 }
