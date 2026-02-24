@@ -16,5 +16,7 @@
 .swiper-pagination {
     width:fit-content !important;
     left:120px !important;
+        display: flex;
+    align-items: center;
     bottom:30px !important;
 }
