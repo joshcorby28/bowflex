@@ -4,18 +4,16 @@
       <li>
         <header-menu>
           <details id="Details-HeaderMenu-{{ forloop.index }}">
-            <summary
-              id="HeaderMenu-{{ link.handle }}"
-              class="header__menu-item list-menu__item link focus-inset"
-            >
-              <span
-                {%- if link.current %}
-                  class="header__active-menu-item"
-                {% endif %}
-              >
-                {{ link.title | escape }}
-              </span>
-            </summary>
+<summary
+  id="HeaderMenu-{{ link.handle }}"
+  class="header__menu-item list-menu__item link focus-inset
+    {%- if link.current -%} header__active-menu-item{%- endif -%}
+    {%- if link.title contains 'Sale' or link.handle contains 'sale' -%} sale-menu-item{%- endif -%}"
+>
+  <span>
+    {{ link.title | escape }}
+  </span>
+</summary>
 
             <ul
               id="HeaderMenu-MenuList-{{ forloop.index }}"
