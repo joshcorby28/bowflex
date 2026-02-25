@@ -87,3 +87,35 @@
     display: flex;
 
 }
+
+/* Fonts */
+
+/* Rauschen Typography System */
+
+body {
+  font-family: 'Rauschen', sans-serif;
+  font-weight: 400;
+}
+
+/* Headings */
+
+h1, h2 {
+  font-family: 'Rauschen', sans-serif;
+  font-weight: 700;
+}
+
+h3, h4, h5 {
+  font-family: 'Rauschen', sans-serif;
+  font-weight: 500;
+}
+
+/* Buttons & UI text */
+
+.button,
+.button-label,
+.shopify-payment-button__button,
+.header__menu-item,
+.menu-drawer__menu-item {
+  font-family: 'Rauschen', sans-serif;
+  font-weight: 500;
+}
