@@ -41,49 +41,15 @@
 
                 {# --- CUSTOM CONTENT FOR EMPTY MENUS --- #}
 
-            {%- if link.handle == 'treadmill' -%}
+        {%- case link.handle -%}
 
-  <li class="mega-block">
-    <div class="mega-grid">
-      
-      <div class="mega-card">
-        <h4>Treadmills</h4>
-        <p>Shop our full treadmill range</p>
-        <a href="/collections/treadmills" class="button">
-          Shop Treadmills
-        </a>
-      </div>
+  {%- when 'treadmills' -%}
+    {% render 'mega-menu-treadmills' %}
 
-      <div class="mega-card">
-        <h4>Compare Models</h4>
-        <p>Find the right treadmill for you</p>
-        <a href="/pages/treadmill-comparison" class="button button--secondary">
-          Compare
-        </a>
-      </div>
+  {%- else -%}
+    ... normal menu logic ...
 
-    </div>
-  </li>
-
-{%- elsif link.links != blank -%}
-
-  {%- for childlink in link.links -%}
-    <li>
-      <a href="{{ childlink.url }}" class="header__menu-item">
-        {{ childlink.title }}
-      </a>
-    </li>
-  {%- endfor -%}
-
-{%- else -%}
-
-  <li>
-    <a href="{{ link.url }}" class="header__menu-item">
-      Shop {{ link.title }}
-    </a>
-  </li>
-
-{%- endif -%}
+{%- endcase -%}
 
               {%- endif -%}
 
