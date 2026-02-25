@@ -148,6 +148,63 @@
         "padding_top": 72,
         "padding_bottom": 52
       }
+    },
+    "image_with_text_FBih6q": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_6RFhxq": {
+          "type": "heading",
+          "settings": {
+            "heading": "New Treadmills",
+            "heading_size": "h2"
+          }
+        },
+        "text_6ijYkp": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Your indoor run—unlocked for maximum fitness app freedom.</p>",
+            "text_style": "body"
+          }
+        },
+        "caption_JpaXwa": {
+          "type": "caption",
+          "settings": {
+            "caption": "Get $300 Off + $99 Standard Delivery! Limited time only.",
+            "text_style": "subtitle",
+            "text_size": "small"
+          }
+        },
+        "button_cFQK6k": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Treadmills",
+            "button_link": "#",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_6RFhxq",
+        "text_6ijYkp",
+        "caption_JpaXwa",
+        "button_cFQK6k"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/treadmill-9-f-lr-bg-2x.webp",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "scheme-4",
+        "padding_top": 72,
+        "padding_bottom": 72
+      }
     }
   },
   "order": [
@@ -155,6 +212,7 @@
     "cta_bar_3ccn7H",
     "custom_liquid_G9fb6f",
     "featured_collection_T7NDHP",
-    "rich_text_YTkxYq"
+    "rich_text_YTkxYq",
+    "image_with_text_FBih6q"
   ]
 }
