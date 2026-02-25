@@ -98,6 +98,9 @@ body {
       letter-spacing: 0;
 }
 
+.body {
+    opacity: 1;
+}
 /* Headings */
 
 h1, h2 {
