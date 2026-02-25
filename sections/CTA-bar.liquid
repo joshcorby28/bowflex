@@ -6,6 +6,7 @@
       aria-label="CTA Bar"
       {{ section.blocks.first.shopify_attributes }}
     >
+      <div class="img-and-text">
         {% if section.blocks.first.settings.show-jrny-image != blank %}
           <div class="cta-bar__img">
             <img 
@@ -19,6 +20,7 @@
         <p class="cta-bar__message h3">
           {{ section.blocks.first.settings.text | escape }}
         </p>
+      </div>
 
       <!-- Button if link exists -->
       {%- if section.blocks.first.settings.link != blank -%}
