@@ -7,7 +7,7 @@
       {{ section.blocks.first.shopify_attributes }}
     >
       <!-- Message -->
-      <p class="cta-bar__message">
+      <p class="cta-bar__message h3">
         {{ section.blocks.first.settings.text | escape }}
       </p>
 
@@ -15,7 +15,7 @@
       {%- if section.blocks.first.settings.link != blank -%}
         <a
           href="{{ section.blocks.first.settings.link }}"
-          class="global-black-button"
+          class="{% if section.settings.white-button %} global-white-button {%else%} global-black-button {% endif %}"
           role="button"
         >
           {{ section.blocks.first.settings.button_text }}
