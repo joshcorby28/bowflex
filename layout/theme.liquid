@@ -259,6 +259,39 @@
     {{ 'global-style.css' | asset_url | stylesheet_tag }}
     <link rel="stylesheet" href="{{ 'component-cart-items.css' | asset_url }}" media="print" onload="this.media='all'">
 
+    <style>
+            @font-face {
+        font-family: 'Rauschen';
+        src: url('https://cdn.shopify.com/s/files/1/1019/0431/8794/files/RauschenTrialA-Book.otf?v=1772012365') format('opentype');
+        font-weight: 350;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: 'Rauschen';
+        src: url('https://cdn.shopify.com/s/files/1/1019/0431/8794/files/RauschenTrialA-Regular.otf?v=1772012365') format('opentype');
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: 'Rauschen';
+        src: url('https://cdn.shopify.com/s/files/1/1019/0431/8794/files/RauschenTrialA-Medium.otf?v=1772012365') format('opentype');
+        font-weight: 500;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: 'Rauschen';
+        src: url('https://cdn.shopify.com/s/files/1/1019/0431/8794/files/RauschenTrialA-Bold.otf?v=1772012365') format('opentype');
+        font-weight: 700;
+        font-style: normal;
+        font-display: swap;
+      }
+      </style>
     {%- if settings.cart_type == 'drawer' -%}
       {{ 'component-cart-drawer.css' | asset_url | stylesheet_tag }}
       {{ 'component-cart.css' | asset_url | stylesheet_tag }}
