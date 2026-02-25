@@ -95,6 +95,7 @@
 body {
   font-family: 'Rauschen', sans-serif;
   font-weight: 400;
+      letter-spacing: 0;
 }
 
 /* Headings */
@@ -102,11 +103,13 @@ body {
 h1, h2 {
   font-family: 'Rauschen', sans-serif;
   font-weight: 700;
+      letter-spacing: 0;
 }
 
 h3, h4, h5 {
   font-family: 'Rauschen', sans-serif;
   font-weight: 500;
+      letter-spacing: 0;
 }
 
 /* Buttons & UI text */
@@ -118,4 +121,5 @@ h3, h4, h5 {
 .menu-drawer__menu-item {
   font-family: 'Rauschen', sans-serif;
   font-weight: 500;
+      letter-spacing: 0;
 }
