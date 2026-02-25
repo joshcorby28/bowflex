@@ -53,6 +53,7 @@
           "type": "cta",
           "settings": {
             "text": "For a limited time only → Save up to $500!",
+            "white-button": false,
             "link": "#",
             "button_text": "Shop Now"
           }
@@ -341,6 +342,16 @@
         "padding_bottom": 80
       }
     },
+    "custom_liquid_LBPKe8": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<div class=\"page-width jrny-message\"> <span> *Availability of terms may vary based on purchase price, product, and state of residence. Down payment may be required. Subject to approval of credit application. Rates range from 0.00% to 34.99% APR, resulting in, for example, 36 monthly payments of $38.19 at 21.99% APR, per $1,000.00 borrowed. APRs will vary depending on credit qualifications, loan amount, and term. Bread Pay® loans are made by Comenity Capital Bank, a Bread Financial® company.\n\n1 Offer availability is subject to change without notice. At the end of the introductory offer period, JRNY membership automatically renews at then-current membership rate until canceled.</span> </div>\n\n<style>\n.jrny-message span {\n  display: block;\n  font-size: 12px;\n  letter-spacing: 0px;\n  line-height: 1.4;\n  text-align: center;\n}\n</style>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "cta_bar_BLzzVd": {
       "type": "CTA-bar",
       "blocks": {
@@ -348,6 +359,7 @@
           "type": "cta",
           "settings": {
             "text": "The adaptive fitness membership that evolves with you.",
+            "white-button": true,
             "link": "#",
             "button_text": "Explore JRNY"
           }
@@ -358,18 +370,8 @@
       ],
       "name": "CTA Bar",
       "settings": {
-        "color_scheme": "scheme-5",
+        "color_scheme": "scheme-4",
         "show_line_separator": true
-      }
-    },
-    "custom_liquid_LBPKe8": {
-      "type": "custom-liquid",
-      "name": "t:sections.custom-liquid.presets.name",
-      "settings": {
-        "custom_liquid": "<div class=\"page-width jrny-message\"> <span> *Availability of terms may vary based on purchase price, product, and state of residence. Down payment may be required. Subject to approval of credit application. Rates range from 0.00% to 34.99% APR, resulting in, for example, 36 monthly payments of $38.19 at 21.99% APR, per $1,000.00 borrowed. APRs will vary depending on credit qualifications, loan amount, and term. Bread Pay® loans are made by Comenity Capital Bank, a Bread Financial® company.\n\n1 Offer availability is subject to change without notice. At the end of the introductory offer period, JRNY membership automatically renews at then-current membership rate until canceled.</span> </div>\n\n<style>\n.jrny-message span {\n  display: block;\n  font-size: 12px;\n  letter-spacing: 0px;\n  line-height: 1.4;\n  text-align: center;\n}\n</style>",
-        "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 52
       }
     }
   },
