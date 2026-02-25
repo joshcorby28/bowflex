@@ -15,7 +15,7 @@
       {%- if section.blocks.first.settings.link != blank -%}
         <a
           href="{{ section.blocks.first.settings.link }}"
-          class="{% if section.settings.white-button %} global-white-button {%else%} global-black-button {% endif %}"
+          class="{% if section.blocks.first.white-button %} global-white-button {%else%} global-black-button {% endif %}"
           role="button"
         >
           {{ section.blocks.first.settings.button_text }}
@@ -51,6 +51,7 @@
       "label": "Color scheme",
       "default": "scheme-4"
     },
+
     {
       "type": "checkbox",
       "id": "show_line_separator",
@@ -69,6 +70,12 @@
           "default": "Add your call-to-action message",
           "label": "Text"
         },
+            {
+      "type": "checkbox",
+      "id": "white-button",
+      "default": false,
+      "label": "Show White Button"
+    },
         {
           "type": "url",
           "id": "link",
