@@ -6,10 +6,19 @@
       aria-label="CTA Bar"
       {{ section.blocks.first.shopify_attributes }}
     >
-      <!-- Message -->
-      <p class="cta-bar__message h3">
-        {{ section.blocks.first.settings.text | escape }}
-      </p>
+        {% if section.settings.show_jrny_image %}
+          <div class="cta-bar__img">
+            <img 
+              src="{{ section.blocks.first.settings.jrny_image | image_url }}" 
+              alt="{{ section.blocks.first.settings.jrny_image.alt | escape }}"
+            >
+          </div>
+        {% endif %}
+
+        <!-- Message -->
+        <p class="cta-bar__message h3">
+          {{ section.blocks.first.settings.text | escape }}
+        </p>
 
       <!-- Button if link exists -->
       {%- if section.blocks.first.settings.link != blank -%}
