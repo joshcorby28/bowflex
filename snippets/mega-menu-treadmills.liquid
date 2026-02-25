@@ -1,32 +1,36 @@
 {%- assign product_1 = settings.mega_treadmill_product_1 -%}
 {%- assign product_2 = settings.mega_treadmill_product_2 -%}
 
+{%- assign products_array = '' | split: ',' -%} 
+{%- if product_1 != blank -%}
+  {%- assign products_array = products_array | push: product_1 -%}
+{%- endif -%}
+{%- if product_2 != blank -%}
+  {%- assign products_array = products_array | push: product_2 -%}
+{%- endif -%}
+
 <li class="mega-products">
+  {%- for product_handle in products_array -%}
+    {%- assign p = all_products[product_handle] -%}
 
-  {%- for product in (product_1, product_2) -%}
-    {%- if product != blank -%}
-      {%- assign p = all_products[product] -%}
+    <a href="{{ p.url }}" class="mega-product-card">
+      
+      <div class="mega-product-image">
+        {{ p.featured_image | image_url: width: 160 | image_tag }}
+      </div>
 
-      <a href="{{ p.url }}" class="mega-product-card">
-        
-        <div class="mega-product-image">
-          {{ p.featured_image | image_url: width: 160 | image_tag }}
+      <div class="mega-product-info">
+        <div class="mega-product-title">{{ p.title }}</div>
+        <div class="mega-product-subtitle">
+          {{ p.metafields.custom.short_text }}
         </div>
+      </div>
 
-        <div class="mega-product-info">
-          <div class="mega-product-title">{{ p.title }}</div>
-          <div class="mega-product-subtitle">
-            {{ p.metafields.custom.short_text }}
-          </div>
-        </div>
+      {%- if p.tags contains 'New' -%}
+        <span class="mega-badge">New</span>
+      {%- endif -%}
 
-        {%- if p.tags contains 'New' -%}
-          <span class="mega-badge">New</span>
-        {%- endif -%}
-
-      </a>
-
-    {%- endif -%}
+    </a>
   {%- endfor -%}
 
   <div class="mega-menu-actions">
@@ -35,5 +39,4 @@
       Compare Treadmills
     </a>
   </div>
-
 </li>
