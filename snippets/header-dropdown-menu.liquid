@@ -41,18 +41,49 @@
 
                 {# --- CUSTOM CONTENT FOR EMPTY MENUS --- #}
 
-                <li class="header__custom-block">
-                  <a href="{{ link.url }}" class="button button--primary">
-                    Shop {{ link.title }}
-                  </a>
-                </li>
+            {%- if link.handle == 'treadmill' -%}
 
-                <li class="header__custom-block">
-                  <div class="menu-promo">
-                    <strong>Featured {{ link.title }}</strong>
-                    <p>Add promotional content here</p>
-                  </div>
-                </li>
+  <li class="mega-block">
+    <div class="mega-grid">
+      
+      <div class="mega-card">
+        <h4>Treadmills</h4>
+        <p>Shop our full treadmill range</p>
+        <a href="/collections/treadmills" class="button">
+          Shop Treadmills
+        </a>
+      </div>
+
+      <div class="mega-card">
+        <h4>Compare Models</h4>
+        <p>Find the right treadmill for you</p>
+        <a href="/pages/treadmill-comparison" class="button button--secondary">
+          Compare
+        </a>
+      </div>
+
+    </div>
+  </li>
+
+{%- elsif link.links != blank -%}
+
+  {%- for childlink in link.links -%}
+    <li>
+      <a href="{{ childlink.url }}" class="header__menu-item">
+        {{ childlink.title }}
+      </a>
+    </li>
+  {%- endfor -%}
+
+{%- else -%}
+
+  <li>
+    <a href="{{ link.url }}" class="header__menu-item">
+      Shop {{ link.title }}
+    </a>
+  </li>
+
+{%- endif -%}
 
               {%- endif -%}
 
