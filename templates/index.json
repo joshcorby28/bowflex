@@ -290,6 +290,56 @@
         "padding_top": 72,
         "padding_bottom": 72
       }
+    },
+    "image_with_text_q3LBRF": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_R8migA": {
+          "type": "heading",
+          "settings": {
+            "badge": "",
+            "badge_color": "#b4ff63",
+            "heading": "Want even more options?",
+            "heading_size": "h2"
+          }
+        },
+        "text_XHg477": {
+          "type": "text",
+          "settings": {
+            "text": "<p>See best-selling cardio favorites at SchwinnFitness.com</p>",
+            "text_style": "body"
+          }
+        },
+        "button_8BeHXU": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Schwinn",
+            "button_link": "#",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_R8migA",
+        "text_XHg477",
+        "button_8BeHXU"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/brand-crossover-shw290r-bg-2x.webp",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "scheme-4",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -300,6 +350,7 @@
     "rich_text_YTkxYq",
     "image_with_text_FBih6q",
     "rich_text_DeaNnJ",
-    "multirow_wqYawf"
+    "multirow_wqYawf",
+    "image_with_text_q3LBRF"
   ]
 }
