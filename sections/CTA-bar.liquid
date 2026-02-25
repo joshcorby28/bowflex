@@ -6,11 +6,11 @@
       aria-label="CTA Bar"
       {{ section.blocks.first.shopify_attributes }}
     >
-        {% if section.settings.show_jrny_image %}
+        {% if section.blocks.first.settings.show-jrny-image != blank %}
           <div class="cta-bar__img">
             <img 
-              src="{{ section.blocks.first.settings.jrny_image | image_url }}" 
-              alt="{{ section.blocks.first.settings.jrny_image.alt | escape }}"
+              src="{{ section.blocks.first.settings.show-jrny-image | image_url }}" 
+              alt="{{ section.blocks.first.settings.show-jrny-image.alt | escape }}"
             >
           </div>
         {% endif %}
@@ -80,11 +80,16 @@ class="{% if section.blocks.first.settings.white-button %}global-white-button{% 
           "label": "Text"
         },
             {
-      "type": "checkbox",
-      "id": "white-button",
-      "default": false,
-      "label": "Show White Button"
-    },
+            "type": "image_picker",
+            "id": "show-jrny-image",
+            "label": "show-jrny-image"
+          },
+            {
+            "type": "checkbox",
+            "id": "white-button",
+            "default": false,
+            "label": "Show White Button"
+          },
         {
           "type": "url",
           "id": "link",
