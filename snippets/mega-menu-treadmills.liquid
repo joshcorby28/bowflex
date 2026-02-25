@@ -1,0 +1,39 @@
+{%- assign product_1 = settings.mega_treadmill_product_1 -%}
+{%- assign product_2 = settings.mega_treadmill_product_2 -%}
+
+<li class="mega-products">
+
+  {%- for product in (product_1, product_2) -%}
+    {%- if product != blank -%}
+      {%- assign p = all_products[product] -%}
+
+      <a href="{{ p.url }}" class="mega-product-card">
+        
+        <div class="mega-product-image">
+          {{ p.featured_image | image_url: width: 160 | image_tag }}
+        </div>
+
+        <div class="mega-product-info">
+          <div class="mega-product-title">{{ p.title }}</div>
+          <div class="mega-product-subtitle">
+            {{ p.metafields.custom.short_text }}
+          </div>
+        </div>
+
+        {%- if p.tags contains 'New' -%}
+          <span class="mega-badge">New</span>
+        {%- endif -%}
+
+      </a>
+
+    {%- endif -%}
+  {%- endfor -%}
+
+  <div class="mega-menu-actions">
+    <a href="/collections/treadmills" class="button">Shop Treadmills</a>
+    <a href="/pages/treadmill-comparison" class="mega-compare">
+      Compare Treadmills
+    </a>
+  </div>
+
+</li>
