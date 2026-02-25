@@ -8,6 +8,21 @@
     "theme_support_url": "https://support.shopify.com/"
   },
   {
+  "name": "Mega Menu – Treadmills",
+  "settings": [
+    {
+      "type": "product",
+      "id": "mega_treadmill_product_1",
+      "label": "Product 1"
+    },
+    {
+      "type": "product",
+      "id": "mega_treadmill_product_2",
+      "label": "Product 2"
+    }
+  ]
+},
+  {
     "name": "t:settings_schema.logo.name",
     "settings": [
       {
