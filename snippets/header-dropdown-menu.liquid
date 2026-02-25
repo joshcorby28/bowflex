@@ -10,10 +10,10 @@
     {%- if link.current -%} header__active-menu-item{%- endif -%}
     {%- if link.title contains 'Sale' or link.handle contains 'sale' -%} sale-menu-item{%- endif -%}"
 >
-  <span>
-    {{ link.title | escape }}
-  </span>
-</summary>
+                <span>
+                  {{ link.title | escape }}
+                </span>
+              </summary>
 
             <ul
               id="HeaderMenu-MenuList-{{ forloop.index }}"
