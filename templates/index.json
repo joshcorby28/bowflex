@@ -205,6 +205,89 @@
         "padding_top": 72,
         "padding_bottom": 72
       }
+    },
+    "rich_text_DeaNnJ": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_m8bJjY": {
+          "type": "heading",
+          "settings": {
+            "heading": "Great prices on best-sellers.",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_m8bJjY"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 72,
+        "padding_bottom": 0
+      }
+    },
+    "multirow_wqYawf": {
+      "type": "multirow",
+      "blocks": {
+        "row_xgRtdy": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/840-kettlebell-m-lr-0623-bg-1x.jpg",
+            "caption": "Only $149 + Free Shipping!",
+            "heading": "840 Kettlebells",
+            "text": "<p>Adjusts from 8 to 40 lbs.</p>",
+            "button_label": "Shop 840 Kettlebells",
+            "button_link": "#"
+          }
+        },
+        "row_aKUCaw": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/xtreme-2se-gym-f-lr-bg-1x.jpg",
+            "caption": "Only $999 with $500 Off + Free Shipping!",
+            "heading": "Xtreme 2 SE",
+            "text": "<p>Get the ultimate all-in-one home gym system.</p>",
+            "button_label": "Shop Xtreme 2 SE",
+            "button_link": "#"
+          }
+        },
+        "row_htHnbU": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/c6-bike-m-lr-0623-bg-1x.jpg",
+            "caption": "Only $899 with $100 Off + Free Shipping!",
+            "heading": "BowFlex C6 Bike",
+            "text": "<p>Explore a variety of world-class app experiences.</p>",
+            "button_label": "Shop C6 Bike",
+            "button_link": "#"
+          }
+        }
+      },
+      "block_order": [
+        "row_xgRtdy",
+        "row_aKUCaw",
+        "row_htHnbU"
+      ],
+      "name": "t:sections.multirow.presets.name",
+      "settings": {
+        "image_height": "large",
+        "desktop_image_width": "medium",
+        "image_layout": "alternate-left",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "padding_top": 72,
+        "padding_bottom": 72
+      }
     }
   },
   "order": [
@@ -213,6 +296,8 @@
     "custom_liquid_G9fb6f",
     "featured_collection_T7NDHP",
     "rich_text_YTkxYq",
-    "image_with_text_FBih6q"
+    "image_with_text_FBih6q",
+    "rich_text_DeaNnJ",
+    "multirow_wqYawf"
   ]
 }
