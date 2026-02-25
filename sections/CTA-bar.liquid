@@ -15,7 +15,7 @@
       {%- if section.blocks.first.settings.link != blank -%}
         <a
           href="{{ section.blocks.first.settings.link }}"
-          class="{% if section.blocks.first.white-button %} global-white-button {%else%} global-black-button {% endif %}"
+class="{% if section.blocks.first.settings.white-button %}global-white-button{% else %}global-black-button{% endif %}"
           role="button"
         >
           {{ section.blocks.first.settings.button_text }}
