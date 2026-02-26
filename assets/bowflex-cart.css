@@ -8,10 +8,10 @@
   }
 }
 .cart .title-wrapper-with-link .item-count {
-  color: #071739;
-  font-size: 16px;
+  color: #1b1b1b;
+  font-size: 14px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: -0.16px;
 }
 .cart .smarte-cart-main {
@@ -26,7 +26,7 @@
 }
 .cart .cart__contents .cart__items .in-stock {
   display: flex;
-  color: #071739;
+  color: #1b1b1b;
   font-size: 13px;
   align-items: center;
   gap: 5px;
@@ -55,15 +55,15 @@
   font-size: 15px;
   text-align: text;
   letter-spacing: 0;
-  color: #071739;
+  color: #1b1b1b;
 }
 .cart .cart__contents .cart__items td.cart-item__details .cart-item__sku {
-  color: #071739;
+  color: #1b1b1b;
   font-size: 12px;
 }
 .cart .cart__contents .cart__items td.cart-item__details .next-day-text {
   display: block;
-  color: #071739;
+  color: #1b1b1b;
   font-size: 12px;
   font-weight: 700;
   white-space: normal;
@@ -71,7 +71,7 @@
 }
 .cart .cart__contents .cart__items .cart-item__price-wrapper span {
   font-size: 22px;
-  color: #071739;
+  color: #1b1b1b;
   font-weight: bold;
   line-height: normal;
   margin-top: 0;
@@ -79,7 +79,7 @@
 }
 .cart .cart__contents .cart__items .cart-item__price-wrapper .compare--price {
   font-size: 12px;
-  color: #071739;
+  color: #1b1b1b;
 }
 .cart .cart__contents .cart__items .cart-item__image-container {
   max-width: 100px;
@@ -113,7 +113,7 @@
   font-size: 26px;
   margin: 0 0 20px 0;
   padding-bottom: 10px;
-  border-bottom: 1px solid #071739;
+  border-bottom: 1px solid #1b1b1b;;
 }
 .cart .smarte-cart .smarte-cart-footer .cart__blocks {
   width: 100%;
@@ -132,7 +132,7 @@
 .cart .smarte-cart .smarte-cart-footer .cart__blocks .js-contents .totals {
   display: flex;
   justify-content: space-between;
-  color: #071739;
+  color: #1b1b1b;
   align-items: center;
 }
 .cart .smarte-cart .smarte-cart-footer .cart__blocks .js-contents .totals .totals__subtotal {
@@ -147,7 +147,7 @@
 .cart .smarte-cart .smarte-cart-footer .cart__blocks .js-contents .delivery-calculation {
   display: flex;
   justify-content: space-between;
-  color: #071739;
+  color: #1b1b1b;
   align-items: center;
   margin-bottom: 24px;
 }
@@ -163,7 +163,7 @@
 .cart .smarte-cart .smarte-cart-footer .cart__blocks .js-contents .savings-calculation {
   display: flex;
   justify-content: space-between;
-  color: #071739;
+  color: #1b1b1b;
   margin-bottom: 10px;
   align-items: center;
 }
@@ -174,7 +174,7 @@
 .cart .smarte-cart .smarte-cart-footer .cart__blocks .js-contents .savings-calculation .savings-message {
   text-align: center;
   font-size: 16px;
-  color: #071739;
+  color: #1b1b1b;
   margin: 0;
 }
 .cart .smarte-cart .smarte-cart-footer .cart__blocks .js-contents .free-shipping {
@@ -237,13 +237,13 @@
 .cart .smarte-cart .smarte-cart-footer .cart__blocks .cart__ctas .gift-wrap-text {
   font-weight: bold;
   font-size: 14px;
-  color: #071739;
+  color: #1b1b1b;
 }
 .cart .smarte-cart .smarte-cart-footer .cart__blocks .cart__ctas .gift-wrap-price {
   font-weight: bold;
   margin-left: 4px;
   font-size: 14px;
-  color: #071739;
+  color: #1b1b1b;
 }
 .cart .smarte-cart .smarte-cart-footer .cart__blocks .cart__ctas .gift-wrap-info {
   cursor: help;
@@ -253,7 +253,7 @@
 .cart .smarte-cart .smarte-cart-footer .cart__blocks .cart__ctas #gift-wrap-checkbox {
   width: 14px;
   height: 14px;
-  accent-color: #071739;
+  accent-color:#1b1b1b;
   margin-left: 5px;
 }
 .cart .smarte-cart .cart__contents .cart-items .flex-cart-items {
@@ -339,7 +339,7 @@
 .cart .smarte-cart .cart__contents .continue-shopping a {
   text-decoration: none;
   text-transform: capitalize;
-  border: 1px solid var(--Key-Blue, #071739);
+  border: 1px solid var(--Key-Blue, #1b1b1b);
 }
 
 .cart .our-review .text-block-story {
@@ -350,14 +350,14 @@
 .cart .our-review .text-block-story .story-description {
   font-size: 15px;
   letter-spacing: 0;
-  color: #071739;
+  color: #1b1b1b;
   font-weight: 300;
 }
 .cart .our-review .text-block-story .story-name {
   font-size: 14px;
   letter-spacing: 0;
   font-weight: bold;
-  color: #071739;
+  color: #1b1b1b;
 }
 
 @media screen and (min-width: 1081px) {
