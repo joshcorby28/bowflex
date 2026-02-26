@@ -466,10 +466,7 @@
 
                 {% if total_savings > 0 %}
                   <div class="you-saved">
-                    <div style="  flex: 1;
-  height: 1px;
-  background-color: #e5e5e5; /* soft grey */
-  margin-right: 0.5rem;" class="hr-left"></div>
+                    <div class="hr-left"></div>
 
                     <svg stroke="currentColor" fill="currentColor" viewBox="0 0 512 512" height="1em" width="1em">
                       <path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path>
@@ -477,12 +474,17 @@
 
                     You Saved {{ total_savings | money }}
 
-                    <div style="margin-left: .5rem;
-    height: .125rem;
-    -ms-flex: 1 1 0%;
-    flex: 1 1 0%;
-    background-color: #efefef;" class="hr-right"></div>
+                    <divclass="hr-right"></div>
                   </div>
+
+
+                  <style>
+                    .hr-left {
+                    flex: 1;
+  height: 1px;
+  background-color: #e5e5e5; /* soft grey */
+  margin-right: 0.5rem;}
+                    </style>
                 {% endif %}
               <div class="cart__ctas">
                 <noscript>
