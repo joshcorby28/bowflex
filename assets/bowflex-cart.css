@@ -366,8 +366,8 @@
     align-items: center;
   }
   .cart .title.title--primary {
-    font-size: 32px;
-    margin-bottom: -5px;
+    font-size: 26px;
+    font-weight:400;
   }
   .cart .mobile-checkout-button {
     display: none;
