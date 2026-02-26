@@ -308,7 +308,7 @@
   width: 13rem;
   margin-right: 1rem;
   border-radius: 0px;
-  border: 1px solid var(--Pale-Gold, #e1d6c8);
+  border: 1px solid var(--Pale-Gold, #1b1b1b);
   background: var(--Meta-White, #fff);
 }
 .cart .smarte-cart .cart__contents .cart-items .flex-cart-items .cart-item .cart-item__quantity .quantity::after {
