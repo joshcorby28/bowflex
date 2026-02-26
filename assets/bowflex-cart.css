@@ -78,9 +78,9 @@
   text-align: left;
 }
 
-.cart .product_original_Price {
+.cart .product_original_Price span{
     font-size: 22px;
-  color: #1b1b1b;
+  color: #1b1b1b !important;
   font-weight: bold;
   line-height: normal;
   margin-top: 0;
