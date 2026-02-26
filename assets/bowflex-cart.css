@@ -264,7 +264,7 @@
 .cart .smarte-cart .cart__contents .cart-items .flex-cart-items .cart-item {
   border-radius: 8px;
   flex-wrap: wrap;
-  background: #f0ebe3;
+  background: #fff;
   padding: 16px;
   justify-content: space-between;
   align-items: center;
