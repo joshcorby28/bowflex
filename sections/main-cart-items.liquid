@@ -423,14 +423,15 @@
 
             <div class="cart__blocks">
               <div class="js-contents">
-                {% assign total_savings = 0 %}
+{% assign total_savings = 0 %}
 
-                {% for item in cart.items %}
-                  {% if item.original_line_price > item.final_line_price %}
-                    {% assign savings = item.original_line_price | minus: item.final_line_price %}
-                    {% assign total_savings = total_savings | plus: savings %}
-                  {% endif %}
-                {% endfor %}
+{% for item in cart.items %}
+  {% if item.variant.compare_at_price > item.variant.price %}
+    {% assign savings = item.variant.compare_at_price | minus: item.variant.price %}
+    {% assign line_savings = savings | times: item.quantity %}
+    {% assign total_savings = total_savings | plus: line_savings %}
+  {% endif %}
+{% endfor %}
 
                 <div class="savings-calculation">
                   <span class="savings-title">Savings</span>
@@ -463,19 +464,27 @@
                 {%- endif -%}
               </div>
 
-{% if total_savings > 0 %}
-  <div class="you-saved">
-    <div class="hr-left"></div>
+                {% if total_savings > 0 %}
+                  <div class="you-saved">
+                    <div style="    margin-right: .5rem;
+    height: .125rem;
+    -ms-flex: 1 1 0%;
+    flex: 1 1 0%;
+    background-color:#efefef;" class="hr-left"></div>
 
-    <svg stroke="currentColor" fill="currentColor" viewBox="0 0 512 512" height="1em" width="1em">
-      <path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path>
-    </svg>
+                    <svg stroke="currentColor" fill="currentColor" viewBox="0 0 512 512" height="1em" width="1em">
+                      <path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path>
+                    </svg>
 
-    You Saved {{ total_savings | money }}
+                    You Saved {{ total_savings | money }}
 
-    <div class="hr-right"></div>
-  </div>
-{% endif %}
+                    <div style="margin-left: .5rem;
+    height: .125rem;
+    -ms-flex: 1 1 0%;
+    flex: 1 1 0%;
+    background-color: #efefef;" class="hr-right"></div>
+                  </div>
+                {% endif %}
               <div class="cart__ctas">
                 <noscript>
                   <button type="submit" class="cart__update-button button button--secondary" form="cart">
