@@ -153,11 +153,14 @@
 }
 .cart .smarte-cart .smarte-cart-footer .cart__blocks .js-contents .delivery-calculation .delivery-title {
   opacity: 1;
-  font-size: 16px;
+  font-size: 14px;
+  font-weight:400;
 }
 .cart .smarte-cart .smarte-cart-footer .cart__blocks .js-contents .delivery-calculation .delivery-message {
   text-align: center;
-  font-size: 16px;
+  opacity: 1;
+  font-size: 14px;
+  font-weight:400;
   margin: 0;
 }
 .cart .smarte-cart .smarte-cart-footer .cart__blocks .js-contents .savings-calculation {
