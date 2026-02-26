@@ -478,23 +478,29 @@
                   </div>
 
 
-                  <style>
-                    .hr-left {
-                    flex: 1;
-                    height: 1px;
-                    background-color: #e5e5e5; /* soft grey */
-                    margin-right: 0.5rem;
-                    display: flex !important;
+                    <style>
+                      .you-saved {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
                       }
 
-                                          .hr-right {
-                    flex: 1;
-                    height: 1px;
-                    background-color: #e5e5e5; /* soft grey */
-                    margin-left: 0.5rem;
-                    display: flex !important;
+                      .hr-left,
+                      .hr-right {
+                        flex: 1;
+                        height: 1px;
+                        background-color: #e5e5e5; /* soft grey */
                       }
-                 </style>
+
+                      .hr-left {
+                        margin-right: 0.5rem;
+                      }
+
+                      .hr-right {
+                        margin-left: 0.5rem;
+                      }
+                    </style>
+                    
                 {% endif %}
               <div class="cart__ctas">
                 <noscript>
