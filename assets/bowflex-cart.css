@@ -90,6 +90,7 @@
 }
 .cart .smarte-cart {
   padding-top: 30px;
+  background:#EFEFEF;
 }
 .cart .smarte-cart:nth-last-of-type(2) {
   margin-top: 0;
