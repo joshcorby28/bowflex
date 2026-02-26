@@ -3,7 +3,7 @@
 {{ 'component-totals.css' | asset_url | stylesheet_tag }}
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
 {{ 'component-discounts.css' | asset_url | stylesheet_tag }}
-{{ 'bowflex-cart.css' | asset_url | stylesheet_tag }}
+{{ 'smarte-cart.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
   .section-{{ section.id }}-padding {
@@ -114,6 +114,21 @@
                             {%- endfor -%}
                           </ul>
 
+                          <div class="smarte-stock-status">
+                            <div class="in-stock-wrapper">
+                              <div class="in-stock">
+                                {{ 'icon-stock-delivery-stock.svg' | inline_asset_content }}
+                                <div class="text">
+                                  <span class="stock-text-bold">In Stock</span> – Dispatched within 48 Hours
+                                </div>
+                              </div>
+                              {% if item.variant.inventory_quantity == 1 %}
+                                <div class="last-stock-notice" style="color: red; margin-top: 2px;">
+                                  Last one in stock
+                                </div>
+                              {% endif %}
+                            </div>
+                          </div>
                         </td>
 
                         <td class="cart-item__quantity only-desktop">
@@ -503,6 +518,12 @@
                     {{ content_for_additional_checkout_buttons }}
                   </div>
                 {%- endif -%}
+              </div>
+              <div
+                style="     justify-content: center;   padding-top: 20px; margin: 0 auto;display: flex;"
+                class="pay-icons"
+              >
+                {% render 'smarte-payment-icons-card' %}
               </div>
             </div>
           </div>
