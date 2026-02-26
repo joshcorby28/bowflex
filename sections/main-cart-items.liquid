@@ -113,22 +113,6 @@
                               </li>
                             {%- endfor -%}
                           </ul>
-
-                          <div class="smarte-stock-status">
-                            <div class="in-stock-wrapper">
-                              <div class="in-stock">
-                                {{ 'icon-stock-delivery-stock.svg' | inline_asset_content }}
-                                <div class="text">
-                                  <span class="stock-text-bold">In Stock</span> – Dispatched within 48 Hours
-                                </div>
-                              </div>
-                              {% if item.variant.inventory_quantity == 1 %}
-                                <div class="last-stock-notice" style="color: red; margin-top: 2px;">
-                                  Last one in stock
-                                </div>
-                              {% endif %}
-                            </div>
-                          </div>
                         </td>
 
                         <td class="cart-item__quantity only-desktop">
@@ -191,7 +175,7 @@
                                 class="button button--tertiary"
                                 aria-label="{{ 'sections.cart.remove_title' | t: title: item.title }}"
                               >
-                                {% render 'smarte-icon-bin' %}
+                                Remove
                               </a>
                             </cart-remove-button>
                           </div>
