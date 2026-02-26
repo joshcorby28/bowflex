@@ -169,7 +169,7 @@
   display: flex;
   justify-content: space-between;
   color: #1b1b1b;
-  margin-bottom: 10px;
+  margin-bottom: 2px;
   align-items: center;
 }
 .cart .smarte-cart .smarte-cart-footer .cart__blocks .js-contents .savings-calculation .savings-title {
