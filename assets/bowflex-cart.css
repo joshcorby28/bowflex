@@ -77,6 +77,15 @@
   margin-top: 0;
   text-align: left;
 }
+
+.cart .product_original_Price {
+    font-size: 22px;
+  color: #1b1b1b;
+  font-weight: bold;
+  line-height: normal;
+  margin-top: 0;
+  text-align: left;
+}
 .cart .cart__contents .cart__items .cart-item__price-wrapper .compare--price {
   font-size: 12px;
   color: #1b1b1b;
