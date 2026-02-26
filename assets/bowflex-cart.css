@@ -333,7 +333,7 @@
   align-items: flex-end;
 }
 .cart .smarte-cart .cart__contents .cart-items .flex-cart-items .cart-item .smarte-remove a.button.button--tertiary {
-  color: #8d8d8d;
+  color: #1b1b1b;
   text-decoration: underline;
 }
 .cart .smarte-cart .cart__contents .cart-items .flex-cart-items .cart-item .smarte-remove cart-remove-button#Remove-1 {
