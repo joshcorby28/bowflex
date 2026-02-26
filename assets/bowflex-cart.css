@@ -190,7 +190,6 @@
 .cart .smarte-cart .smarte-cart-footer .cart__blocks .cart__ctas {
   flex-direction: column;
   border-radius: 0px;
-  padding: 20px;
   background: var(--White, #fff);
   margin-bottom: 0;
 }
