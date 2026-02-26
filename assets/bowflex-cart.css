@@ -137,12 +137,14 @@
 }
 .cart .smarte-cart .smarte-cart-footer .cart__blocks .js-contents .totals .totals__subtotal {
   opacity: 1;
-  font-size: 22px;
+  font-size: 17px;
+  font-weight:600;
 }
 .cart .smarte-cart .smarte-cart-footer .cart__blocks .js-contents .totals .totals__subtotal-value {
   text-align: center;
   margin: 0;
-  font-size: 22px;
+  font-size: 17px;
+  font-weight:600;
 }
 .cart .smarte-cart .smarte-cart-footer .cart__blocks .js-contents .delivery-calculation {
   display: flex;
