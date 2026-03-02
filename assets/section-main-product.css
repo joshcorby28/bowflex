@@ -25,9 +25,9 @@
 }
 
 .thumbnail {
-      border-color: #1b1b1b40;
+      border-color: #1b1b1b40 !important;
     border-radius: 4px;
-    box-shadow:none;
+    box-shadow:none !important;
 }
 
 .thumbnail-list__item.slider__slide {
