@@ -1,3 +1,10 @@
+/* Custom */
+
+.product__title h1 {
+  font-size:28px;
+}
+
+
 product-info {
   display: block;
 }
