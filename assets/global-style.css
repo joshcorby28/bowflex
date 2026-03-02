@@ -71,6 +71,9 @@
 
 }
 
+.global-blue-button::after, .global-blue-button::before {
+    display:none;
+}
 .global-black-button-small {
     letter-spacing: -.04rem;
     line-height: 1;
