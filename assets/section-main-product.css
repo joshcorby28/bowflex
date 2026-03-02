@@ -24,6 +24,16 @@
   border:none;
 }
 
+.thumbnail {
+      border-color: #1b1b1b40;
+    border-radius: 4px;
+}
+
+.thumbnail-list__item.slider__slide {
+  max-width:85px;
+  max-height:85px;
+}
+
 product-info {
   display: block;
 }
