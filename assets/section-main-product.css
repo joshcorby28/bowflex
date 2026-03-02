@@ -7,6 +7,11 @@
 .price__sale .price-item--last {
   color:#4041f1;
   font-size:18px;
+  font-weight:700;
+}
+
+.price__sale .price-item--regular {
+  font-size:16px;
 }
 
 .price__regular span {
