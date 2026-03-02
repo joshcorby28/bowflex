@@ -1,0 +1,182 @@
+
+{%- style -%}
+  .bowflex-collection-cirlces {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+   .bowflex-collection-cirlces {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+{{ 'bowflex-collection-cirlces.js' | asset_url | script_tag }}
+
+<div class="bowflex-collection-cirlces page-width color-{{ section.settings.color_scheme }}">
+      {%- if section.settings.title != blank -%}
+        <h2 class="title inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+          {{ section.settings.title }}
+        </h2>
+      {%- endif -%}
+  <div class="swiper collection-cirlces-track">
+    <div class="swiper-wrapper">
+      {% for block in section.blocks %}
+        <div style="width:fit-content;" class="swiper-slide">
+          <div class="collection-circle">
+            {% if block.settings.collection_image %}
+              <img
+                src="{{ block.settings.collection_image | img_url: '100x100' }}"
+                alt="{{ block.settings.collection_text }}"
+              >
+            {% endif %}
+            <span class="collection-title">{{ block.settings.collection_text }}</span>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="swiper-buttons">
+    <div class="swiper-bowflex-button-prev">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25">
+        <path style="fill:#071739" d="M24 12.001H2.914l5.294-5.295-.707-.707L1 12.501l6.5 6.5.707-.707-5.293-5.293H24v-1z" data-name="Left"/>
+      </svg>
+    </div>
+
+    <div class="swiper-bowflex-button-next">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25">
+        <path style="fill:#071739" d="m17.5 5.999-.707.707 5.293 5.293H1v1h21.086l-5.294 5.295.707.707L24 12.499l-6.5-6.5z" data-name="Right"/>
+      </svg>
+    </div>
+  </div>
+</div>
+
+<style>
+.bowflex-collection-cirlces .collection-circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+.bowflex-collection-cirlces .collection-circle span {
+  text-align: center;
+  font-size: 14px;
+}
+.bowflex-collection-cirlces .swiper-buttons {
+  display: flex;
+  margin-top: 40px;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.bowflex-collection-cirlces .swiper-buttons svg {
+  height: 22px;
+}
+
+/*# sourceMappingURL=bowflex-collection-cirlces.css.map */
+</style>
+
+{% schema %}
+{
+  "name": "Key Features",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_heading",
+      "label": "Section Heading",
+      "default": "Customer Reviews"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color Scheme",
+      "default": "scheme-1"
+    },
+        {
+      "type": "header",
+      "content": "t:sections.featured-collection.settings.header_text.content"
+    },   
+    {
+      "type": "inline_richtext",
+      "id": "title",
+      "default": "t:sections.featured-collection.settings.title.default",
+      "label": "t:sections.featured-collection.settings.title.label"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "h2",
+          "label": "t:sections.all.heading_size.options__1.label"
+        },
+        {
+          "value": "h1",
+          "label": "t:sections.all.heading_size.options__2.label"
+        },
+        {
+          "value": "h0",
+          "label": "t:sections.all.heading_size.options__3.label"
+        },
+        {
+          "value": "hxl",
+          "label": "t:sections.all.heading_size.options__4.label"
+        },
+        {
+          "value": "hxxl",
+          "label": "t:sections.all.heading_size.options__5.label"
+        }
+      ],
+      "default": "h1",
+      "label": "t:sections.all.heading_size.label"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "collection-circle",
+      "name": "Collection Circle",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "collection_image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "collection_text",
+          "label": "Feature"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Key Features",
+      "category": "Collections"
+    }
+  ]
+}
+{% endschema %}
