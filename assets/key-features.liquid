@@ -180,3 +180,33 @@
   ]
 }
 {% endschema %}
+
+<script>
+  if (typeof Swiper !== 'undefined') {
+  document.addEventListener('DOMContentLoaded', function() {
+    const swipers = document.querySelectorAll('.bowflex-collection-cirlces .swiper');
+    swipers.forEach(function(swiperEl) {
+      new Swiper(swiperEl, {
+        slidesPerView: 'auto',
+        spaceBetween: 20,
+        loop: true,
+        navigation: {
+          nextEl: '.swiper-bowflex-button-next',
+          prevEl: '.swiper-bowflex-button-prev',
+        },
+        breakpoints: {
+          368: {
+            slidesPerView: 2.4,
+          },
+                    1024: {
+            slidesPerView: '6',
+          },
+          1424: {
+            slidesPerView: '8',
+          }
+        }
+      });
+    });
+  });
+}
+</script>
