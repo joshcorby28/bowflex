@@ -341,6 +341,10 @@ font-size:14px;
   font-weight:300;
 }
 
+  .header__icon {
+    text-decoration: none !important;
+  }
+
   @media screen and (max-width: 750px) {
     .header-top {
       padding-top: 12px;}
@@ -364,10 +368,12 @@ font-size:14px;
 
   .header__icon {
     position: relative;
+    text-decoration: none !important;
   }
 
   .cart-price {
     position: absolute;
+    display:none;
     top: 100%;
     left: 50%;
     transform: translateX(-50%);
