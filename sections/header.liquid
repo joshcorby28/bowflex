@@ -227,13 +227,11 @@ $( document ).ready(function() {
 <i class='bx bx-user icon'></i>
       </a>
       <a href="{{ routes.cart_url }}" class="header__icon cart-main-icon" id="cart-icon-bubble">
-        <div class="cart-icon-container">
 {%- if cart == empty -%}
 <i class='bx bx-shopping-bag icon' ></i>
 {%- else -%}
 <i class='bx bx-shopping-bag icon'></i>
 {%- endif -%}
-      </div>
         <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
       </a>
     </div>
