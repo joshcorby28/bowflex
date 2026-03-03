@@ -34,12 +34,6 @@
   letter-spacing: 0;
   font-size: 13px;
 }
-.smarte-header-overrides .header__icons .cart-main-icon {
-  border-radius: 100px;
-  padding: 5px;
-  text-decoration: none;
-  background: rgba(205, 213, 219, 0.5);
-}
 
 .smarte-header-overrides .header__icons .header__icon--wishlist {
   display: flex;
@@ -82,7 +76,7 @@
     padding-right: 0;
   }
   .smarte-header-overrides .header__icons .icon {
-    font-size: 19px;
+    font-size: 22px;
   }
   .smarte-header-overrides .header__icons .cart-count-bubble {
     bottom: 2.7rem;
