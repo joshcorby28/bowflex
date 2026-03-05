@@ -20,18 +20,42 @@
     },
     "video_dirrE8": {
       "type": "video",
+      "blocks": {
+        "text_eVUcUH": {
+          "type": "text",
+          "settings": {
+            "show-quotes": false,
+            "show_review": false,
+            "border_radius": 25,
+            "backdrop_filter": false,
+            "stand_out_text": "Run.",
+            "heading": "Find the best treadmill for you.",
+            "heading_text_color": "#ffffff",
+            "text": "",
+            "body_text_color": "#ffffff",
+            "button_link_one": "",
+            "link_one_text": "",
+            "button_link_one_style": "primary",
+            "button_link_two": "",
+            "link_two_text": "",
+            "button_link_two_style": "secondary"
+          }
+        }
+      },
+      "block_order": [
+        "text_eVUcUH"
+      ],
       "name": "t:sections.video.presets.name",
       "settings": {
-        "heading": "",
-        "heading_size": "h1",
-        "enable_video_looping": true,
         "video": "shopify://files/videos/treadmills-homepage-hero-1920x700.mp4",
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "description": "",
+        "no_video_mobile": false,
+        "show_overlay": true,
+        "overlay_color": "#000000",
+        "overlay_opacity": 19,
         "full_width": true,
-        "color_scheme": "",
+        "horizontal_alignment": "middle-left",
         "padding_top": 0,
-        "padding_bottom": 36
+        "padding_bottom": 0
       }
     },
     "product-grid": {
