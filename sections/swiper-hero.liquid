@@ -125,12 +125,11 @@ document.addEventListener('DOMContentLoaded', function () {
   .swiper-hero .slide-inner {
     display: flex;
     min-height: 520px;
-   padding: 0 0 0 5rem;
-   margin: 0 -5rem 0 auto;
   }
 
   .slide-content {
     padding: 60px 60px 60px 120px; 
+        padding-left: max(5rem, calc((100vw - var(--page-width) + 10rem - var(--grid-desktop-horizontal-spacing)) / 2));
   box-sizing: border-box; 
     display: flex;
     flex: 0 0 50%;
@@ -189,10 +188,8 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   @media (max-width: 768px) {
-    .swiper-hero  .slide-inner {
+    .slide-inner {
       flex-direction: column;
-      padding: 0;
-    margin: 0 auto;
     }
 
     .slide-content {
