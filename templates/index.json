@@ -19,7 +19,7 @@
             "badge": "New",
             "badge_color": "#b4ff63",
             "heading": "Upgrade your training",
-            "subtext": "Get the Max Total 16 for only $1,999 with $500 Off + Free Shipping",
+            "subtext": "Get the Max Total 16 for only £1,599 with £500 Off + Free Shipping",
             "small_text": "Limited time only",
             "button_label": "Shop Now",
             "button_link": ""
@@ -52,7 +52,7 @@
         "cta_Ja7Bbc": {
           "type": "cta",
           "settings": {
-            "text": "For a limited time only → Save up to $500!",
+            "text": "For a limited time only → Save up to £500!",
             "white-button": false,
             "link": "#",
             "button_text": "Shop Now"
@@ -120,7 +120,7 @@
         "text_86fyFV": {
           "type": "text",
           "settings": {
-            "text": "<p>Save up to $500! Shop our limited-time sale prices.</p>"
+            "text": "<p>Save up to £500! Shop our limited-time sale prices.</p>"
           }
         },
         "button_BNL3fq": {
@@ -172,7 +172,7 @@
         "caption_JpaXwa": {
           "type": "caption",
           "settings": {
-            "caption": "Get $300 Off + $99 Standard Delivery! Limited time only.",
+            "caption": "Get £300 Off + Free Delivery! Limited time only.",
             "text_style": "subtitle",
             "text_size": "small"
           }
@@ -240,7 +240,7 @@
           "type": "row",
           "settings": {
             "image": "shopify://shop_images/840-kettlebell-m-lr-0623-bg-1x.jpg",
-            "caption": "Only $149 + Free Shipping!",
+            "caption": "Only £149 + Free Shipping!",
             "heading": "840 Kettlebells",
             "text": "<p>Adjusts from 8 to 40 lbs.</p>",
             "button_label": "Shop 840 Kettlebells",
@@ -251,7 +251,7 @@
           "type": "row",
           "settings": {
             "image": "shopify://shop_images/xtreme-2se-gym-f-lr-bg-1x.jpg",
-            "caption": "Only $999 with $500 Off + Free Shipping!",
+            "caption": "Only £999 with £500 Off + Free Shipping!",
             "heading": "Xtreme 2 SE",
             "text": "<p>Get the ultimate all-in-one home gym system.</p>",
             "button_label": "Shop Xtreme 2 SE",
@@ -262,7 +262,7 @@
           "type": "row",
           "settings": {
             "image": "shopify://shop_images/c6-bike-m-lr-0623-bg-1x.jpg",
-            "caption": "Only $899 with $100 Off + Free Shipping!",
+            "caption": "Only £899 with £100 Off + Free Shipping!",
             "heading": "BowFlex C6 Bike",
             "text": "<p>Explore a variety of world-class app experiences.</p>",
             "button_label": "Shop C6 Bike",
