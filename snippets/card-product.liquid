@@ -62,7 +62,14 @@
           <div class="price">
             {% render 'price', product: card_product, price_class: '', show_compare_at_price: true %}
           </div>
-          {% endcomment %}
+          {% endcomment %}<div class="offer-text">
+  {% if product.compare_at_price > product.price %}
+    {% assign discount = product.compare_at_price | minus: product.price %}
+    {{ discount | money }} Off + Free Shipping
+  {% else %}
+    Free Shipping
+  {% endif %}
+</div>
 
             <div class="card-product__actions">
             <a style="font-size:16px;" href="{{ card_product.url }}" class="global-border-button" style="width:100%;">
@@ -104,16 +111,8 @@
 
 
     
-
+    
     <div class="card-product__actions">
-      <div class="offer-text">
-  {% if product.compare_at_price > product.price %}
-    {% assign discount = product.compare_at_price | minus: product.price %}
-    {{ discount | money }} Off + Free Shipping
-  {% else %}
-    Free Shipping
-  {% endif %}
-</div>
       <button type="button" class="global-button-black" disabled>
         {{ 'products.product.add_to_cart' | t }}
       </button>
