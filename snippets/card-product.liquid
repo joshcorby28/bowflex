@@ -102,13 +102,14 @@
       {% render 'price', placeholder: true, show_compare_at_price: true %}
     </div>
 
-    {% if product.compare_at_price > product.price %}
-      {% assign discount = product.compare_at_price | minus: product.price %}
-      <div class="offer-text">
-        {{ discount | money }} Off + Free Shipping
-      </div>
-    {% endif %}
-
+<div class="offer-text">
+  {% if product.compare_at_price > product.price %}
+    {% assign discount = product.compare_at_price | minus: product.price %}
+    {{ discount | money }} Off + Free Shipping
+  {% else %}
+    Free Shipping
+  {% endif %}
+</div>
     <div class="card-product__actions">
       <button type="button" class="global-button-black" disabled>
         {{ 'products.product.add_to_cart' | t }}
