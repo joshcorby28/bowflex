@@ -71,14 +71,14 @@
 .custom-footer__column h3,
 .custom-footer__utility-col h3 {
   margin: 0 0 1.8rem;
-  font-size: 2.2rem;
+  font-size: 17px;
   font-weight: 600;
 }
 
 .custom-footer__column p,
 .custom-footer__column li,
 .custom-footer__utility-col p {
-  font-size: 1.6rem;
+  font-size: 13px;
   line-height: 1.45;
 }
 
