@@ -56,10 +56,19 @@
 }
 
 .custom-footer__divider {
-  width: 100%;
-  height: 0.1rem;
-  background: rgba(0, 0, 0, 0.18);
-  margin: 3.2rem 0;
+  display: none;
+}
+
+.custom-footer__topbar,
+.custom-footer__main-grid,
+.custom-footer__utility-grid {
+  border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 3.2rem;
+}
+
+.custom-footer__main-grid,
+.custom-footer__utility-grid {
+  padding-top: 3.2rem;
 }
 
 .custom-footer__main-grid {
@@ -198,7 +207,7 @@
 .custom-footer__legal-bar {
   margin-top: 3.2rem;
   background: #e1e1e1;
-  border-top: 0.1rem solid rgba(0, 0, 0, 0.16);
+  border-top: 0;
 }
 
 .custom-footer__legal {
