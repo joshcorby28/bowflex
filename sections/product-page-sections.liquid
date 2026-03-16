@@ -179,6 +179,20 @@
     background: rgba(255, 255, 255, 0.06);
   }
 
+  #shopify-section-{{ section.id }} .pps__app-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+    align-items: center;
+  }
+
+  #shopify-section-{{ section.id }} .pps__app-icons img {
+    width: 24px;
+    height: 24px;
+    display: block;
+  }
+
   #shopify-section-{{ section.id }} .pps__specs {
     background: #f2f2f4;
     color: #14161d;
@@ -316,19 +330,19 @@
     cursor: not-allowed;
   }
 
-  #shopify-section-{{ section.id }} .pps__slider {
+  #shopify-section-{{ section.id }} .pps__jrny-swiper {
     overflow: hidden;
   }
 
-  #shopify-section-{{ section.id }} .pps__slider-track {
-    display: flex;
-    gap: 12px;
-    transition: transform 0.3s ease;
-    will-change: transform;
+  #shopify-section-{{ section.id }} .pps__jrny-swiper .swiper-wrapper {
+    align-items: stretch;
+  }
+
+  #shopify-section-{{ section.id }} .pps__jrny-swiper .swiper-slide {
+    height: auto;
   }
 
   #shopify-section-{{ section.id }} .pps__slide {
-    flex: 0 0 calc((100% - 24px) / 3);
     min-width: 0;
   }
 
@@ -362,16 +376,15 @@
     align-items: center;
   }
 
-  #shopify-section-{{ section.id }} .pps__dot {
+  #shopify-section-{{ section.id }} .pps__dots .swiper-pagination-bullet {
     width: 34px;
     height: 3px;
-    border: 0;
     border-radius: 999px;
     background: rgba(255, 255, 255, 0.26);
-    cursor: pointer;
+    opacity: 1;
   }
 
-  #shopify-section-{{ section.id }} .pps__dot.is-active {
+  #shopify-section-{{ section.id }} .pps__dots .swiper-pagination-bullet-active {
     background: #fff;
   }
 
@@ -382,9 +395,6 @@
       grid-template-columns: 1fr;
     }
 
-    #shopify-section-{{ section.id }} .pps__slide {
-      flex-basis: calc((100% - 12px) / 2);
-    }
   }
 
   @media screen and (max-width: 749px) {
@@ -402,9 +412,6 @@
       flex-direction: column;
     }
 
-    #shopify-section-{{ section.id }} .pps__slide {
-      flex-basis: 100%;
-    }
   }
 {%- endstyle -%}
 
@@ -537,11 +544,18 @@
           <div class="pps__fitness-copy">
             <h3>{{ section.settings.fitness_right_title }}</h3>
             <p>{{ section.settings.fitness_right_text }}</p>
-            <div class="pps__pill-row">
-              <span class="pps__pill">Netflix</span>
-              <span class="pps__pill">YouTube</span>
-              <span class="pps__pill">Spotify</span>
-              <span class="pps__pill">JRNY</span>
+            <div class="pps__app-icons">
+              <img loading="lazy" width="24" height="24" src="https://www.bowflex.com/on/demandware.static/-/Library-Sites-bowflexShared/default/dw150c59a8/bfx/global/logos/icon-youtube-dark.svg" alt="YouTube">
+              <img loading="lazy" width="24" height="24" src="https://www.bowflex.com/on/demandware.static/-/Library-Sites-bowflexShared/default/dw36c861ce/bfx/global/logos/icon-netflix-dark.svg" alt="Netflix">
+              <img loading="lazy" width="24" height="24" src="https://www.bowflex.com/on/demandware.static/-/Library-Sites-bowflexShared/default/dw1019a6a3/bfx/global/logos/icon-prime-dark.svg" alt="Prime">
+              <img loading="lazy" width="24" height="24" src="https://www.bowflex.com/on/demandware.static/-/Library-Sites-bowflexShared/default/dw5c36de5f/bfx/global/logos/icon-spotify-dark.svg" alt="Spotify">
+              <img loading="lazy" width="24" height="24" src="https://www.bowflex.com/on/demandware.static/-/Library-Sites-bowflexShared/default/dw2e304eec/bfx/global/logos/icon-webbrowser-dark.svg" alt="Web Browser">
+              <img loading="lazy" width="24" height="24" src="https://www.bowflex.com/on/demandware.static/-/Library-Sites-bowflexShared/default/dw3f7e43bb/bfx/global/logos/icon-kindle-dark.svg" alt="Kindle">
+              <img loading="lazy" width="24" height="24" src="https://www.bowflex.com/on/demandware.static/-/Library-Sites-bowflexShared/default/dw3eafc789/bfx/global/logos/icon-instagram-dark.svg" alt="Instagram">
+              <img loading="lazy" width="24" height="24" src="https://www.bowflex.com/on/demandware.static/-/Library-Sites-bowflexShared/default/dwae36a2a3/bfx/global/logos/icon-facebook-dark.svg" alt="Facebook">
+              <img loading="lazy" width="24" height="24" src="https://www.bowflex.com/on/demandware.static/-/Library-Sites-bowflexShared/default/dw7b5788c8/bfx/global/logos/icon-x-dark.svg" alt="X">
+              <img loading="lazy" width="24" height="24" src="https://www.bowflex.com/on/demandware.static/-/Library-Sites-bowflexShared/default/dw36328310/bfx/global/logos/icon-jrny-dark.svg" alt="JRNY">
+              <img loading="lazy" width="24" height="24" src="https://www.bowflex.com/on/demandware.static/-/Library-Sites-bowflexShared/default/dwcf1d3bde/bfx/global/logos/icon-moreapps-dark.svg" alt="More Apps">
             </div>
           </div>
         </article>
@@ -655,16 +669,16 @@
       </div>
 
       <div class="pps__slider-nav">
-        <button class="pps__arrow" type="button" data-slider-prev aria-label="Previous slide">‹</button>
-        <button class="pps__arrow" type="button" data-slider-next aria-label="Next slide">›</button>
+        <button class="pps__arrow pps__jrny-prev-{{ section.id }}" type="button" aria-label="Previous slide">‹</button>
+        <button class="pps__arrow pps__jrny-next-{{ section.id }}" type="button" aria-label="Next slide">›</button>
       </div>
     </div>
 
-    <div class="pps__slider" data-slider>
-      <div class="pps__slider-track" data-slider-track>
+    <div class="swiper pps__jrny-swiper pps__jrny-swiper-{{ section.id }}">
+      <div class="swiper-wrapper">
         {%- if jrny_slides.size > 0 -%}
           {%- for block in jrny_slides -%}
-            <article class="pps__slide" {{ block.shopify_attributes }}>
+            <article class="swiper-slide pps__slide" {{ block.shopify_attributes }}>
               <div class="pps__slide-image">
                 {%- if block.settings.image != blank -%}
                   {{ block.settings.image | image_url: width: 1200 | image_tag: loading: 'lazy', alt: block.settings.title }}
@@ -679,7 +693,7 @@
             </article>
           {%- endfor -%}
         {%- else -%}
-          <article class="pps__slide">
+          <article class="swiper-slide pps__slide">
             <div class="pps__slide-image">
               {%- if section.settings.jrny_default_image != blank -%}
                 {{ section.settings.jrny_default_image | image_url: width: 1200 | image_tag: loading: 'lazy', alt: 'JRNY slide image' }}
@@ -690,7 +704,7 @@
             <h3>Every day is different.</h3>
             <p>Get adaptive workouts that keep your routine fresh.</p>
           </article>
-          <article class="pps__slide">
+          <article class="swiper-slide pps__slide">
             <div class="pps__slide-image">
               {%- if section.settings.jrny_default_image != blank -%}
                 {{ section.settings.jrny_default_image | image_url: width: 1200 | image_tag: loading: 'lazy', alt: 'JRNY slide image' }}
@@ -701,7 +715,7 @@
             <h3>Go ahead, pick up the pace.</h3>
             <p>Virtual coaching provides guidance and encouragement.</p>
           </article>
-          <article class="pps__slide">
+          <article class="swiper-slide pps__slide">
             <div class="pps__slide-image">
               {%- if section.settings.jrny_default_image != blank -%}
                 {{ section.settings.jrny_default_image | image_url: width: 1200 | image_tag: loading: 'lazy', alt: 'JRNY slide image' }}
@@ -716,7 +730,7 @@
       </div>
     </div>
 
-    <div class="pps__dots" data-slider-dots></div>
+    <div class="pps__dots pps__jrny-pagination-{{ section.id }}"></div>
   </div>
 </section>
 
@@ -767,83 +781,28 @@
       });
     }
 
-    const slider = sectionRoot.querySelector('[data-slider]');
-    if (slider) {
-      const track = slider.querySelector('[data-slider-track]');
-      const slides = track ? Array.from(track.children) : [];
-      const prevButton = sectionRoot.querySelector('[data-slider-prev]');
-      const nextButton = sectionRoot.querySelector('[data-slider-next]');
-      const dotsWrap = sectionRoot.querySelector('[data-slider-dots]');
-      let index = 0;
-
-      if (!track || slides.length === 0) return;
-
-      const slidesPerView = () => {
-        if (window.innerWidth < 750) return 1;
-        if (window.innerWidth < 990) return 2;
-        return 3;
-      };
-
-      const maxIndex = () => Math.max(0, slides.length - slidesPerView());
-
-      const createDots = () => {
-        if (!dotsWrap) return;
-        dotsWrap.innerHTML = '';
-
-        const total = maxIndex() + 1;
-        for (let i = 0; i < total; i += 1) {
-          const dot = document.createElement('button');
-          dot.type = 'button';
-          dot.className = 'pps__dot';
-          dot.setAttribute('aria-label', `Go to slide ${i + 1}`);
-          dot.addEventListener('click', () => {
-            index = i;
-            updateSlider();
-          });
-          dotsWrap.appendChild(dot);
+    const jrnySwiperSelector = `.pps__jrny-swiper-{{ section.id }}`;
+    if (typeof Swiper !== 'undefined' && sectionRoot.querySelector(jrnySwiperSelector)) {
+      new Swiper(jrnySwiperSelector, {
+        slidesPerView: 1,
+        spaceBetween: 12,
+        loop: false,
+        pagination: {
+          el: `.pps__jrny-pagination-{{ section.id }}`,
+          clickable: true
+        },
+        navigation: {
+          nextEl: `.pps__jrny-next-{{ section.id }}`,
+          prevEl: `.pps__jrny-prev-{{ section.id }}`
+        },
+        breakpoints: {
+          750: {
+            slidesPerView: 2
+          },
+          990: {
+            slidesPerView: 3
+          }
         }
-      };
-
-      const updateSlider = () => {
-        const firstSlide = slides[0];
-        const secondSlide = slides[1];
-        const gap = secondSlide ? secondSlide.offsetLeft - firstSlide.offsetLeft - firstSlide.offsetWidth : 12;
-        const step = firstSlide.offsetWidth + gap;
-        const boundedIndex = Math.min(maxIndex(), Math.max(0, index));
-
-        index = boundedIndex;
-        track.style.transform = `translateX(${-1 * step * boundedIndex}px)`;
-
-        if (prevButton) prevButton.disabled = boundedIndex === 0;
-        if (nextButton) nextButton.disabled = boundedIndex >= maxIndex();
-
-        if (dotsWrap) {
-          const dots = Array.from(dotsWrap.querySelectorAll('.pps__dot'));
-          dots.forEach((dot, dotIndex) => {
-            dot.classList.toggle('is-active', dotIndex === boundedIndex);
-          });
-        }
-      };
-
-      if (prevButton) {
-        prevButton.addEventListener('click', () => {
-          index -= 1;
-          updateSlider();
-        });
-      }
-
-      if (nextButton) {
-        nextButton.addEventListener('click', () => {
-          index += 1;
-          updateSlider();
-        });
-      }
-
-      createDots();
-      updateSlider();
-      window.addEventListener('resize', () => {
-        createDots();
-        updateSlider();
       });
     }
   })();
