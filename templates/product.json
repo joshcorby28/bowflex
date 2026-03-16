@@ -97,6 +97,20 @@
         "padding_bottom": 28
       }
     },
+    "product_page_sections_nx3K7M": {
+      "type": "product-page-sections",
+      "settings": {
+        "dark_color_scheme": "scheme-1",
+        "light_color_scheme": "scheme-1",
+        "training_heading": "The ultimate training experience",
+        "training_subheading": "Watch videos below to learn more.",
+        "fitness_heading": "Entertainment + fitness at your fingertips.",
+        "fitness_subheading": "Dummy content to represent media and app integrations.",
+        "specs_heading": "Specs & Warranty",
+        "membership_heading": "The JRNY adaptive fitness membership keeps you going.",
+        "membership_subheading": "Dummy carousel cards for membership benefits."
+      }
+    },
     "key_features_wQ7gFE": {
       "type": "key-features",
       "blocks": {
@@ -181,6 +195,7 @@
   "order": [
     "main",
     "related-products",
+    "product_page_sections_nx3K7M",
     "key_features_wQ7gFE"
   ]
 }
