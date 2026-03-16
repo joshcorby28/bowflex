@@ -15,9 +15,21 @@
   }
 
   #shopify-section-{{ section.id }} .pps__wrap {
-    max-width: 1180px;
-    margin: 0 auto;
     padding: 64px 20px;
+  }
+
+  #shopify-section-{{ section.id }} .pps:not(.pps__specs),
+  #shopify-section-{{ section.id }} .pps__fitness,
+  #shopify-section-{{ section.id }} .pps__jrny {
+    color: #fff;
+  }
+
+  #shopify-section-{{ section.id }} .pps:not(.pps__specs) .pps__title,
+  #shopify-section-{{ section.id }} .pps:not(.pps__specs) .pps__subtitle,
+  #shopify-section-{{ section.id }} .pps:not(.pps__specs) h3,
+  #shopify-section-{{ section.id }} .pps:not(.pps__specs) p,
+  #shopify-section-{{ section.id }} .pps:not(.pps__specs) span {
+    color: #fff;
   }
 
   #shopify-section-{{ section.id }} .pps__title {
@@ -416,7 +428,7 @@
 {%- endstyle -%}
 
 <section class="pps color-{{ section.settings.dark_color_scheme }}" data-section-id="{{ section.id }}">
-  <div class="pps__wrap">
+  <div class="pps__wrap page-width">
     <h2 class="pps__title">{{ section.settings.training_heading }}</h2>
     <p class="pps__subtitle">{{ section.settings.training_subheading }}</p>
 
@@ -510,7 +522,7 @@
   </div>
 
   <div class="pps__fitness color-{{ section.settings.dark_color_scheme }}">
-    <div class="pps__wrap">
+    <div class="pps__wrap page-width">
       <h2 class="pps__title">{{ section.settings.fitness_heading }}</h2>
       <p class="pps__subtitle">{{ section.settings.fitness_subheading }}</p>
 
@@ -565,7 +577,7 @@
 </section>
 
 <section class="pps pps__specs color-{{ section.settings.light_color_scheme }}" data-section-id="{{ section.id }}">
-  <div class="pps__wrap">
+  <div class="pps__wrap page-width">
     <h2 class="pps__title">{{ section.settings.specs_heading }}</h2>
     <p class="pps__subtitle">{{ section.settings.specs_subheading }}</p>
 
@@ -661,7 +673,7 @@
 </section>
 
 <section class="pps pps__jrny color-{{ section.settings.dark_color_scheme }}" data-section-id="{{ section.id }}">
-  <div class="pps__wrap">
+  <div class="pps__wrap page-width">
     <div class="pps__slider-head">
       <div>
         <h2 class="pps__title">{{ section.settings.membership_heading }}</h2>
