@@ -5,6 +5,11 @@
 
 .custom-footer {
   color: #121212;
+  display: flex;
+    flex-direction: column;
+    gap: 130px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .custom-footer__topbar {
