@@ -94,18 +94,29 @@
         </div>
       </div>
 
-      <div class="card__content">
-        <div class="card__information">
-          <h3 class="card__heading">{{ 'onboarding.product_title' | t }}</h3>
-          <div class="price">{% render 'price', placeholder: true, show_compare_at_price: true %}</div>
-          <div class="card-product__actions">
-            <button type="button" class="global-button-black" disabled>
-              {{ 'products.product.add_to_cart' | t }}
-            </button>
-          </div>
-        </div>
-      </div>
+<div class="card__content">
+  <div class="card__information">
+    <h3 class="card__heading">{{ 'onboarding.product_title' | t }}</h3>
+
+    <div class="price">
+      {% render 'price', placeholder: true, show_compare_at_price: true %}
     </div>
+
+    {% if product.compare_at_price > product.price %}
+      {% assign discount = product.compare_at_price | minus: product.price %}
+      <div class="offer-text">
+        {{ discount | money }} Off + Free Shipping
+      </div>
+    {% endif %}
+
+    <div class="card-product__actions">
+      <button type="button" class="global-button-black" disabled>
+        {{ 'products.product.add_to_cart' | t }}
+      </button>
+    </div>
+
+  </div>
+</div>
   </div>
 {%- endif -%}
 
