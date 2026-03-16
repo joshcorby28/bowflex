@@ -37,10 +37,17 @@
 
               {%- else -%}
 
-        {%- case link.handle -%}
+        {%- assign menu_handle = link.handle | downcase -%}
+        {%- case menu_handle -%}
 
   {%- when 'treadmills' -%}
     {% render 'mega-menu-treadmills' %}
+
+  {%- when 'bikes' -%}
+    {% render 'mega-menu-bikes' %}
+
+  {%- when 'sale' -%}
+    {% render 'mega-menu-sale' %}
 
   {%- else -%}
     ... normal menu logic ...
