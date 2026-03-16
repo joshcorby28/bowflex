@@ -37,15 +37,14 @@
   <div class="custom-footer page-width">
     <div class="custom-footer__topbar">
       <a class="custom-footer__brand" href="{{ routes.root_url }}" aria-label="{{ shop.name }}">
-        {%- if settings.brand_image != blank -%}
-          {{
-            settings.brand_image
-            | image_url: width: 400
-            | image_tag: loading: 'lazy', widths: '120, 160, 200, 240, 320, 400', class: 'custom-footer__brand-image'
-          }}
-        {%- else -%}
-          <span class="custom-footer__brand-text">{{ shop.name }}</span>
-        {%- endif -%}
+        <img
+          class="custom-footer__brand-image"
+          src="https://bowflex-uk.myshopify.com/cdn/shop/files/bowflex-logo.svg?v=1771947855&width=360"
+          alt="BowFlex"
+          loading="lazy"
+          width="180"
+          height="39"
+        >
       </a>
 
       <div class="custom-footer__top-links">
@@ -177,7 +176,22 @@
 
       <div class="custom-footer__utility-col">
         <h3>Shop Our Brands</h3>
-        <div class="custom-footer__brands">JRNY&nbsp;&nbsp;&nbsp;SCHWINN</div>
+        <div class="custom-footer__brands">
+          <img
+            src="https://www.bowflex.com/on/demandware.static/-/Library-Sites-bowflexShared/default/dw8467c835/bfx/global/logos/jrny-logo-black.svg"
+            alt="JRNY"
+            loading="lazy"
+            width="90"
+            height="30"
+          >
+          <img
+            src="https://www.bowflex.com/on/demandware.static/-/Library-Sites-bowflexShared/default/dw0188158b/bfx/global/logos/schwinn-logo-2025-black.svg"
+            alt="Schwinn"
+            loading="lazy"
+            width="170"
+            height="30"
+          >
+        </div>
       </div>
     </div>
   </div>

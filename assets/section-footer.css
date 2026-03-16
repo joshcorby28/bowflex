@@ -182,10 +182,17 @@
 }
 
 .custom-footer__brands {
-  font-size: 2.8rem;
-  font-weight: 700;
-  letter-spacing: 0.02em;
-  line-height: 1.1;
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+  flex-wrap: wrap;
+}
+
+.custom-footer__brands img {
+  display: block;
+  width: auto;
+  height: 2.8rem;
+  max-width: 100%;
 }
 
 .custom-footer__legal-bar {
@@ -283,7 +290,11 @@
   }
 
   .custom-footer__brands {
-    font-size: 2.2rem;
+    gap: 1.2rem;
+  }
+
+  .custom-footer__brands img {
+    height: 2.2rem;
   }
 
   .custom-footer__newsletter-field-wrap {
