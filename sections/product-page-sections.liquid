@@ -5,6 +5,7 @@
   assign accordion_rows = section.blocks | where: 'type', 'specs_accordion'
   assign jrny_slides = section.blocks | where: 'type', 'jrny_slide'
   assign fallback_accordion_titles = 'Console,Deck,Drive System,Frame,Technical Specs' | split: ','
+  assign fallback_training_video_url = 'https://download.bowflex.com/video/bxt/t16/T16_PDP-01_Entertainment.mp4'
 -%}
 
 {%- style -%}
@@ -458,27 +459,43 @@
             >
               <div class="pps__media-shell">
                 {%- if block.settings.video_embed_url != blank -%}
-                  <iframe
-                    src="{{ block.settings.video_embed_url }}"
-                    title="{{ block.settings.tab_title | escape }}"
-                    loading="lazy"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                  ></iframe>
+                  {%- if block.settings.video_embed_url contains '.mp4' -%}
+                    <video controls playsinline preload="metadata">
+                      <source src="{{ block.settings.video_embed_url }}" type="video/mp4">
+                    </video>
+                  {%- else -%}
+                    <iframe
+                      src="{{ block.settings.video_embed_url }}"
+                      title="{{ block.settings.tab_title | escape }}"
+                      loading="lazy"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen
+                    ></iframe>
+                  {%- endif -%}
                 {%- elsif block.settings.video_poster != blank -%}
                   {{ block.settings.video_poster | image_url: width: 1500 | image_tag: loading: 'lazy', alt: block.settings.tab_title }}
                 {%- else -%}
-                  Video placeholder
+                  <video controls playsinline preload="metadata">
+                    <source src="{{ fallback_training_video_url }}" type="video/mp4">
+                  </video>
                 {%- endif -%}
               </div>
             </div>
           {%- endfor -%}
         {%- else -%}
           <div class="pps__video-panel is-active" id="pps-video-{{ section.id }}-fallback-1" role="tabpanel">
-            <div class="pps__media-shell">Video placeholder</div>
+            <div class="pps__media-shell">
+              <video controls playsinline preload="metadata">
+                <source src="{{ fallback_training_video_url }}" type="video/mp4">
+              </video>
+            </div>
           </div>
           <div class="pps__video-panel" id="pps-video-{{ section.id }}-fallback-2" role="tabpanel" hidden>
-            <div class="pps__media-shell">Video placeholder</div>
+            <div class="pps__media-shell">
+              <video controls playsinline preload="metadata">
+                <source src="{{ fallback_training_video_url }}" type="video/mp4">
+              </video>
+            </div>
           </div>
         {%- endif -%}
       </div>
@@ -651,8 +668,10 @@
               <div class="pps__slide-image">
                 {%- if block.settings.image != blank -%}
                   {{ block.settings.image | image_url: width: 1200 | image_tag: loading: 'lazy', alt: block.settings.title }}
+                {%- elsif section.settings.jrny_default_image != blank -%}
+                  {{ section.settings.jrny_default_image | image_url: width: 1200 | image_tag: loading: 'lazy', alt: block.settings.title }}
                 {%- else -%}
-                  <div class="pps__image-shell" style="height: 100%; border: 0; border-radius: 0;">JRNY image</div>
+                  {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
                 {%- endif -%}
               </div>
               <h3>{{ block.settings.title }}</h3>
@@ -661,17 +680,35 @@
           {%- endfor -%}
         {%- else -%}
           <article class="pps__slide">
-            <div class="pps__slide-image"></div>
+            <div class="pps__slide-image">
+              {%- if section.settings.jrny_default_image != blank -%}
+                {{ section.settings.jrny_default_image | image_url: width: 1200 | image_tag: loading: 'lazy', alt: 'JRNY slide image' }}
+              {%- else -%}
+                {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+              {%- endif -%}
+            </div>
             <h3>Every day is different.</h3>
             <p>Get adaptive workouts that keep your routine fresh.</p>
           </article>
           <article class="pps__slide">
-            <div class="pps__slide-image"></div>
+            <div class="pps__slide-image">
+              {%- if section.settings.jrny_default_image != blank -%}
+                {{ section.settings.jrny_default_image | image_url: width: 1200 | image_tag: loading: 'lazy', alt: 'JRNY slide image' }}
+              {%- else -%}
+                {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+              {%- endif -%}
+            </div>
             <h3>Go ahead, pick up the pace.</h3>
             <p>Virtual coaching provides guidance and encouragement.</p>
           </article>
           <article class="pps__slide">
-            <div class="pps__slide-image"></div>
+            <div class="pps__slide-image">
+              {%- if section.settings.jrny_default_image != blank -%}
+                {{ section.settings.jrny_default_image | image_url: width: 1200 | image_tag: loading: 'lazy', alt: 'JRNY slide image' }}
+              {%- else -%}
+                {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+              {%- endif -%}
+            </div>
             <h3>Roam if you want.</h3>
             <p>Explore the world while you train.</p>
           </article>
@@ -931,6 +968,11 @@
       "id": "membership_subheading",
       "label": "Membership subheading",
       "default": "Adaptive coaching, scenic workouts, and daily variety."
+    },
+    {
+      "type": "image_picker",
+      "id": "jrny_default_image",
+      "label": "JRNY default slide image"
     }
   ],
   "blocks": [
