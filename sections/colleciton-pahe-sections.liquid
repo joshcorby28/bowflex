@@ -1,0 +1,416 @@
+{%- liquid
+  assign jrny_slides = section.blocks | where: 'type', 'jrny_slide'
+  assign feature_slides = section.blocks | where: 'type', 'feature_slide'
+-%}
+
+{%- style -%}
+  #shopify-section-{{ section.id }} .pps {
+    background: #0b0c11;
+    color: #fff;
+  }
+
+  #shopify-section-{{ section.id }} .pps__wrap {
+    padding: 64px 20px;
+  }
+
+  #shopify-section-{{ section.id }} .pps__jrny,
+  #shopify-section-{{ section.id }} .pps__features {
+    color: #fff;
+    background: #0b0c11;
+  }
+
+  #shopify-section-{{ section.id }} .pps__title {
+    margin: 0 0 8px;
+    color: inherit;
+    font-size: clamp(2.8rem, 3vw, 4.2rem);
+    line-height: 1.12;
+    letter-spacing: 0;
+  }
+
+  #shopify-section-{{ section.id }} .pps__subtitle {
+    margin: 0 0 26px;
+    opacity: 0.88;
+    font-size: 1.35rem;
+    line-height: 1.6;
+  }
+
+  #shopify-section-{{ section.id }} .pps__slider-head {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 18px;
+  }
+
+  #shopify-section-{{ section.id }} .pps__slider-nav {
+    display: inline-flex;
+    gap: 8px;
+  }
+
+  #shopify-section-{{ section.id }} .pps__arrow {
+    width: 38px;
+    height: 38px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    color: #fff;
+    background: rgba(255, 255, 255, 0.05);
+    cursor: pointer;
+    line-height: 1;
+  }
+
+  #shopify-section-{{ section.id }} .pps__arrow[disabled] {
+    opacity: 0.35;
+    cursor: not-allowed;
+  }
+
+  #shopify-section-{{ section.id }} .pps__jrny-swiper,
+  #shopify-section-{{ section.id }} .pps__features-swiper {
+    overflow: hidden;
+  }
+
+  #shopify-section-{{ section.id }} .pps__jrny-swiper .swiper-wrapper,
+  #shopify-section-{{ section.id }} .pps__features-swiper .swiper-wrapper {
+    align-items: stretch;
+  }
+
+  #shopify-section-{{ section.id }} .pps__jrny-swiper .swiper-slide,
+  #shopify-section-{{ section.id }} .pps__features-swiper .swiper-slide {
+    height: auto;
+  }
+
+  #shopify-section-{{ section.id }} .pps__slide {
+    min-width: 0;
+  }
+
+  #shopify-section-{{ section.id }} .pps__slide-image {
+    aspect-ratio: 4 / 3;
+    background: #1c1f2b;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 2px;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+
+  #shopify-section-{{ section.id }} .pps__slide-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  #shopify-section-{{ section.id }} .pps__slide h3 {
+    margin: 0 0 4px;
+    color: #fff;
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  #shopify-section-{{ section.id }} .pps__slide p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.84);
+    font-size: 1.25rem;
+    line-height: 1.45;
+  }
+
+  #shopify-section-{{ section.id }} .pps__dots {
+    margin-top: 14px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+
+  #shopify-section-{{ section.id }} .pps__dots .swiper-pagination-bullet {
+    width: 34px;
+    height: 3px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.26);
+    opacity: 1;
+  }
+
+  #shopify-section-{{ section.id }} .pps__dots .swiper-pagination-bullet-active {
+    background: #fff;
+  }
+
+  @media screen and (max-width: 749px) {
+    #shopify-section-{{ section.id }} .pps__wrap {
+      padding: 44px 16px;
+    }
+
+    #shopify-section-{{ section.id }} .pps__slider-head {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+  }
+{%- endstyle -%}
+
+<section class="pps pps__jrny color-{{ section.settings.dark_color_scheme }}" data-section-id="{{ section.id }}">
+  <div class="pps__wrap page-width">
+    <div class="pps__slider-head">
+      <div>
+        <h2 class="pps__title">{{ section.settings.membership_heading }}</h2>
+        <p class="pps__subtitle">{{ section.settings.membership_subheading }}</p>
+      </div>
+
+      <div class="pps__slider-nav">
+        <button class="pps__arrow pps__jrny-prev-{{ section.id }}" type="button" aria-label="Previous slide">‹</button>
+        <button class="pps__arrow pps__jrny-next-{{ section.id }}" type="button" aria-label="Next slide">›</button>
+      </div>
+    </div>
+
+    <div class="swiper pps__jrny-swiper pps__jrny-swiper-{{ section.id }}">
+      <div class="swiper-wrapper">
+        {%- if jrny_slides.size > 0 -%}
+          {%- for block in jrny_slides -%}
+            <article class="swiper-slide pps__slide" {{ block.shopify_attributes }}>
+              <div class="pps__slide-image">
+                {%- if block.settings.image != blank -%}
+                  {{ block.settings.image | image_url: width: 1200 | image_tag: loading: 'lazy', alt: block.settings.title }}
+                {%- elsif section.settings.jrny_default_image != blank -%}
+                  {{ section.settings.jrny_default_image | image_url: width: 1200 | image_tag: loading: 'lazy', alt: block.settings.title }}
+                {%- else -%}
+                  {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+                {%- endif -%}
+              </div>
+              <h3>{{ block.settings.title }}</h3>
+              <p>{{ block.settings.text }}</p>
+            </article>
+          {%- endfor -%}
+        {%- else -%}
+          <article class="swiper-slide pps__slide">
+            <div class="pps__slide-image">
+              {%- if section.settings.jrny_default_image != blank -%}
+                {{ section.settings.jrny_default_image | image_url: width: 1200 | image_tag: loading: 'lazy', alt: 'JRNY slide image' }}
+              {%- else -%}
+                {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+              {%- endif -%}
+            </div>
+            <h3>Every day is different.</h3>
+            <p>Get adaptive workouts that keep your routine fresh.</p>
+          </article>
+        {%- endif -%}
+      </div>
+    </div>
+
+    <div class="pps__dots pps__jrny-pagination-{{ section.id }}"></div>
+  </div>
+</section>
+
+<section class="pps pps__features color-{{ section.settings.dark_color_scheme }}" data-section-id="{{ section.id }}">
+  <div class="pps__wrap page-width">
+    <div class="pps__slider-head">
+      <div>
+        <h2 class="pps__title">{{ section.settings.features_heading }}</h2>
+        <p class="pps__subtitle">{{ section.settings.features_subheading }}</p>
+      </div>
+
+      <div class="pps__slider-nav">
+        <button class="pps__arrow pps__features-prev-{{ section.id }}" type="button" aria-label="Previous slide">‹</button>
+        <button class="pps__arrow pps__features-next-{{ section.id }}" type="button" aria-label="Next slide">›</button>
+      </div>
+    </div>
+
+    <div class="swiper pps__features-swiper pps__features-swiper-{{ section.id }}">
+      <div class="swiper-wrapper">
+        {%- if feature_slides.size > 0 -%}
+          {%- for block in feature_slides -%}
+            <article class="swiper-slide pps__slide" {{ block.shopify_attributes }}>
+              <div class="pps__slide-image">
+                {%- if block.settings.image != blank -%}
+                  {{ block.settings.image | image_url: width: 1200 | image_tag: loading: 'lazy', alt: block.settings.title }}
+                {%- elsif section.settings.features_default_image != blank -%}
+                  {{ section.settings.features_default_image | image_url: width: 1200 | image_tag: loading: 'lazy', alt: block.settings.title }}
+                {%- else -%}
+                  {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+                {%- endif -%}
+              </div>
+              <h3>{{ block.settings.title }}</h3>
+              <p>{{ block.settings.text }}</p>
+            </article>
+          {%- endfor -%}
+        {%- else -%}
+          <article class="swiper-slide pps__slide">
+            <div class="pps__slide-image">
+              {%- if section.settings.features_default_image != blank -%}
+                {{ section.settings.features_default_image | image_url: width: 1200 | image_tag: loading: 'lazy', alt: 'Features slide image' }}
+              {%- else -%}
+                {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+              {%- endif -%}
+            </div>
+            <h3>Built for performance.</h3>
+            <p>Highlight your top collection features with flexible slide content.</p>
+          </article>
+        {%- endif -%}
+      </div>
+    </div>
+
+    <div class="pps__dots pps__features-pagination-{{ section.id }}"></div>
+  </div>
+</section>
+
+<script>
+  (() => {
+    const sectionRoot = document.querySelector('#shopify-section-{{ section.id }}');
+    if (!sectionRoot || typeof Swiper === 'undefined') return;
+
+    const sharedSliderConfig = {
+      slidesPerView: 1,
+      spaceBetween: 12,
+      loop: false,
+      breakpoints: {
+        750: {
+          slidesPerView: 2
+        },
+        990: {
+          slidesPerView: 3
+        }
+      }
+    };
+
+    const jrnySwiperSelector = `.pps__jrny-swiper-{{ section.id }}`;
+    if (sectionRoot.querySelector(jrnySwiperSelector)) {
+      new Swiper(jrnySwiperSelector, {
+        ...sharedSliderConfig,
+        pagination: {
+          el: `.pps__jrny-pagination-{{ section.id }}`,
+          clickable: true
+        },
+        navigation: {
+          nextEl: `.pps__jrny-next-{{ section.id }}`,
+          prevEl: `.pps__jrny-prev-{{ section.id }}`
+        }
+      });
+    }
+
+    const featuresSwiperSelector = `.pps__features-swiper-{{ section.id }}`;
+    if (sectionRoot.querySelector(featuresSwiperSelector)) {
+      new Swiper(featuresSwiperSelector, {
+        ...sharedSliderConfig,
+        pagination: {
+          el: `.pps__features-pagination-{{ section.id }}`,
+          clickable: true
+        },
+        navigation: {
+          nextEl: `.pps__features-next-{{ section.id }}`,
+          prevEl: `.pps__features-prev-{{ section.id }}`
+        }
+      });
+    }
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Colleciton pahe sections",
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "dark_color_scheme",
+      "label": "Section color scheme",
+      "default": "scheme-1"
+    },
+    {
+      "type": "text",
+      "id": "membership_heading",
+      "label": "JRNY heading",
+      "default": "The JRNY adaptive fitness membership keeps you going."
+    },
+    {
+      "type": "text",
+      "id": "membership_subheading",
+      "label": "JRNY subheading",
+      "default": "Adaptive coaching, scenic workouts, and daily variety."
+    },
+    {
+      "type": "image_picker",
+      "id": "jrny_default_image",
+      "label": "JRNY default slide image"
+    },
+    {
+      "type": "text",
+      "id": "features_heading",
+      "label": "Features slider heading",
+      "default": "Features slider"
+    },
+    {
+      "type": "text",
+      "id": "features_subheading",
+      "label": "Features slider subheading",
+      "default": "Showcase your top collection features."
+    },
+    {
+      "type": "image_picker",
+      "id": "features_default_image",
+      "label": "Features default slide image"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "jrny_slide",
+      "name": "JRNY slide",
+      "limit": 8,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Slide image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Slide title",
+          "default": "Every day is different."
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Slide text",
+          "default": "Get a custom set of adaptive workouts to freshen up your routine."
+        }
+      ]
+    },
+    {
+      "type": "feature_slide",
+      "name": "Feature slide",
+      "limit": 8,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Slide image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Slide title",
+          "default": "Built for performance."
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Slide text",
+          "default": "Highlight key collection benefits in this feature slider."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Colleciton pahe sections",
+      "blocks": [
+        {
+          "type": "jrny_slide"
+        },
+        {
+          "type": "jrny_slide"
+        },
+        {
+          "type": "feature_slide"
+        },
+        {
+          "type": "feature_slide"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
