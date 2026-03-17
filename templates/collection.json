@@ -47,7 +47,8 @@
       ],
       "name": "t:sections.video.presets.name",
       "settings": {
-        "video": "shopify://files/videos/treadmills-homepage-hero-1920x700.mp4",
+        "video": "{{ collection.metafields.custom.video_hero.value }}",
+        "poster_desktop": "{{ collection.image }}",
         "no_video_mobile": false,
         "show_overlay": true,
         "overlay_color": "#000000",
@@ -176,7 +177,7 @@
       ],
       "custom_css": [
         ".pps__jrny {background: white; color: #1b1b1b;}",
-        ".pps__jrny h3, .pps__jrny p {color:#1b1b1b;}"
+        ".pps__jrny h3,.pps__jrny p {color: #1b1b1b;}"
       ],
       "name": "Colleciton pahe sections",
       "settings": {
