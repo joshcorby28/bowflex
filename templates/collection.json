@@ -175,7 +175,8 @@
         "feature_slide_CnPBWn"
       ],
       "custom_css": [
-        ".pps__jrny {background:white; color:#1b1b1b;}"
+        ".pps__jrny {background: white; color: #1b1b1b;}",
+        ".pps__jrny h3, .pps__jrny p {color:#1b1b1b;}"
       ],
       "name": "Colleciton pahe sections",
       "settings": {
