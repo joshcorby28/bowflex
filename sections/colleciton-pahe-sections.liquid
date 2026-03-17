@@ -136,9 +136,6 @@
       padding: 44px 16px;
     }
 
-    #shopify-section-{{ section.id }} .pps__jrny-swiper .swiper-wrapper {
-      margin-left:-200px;
-    }
 
     #shopify-section-{{ section.id }} .pps__slider-head {
       align-items: flex-start;
@@ -260,6 +257,8 @@
       slidesPerView: 1,
       spaceBetween: 12,
       loop: true,
+        centeredSlides: true,
+  initialSlide: 1,
       breakpoints: {
         250: {
           slidesPerView: 1.5
