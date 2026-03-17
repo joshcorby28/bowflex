@@ -275,6 +275,9 @@
         "row_aKUCaw",
         "row_htHnbU"
       ],
+      "custom_css": [
+        "h2 {font-size:28px; font-weight:500}"
+      ],
       "name": "t:sections.multirow.presets.name",
       "settings": {
         "image_height": "large",
