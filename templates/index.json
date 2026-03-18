@@ -32,7 +32,7 @@
             "badge": "New",
             "badge_color": "#b4ff63",
             "heading": "Upgrade your training",
-            "subtext": "Get the Max Total 16 for only $1,999 with $500 Off + Free Shipping",
+            "subtext": "Get the Max Total 16 for only £1,999 with £500 Off + Free Shipping",
             "small_text": "Limited time only",
             "button_label": "Shop Now",
             "button_link": ""
@@ -276,7 +276,7 @@
         "row_htHnbU"
       ],
       "custom_css": [
-        "h2 {font-size:28px; font-weight:500}"
+        "h2 {font-size: 28px; font-weight: 500;}"
       ],
       "name": "t:sections.multirow.presets.name",
       "settings": {
