@@ -132,15 +132,6 @@
   </symbol>
 </svg>
 
-<script>
-$( document ).ready(function() {
-    $( ".smarte-location_btn" ).click(function(){
-        $( ".location" ).toggle();
-    });
-});
-</script>
-
-
 {%- liquid
   for block in section.blocks
     if block.type == '@app'
@@ -169,36 +160,6 @@ $( document ).ready(function() {
   <div class="header-top page-width">
     {% if section.settings.menu != blank %}
       {% render 'header-drawer' %}
-                      {% for block in section.blocks %}
-        {% if block.settings.current_country %}
-            <button class="header__icon smarte-location_btn mediun-up-hide large-up-hide">
-                {% if block.settings.icon_svg != blank %}
-                  <span class="icon-text"> {{ block.settings.currency }} {{ block.settings.label }}<span>
-                {% endif %}
-                <div class="location">
-                    <ul>
-                        <li class="location_list_item_heading" style="padding-bottom: 5px;color: #000;"><strong>Country</strong></li>
-                        {%- for block in section.blocks -%}
-                            {%- case block.type -%}
-                            {%- when 'announcement' -%}
-                                <li class="location_list_item">
-                                    <a href="{{ block.settings.link }}" class="announcement-bar__link link link--text focus-inset animate-arrow">
-                                        <div class="location_list_content">
-                                            <p class="announcement-bar__message  h5">
-                                                <img loading="lazy" src="{{ block.settings.icon_svg }}" alt="{{ block.settings.country }}" />
-                                            </p>
-                                            <p class="country_code">{{ block.settings.label }} {% if block.settings.currency != blank %} / {{ block.settings.currency }} {% endif %} </p>
-                                        </div>
-                                    </a>
-                                </li>
-                            {%- endcase -%}
-                        {%- endfor -%}
-                    </ul>
-                </div>
-            </button>
-        {% endif %}
-    {% endfor %}
-      
     {% endif %}
 
         <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
@@ -791,46 +752,6 @@ font-size:14px;
   ],
   "blocks": [
     {
-      "type": "announcement",
-      "name": "GEO IP",
-      "settings": [
-        {
-            "type":     "checkbox",
-            "id":       "current_country",
-            "label":    "This Store",
-            "default":  false
-        },
-     
-        {
-          "type": "url",
-          "id": "icon_svg",
-          "label": "Add SVG"
-        },
-        {
-            "type":     "text",
-            "id":       "label",
-            "label":    "Label (e.g UK)"
-        },
-        {
-            "type":     "text",
-            "id":       "country",
-            "label":    "Country Code (e.g GB)",
-            "info":     "'*' for RoW"
-        },
-        {
-            "type":     "text",
-            "id":       "currency",
-            "label":    "Currency Symbol (e.g £)"
-        },
-        {
-          "type": "url",
-          "id": "link",
-          "label": "t:sections.announcement-bar.blocks.announcement.settings.link.label"
-        }
-     
-      ]
-    },
-    {
       "type": "mega_menu_item",
       "name": "Mega menu item",
       "settings": [
@@ -865,11 +786,7 @@ font-size:14px;
     }
   ],
   "default": {
-    "blocks": [
-      {
-        "type": "announcement"
-      }
-    ]
+    "blocks": []
   }
 }
 {% endschema %}
