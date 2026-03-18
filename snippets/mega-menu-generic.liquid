@@ -1,0 +1,89 @@
+{%- liquid
+  assign cta_label = cta_text
+  if cta_label == blank
+    assign cta_label = 'Shop ' | append: menu_link.title
+  endif
+
+  assign cta_href = cta_url
+  if cta_href == blank
+    assign cta_href = menu_link.url
+  endif
+-%}
+
+<li class="mega-products">
+  {%- if product_1 != blank -%}
+    {%- assign p = all_products[product_1] -%}
+    {%- if p != blank -%}
+      <a href="{{ p.url }}" class="mega-product-card">
+        <div class="mega-product-image">
+          {{ p.featured_image | image_url: width: 160 | image_tag }}
+        </div>
+        <div class="mega-product-info">
+          <div class="mega-product-title">{{ p.title }}</div>
+          <div class="mega-product-subtitle">{{ p.metafields.custom.short_text }}</div>
+        </div>
+        {%- if p.tags contains 'New' -%}
+          <span class="mega-badge">New</span>
+        {%- endif -%}
+      </a>
+    {%- endif -%}
+  {%- endif -%}
+
+  {%- if product_2 != blank -%}
+    {%- assign p = all_products[product_2] -%}
+    {%- if p != blank -%}
+      <a href="{{ p.url }}" class="mega-product-card">
+        <div class="mega-product-image">
+          {{ p.featured_image | image_url: width: 160 | image_tag }}
+        </div>
+        <div class="mega-product-info">
+          <div class="mega-product-title">{{ p.title }}</div>
+          <div class="mega-product-subtitle">{{ p.metafields.custom.short_text }}</div>
+        </div>
+        {%- if p.tags contains 'New' -%}
+          <span class="mega-badge">New</span>
+        {%- endif -%}
+      </a>
+    {%- endif -%}
+  {%- endif -%}
+
+  <div class="mega-menu-actions">
+    <a href="{{ cta_href }}" class="global-black-button">{{ cta_label }}</a>
+  </div>
+</li>
+
+<style>
+details[open] > .header__submenu {
+  width: 360px;
+}
+
+.mega-products {
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.mega-product-card {
+  background: #efefef;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-decoration: none;
+  border-radius: 3px;
+  gap: 10px;
+}
+
+.mega-product-image img {
+  max-width: 80px;
+  height: 80px;
+  background-blend-mode: multiply;
+  mix-blend-mode: multiply;
+}
+
+.mega-product-title {
+  text-decoration: none;
+  color: #1b1b1b;
+  font-weight: 700;
+}
+</style>

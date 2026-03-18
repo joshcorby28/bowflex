@@ -38,21 +38,29 @@
               {%- else -%}
 
         {%- assign menu_handle = link.handle | downcase -%}
-        {%- case menu_handle -%}
+        {%- assign matched_mega_block = blank -%}
 
-  {%- when 'treadmills' -%}
-    {% render 'mega-menu-treadmills' %}
+        {%- for block in section.blocks -%}
+          {%- if block.type == 'mega_menu_item' and block.settings.menu_handle != blank -%}
+            {%- assign block_handle = block.settings.menu_handle | handleize -%}
+            {%- if block_handle == menu_handle -%}
+              {%- assign matched_mega_block = block -%}
+              {%- break -%}
+            {%- endif -%}
+          {%- endif -%}
+        {%- endfor -%}
 
-  {%- when 'bikes' -%}
-    {% render 'mega-menu-bikes' %}
-
-  {%- when 'sale' -%}
-    {% render 'mega-menu-sale' %}
-
-  {%- else -%}
-    ... normal menu logic ...
-
-{%- endcase -%}
+        {%- if matched_mega_block != blank -%}
+          {% render 'mega-menu-generic',
+            menu_link: link,
+            product_1: matched_mega_block.settings.product_1,
+            product_2: matched_mega_block.settings.product_2,
+            cta_text: matched_mega_block.settings.cta_text,
+            cta_url: matched_mega_block.settings.cta_url
+          %}
+        {%- else -%}
+          ... normal menu logic ...
+        {%- endif -%}
 
               {%- endif -%}
 
