@@ -4,8 +4,9 @@
   assign warranty_metrics = section.blocks | where: 'type', 'warranty_metric'
   assign accordion_rows = section.blocks | where: 'type', 'specs_accordion'
   assign jrny_slides = section.blocks | where: 'type', 'jrny_slide'
+  assign app_icons = section.blocks | where: 'type', 'app_icon'
   assign fallback_accordion_titles = 'Console,Deck,Drive System,Frame,Technical Specs' | split: ','
-  assign fallback_training_video_url = 'https://download.bowflex.com/video/bxt/t16/T16_PDP-01_Entertainment.mp4'
+  assign fallback_training_video_url = section.settings.fallback_training_video_url
 -%}
 
 {%- style -%}
@@ -48,7 +49,7 @@
   }
 
   #shopify-section-{{ section.id }} .pps__media-shell,
-  #shopify-section-{{ section.id }} .pps__image-shell {);
+  #shopify-section-{{ section.id }} .pps__image-shell {
     border-radius: 4px;
     min-height: 220px;
     display: grid;
@@ -459,11 +460,11 @@
         {%- else -%}
           <button type="button" class="pps__tab is-active" role="tab" aria-selected="true" data-panel-id="pps-video-{{ section.id }}-fallback-1">
             <span class="pps__tab-thumb"></span>
-            <span class="pps__tab-copy">Explore entertainment</span>
+            <span class="pps__tab-copy">{{ section.settings.fallback_training_tab_title_1 }}</span>
           </button>
           <button type="button" class="pps__tab" role="tab" aria-selected="false" data-panel-id="pps-video-{{ section.id }}-fallback-2">
             <span class="pps__tab-thumb"></span>
-            <span class="pps__tab-copy">Go further with JRNY</span>
+            <span class="pps__tab-copy">{{ section.settings.fallback_training_tab_title_2 }}</span>
           </button>
         {%- endif -%}
       </div>
@@ -506,16 +507,24 @@
         {%- else -%}
           <div class="pps__video-panel is-active" id="pps-video-{{ section.id }}-fallback-1" role="tabpanel">
             <div class="pps__media-shell">
-              <video controls playsinline preload="metadata">
-                <source src="{{ fallback_training_video_url }}" type="video/mp4">
-              </video>
+              {%- if fallback_training_video_url != blank -%}
+                <video controls playsinline preload="metadata">
+                  <source src="{{ fallback_training_video_url }}" type="video/mp4">
+                </video>
+              {%- else -%}
+                {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
+              {%- endif -%}
             </div>
           </div>
           <div class="pps__video-panel" id="pps-video-{{ section.id }}-fallback-2" role="tabpanel" hidden>
             <div class="pps__media-shell">
-              <video controls playsinline preload="metadata">
-                <source src="{{ fallback_training_video_url }}" type="video/mp4">
-              </video>
+              {%- if fallback_training_video_url != blank -%}
+                <video controls playsinline preload="metadata">
+                  <source src="{{ fallback_training_video_url }}" type="video/mp4">
+                </video>
+              {%- else -%}
+                {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
+              {%- endif -%}
             </div>
           </div>
         {%- endif -%}
@@ -559,17 +568,13 @@
             <h3>{{ section.settings.fitness_right_title }}</h3>
             <p>{{ section.settings.fitness_right_text }}</p>
             <div class="pps__app-icons">
-              <img loading="lazy" width="24" height="24" src="https://www.bowflex.com/on/demandware.static/-/Library-Sites-bowflexShared/default/dw150c59a8/bfx/global/logos/icon-youtube-dark.svg" alt="YouTube">
-              <img loading="lazy" width="24" height="24" src="https://www.bowflex.com/on/demandware.static/-/Library-Sites-bowflexShared/default/dw36c861ce/bfx/global/logos/icon-netflix-dark.svg" alt="Netflix">
-              <img loading="lazy" width="24" height="24" src="https://www.bowflex.com/on/demandware.static/-/Library-Sites-bowflexShared/default/dw1019a6a3/bfx/global/logos/icon-prime-dark.svg" alt="Prime">
-              <img loading="lazy" width="24" height="24" src="https://www.bowflex.com/on/demandware.static/-/Library-Sites-bowflexShared/default/dw5c36de5f/bfx/global/logos/icon-spotify-dark.svg" alt="Spotify">
-              <img loading="lazy" width="24" height="24" src="https://www.bowflex.com/on/demandware.static/-/Library-Sites-bowflexShared/default/dw2e304eec/bfx/global/logos/icon-webbrowser-dark.svg" alt="Web Browser">
-              <img loading="lazy" width="24" height="24" src="https://www.bowflex.com/on/demandware.static/-/Library-Sites-bowflexShared/default/dw3f7e43bb/bfx/global/logos/icon-kindle-dark.svg" alt="Kindle">
-              <img loading="lazy" width="24" height="24" src="https://www.bowflex.com/on/demandware.static/-/Library-Sites-bowflexShared/default/dw3eafc789/bfx/global/logos/icon-instagram-dark.svg" alt="Instagram">
-              <img loading="lazy" width="24" height="24" src="https://www.bowflex.com/on/demandware.static/-/Library-Sites-bowflexShared/default/dwae36a2a3/bfx/global/logos/icon-facebook-dark.svg" alt="Facebook">
-              <img loading="lazy" width="24" height="24" src="https://www.bowflex.com/on/demandware.static/-/Library-Sites-bowflexShared/default/dw7b5788c8/bfx/global/logos/icon-x-dark.svg" alt="X">
-              <img loading="lazy" width="24" height="24" src="https://www.bowflex.com/on/demandware.static/-/Library-Sites-bowflexShared/default/dw36328310/bfx/global/logos/icon-jrny-dark.svg" alt="JRNY">
-              <img loading="lazy" width="24" height="24" src="https://www.bowflex.com/on/demandware.static/-/Library-Sites-bowflexShared/default/dwcf1d3bde/bfx/global/logos/icon-moreapps-dark.svg" alt="More Apps">
+              {%- if app_icons.size > 0 -%}
+                {%- for block in app_icons -%}
+                  {%- if block.settings.icon_image != blank -%}
+                    {{ block.settings.icon_image | image_url: width: 48 | image_tag: loading: 'lazy', width: 24, height: 24, alt: block.settings.icon_alt }}
+                  {%- endif -%}
+                {%- endfor -%}
+              {%- endif -%}
             </div>
           </div>
         </article>
@@ -586,14 +591,14 @@
     <div class="pps__specs-grid">
       <div class="pps__image-shell">
         {%- if section.settings.spec_image_1 != blank -%}
-          {{ section.settings.spec_image_1 | image_url: width: 1000 | image_tag: loading: 'lazy', alt: 'Open treadmill dimensions' }}
+          {{ section.settings.spec_image_1 | image_url: width: 1000 | image_tag: loading: 'lazy', alt: section.settings.spec_image_1_alt }}
         {%- else -%}
           Open position image
         {%- endif -%}
       </div>
       <div class="pps__image-shell">
         {%- if section.settings.spec_image_2 != blank -%}
-          {{ section.settings.spec_image_2 | image_url: width: 1000 | image_tag: loading: 'lazy', alt: 'Folded treadmill dimensions' }}
+          {{ section.settings.spec_image_2 | image_url: width: 1000 | image_tag: loading: 'lazy', alt: section.settings.spec_image_2_alt }}
         {%- else -%}
           Folded position image
         {%- endif -%}
@@ -601,7 +606,7 @@
 
       <div class="pps__spec-columns">
         <div class="pps__spec-group">
-          <h3>Specs</h3>
+          <h3>{{ section.settings.specs_group_heading }}</h3>
           <ul class="pps__spec-list">
             {%- if spec_metrics.size > 0 -%}
               {%- for block in spec_metrics -%}
@@ -620,7 +625,7 @@
         </div>
 
         <div class="pps__spec-group">
-          <h3>Warranty</h3>
+          <h3>{{ section.settings.warranty_group_heading }}</h3>
           <ul class="pps__spec-list">
             {%- if warranty_metrics.size > 0 -%}
               {%- for block in warranty_metrics -%}
@@ -639,7 +644,7 @@
       </div>
     </div>
 
-    <h3 class="pps__title" style="font-size:2.2rem; margin-bottom: 14px;">Additional Specs</h3>
+    <h3 class="pps__title" style="font-size:2.2rem; margin-bottom: 14px;">{{ section.settings.additional_specs_heading }}</h3>
     <div class="pps__accordion" data-accordion>
       {%- if accordion_rows.size > 0 -%}
         {%- for block in accordion_rows -%}
@@ -851,6 +856,23 @@
       "default": "Watch videos below to learn more."
     },
     {
+      "type": "url",
+      "id": "fallback_training_video_url",
+      "label": "Fallback training video URL"
+    },
+    {
+      "type": "text",
+      "id": "fallback_training_tab_title_1",
+      "label": "Fallback training tab title 1",
+      "default": "Explore entertainment"
+    },
+    {
+      "type": "text",
+      "id": "fallback_training_tab_title_2",
+      "label": "Fallback training tab title 2",
+      "default": "Go further with JRNY"
+    },
+    {
       "type": "text",
       "id": "fitness_heading",
       "label": "Entertainment + fitness heading",
@@ -926,9 +948,39 @@
       "label": "Specs image 1"
     },
     {
+      "type": "text",
+      "id": "spec_image_1_alt",
+      "label": "Specs image 1 alt text",
+      "default": "Open treadmill dimensions"
+    },
+    {
       "type": "image_picker",
       "id": "spec_image_2",
       "label": "Specs image 2"
+    },
+    {
+      "type": "text",
+      "id": "spec_image_2_alt",
+      "label": "Specs image 2 alt text",
+      "default": "Folded treadmill dimensions"
+    },
+    {
+      "type": "text",
+      "id": "specs_group_heading",
+      "label": "Specs group heading",
+      "default": "Specs"
+    },
+    {
+      "type": "text",
+      "id": "warranty_group_heading",
+      "label": "Warranty group heading",
+      "default": "Warranty"
+    },
+    {
+      "type": "text",
+      "id": "additional_specs_heading",
+      "label": "Additional specs heading",
+      "default": "Additional Specs"
     },
     {
       "type": "text",
@@ -1055,6 +1107,24 @@
           "default": "Get a custom set of adaptive workouts to freshen up your routine."
         }
       ]
+    },
+    {
+      "type": "app_icon",
+      "name": "Entertainment app icon",
+      "limit": 20,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon_image",
+          "label": "Icon image"
+        },
+        {
+          "type": "text",
+          "id": "icon_alt",
+          "label": "Icon alt text",
+          "default": "App icon"
+        }
+      ]
     }
   ],
   "presets": [
@@ -1093,6 +1163,39 @@
         },
         {
           "type": "jrny_slide"
+        },
+        {
+          "type": "app_icon"
+        },
+        {
+          "type": "app_icon"
+        },
+        {
+          "type": "app_icon"
+        },
+        {
+          "type": "app_icon"
+        },
+        {
+          "type": "app_icon"
+        },
+        {
+          "type": "app_icon"
+        },
+        {
+          "type": "app_icon"
+        },
+        {
+          "type": "app_icon"
+        },
+        {
+          "type": "app_icon"
+        },
+        {
+          "type": "app_icon"
+        },
+        {
+          "type": "app_icon"
         }
       ]
     }
