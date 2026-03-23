@@ -459,11 +459,19 @@
           {%- endfor -%}
         {%- else -%}
           <button type="button" class="pps__tab is-active" role="tab" aria-selected="true" data-panel-id="pps-video-{{ section.id }}-fallback-1">
-            <span class="pps__tab-thumb"></span>
+            <span class="pps__tab-thumb">
+              {%- if section.settings.fallback_training_tab_image_1 != blank -%}
+                {{ section.settings.fallback_training_tab_image_1 | image_url: width: 220 | image_tag: loading: 'lazy', alt: section.settings.fallback_training_tab_title_1 }}
+              {%- endif -%}
+            </span>
             <span class="pps__tab-copy">{{ section.settings.fallback_training_tab_title_1 }}</span>
           </button>
           <button type="button" class="pps__tab" role="tab" aria-selected="false" data-panel-id="pps-video-{{ section.id }}-fallback-2">
-            <span class="pps__tab-thumb"></span>
+            <span class="pps__tab-thumb">
+              {%- if section.settings.fallback_training_tab_image_2 != blank -%}
+                {{ section.settings.fallback_training_tab_image_2 | image_url: width: 220 | image_tag: loading: 'lazy', alt: section.settings.fallback_training_tab_title_2 }}
+              {%- endif -%}
+            </span>
             <span class="pps__tab-copy">{{ section.settings.fallback_training_tab_title_2 }}</span>
           </button>
         {%- endif -%}
@@ -844,6 +852,10 @@
       "default": "scheme-1"
     },
     {
+      "type": "header",
+      "content": "Training section"
+    },
+    {
       "type": "text",
       "id": "training_heading",
       "label": "Training heading",
@@ -867,10 +879,24 @@
       "default": "Explore entertainment"
     },
     {
+      "type": "image_picker",
+      "id": "fallback_training_tab_image_1",
+      "label": "Fallback training tab image 1"
+    },
+    {
       "type": "text",
       "id": "fallback_training_tab_title_2",
       "label": "Fallback training tab title 2",
       "default": "Go further with JRNY"
+    },
+    {
+      "type": "image_picker",
+      "id": "fallback_training_tab_image_2",
+      "label": "Fallback training tab image 2"
+    },
+    {
+      "type": "header",
+      "content": "Entertainment + fitness section"
     },
     {
       "type": "text",
@@ -931,6 +957,10 @@
       "default": "Browse the web or access Netflix, YouTube, Spotify, JRNY, and more."
     },
     {
+      "type": "header",
+      "content": "Specs + warranty section"
+    },
+    {
       "type": "text",
       "id": "specs_heading",
       "label": "Specs heading",
@@ -981,6 +1011,10 @@
       "id": "additional_specs_heading",
       "label": "Additional specs heading",
       "default": "Additional Specs"
+    },
+    {
+      "type": "header",
+      "content": "JRNY membership section"
     },
     {
       "type": "text",
