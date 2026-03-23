@@ -1,39 +1,9 @@
-shopify{%- liquid
+{%- liquid
   assign training_tabs = section.blocks | where: 'type', 'training_tab'
   assign spec_metrics = section.blocks | where: 'type', 'spec_metric'
   assign warranty_metrics = section.blocks | where: 'type', 'warranty_metric'
   assign accordion_rows = section.blocks | where: 'type', 'specs_accordion'
   assign jrny_slides = section.blocks | where: 'type', 'jrny_slide'
-
-  assign pps_training_heading = product.metafields.custom.pps_training_heading.value | default: section.settings.training_heading
-  assign pps_training_subheading = product.metafields.custom.pps_training_subheading.value | default: section.settings.training_subheading
-  assign pps_training_tabs = product.metafields.custom.pps_training_tabs.value
-
-  assign pps_fitness_heading = product.metafields.custom.pps_fitness_heading.value | default: section.settings.fitness_heading
-  assign pps_fitness_subheading = product.metafields.custom.pps_fitness_subheading.value | default: section.settings.fitness_subheading
-  assign pps_fitness_left_image = product.metafields.custom.pps_fitness_left_image.value | default: section.settings.fitness_left_image
-  assign pps_fitness_left_title = product.metafields.custom.pps_fitness_left_title.value | default: section.settings.fitness_left_title
-  assign pps_fitness_left_text = product.metafields.custom.pps_fitness_left_text.value | default: section.settings.fitness_left_text
-  assign pps_fitness_left_pill_1 = product.metafields.custom.pps_fitness_left_pill_1.value | default: section.settings.fitness_left_pill_1
-  assign pps_fitness_left_pill_2 = product.metafields.custom.pps_fitness_left_pill_2.value | default: section.settings.fitness_left_pill_2
-  assign pps_fitness_right_image = product.metafields.custom.pps_fitness_right_image.value | default: section.settings.fitness_right_image
-  assign pps_fitness_right_title = product.metafields.custom.pps_fitness_right_title.value | default: section.settings.fitness_right_title
-  assign pps_fitness_right_text = product.metafields.custom.pps_fitness_right_text.value | default: section.settings.fitness_right_text
-  assign pps_app_icons = product.metafields.custom.pps_app_icons.value
-
-  assign pps_specs_heading = product.metafields.custom.pps_specs_heading.value | default: section.settings.specs_heading
-  assign pps_specs_subheading = product.metafields.custom.pps_specs_subheading.value | default: section.settings.specs_subheading
-  assign pps_spec_image_1 = product.metafields.custom.pps_spec_image_1.value | default: section.settings.spec_image_1
-  assign pps_spec_image_2 = product.metafields.custom.pps_spec_image_2.value | default: section.settings.spec_image_2
-  assign pps_specs_list = product.metafields.custom.pps_specs_list.value
-  assign pps_warranty_list = product.metafields.custom.pps_warranty_list.value
-  assign pps_accordion_rows = product.metafields.custom.pps_additional_specs.value
-
-  assign pps_membership_heading = product.metafields.custom.pps_membership_heading.value | default: section.settings.membership_heading
-  assign pps_membership_subheading = product.metafields.custom.pps_membership_subheading.value | default: section.settings.membership_subheading
-  assign pps_jrny_default_image = product.metafields.custom.pps_jrny_default_image.value | default: section.settings.jrny_default_image
-  assign pps_jrny_slides = product.metafields.custom.pps_jrny_slides.value
-
   assign fallback_accordion_titles = 'Console,Deck,Drive System,Frame,Technical Specs' | split: ','
   assign fallback_training_video_url = 'https://download.bowflex.com/video/bxt/t16/T16_PDP-01_Entertainment.mp4'
 -%}
@@ -78,7 +48,7 @@ shopify{%- liquid
   }
 
   #shopify-section-{{ section.id }} .pps__media-shell,
-  #shopify-section-{{ section.id }} .pps__image-shell {
+  #shopify-section-{{ section.id }} .pps__image-shell {);
     border-radius: 4px;
     min-height: 220px;
     display: grid;
@@ -461,31 +431,12 @@ shopify{%- liquid
 
 <section class="pps color-{{ section.settings.dark_color_scheme }}" data-section-id="{{ section.id }}">
   <div class="pps__wrap page-width">
-    <h2 class="pps__title">{{ pps_training_heading }}</h2>
-    <p class="pps__subtitle">{{ pps_training_subheading }}</p>
+    <h2 class="pps__title">{{ section.settings.training_heading }}</h2>
+    <p class="pps__subtitle">{{ section.settings.training_subheading }}</p>
 
     <div class="pps__training" data-training-tabs>
-      <div class="pps__training-tabs" role="tablist" aria-label="{{ pps_training_heading | escape }}">
-        {%- if pps_training_tabs != blank -%}
-          {%- for tab in pps_training_tabs -%}
-            <button
-              type="button"
-              class="pps__tab{% if forloop.first %} is-active{% endif %}"
-              role="tab"
-              aria-selected="{% if forloop.first %}true{% else %}false{% endif %}"
-              aria-controls="pps-video-{{ section.id }}-mf-{{ forloop.index }}"
-              id="pps-tab-{{ section.id }}-mf-{{ forloop.index }}"
-              data-panel-id="pps-video-{{ section.id }}-mf-{{ forloop.index }}"
-            >
-              <span class="pps__tab-thumb">
-                {%- if tab.thumbnail != blank -%}
-                  {{ tab.thumbnail | image_url: width: 220 | image_tag: loading: 'lazy', alt: tab.title }}
-                {%- endif -%}
-              </span>
-              <span class="pps__tab-copy">{{ tab.title }}</span>
-            </button>
-          {%- endfor -%}
-        {%- elsif training_tabs.size > 0 -%}
+      <div class="pps__training-tabs" role="tablist" aria-label="{{ section.settings.training_heading | escape }}">
+        {%- if training_tabs.size > 0 -%}
           {%- for block in training_tabs -%}
             <button
               type="button"
@@ -518,41 +469,7 @@ shopify{%- liquid
       </div>
 
       <div class="pps__training-media">
-        {%- if pps_training_tabs != blank -%}
-          {%- for tab in pps_training_tabs -%}
-            <div
-              class="pps__video-panel{% if forloop.first %} is-active{% endif %}"
-              id="pps-video-{{ section.id }}-mf-{{ forloop.index }}"
-              role="tabpanel"
-              aria-labelledby="pps-tab-{{ section.id }}-mf-{{ forloop.index }}"
-              {% unless forloop.first %}hidden{% endunless %}
-            >
-              <div class="pps__media-shell">
-                {%- if tab.video_url != blank -%}
-                  {%- if tab.video_url contains '.mp4' -%}
-                    <video controls playsinline preload="metadata">
-                      <source src="{{ tab.video_url }}" type="video/mp4">
-                    </video>
-                  {%- else -%}
-                    <iframe
-                      src="{{ tab.video_url }}"
-                      title="{{ tab.title | escape }}"
-                      loading="lazy"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowfullscreen
-                    ></iframe>
-                  {%- endif -%}
-                {%- elsif tab.poster != blank -%}
-                  {{ tab.poster | image_url: width: 1500 | image_tag: loading: 'lazy', alt: tab.title }}
-                {%- else -%}
-                  <video controls playsinline preload="metadata">
-                    <source src="{{ fallback_training_video_url }}" type="video/mp4">
-                  </video>
-                {%- endif -%}
-              </div>
-            </div>
-          {%- endfor -%}
-        {%- elsif training_tabs.size > 0 -%}
+        {%- if training_tabs.size > 0 -%}
           {%- for block in training_tabs -%}
             <div
               class="pps__video-panel{% if forloop.first %} is-active{% endif %}"
@@ -608,59 +525,51 @@ shopify{%- liquid
 
   <div class="pps__fitness color-{{ section.settings.dark_color_scheme }}">
     <div class="pps__wrap page-width">
-      <h2 class="pps__title">{{ pps_fitness_heading }}</h2>
-      <p class="pps__subtitle">{{ pps_fitness_subheading }}</p>
+      <h2 class="pps__title">{{ section.settings.fitness_heading }}</h2>
+      <p class="pps__subtitle">{{ section.settings.fitness_subheading }}</p>
 
       <div class="pps__fitness-grid">
         <article class="pps__fitness-card">
           <div class="pps__image-shell">
-            {%- if pps_fitness_left_image != blank -%}
-              {{ pps_fitness_left_image | image_url: width: 1100 | image_tag: loading: 'lazy', alt: pps_fitness_left_title }}
+            {%- if section.settings.fitness_left_image != blank -%}
+              {{ section.settings.fitness_left_image | image_url: width: 1100 | image_tag: loading: 'lazy', alt: section.settings.fitness_left_title }}
             {%- else -%}
               Fitness image
             {%- endif -%}
           </div>
           <div class="pps__fitness-copy">
-            <h3>{{ pps_fitness_left_title }}</h3>
-            <p>{{ pps_fitness_left_text }}</p>
+            <h3>{{ section.settings.fitness_left_title }}</h3>
+            <p>{{ section.settings.fitness_left_text }}</p>
             <div class="pps__pill-row">
-              <span class="pps__pill">{{ pps_fitness_left_pill_1 }}</span>
-              <span class="pps__pill">{{ pps_fitness_left_pill_2 }}</span>
+              <span class="pps__pill">{{ section.settings.fitness_left_pill_1 }}</span>
+              <span class="pps__pill">{{ section.settings.fitness_left_pill_2 }}</span>
             </div>
           </div>
         </article>
 
         <article class="pps__fitness-card">
           <div class="pps__image-shell">
-            {%- if pps_fitness_right_image != blank -%}
-              {{ pps_fitness_right_image | image_url: width: 1100 | image_tag: loading: 'lazy', alt: pps_fitness_right_title }}
+            {%- if section.settings.fitness_right_image != blank -%}
+              {{ section.settings.fitness_right_image | image_url: width: 1100 | image_tag: loading: 'lazy', alt: section.settings.fitness_right_title }}
             {%- else -%}
               Touchscreen image
             {%- endif -%}
           </div>
           <div class="pps__fitness-copy">
-            <h3>{{ pps_fitness_right_title }}</h3>
-            <p>{{ pps_fitness_right_text }}</p>
+            <h3>{{ section.settings.fitness_right_title }}</h3>
+            <p>{{ section.settings.fitness_right_text }}</p>
             <div class="pps__app-icons">
-              {%- if pps_app_icons != blank -%}
-                {%- for icon in pps_app_icons -%}
-                  {%- if icon.url != blank -%}
-                    <img loading="lazy" width="24" height="24" src="{{ icon.url }}" alt="{{ icon.alt | default: 'App icon' | escape }}">
-                  {%- endif -%}
-                {%- endfor -%}
-              {%- else -%}
-                <img loading="lazy" width="24" height="24" src="https://www.bowflex.com/on/demandware.static/-/Library-Sites-bowflexShared/default/dw150c59a8/bfx/global/logos/icon-youtube-dark.svg" alt="YouTube">
-                <img loading="lazy" width="24" height="24" src="https://www.bowflex.com/on/demandware.static/-/Library-Sites-bowflexShared/default/dw36c861ce/bfx/global/logos/icon-netflix-dark.svg" alt="Netflix">
-                <img loading="lazy" width="24" height="24" src="https://www.bowflex.com/on/demandware.static/-/Library-Sites-bowflexShared/default/dw1019a6a3/bfx/global/logos/icon-prime-dark.svg" alt="Prime">
-                <img loading="lazy" width="24" height="24" src="https://www.bowflex.com/on/demandware.static/-/Library-Sites-bowflexShared/default/dw5c36de5f/bfx/global/logos/icon-spotify-dark.svg" alt="Spotify">
-                <img loading="lazy" width="24" height="24" src="https://www.bowflex.com/on/demandware.static/-/Library-Sites-bowflexShared/default/dw2e304eec/bfx/global/logos/icon-webbrowser-dark.svg" alt="Web Browser">
-                <img loading="lazy" width="24" height="24" src="https://www.bowflex.com/on/demandware.static/-/Library-Sites-bowflexShared/default/dw3f7e43bb/bfx/global/logos/icon-kindle-dark.svg" alt="Kindle">
-                <img loading="lazy" width="24" height="24" src="https://www.bowflex.com/on/demandware.static/-/Library-Sites-bowflexShared/default/dw3eafc789/bfx/global/logos/icon-instagram-dark.svg" alt="Instagram">
-                <img loading="lazy" width="24" height="24" src="https://www.bowflex.com/on/demandware.static/-/Library-Sites-bowflexShared/default/dwae36a2a3/bfx/global/logos/icon-facebook-dark.svg" alt="Facebook">
-                <img loading="lazy" width="24" height="24" src="https://www.bowflex.com/on/demandware.static/-/Library-Sites-bowflexShared/default/dw7b5788c8/bfx/global/logos/icon-x-dark.svg" alt="X">
-                <img loading="lazy" width="24" height="24" src="https://www.bowflex.com/on/demandware.static/-/Library-Sites-bowflexShared/default/dw36328310/bfx/global/logos/icon-jrny-dark.svg" alt="JRNY">
-                <img loading="lazy" width="24" height="24" src="https://www.bowflex.com/on/demandware.static/-/Library-Sites-bowflexShared/default/dwcf1d3bde/bfx/global/logos/icon-moreapps-dark.svg" alt="More Apps">
-              {%- endif -%}
+              <img loading="lazy" width="24" height="24" src="https://www.bowflex.com/on/demandware.static/-/Library-Sites-bowflexShared/default/dw150c59a8/bfx/global/logos/icon-youtube-dark.svg" alt="YouTube">
+              <img loading="lazy" width="24" height="24" src="https://www.bowflex.com/on/demandware.static/-/Library-Sites-bowflexShared/default/dw36c861ce/bfx/global/logos/icon-netflix-dark.svg" alt="Netflix">
+              <img loading="lazy" width="24" height="24" src="https://www.bowflex.com/on/demandware.static/-/Library-Sites-bowflexShared/default/dw1019a6a3/bfx/global/logos/icon-prime-dark.svg" alt="Prime">
+              <img loading="lazy" width="24" height="24" src="https://www.bowflex.com/on/demandware.static/-/Library-Sites-bowflexShared/default/dw5c36de5f/bfx/global/logos/icon-spotify-dark.svg" alt="Spotify">
+              <img loading="lazy" width="24" height="24" src="https://www.bowflex.com/on/demandware.static/-/Library-Sites-bowflexShared/default/dw2e304eec/bfx/global/logos/icon-webbrowser-dark.svg" alt="Web Browser">
+              <img loading="lazy" width="24" height="24" src="https://www.bowflex.com/on/demandware.static/-/Library-Sites-bowflexShared/default/dw3f7e43bb/bfx/global/logos/icon-kindle-dark.svg" alt="Kindle">
+              <img loading="lazy" width="24" height="24" src="https://www.bowflex.com/on/demandware.static/-/Library-Sites-bowflexShared/default/dw3eafc789/bfx/global/logos/icon-instagram-dark.svg" alt="Instagram">
+              <img loading="lazy" width="24" height="24" src="https://www.bowflex.com/on/demandware.static/-/Library-Sites-bowflexShared/default/dwae36a2a3/bfx/global/logos/icon-facebook-dark.svg" alt="Facebook">
+              <img loading="lazy" width="24" height="24" src="https://www.bowflex.com/on/demandware.static/-/Library-Sites-bowflexShared/default/dw7b5788c8/bfx/global/logos/icon-x-dark.svg" alt="X">
+              <img loading="lazy" width="24" height="24" src="https://www.bowflex.com/on/demandware.static/-/Library-Sites-bowflexShared/default/dw36328310/bfx/global/logos/icon-jrny-dark.svg" alt="JRNY">
+              <img loading="lazy" width="24" height="24" src="https://www.bowflex.com/on/demandware.static/-/Library-Sites-bowflexShared/default/dwcf1d3bde/bfx/global/logos/icon-moreapps-dark.svg" alt="More Apps">
             </div>
           </div>
         </article>
@@ -671,20 +580,20 @@ shopify{%- liquid
 
 <section class="pps pps__specs color-{{ section.settings.light_color_scheme }}" data-section-id="{{ section.id }}">
   <div class="pps__wrap page-width">
-    <h2 class="pps__title">{{ pps_specs_heading }}</h2>
-    <p class="pps__subtitle">{{ pps_specs_subheading }}</p>
+    <h2 class="pps__title">{{ section.settings.specs_heading }}</h2>
+    <p class="pps__subtitle">{{ section.settings.specs_subheading }}</p>
 
     <div class="pps__specs-grid">
       <div class="pps__image-shell">
-        {%- if pps_spec_image_1 != blank -%}
-          {{ pps_spec_image_1 | image_url: width: 1000 | image_tag: loading: 'lazy', alt: 'Open treadmill dimensions' }}
+        {%- if section.settings.spec_image_1 != blank -%}
+          {{ section.settings.spec_image_1 | image_url: width: 1000 | image_tag: loading: 'lazy', alt: 'Open treadmill dimensions' }}
         {%- else -%}
           Open position image
         {%- endif -%}
       </div>
       <div class="pps__image-shell">
-        {%- if pps_spec_image_2 != blank -%}
-          {{ pps_spec_image_2 | image_url: width: 1000 | image_tag: loading: 'lazy', alt: 'Folded treadmill dimensions' }}
+        {%- if section.settings.spec_image_2 != blank -%}
+          {{ section.settings.spec_image_2 | image_url: width: 1000 | image_tag: loading: 'lazy', alt: 'Folded treadmill dimensions' }}
         {%- else -%}
           Folded position image
         {%- endif -%}
@@ -694,14 +603,7 @@ shopify{%- liquid
         <div class="pps__spec-group">
           <h3>Specs</h3>
           <ul class="pps__spec-list">
-            {%- if pps_specs_list != blank -%}
-              {%- for item in pps_specs_list -%}
-                <li class="pps__spec-item">
-                  <strong>{{ item.label }}</strong>
-                  <span>{{ item.value }}</span>
-                </li>
-              {%- endfor -%}
-            {%- elsif spec_metrics.size > 0 -%}
+            {%- if spec_metrics.size > 0 -%}
               {%- for block in spec_metrics -%}
                 <li class="pps__spec-item" {{ block.shopify_attributes }}>
                   <strong>{{ block.settings.label }}</strong>
@@ -720,14 +622,7 @@ shopify{%- liquid
         <div class="pps__spec-group">
           <h3>Warranty</h3>
           <ul class="pps__spec-list">
-            {%- if pps_warranty_list != blank -%}
-              {%- for item in pps_warranty_list -%}
-                <li class="pps__spec-item">
-                  <strong>{{ item.label }}</strong>
-                  <span>{{ item.value }}</span>
-                </li>
-              {%- endfor -%}
-            {%- elsif warranty_metrics.size > 0 -%}
+            {%- if warranty_metrics.size > 0 -%}
               {%- for block in warranty_metrics -%}
                 <li class="pps__spec-item" {{ block.shopify_attributes }}>
                   <strong>{{ block.settings.label }}</strong>
@@ -746,25 +641,7 @@ shopify{%- liquid
 
     <h3 class="pps__title" style="font-size:2.2rem; margin-bottom: 14px;">Additional Specs</h3>
     <div class="pps__accordion" data-accordion>
-      {%- if pps_accordion_rows != blank -%}
-        {%- for item in pps_accordion_rows -%}
-          <div class="pps__accordion-row">
-            <button
-              class="pps__accordion-trigger"
-              type="button"
-              aria-expanded="false"
-              aria-controls="pps-accordion-{{ section.id }}-mf-{{ forloop.index }}"
-              id="pps-accordion-trigger-{{ section.id }}-mf-{{ forloop.index }}"
-            >
-              <span>{{ item.title }}</span>
-              <span class="pps__accordion-plus">+</span>
-            </button>
-            <div class="pps__accordion-content" id="pps-accordion-{{ section.id }}-mf-{{ forloop.index }}" role="region" aria-labelledby="pps-accordion-trigger-{{ section.id }}-mf-{{ forloop.index }}">
-              {{ item.content }}
-            </div>
-          </div>
-        {%- endfor -%}
-      {%- elsif accordion_rows.size > 0 -%}
+      {%- if accordion_rows.size > 0 -%}
         {%- for block in accordion_rows -%}
           <div class="pps__accordion-row" {{ block.shopify_attributes }}>
             <button
@@ -801,8 +678,8 @@ shopify{%- liquid
   <div class="pps__wrap page-width">
     <div class="pps__slider-head">
       <div>
-        <h2 class="pps__title">{{ pps_membership_heading }}</h2>
-        <p class="pps__subtitle">{{ pps_membership_subheading }}</p>
+        <h2 class="pps__title">{{ section.settings.membership_heading }}</h2>
+        <p class="pps__subtitle">{{ section.settings.membership_subheading }}</p>
       </div>
 
       <div class="pps__slider-nav">
@@ -813,30 +690,14 @@ shopify{%- liquid
 
     <div class="swiper pps__jrny-swiper pps__jrny-swiper-{{ section.id }}">
       <div class="swiper-wrapper">
-        {%- if pps_jrny_slides != blank -%}
-          {%- for slide in pps_jrny_slides -%}
-            <article class="swiper-slide pps__slide">
-              <div class="pps__slide-image">
-                {%- if slide.image != blank -%}
-                  {{ slide.image | image_url: width: 1200 | image_tag: loading: 'lazy', alt: slide.title }}
-                {%- elsif pps_jrny_default_image != blank -%}
-                  {{ pps_jrny_default_image | image_url: width: 1200 | image_tag: loading: 'lazy', alt: slide.title }}
-                {%- else -%}
-                  {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
-                {%- endif -%}
-              </div>
-              <h3>{{ slide.title }}</h3>
-              <p>{{ slide.text }}</p>
-            </article>
-          {%- endfor -%}
-        {%- elsif jrny_slides.size > 0 -%}
+        {%- if jrny_slides.size > 0 -%}
           {%- for block in jrny_slides -%}
             <article class="swiper-slide pps__slide" {{ block.shopify_attributes }}>
               <div class="pps__slide-image">
                 {%- if block.settings.image != blank -%}
                   {{ block.settings.image | image_url: width: 1200 | image_tag: loading: 'lazy', alt: block.settings.title }}
-                {%- elsif pps_jrny_default_image != blank -%}
-                  {{ pps_jrny_default_image | image_url: width: 1200 | image_tag: loading: 'lazy', alt: block.settings.title }}
+                {%- elsif section.settings.jrny_default_image != blank -%}
+                  {{ section.settings.jrny_default_image | image_url: width: 1200 | image_tag: loading: 'lazy', alt: block.settings.title }}
                 {%- else -%}
                   {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
                 {%- endif -%}
@@ -848,8 +709,8 @@ shopify{%- liquid
         {%- else -%}
           <article class="swiper-slide pps__slide">
             <div class="pps__slide-image">
-              {%- if pps_jrny_default_image != blank -%}
-                {{ pps_jrny_default_image | image_url: width: 1200 | image_tag: loading: 'lazy', alt: 'JRNY slide image' }}
+              {%- if section.settings.jrny_default_image != blank -%}
+                {{ section.settings.jrny_default_image | image_url: width: 1200 | image_tag: loading: 'lazy', alt: 'JRNY slide image' }}
               {%- else -%}
                 {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
               {%- endif -%}
@@ -859,8 +720,8 @@ shopify{%- liquid
           </article>
           <article class="swiper-slide pps__slide">
             <div class="pps__slide-image">
-              {%- if pps_jrny_default_image != blank -%}
-                {{ pps_jrny_default_image | image_url: width: 1200 | image_tag: loading: 'lazy', alt: 'JRNY slide image' }}
+              {%- if section.settings.jrny_default_image != blank -%}
+                {{ section.settings.jrny_default_image | image_url: width: 1200 | image_tag: loading: 'lazy', alt: 'JRNY slide image' }}
               {%- else -%}
                 {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
               {%- endif -%}
@@ -870,8 +731,8 @@ shopify{%- liquid
           </article>
           <article class="swiper-slide pps__slide">
             <div class="pps__slide-image">
-              {%- if pps_jrny_default_image != blank -%}
-                {{ pps_jrny_default_image | image_url: width: 1200 | image_tag: loading: 'lazy', alt: 'JRNY slide image' }}
+              {%- if section.settings.jrny_default_image != blank -%}
+                {{ section.settings.jrny_default_image | image_url: width: 1200 | image_tag: loading: 'lazy', alt: 'JRNY slide image' }}
               {%- else -%}
                 {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
               {%- endif -%}
