@@ -95,8 +95,9 @@
         "jrny_slide_DfRBda": {
           "type": "jrny_slide",
           "settings": {
-            "title": "Every day is different.",
-            "text": "Get a custom set of adaptive workouts to freshen up your routine."
+            "image": "shopify://shop_images/maxreact-drive-system-2x.webp",
+            "title": "MaxReact Drive System",
+            "text": "The ultra-responsive Drive System lets you change your pace rapidly without lags or delays. (Available only on the T6 and T9 treadmills)."
           }
         },
         "jrny_slide_GNEjyq": {
@@ -178,7 +179,7 @@
       "custom_css": [
         ".pps__jrny {background: white; color: #1b1b1b;}",
         ".pps__jrny h3,.pps__jrny p {color: #1b1b1b;}",
-        ".swiper-slide-active{opacity: 1 !important;}",
+        ".swiper-slide-active {opacity: 1 !important;}",
         ".swiper-slide {border: none; opacity: 0.4;}"
       ],
       "name": "Colleciton pahe sections",
