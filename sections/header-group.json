@@ -33,6 +33,54 @@
     },
     "header": {
       "type": "header",
+      "blocks": {
+        "mega_menu_item_wKpfhg": {
+          "type": "mega_menu_item",
+          "settings": {
+            "menu_handle": "accessories",
+            "product_1": "bowflex-heart-rate-strap",
+            "product_2": "bowflex-stowable-bench-5-1s",
+            "cta_text": "Shop Accessories",
+            "cta_url": "shopify://collections/accessories-parts"
+          }
+        },
+        "mega_menu_item_AxjBzf": {
+          "type": "mega_menu_item",
+          "settings": {
+            "menu_handle": "weights-and-benches",
+            "product_1": "bowflex-1090i-dumbbell-pair-with-bowflex-stand",
+            "product_2": "bowflex-552i-adjustable-dumbbell-pair",
+            "cta_text": "Shop Weights",
+            "cta_url": "shopify://collections/weights-benches"
+          }
+        },
+        "mega_menu_item_JT3fqL": {
+          "type": "mega_menu_item",
+          "settings": {
+            "menu_handle": "ellipticals",
+            "product_1": "bowflex-max-trainer-m6i",
+            "product_2": "bowflex-max-trainer-total-40",
+            "cta_text": "Shop Ellipticals",
+            "cta_url": "shopify://collections/ellipticals"
+          }
+        },
+        "mega_menu_item_z8hACX": {
+          "type": "mega_menu_item",
+          "settings": {
+            "menu_handle": "treadmills",
+            "product_1": "bowflex-t25-treadmill",
+            "product_2": "bowflex-t56-treadmill",
+            "cta_text": "Shop Treadmills",
+            "cta_url": "shopify://collections/treadmills"
+          }
+        }
+      },
+      "block_order": [
+        "mega_menu_item_wKpfhg",
+        "mega_menu_item_AxjBzf",
+        "mega_menu_item_JT3fqL",
+        "mega_menu_item_z8hACX"
+      ],
       "settings": {
         "logo_position": "middle-center",
         "menu": "main-menu",
