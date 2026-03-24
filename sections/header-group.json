@@ -37,7 +37,7 @@
         "mega_menu_item_wKpfhg": {
           "type": "mega_menu_item",
           "settings": {
-            "menu_handle": "accessories",
+            "menu_handle": "accessories & parts",
             "product_1": "bowflex-heart-rate-strap",
             "product_2": "bowflex-stowable-bench-5-1s",
             "cta_text": "Shop Accessories",
@@ -47,7 +47,7 @@
         "mega_menu_item_AxjBzf": {
           "type": "mega_menu_item",
           "settings": {
-            "menu_handle": "weights-and-benches",
+            "menu_handle": "weights & benches",
             "product_1": "bowflex-1090i-dumbbell-pair-with-bowflex-stand",
             "product_2": "bowflex-552i-adjustable-dumbbell-pair",
             "cta_text": "Shop Weights",
