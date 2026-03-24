@@ -34,6 +34,16 @@
     "header": {
       "type": "header",
       "blocks": {
+        "mega_menu_item_KVf3k7": {
+          "type": "mega_menu_item",
+          "settings": {
+            "menu_handle": "sale",
+            "product_1": "bowflex-8-5j-treadmill",
+            "product_2": "bowflex-t56-treadmill",
+            "cta_text": "Shop Sale",
+            "cta_url": ""
+          }
+        },
         "mega_menu_item_wKpfhg": {
           "type": "mega_menu_item",
           "settings": {
@@ -76,6 +86,7 @@
         }
       },
       "block_order": [
+        "mega_menu_item_KVf3k7",
         "mega_menu_item_wKpfhg",
         "mega_menu_item_AxjBzf",
         "mega_menu_item_JT3fqL",
