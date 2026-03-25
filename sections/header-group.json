@@ -18,8 +18,8 @@
           "type": "announcement",
           "settings": {
             "text": "For a limited time only → Save up to £500!",
-            "link": "#",
-            "button_text": "Shop Now"
+            "link": "shopify://collections/sale",
+            "button_text": "Shop Sale"
           }
         }
       },
