@@ -110,15 +110,15 @@
         "specs_accordion_J8JT9p": {
           "type": "specs_accordion",
           "settings": {
-            "title": "<b>Deck<b></b></b>",
+            "title": "Deck",
             "content": "<p>Cushion System - FlexZone XL </p><p>Deck Thickness - 0.75” / 18 mm</p><p>Running Area - 22” x 60” / 56 cm x 152.4 cm</p><p>Running Belt Thickness - 1.6 mm</p><p>Step On Height - 8.7\" / 22.3 cm</p><p>Lubrication System- Silicone Oil</p><p>Reversible Deck - No<br/></p>"
           }
         },
         "specs_accordion_3n4dKm": {
           "type": "specs_accordion",
           "settings": {
-            "title": "Console",
-            "content": "<p>Add your specification details here.</p>"
+            "title": "<b>Drive System<b></b></b>",
+            "content": "<p>Drive Motor - 3.5 hp*</p><p>Incline Motor - 500lb thrust</p><p>*The stated motor horsepower (HP/CHP is a rating based on measurement in a test setting. It is an indication of the robustness of the motor and does not reflect the operational HP of the motor in use).</p>"
           }
         },
         "specs_accordion_AdCndh": {
