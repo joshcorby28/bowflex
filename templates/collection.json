@@ -116,20 +116,6 @@
             "text": "Roll the right-hand dial to adjust speed and the left-hand dial to change the incline - perfect for fast-paced interval training.  (Available only on the T6 and T9 Treadmills)."
           }
         },
-        "jrny_slide_pHUKgJ": {
-          "type": "jrny_slide",
-          "settings": {
-            "title": "Every day is different.",
-            "text": "Get a custom set of adaptive workouts to freshen up your routine."
-          }
-        },
-        "jrny_slide_tm9g8b": {
-          "type": "jrny_slide",
-          "settings": {
-            "title": "Every day is different.",
-            "text": "Get a custom set of adaptive workouts to freshen up your routine."
-          }
-        },
         "feature_slide_zeGR7f": {
           "type": "feature_slide",
           "settings": {
@@ -175,8 +161,6 @@
         "jrny_slide_DfRBda",
         "jrny_slide_GNEjyq",
         "jrny_slide_Q9mdqp",
-        "jrny_slide_pHUKgJ",
-        "jrny_slide_tm9g8b",
         "feature_slide_zeGR7f",
         "feature_slide_amHNf7",
         "feature_slide_xEFExm",
