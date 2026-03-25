@@ -567,6 +567,14 @@
             "title": "Meet trainers that are just your speed",
             "text": "There's a trainer-led workout for warm-up walks, sprints, hills and everything in between."
           }
+        },
+        "jrny_slide_NDyVFF": {
+          "type": "jrny_slide",
+          "settings": {
+            "image": "shopify://shop_images/t9-jrny-metrics-tracking-bg-2x.webp",
+            "title": "Celebrate your success",
+            "text": "Data and performance tracking show you just how far you've come."
+          }
         }
       },
       "block_order": [
@@ -591,7 +599,8 @@
         "jrny_slide_MnmhUB",
         "jrny_slide_hCY6Ek",
         "jrny_slide_Jq3WbE",
-        "jrny_slide_KTYTfc"
+        "jrny_slide_KTYTfc",
+        "jrny_slide_NDyVFF"
       ],
       "settings": {
         "dark_color_scheme": "scheme-1",
