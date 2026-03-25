@@ -7,6 +7,10 @@
   assign app_icons = section.blocks | where: 'type', 'app_icon'
   assign fallback_accordion_titles = 'Console,Deck,Drive System,Frame,Technical Specs' | split: ','
   assign fallback_training_video_url = section.settings.fallback_training_video_url
+  assign training_position = section.settings.training_position | default: 1 | plus: 0
+  assign fitness_position = section.settings.fitness_position | default: 2 | plus: 0
+  assign specs_position = section.settings.specs_position | default: 3 | plus: 0
+  assign membership_position = section.settings.membership_position | default: 4 | plus: 0
 -%}
 
 {%- style -%}
@@ -430,336 +434,348 @@
   }
 {%- endstyle -%}
 
-<section class="pps color-{{ section.settings.dark_color_scheme }}" data-section-id="{{ section.id }}">
-  <div class="pps__wrap page-width">
-    <h2 class="pps__title">{{ section.settings.training_heading }}</h2>
-    <p class="pps__subtitle">{{ section.settings.training_subheading }}</p>
+<div class="pps-sections" data-section-id="{{ section.id }}">
+  {%- for index in (1..4) -%}
+    {%- if section.settings.show_training and training_position == index -%}
+      <section class="pps color-{{ section.settings.dark_color_scheme }}" data-section-id="{{ section.id }}">
+        <div class="pps__wrap page-width">
+          <h2 class="pps__title">{{ section.settings.training_heading }}</h2>
+          <p class="pps__subtitle">{{ section.settings.training_subheading }}</p>
 
-    <div class="pps__training" data-training-tabs>
-      <div class="pps__training-tabs" role="tablist" aria-label="{{ section.settings.training_heading | escape }}">
-        {%- if training_tabs.size > 0 -%}
-          {%- for block in training_tabs -%}
-            <button
-              type="button"
-              class="pps__tab{% if forloop.first %} is-active{% endif %}"
-              role="tab"
-              aria-selected="{% if forloop.first %}true{% else %}false{% endif %}"
-              aria-controls="pps-video-{{ section.id }}-{{ block.id }}"
-              id="pps-tab-{{ section.id }}-{{ block.id }}"
-              data-panel-id="pps-video-{{ section.id }}-{{ block.id }}"
-              {{ block.shopify_attributes }}
-            >
-              <span class="pps__tab-thumb">
-                {%- if block.settings.tab_thumbnail != blank -%}
-                  {{ block.settings.tab_thumbnail | image_url: width: 220 | image_tag: loading: 'lazy', alt: block.settings.tab_title }}
-                {%- endif -%}
-              </span>
-              <span class="pps__tab-copy">{{ block.settings.tab_title }}</span>
-            </button>
-          {%- endfor -%}
-        {%- else -%}
-          <button type="button" class="pps__tab is-active" role="tab" aria-selected="true" data-panel-id="pps-video-{{ section.id }}-fallback-1">
-            <span class="pps__tab-thumb">
-              {%- if section.settings.fallback_training_tab_image_1 != blank -%}
-                {{ section.settings.fallback_training_tab_image_1 | image_url: width: 220 | image_tag: loading: 'lazy', alt: section.settings.fallback_training_tab_title_1 }}
-              {%- endif -%}
-            </span>
-            <span class="pps__tab-copy">{{ section.settings.fallback_training_tab_title_1 }}</span>
-          </button>
-          <button type="button" class="pps__tab" role="tab" aria-selected="false" data-panel-id="pps-video-{{ section.id }}-fallback-2">
-            <span class="pps__tab-thumb">
-              {%- if section.settings.fallback_training_tab_image_2 != blank -%}
-                {{ section.settings.fallback_training_tab_image_2 | image_url: width: 220 | image_tag: loading: 'lazy', alt: section.settings.fallback_training_tab_title_2 }}
-              {%- endif -%}
-            </span>
-            <span class="pps__tab-copy">{{ section.settings.fallback_training_tab_title_2 }}</span>
-          </button>
-        {%- endif -%}
-      </div>
-
-      <div class="pps__training-media">
-        {%- if training_tabs.size > 0 -%}
-          {%- for block in training_tabs -%}
-            <div
-              class="pps__video-panel{% if forloop.first %} is-active{% endif %}"
-              id="pps-video-{{ section.id }}-{{ block.id }}"
-              role="tabpanel"
-              aria-labelledby="pps-tab-{{ section.id }}-{{ block.id }}"
-              {% unless forloop.first %}hidden{% endunless %}
-            >
-              <div class="pps__media-shell">
-                {%- if block.settings.video_embed_url != blank -%}
-                  {%- if block.settings.video_embed_url contains '.mp4' -%}
-                    <video controls playsinline preload="metadata">
-                      <source src="{{ block.settings.video_embed_url }}" type="video/mp4">
-                    </video>
-                  {%- else -%}
-                    <iframe
-                      src="{{ block.settings.video_embed_url }}"
-                      title="{{ block.settings.tab_title | escape }}"
-                      loading="lazy"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowfullscreen
-                    ></iframe>
-                  {%- endif -%}
-                {%- elsif block.settings.video_poster != blank -%}
-                  {{ block.settings.video_poster | image_url: width: 1500 | image_tag: loading: 'lazy', alt: block.settings.tab_title }}
-                {%- else -%}
-                  <video controls playsinline preload="metadata">
-                    <source src="{{ fallback_training_video_url }}" type="video/mp4">
-                  </video>
-                {%- endif -%}
-              </div>
-            </div>
-          {%- endfor -%}
-        {%- else -%}
-          <div class="pps__video-panel is-active" id="pps-video-{{ section.id }}-fallback-1" role="tabpanel">
-            <div class="pps__media-shell">
-              {%- if fallback_training_video_url != blank -%}
-                <video controls playsinline preload="metadata">
-                  <source src="{{ fallback_training_video_url }}" type="video/mp4">
-                </video>
-              {%- else -%}
-                {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
-              {%- endif -%}
-            </div>
-          </div>
-          <div class="pps__video-panel" id="pps-video-{{ section.id }}-fallback-2" role="tabpanel" hidden>
-            <div class="pps__media-shell">
-              {%- if fallback_training_video_url != blank -%}
-                <video controls playsinline preload="metadata">
-                  <source src="{{ fallback_training_video_url }}" type="video/mp4">
-                </video>
-              {%- else -%}
-                {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
-              {%- endif -%}
-            </div>
-          </div>
-        {%- endif -%}
-      </div>
-    </div>
-  </div>
-
-  <div class="pps__fitness color-{{ section.settings.dark_color_scheme }}">
-    <div class="pps__wrap page-width">
-      <h2 class="pps__title">{{ section.settings.fitness_heading }}</h2>
-      <p class="pps__subtitle">{{ section.settings.fitness_subheading }}</p>
-
-      <div class="pps__fitness-grid">
-        <article class="pps__fitness-card">
-          <div class="pps__image-shell">
-            {%- if section.settings.fitness_left_image != blank -%}
-              {{ section.settings.fitness_left_image | image_url: width: 1100 | image_tag: loading: 'lazy', alt: section.settings.fitness_left_title }}
-            {%- else -%}
-              Fitness image
-            {%- endif -%}
-          </div>
-          <div class="pps__fitness-copy">
-            <h3>{{ section.settings.fitness_left_title }}</h3>
-            <p>{{ section.settings.fitness_left_text }}</p>
-            <div class="pps__pill-row">
-              <span class="pps__pill">{{ section.settings.fitness_left_pill_1 }}</span>
-              <span class="pps__pill">{{ section.settings.fitness_left_pill_2 }}</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="pps__fitness-card">
-          <div class="pps__image-shell">
-            {%- if section.settings.fitness_right_image != blank -%}
-              {{ section.settings.fitness_right_image | image_url: width: 1100 | image_tag: loading: 'lazy', alt: section.settings.fitness_right_title }}
-            {%- else -%}
-              Touchscreen image
-            {%- endif -%}
-          </div>
-          <div class="pps__fitness-copy">
-            <h3>{{ section.settings.fitness_right_title }}</h3>
-            <p>{{ section.settings.fitness_right_text }}</p>
-            <div class="pps__app-icons">
-              {%- if app_icons.size > 0 -%}
-                {%- for block in app_icons -%}
-                  {%- if block.settings.icon_image != blank -%}
-                    {{ block.settings.icon_image | image_url: width: 48 | image_tag: loading: 'lazy', width: 24, height: 24, alt: block.settings.icon_alt }}
-                  {%- endif -%}
+          <div class="pps__training" data-training-tabs>
+            <div class="pps__training-tabs" role="tablist" aria-label="{{ section.settings.training_heading | escape }}">
+              {%- if training_tabs.size > 0 -%}
+                {%- for block in training_tabs -%}
+                  <button
+                    type="button"
+                    class="pps__tab{% if forloop.first %} is-active{% endif %}"
+                    role="tab"
+                    aria-selected="{% if forloop.first %}true{% else %}false{% endif %}"
+                    aria-controls="pps-video-{{ section.id }}-{{ block.id }}"
+                    id="pps-tab-{{ section.id }}-{{ block.id }}"
+                    data-panel-id="pps-video-{{ section.id }}-{{ block.id }}"
+                    {{ block.shopify_attributes }}
+                  >
+                    <span class="pps__tab-thumb">
+                      {%- if block.settings.tab_thumbnail != blank -%}
+                        {{ block.settings.tab_thumbnail | image_url: width: 220 | image_tag: loading: 'lazy', alt: block.settings.tab_title }}
+                      {%- endif -%}
+                    </span>
+                    <span class="pps__tab-copy">{{ block.settings.tab_title }}</span>
+                  </button>
                 {%- endfor -%}
+              {%- else -%}
+                <button type="button" class="pps__tab is-active" role="tab" aria-selected="true" data-panel-id="pps-video-{{ section.id }}-fallback-1">
+                  <span class="pps__tab-thumb">
+                    {%- if section.settings.fallback_training_tab_image_1 != blank -%}
+                      {{ section.settings.fallback_training_tab_image_1 | image_url: width: 220 | image_tag: loading: 'lazy', alt: section.settings.fallback_training_tab_title_1 }}
+                    {%- endif -%}
+                  </span>
+                  <span class="pps__tab-copy">{{ section.settings.fallback_training_tab_title_1 }}</span>
+                </button>
+                <button type="button" class="pps__tab" role="tab" aria-selected="false" data-panel-id="pps-video-{{ section.id }}-fallback-2">
+                  <span class="pps__tab-thumb">
+                    {%- if section.settings.fallback_training_tab_image_2 != blank -%}
+                      {{ section.settings.fallback_training_tab_image_2 | image_url: width: 220 | image_tag: loading: 'lazy', alt: section.settings.fallback_training_tab_title_2 }}
+                    {%- endif -%}
+                  </span>
+                  <span class="pps__tab-copy">{{ section.settings.fallback_training_tab_title_2 }}</span>
+                </button>
+              {%- endif -%}
+            </div>
+
+            <div class="pps__training-media">
+              {%- if training_tabs.size > 0 -%}
+                {%- for block in training_tabs -%}
+                  <div
+                    class="pps__video-panel{% if forloop.first %} is-active{% endif %}"
+                    id="pps-video-{{ section.id }}-{{ block.id }}"
+                    role="tabpanel"
+                    aria-labelledby="pps-tab-{{ section.id }}-{{ block.id }}"
+                    {% unless forloop.first %}hidden{% endunless %}
+                  >
+                    <div class="pps__media-shell">
+                      {%- if block.settings.video_embed_url != blank -%}
+                        {%- if block.settings.video_embed_url contains '.mp4' -%}
+                          <video controls playsinline preload="metadata">
+                            <source src="{{ block.settings.video_embed_url }}" type="video/mp4">
+                          </video>
+                        {%- else -%}
+                          <iframe
+                            src="{{ block.settings.video_embed_url }}"
+                            title="{{ block.settings.tab_title | escape }}"
+                            loading="lazy"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                          ></iframe>
+                        {%- endif -%}
+                      {%- elsif block.settings.video_poster != blank -%}
+                        {{ block.settings.video_poster | image_url: width: 1500 | image_tag: loading: 'lazy', alt: block.settings.tab_title }}
+                      {%- else -%}
+                        <video controls playsinline preload="metadata">
+                          <source src="{{ fallback_training_video_url }}" type="video/mp4">
+                        </video>
+                      {%- endif -%}
+                    </div>
+                  </div>
+                {%- endfor -%}
+              {%- else -%}
+                <div class="pps__video-panel is-active" id="pps-video-{{ section.id }}-fallback-1" role="tabpanel">
+                  <div class="pps__media-shell">
+                    {%- if fallback_training_video_url != blank -%}
+                      <video controls playsinline preload="metadata">
+                        <source src="{{ fallback_training_video_url }}" type="video/mp4">
+                      </video>
+                    {%- else -%}
+                      {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
+                    {%- endif -%}
+                  </div>
+                </div>
+                <div class="pps__video-panel" id="pps-video-{{ section.id }}-fallback-2" role="tabpanel" hidden>
+                  <div class="pps__media-shell">
+                    {%- if fallback_training_video_url != blank -%}
+                      <video controls playsinline preload="metadata">
+                        <source src="{{ fallback_training_video_url }}" type="video/mp4">
+                      </video>
+                    {%- else -%}
+                      {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
+                    {%- endif -%}
+                  </div>
+                </div>
               {%- endif -%}
             </div>
           </div>
-        </article>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="pps pps__specs color-{{ section.settings.light_color_scheme }}" data-section-id="{{ section.id }}">
-  <div class="pps__wrap page-width">
-    <h2 class="pps__title">{{ section.settings.specs_heading }}</h2>
-    <p class="pps__subtitle">{{ section.settings.specs_subheading }}</p>
-
-    <div class="pps__specs-grid">
-      <div class="pps__image-shell">
-        {%- if section.settings.spec_image_1 != blank -%}
-          {{ section.settings.spec_image_1 | image_url: width: 1000 | image_tag: loading: 'lazy', alt: section.settings.spec_image_1_alt }}
-        {%- else -%}
-          Open position image
-        {%- endif -%}
-      </div>
-      <div class="pps__image-shell">
-        {%- if section.settings.spec_image_2 != blank -%}
-          {{ section.settings.spec_image_2 | image_url: width: 1000 | image_tag: loading: 'lazy', alt: section.settings.spec_image_2_alt }}
-        {%- else -%}
-          Folded position image
-        {%- endif -%}
-      </div>
-
-      <div class="pps__spec-columns">
-        <div class="pps__spec-group">
-          <h3>{{ section.settings.specs_group_heading }}</h3>
-          <ul class="pps__spec-list">
-            {%- if spec_metrics.size > 0 -%}
-              {%- for block in spec_metrics -%}
-                <li class="pps__spec-item" {{ block.shopify_attributes }}>
-                  <strong>{{ block.settings.label }}</strong>
-                  <span>{{ block.settings.value }}</span>
-                </li>
-              {%- endfor -%}
-            {%- else -%}
-              <li class="pps__spec-item"><strong>Dimensions</strong><span>77.2” L × 35.2” W × 67.6” H</span></li>
-              <li class="pps__spec-item"><strong>Console</strong><span>16” HD Touchscreen</span></li>
-              <li class="pps__spec-item"><strong>Product Weight</strong><span>293 lbs</span></li>
-              <li class="pps__spec-item"><strong>Max User Weight</strong><span>375 lbs</span></li>
-            {%- endif -%}
-          </ul>
         </div>
+      </section>
+    {%- endif -%}
 
-        <div class="pps__spec-group">
-          <h3>{{ section.settings.warranty_group_heading }}</h3>
-          <ul class="pps__spec-list">
-            {%- if warranty_metrics.size > 0 -%}
-              {%- for block in warranty_metrics -%}
-                <li class="pps__spec-item" {{ block.shopify_attributes }}>
-                  <strong>{{ block.settings.label }}</strong>
-                  <span>{{ block.settings.value }}</span>
-                </li>
-              {%- endfor -%}
-            {%- else -%}
-              <li class="pps__spec-item"><strong>Frame & Motor</strong><span>Lifetime</span></li>
-              <li class="pps__spec-item"><strong>Mechanical Parts</strong><span>3 Years</span></li>
-              <li class="pps__spec-item"><strong>Labor</strong><span>1 Year</span></li>
-            {%- endif -%}
-          </ul>
-        </div>
-      </div>
-    </div>
+    {%- if section.settings.show_fitness and fitness_position == index -%}
+      <section class="pps__fitness color-{{ section.settings.dark_color_scheme }}" data-section-id="{{ section.id }}">
+        <div class="pps__wrap page-width">
+          <h2 class="pps__title">{{ section.settings.fitness_heading }}</h2>
+          <p class="pps__subtitle">{{ section.settings.fitness_subheading }}</p>
 
-    <h3 class="pps__title" style="font-size:2.2rem; margin-bottom: 14px;">{{ section.settings.additional_specs_heading }}</h3>
-    <div class="pps__accordion" data-accordion>
-      {%- if accordion_rows.size > 0 -%}
-        {%- for block in accordion_rows -%}
-          <div class="pps__accordion-row" {{ block.shopify_attributes }}>
-            <button
-              class="pps__accordion-trigger"
-              type="button"
-              aria-expanded="false"
-              aria-controls="pps-accordion-{{ section.id }}-{{ block.id }}"
-              id="pps-accordion-trigger-{{ section.id }}-{{ block.id }}"
-            >
-              <span>{{ block.settings.title }}</span>
-              <span class="pps__accordion-plus">+</span>
-            </button>
-            <div class="pps__accordion-content" id="pps-accordion-{{ section.id }}-{{ block.id }}" role="region" aria-labelledby="pps-accordion-trigger-{{ section.id }}-{{ block.id }}">
-              {{ block.settings.content }}
-            </div>
-          </div>
-        {%- endfor -%}
-      {%- else -%}
-        {%- for item in fallback_accordion_titles -%}
-          <div class="pps__accordion-row">
-            <button class="pps__accordion-trigger" type="button" aria-expanded="false">
-              <span>{{ item }}</span>
-              <span class="pps__accordion-plus">+</span>
-            </button>
-            <div class="pps__accordion-content">Add details from Theme Editor.</div>
-          </div>
-        {%- endfor -%}
-      {%- endif -%}
-    </div>
-  </div>
-</section>
-
-<section class="pps pps__jrny color-{{ section.settings.dark_color_scheme }}" data-section-id="{{ section.id }}">
-  <div class="pps__wrap page-width">
-    <div class="pps__slider-head">
-      <div>
-        <h2 class="pps__title">{{ section.settings.membership_heading }}</h2>
-        <p class="pps__subtitle">{{ section.settings.membership_subheading }}</p>
-      </div>
-
-      <div class="pps__slider-nav">
-        <button class="pps__arrow pps__jrny-prev-{{ section.id }}" type="button" aria-label="Previous slide">‹</button>
-        <button class="pps__arrow pps__jrny-next-{{ section.id }}" type="button" aria-label="Next slide">›</button>
-      </div>
-    </div>
-
-    <div class="swiper pps__jrny-swiper pps__jrny-swiper-{{ section.id }}">
-      <div class="swiper-wrapper">
-        {%- if jrny_slides.size > 0 -%}
-          {%- for block in jrny_slides -%}
-            <article class="swiper-slide pps__slide" {{ block.shopify_attributes }}>
-              <div class="pps__slide-image">
-                {%- if block.settings.image != blank -%}
-                  {{ block.settings.image | image_url: width: 1200 | image_tag: loading: 'lazy', alt: block.settings.title }}
-                {%- elsif section.settings.jrny_default_image != blank -%}
-                  {{ section.settings.jrny_default_image | image_url: width: 1200 | image_tag: loading: 'lazy', alt: block.settings.title }}
+          <div class="pps__fitness-grid">
+            <article class="pps__fitness-card">
+              <div class="pps__image-shell">
+                {%- if section.settings.fitness_left_image != blank -%}
+                  {{ section.settings.fitness_left_image | image_url: width: 1100 | image_tag: loading: 'lazy', alt: section.settings.fitness_left_title }}
                 {%- else -%}
-                  {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+                  Fitness image
                 {%- endif -%}
               </div>
-              <h3>{{ block.settings.title }}</h3>
-              <p>{{ block.settings.text }}</p>
+              <div class="pps__fitness-copy">
+                <h3>{{ section.settings.fitness_left_title }}</h3>
+                <p>{{ section.settings.fitness_left_text }}</p>
+                <div class="pps__pill-row">
+                  <span class="pps__pill">{{ section.settings.fitness_left_pill_1 }}</span>
+                  <span class="pps__pill">{{ section.settings.fitness_left_pill_2 }}</span>
+                </div>
+              </div>
             </article>
-          {%- endfor -%}
-        {%- else -%}
-          <article class="swiper-slide pps__slide">
-            <div class="pps__slide-image">
-              {%- if section.settings.jrny_default_image != blank -%}
-                {{ section.settings.jrny_default_image | image_url: width: 1200 | image_tag: loading: 'lazy', alt: 'JRNY slide image' }}
-              {%- else -%}
-                {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
-              {%- endif -%}
-            </div>
-            <h3>Every day is different.</h3>
-            <p>Get adaptive workouts that keep your routine fresh.</p>
-          </article>
-          <article class="swiper-slide pps__slide">
-            <div class="pps__slide-image">
-              {%- if section.settings.jrny_default_image != blank -%}
-                {{ section.settings.jrny_default_image | image_url: width: 1200 | image_tag: loading: 'lazy', alt: 'JRNY slide image' }}
-              {%- else -%}
-                {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
-              {%- endif -%}
-            </div>
-            <h3>Go ahead, pick up the pace.</h3>
-            <p>Virtual coaching provides guidance and encouragement.</p>
-          </article>
-          <article class="swiper-slide pps__slide">
-            <div class="pps__slide-image">
-              {%- if section.settings.jrny_default_image != blank -%}
-                {{ section.settings.jrny_default_image | image_url: width: 1200 | image_tag: loading: 'lazy', alt: 'JRNY slide image' }}
-              {%- else -%}
-                {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
-              {%- endif -%}
-            </div>
-            <h3>Roam if you want.</h3>
-            <p>Explore the world while you train.</p>
-          </article>
-        {%- endif -%}
-      </div>
-    </div>
 
-    <div class="pps__dots pps__jrny-pagination-{{ section.id }}"></div>
-  </div>
-</section>
+            <article class="pps__fitness-card">
+              <div class="pps__image-shell">
+                {%- if section.settings.fitness_right_image != blank -%}
+                  {{ section.settings.fitness_right_image | image_url: width: 1100 | image_tag: loading: 'lazy', alt: section.settings.fitness_right_title }}
+                {%- else -%}
+                  Touchscreen image
+                {%- endif -%}
+              </div>
+              <div class="pps__fitness-copy">
+                <h3>{{ section.settings.fitness_right_title }}</h3>
+                <p>{{ section.settings.fitness_right_text }}</p>
+                <div class="pps__app-icons">
+                  {%- if app_icons.size > 0 -%}
+                    {%- for block in app_icons -%}
+                      {%- if block.settings.icon_image != blank -%}
+                        {{ block.settings.icon_image | image_url: width: 48 | image_tag: loading: 'lazy', width: 24, height: 24, alt: block.settings.icon_alt }}
+                      {%- endif -%}
+                    {%- endfor -%}
+                  {%- endif -%}
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    {%- endif -%}
+
+    {%- if section.settings.show_specs and specs_position == index -%}
+      <section class="pps pps__specs color-{{ section.settings.light_color_scheme }}" data-section-id="{{ section.id }}">
+        <div class="pps__wrap page-width">
+          <h2 class="pps__title">{{ section.settings.specs_heading }}</h2>
+          <p class="pps__subtitle">{{ section.settings.specs_subheading }}</p>
+
+          <div class="pps__specs-grid">
+            <div class="pps__image-shell">
+              {%- if section.settings.spec_image_1 != blank -%}
+                {{ section.settings.spec_image_1 | image_url: width: 1000 | image_tag: loading: 'lazy', alt: section.settings.spec_image_1_alt }}
+              {%- else -%}
+                Open position image
+              {%- endif -%}
+            </div>
+            <div class="pps__image-shell">
+              {%- if section.settings.spec_image_2 != blank -%}
+                {{ section.settings.spec_image_2 | image_url: width: 1000 | image_tag: loading: 'lazy', alt: section.settings.spec_image_2_alt }}
+              {%- else -%}
+                Folded position image
+              {%- endif -%}
+            </div>
+
+            <div class="pps__spec-columns">
+              <div class="pps__spec-group">
+                <h3>{{ section.settings.specs_group_heading }}</h3>
+                <ul class="pps__spec-list">
+                  {%- if spec_metrics.size > 0 -%}
+                    {%- for block in spec_metrics -%}
+                      <li class="pps__spec-item" {{ block.shopify_attributes }}>
+                        <strong>{{ block.settings.label }}</strong>
+                        <span>{{ block.settings.value }}</span>
+                      </li>
+                    {%- endfor -%}
+                  {%- else -%}
+                    <li class="pps__spec-item"><strong>Dimensions</strong><span>77.2” L × 35.2” W × 67.6” H</span></li>
+                    <li class="pps__spec-item"><strong>Console</strong><span>16” HD Touchscreen</span></li>
+                    <li class="pps__spec-item"><strong>Product Weight</strong><span>293 lbs</span></li>
+                    <li class="pps__spec-item"><strong>Max User Weight</strong><span>375 lbs</span></li>
+                  {%- endif -%}
+                </ul>
+              </div>
+
+              <div class="pps__spec-group">
+                <h3>{{ section.settings.warranty_group_heading }}</h3>
+                <ul class="pps__spec-list">
+                  {%- if warranty_metrics.size > 0 -%}
+                    {%- for block in warranty_metrics -%}
+                      <li class="pps__spec-item" {{ block.shopify_attributes }}>
+                        <strong>{{ block.settings.label }}</strong>
+                        <span>{{ block.settings.value }}</span>
+                      </li>
+                    {%- endfor -%}
+                  {%- else -%}
+                    <li class="pps__spec-item"><strong>Frame & Motor</strong><span>Lifetime</span></li>
+                    <li class="pps__spec-item"><strong>Mechanical Parts</strong><span>3 Years</span></li>
+                    <li class="pps__spec-item"><strong>Labor</strong><span>1 Year</span></li>
+                  {%- endif -%}
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="pps__title" style="font-size:2.2rem; margin-bottom: 14px;">{{ section.settings.additional_specs_heading }}</h3>
+          <div class="pps__accordion" data-accordion>
+            {%- if accordion_rows.size > 0 -%}
+              {%- for block in accordion_rows -%}
+                <div class="pps__accordion-row" {{ block.shopify_attributes }}>
+                  <button
+                    class="pps__accordion-trigger"
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="pps-accordion-{{ section.id }}-{{ block.id }}"
+                    id="pps-accordion-trigger-{{ section.id }}-{{ block.id }}"
+                  >
+                    <span>{{ block.settings.title }}</span>
+                    <span class="pps__accordion-plus">+</span>
+                  </button>
+                  <div class="pps__accordion-content" id="pps-accordion-{{ section.id }}-{{ block.id }}" role="region" aria-labelledby="pps-accordion-trigger-{{ section.id }}-{{ block.id }}">
+                    {{ block.settings.content }}
+                  </div>
+                </div>
+              {%- endfor -%}
+            {%- else -%}
+              {%- for item in fallback_accordion_titles -%}
+                <div class="pps__accordion-row">
+                  <button class="pps__accordion-trigger" type="button" aria-expanded="false">
+                    <span>{{ item }}</span>
+                    <span class="pps__accordion-plus">+</span>
+                  </button>
+                  <div class="pps__accordion-content">Add details from Theme Editor.</div>
+                </div>
+              {%- endfor -%}
+            {%- endif -%}
+          </div>
+        </div>
+      </section>
+    {%- endif -%}
+
+    {%- if section.settings.show_membership and membership_position == index -%}
+      <section class="pps pps__jrny color-{{ section.settings.dark_color_scheme }}" data-section-id="{{ section.id }}">
+        <div class="pps__wrap page-width">
+          <div class="pps__slider-head">
+            <div>
+              <h2 class="pps__title">{{ section.settings.membership_heading }}</h2>
+              <p class="pps__subtitle">{{ section.settings.membership_subheading }}</p>
+            </div>
+
+            <div class="pps__slider-nav">
+              <button class="pps__arrow pps__jrny-prev-{{ section.id }}" type="button" aria-label="Previous slide">‹</button>
+              <button class="pps__arrow pps__jrny-next-{{ section.id }}" type="button" aria-label="Next slide">›</button>
+            </div>
+          </div>
+
+          <div class="swiper pps__jrny-swiper pps__jrny-swiper-{{ section.id }}">
+            <div class="swiper-wrapper">
+              {%- if jrny_slides.size > 0 -%}
+                {%- for block in jrny_slides -%}
+                  <article class="swiper-slide pps__slide" {{ block.shopify_attributes }}>
+                    <div class="pps__slide-image">
+                      {%- if block.settings.image != blank -%}
+                        {{ block.settings.image | image_url: width: 1200 | image_tag: loading: 'lazy', alt: block.settings.title }}
+                      {%- elsif section.settings.jrny_default_image != blank -%}
+                        {{ section.settings.jrny_default_image | image_url: width: 1200 | image_tag: loading: 'lazy', alt: block.settings.title }}
+                      {%- else -%}
+                        {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+                      {%- endif -%}
+                    </div>
+                    <h3>{{ block.settings.title }}</h3>
+                    <p>{{ block.settings.text }}</p>
+                  </article>
+                {%- endfor -%}
+              {%- else -%}
+                <article class="swiper-slide pps__slide">
+                  <div class="pps__slide-image">
+                    {%- if section.settings.jrny_default_image != blank -%}
+                      {{ section.settings.jrny_default_image | image_url: width: 1200 | image_tag: loading: 'lazy', alt: 'JRNY slide image' }}
+                    {%- else -%}
+                      {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+                    {%- endif -%}
+                  </div>
+                  <h3>Every day is different.</h3>
+                  <p>Get adaptive workouts that keep your routine fresh.</p>
+                </article>
+                <article class="swiper-slide pps__slide">
+                  <div class="pps__slide-image">
+                    {%- if section.settings.jrny_default_image != blank -%}
+                      {{ section.settings.jrny_default_image | image_url: width: 1200 | image_tag: loading: 'lazy', alt: 'JRNY slide image' }}
+                    {%- else -%}
+                      {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+                    {%- endif -%}
+                  </div>
+                  <h3>Go ahead, pick up the pace.</h3>
+                  <p>Virtual coaching provides guidance and encouragement.</p>
+                </article>
+                <article class="swiper-slide pps__slide">
+                  <div class="pps__slide-image">
+                    {%- if section.settings.jrny_default_image != blank -%}
+                      {{ section.settings.jrny_default_image | image_url: width: 1200 | image_tag: loading: 'lazy', alt: 'JRNY slide image' }}
+                    {%- else -%}
+                      {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+                    {%- endif -%}
+                  </div>
+                  <h3>Roam if you want.</h3>
+                  <p>Explore the world while you train.</p>
+                </article>
+              {%- endif -%}
+            </div>
+          </div>
+
+          <div class="pps__dots pps__jrny-pagination-{{ section.id }}"></div>
+        </div>
+      </section>
+    {%- endif -%}
+  {%- endfor -%}
+</div>
 
 <script>
   (() => {
@@ -856,6 +872,21 @@
       "content": "Training section"
     },
     {
+      "type": "checkbox",
+      "id": "show_training",
+      "label": "Show training section",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "training_position",
+      "label": "Training section position",
+      "min": 1,
+      "max": 4,
+      "step": 1,
+      "default": 1
+    },
+    {
       "type": "text",
       "id": "training_heading",
       "label": "Training heading",
@@ -897,6 +928,21 @@
     {
       "type": "header",
       "content": "Entertainment + fitness section"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_fitness",
+      "label": "Show entertainment + fitness section",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "fitness_position",
+      "label": "Entertainment + fitness section position",
+      "min": 1,
+      "max": 4,
+      "step": 1,
+      "default": 2
     },
     {
       "type": "text",
@@ -961,6 +1007,21 @@
       "content": "Specs + warranty section"
     },
     {
+      "type": "checkbox",
+      "id": "show_specs",
+      "label": "Show specs + warranty section",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "specs_position",
+      "label": "Specs + warranty section position",
+      "min": 1,
+      "max": 4,
+      "step": 1,
+      "default": 3
+    },
+    {
       "type": "text",
       "id": "specs_heading",
       "label": "Specs heading",
@@ -1015,6 +1076,21 @@
     {
       "type": "header",
       "content": "JRNY membership section"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_membership",
+      "label": "Show JRNY membership section",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "membership_position",
+      "label": "JRNY membership section position",
+      "min": 1,
+      "max": 4,
+      "step": 1,
+      "default": 4
     },
     {
       "type": "text",
