@@ -100,6 +100,41 @@
     "product_page_sections_nx3K7M": {
       "type": "product-page-sections",
       "blocks": {
+        "specs_accordion_keQ8qV": {
+          "type": "specs_accordion",
+          "settings": {
+            "title": "Console",
+            "content": "<p>Bluetooth Hardware - BT 4.0LE</p><p>Bluetooth Capabilities - FTMS, Speakers and Heart Rate</p><p>Bluetooth FTMS App Compatible - Yes</p><p>Apple + Samsung Watch Compatible - Yes</p><p>Heartrate - Contact Grips and Bluetooth</p><p>Bluetooth Media Control Keys - Yes (volume, backward / forward, play / pause</p><p>Display Type - 19.4 x 7.83cm / 7.6\" x 3\" Colour LCD + 5 White LED window</p><p>Display Feedback - Time, Distance, Calories, Speed, Incline, Pace, Laps, Heart Rate, Split Timer</p><p>Programs - Manual, Distance, Record, Hill Sprint, Fat Burn, Hill Climb, My First 5K, Custom, Custom Heart Rate, Sprint 8</p><p>Energy Saver - Yes</p><p>One-Button Quick Start - Yes</p><p>Pause Button - Yes</p><p>Button Type - Membrane</p><p>Incline Range - 0-15%</p><p>Speed Range - 0.5-12mph</p><p>Storage Features - Mobile Device Holder, Accessory Tray</p><p>Reading Rack - Integrated into console</p><p>Personal Fan - 2 (3 speed)</p><p>Speakers - 5 Watt Stereo Speakers</p><p>USB Port - Yes (USB A)</p>"
+          }
+        },
+        "specs_accordion_J8JT9p": {
+          "type": "specs_accordion",
+          "settings": {
+            "title": "Console",
+            "content": "<p>Add your specification details here.</p>"
+          }
+        },
+        "specs_accordion_3n4dKm": {
+          "type": "specs_accordion",
+          "settings": {
+            "title": "Console",
+            "content": "<p>Add your specification details here.</p>"
+          }
+        },
+        "specs_accordion_AdCndh": {
+          "type": "specs_accordion",
+          "settings": {
+            "title": "Console",
+            "content": "<p>Add your specification details here.</p>"
+          }
+        },
+        "specs_accordion_67FNHH": {
+          "type": "specs_accordion",
+          "settings": {
+            "title": "Console",
+            "content": "<p>Add your specification details here.</p>"
+          }
+        },
         "spec_metric_xUctmp": {
           "type": "spec_metric",
           "settings": {
@@ -221,6 +256,11 @@
         }
       },
       "block_order": [
+        "specs_accordion_keQ8qV",
+        "specs_accordion_J8JT9p",
+        "specs_accordion_3n4dKm",
+        "specs_accordion_AdCndh",
+        "specs_accordion_67FNHH",
         "spec_metric_xUctmp",
         "spec_metric_CPtxfc",
         "spec_metric_tTXENK",
