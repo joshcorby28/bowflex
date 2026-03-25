@@ -63,7 +63,7 @@
       "type": "custom-liquid",
       "name": "t:sections.custom-liquid.presets.name",
       "settings": {
-        "custom_liquid": "<div class=\"apr-message\">\n<div class=\"apr-inner page-width\">\n<h3>  Limited time: Save $300 on our Newest Treadmills!</h3\n</div>\n</div>\n\n<style>\n.apr-message {\nbackground:#000;\npadding: 10px;\ntext-align:center;\n}\n\n.apr-message h3 {\ncolor:white;\ntext-underline-offset: 8px;\n}\n</style>",
+        "custom_liquid": "<div class=\"apr-message\">\n<div class=\"apr-inner page-width\">\n<h3>  Limited time: Save £300 on our Newest Treadmills!</h3\n</div>\n</div>\n\n<style>\n.apr-message {\nbackground:#000;\npadding: 10px;\ntext-align:center;\n}\n\n.apr-message h3 {\ncolor:white;\ntext-underline-offset: 8px;\n}\n</style>",
         "color_scheme": "",
         "padding_top": 0,
         "padding_bottom": 52
@@ -133,8 +133,9 @@
         "feature_slide_zeGR7f": {
           "type": "feature_slide",
           "settings": {
-            "title": "Built for performance.",
-            "text": "Highlight key collection benefits in this feature slider."
+            "image": "shopify://shop_images/jrny-on-demand-videos-0123-2x.webp",
+            "title": "Trainer Led Workouts",
+            "text": "Find an instructor for every mood, every fitness level."
           }
         },
         "feature_slide_amHNf7": {
@@ -190,8 +191,8 @@
         "membership_heading": "Dial in your metrics. Dial in your run.",
         "membership_subheading": "",
         "jrny_default_image": "shopify://shop_images/quickdial-controls-2x.webp",
-        "features_heading": "Features slider",
-        "features_subheading": "Showcase your top collection features.",
+        "features_heading": "JRNY connectivity for at-home running experiences.",
+        "features_subheading": "JRNY gives you a million exciting reasons to jump on your BowFlex treadmill. With inspiring trainers, workouts that push you harder as you get stronger and streaming entertainment, you'll never find yourself in a fitness rut",
         "features_default_image": "shopify://shop_images/t16-jrny-coaching-bg-1x.jpg"
       }
     }
