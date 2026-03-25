@@ -404,12 +404,233 @@
         "membership_heading": "Effortlessly customise your work out",
         "membership_subheading": ""
       }
+    },
+    "product_page_sections_YkKqYT": {
+      "type": "product-page-sections",
+      "blocks": {
+        "specs_accordion_QLNXyM": {
+          "type": "specs_accordion",
+          "settings": {
+            "title": "<b>Console<b></b></b>",
+            "content": "<p>Bluetooth Hardware - BT 4.0LE</p><p>Bluetooth Capabilities - FTMS, Speakers and Heart Rate</p><p>Bluetooth FTMS App Compatible - Yes</p><p>Apple + Samsung Watch Compatible - Yes</p><p>Heartrate - Contact Grips and Bluetooth</p><p>Bluetooth Media Control Keys - Yes (volume, backward / forward, play / pause</p><p>Display Type - 19.4 x 7.83cm / 7.6\" x 3\" Colour LCD + 5 White LED window</p><p>Display Feedback - Time, Distance, Calories, Speed, Incline, Pace, Laps, Heart Rate, Split Timer</p><p>Programs - Manual, Distance, Record, Hill Sprint, Fat Burn, Hill Climb, My First 5K, Custom, Custom Heart Rate, Sprint 8</p><p>Energy Saver - Yes</p><p>One-Button Quick Start - Yes</p><p>Pause Button - Yes</p><p>Button Type - Membrane</p><p>Incline Range - 0-15%</p><p>Speed Range - 0.5-12mph</p><p>Storage Features - Mobile Device Holder, Accessory Tray</p><p>Reading Rack - Integrated into console</p><p>Personal Fan - 2 (3 speed)</p><p>Speakers - 5 Watt Stereo Speakers</p><p>USB Port - Yes (USB A)</p>"
+          }
+        },
+        "specs_accordion_DnPXPT": {
+          "type": "specs_accordion",
+          "settings": {
+            "title": "<b>Deck<b></b></b>",
+            "content": "<p>Cushion System - FlexZone XL </p><p>Deck Thickness - 0.75” / 18 mm</p><p>Running Area - 22” x 60” / 56 cm x 152.4 cm</p><p>Running Belt Thickness - 1.6 mm</p><p>Step On Height - 8.7\" / 22.3 cm</p><p>Lubrication System- Silicone Oil</p><p>Reversible Deck - No<br/></p>"
+          }
+        },
+        "specs_accordion_M49VgL": {
+          "type": "specs_accordion",
+          "settings": {
+            "title": "<b>Drive System<b></b></b>",
+            "content": "<p>Drive Motor - 3.5 hp*</p><p>Incline Motor - 500lb thrust</p><p>*The stated motor horsepower (HP/CHP is a rating based on measurement in a test setting. It is an indication of the robustness of the motor and does not reflect the operational HP of the motor in use).</p>"
+          }
+        },
+        "specs_accordion_VkWapR": {
+          "type": "specs_accordion",
+          "settings": {
+            "title": "<b>Frame<b></b></b>",
+            "content": "<p>Folding - Yes (Fold on Pin)</p><p>Fold Flat - No</p><p>Transport Wheels - 2</p><p>Gas Shock - Yes</p><p>Front Roller Size - 60 mm</p><p>Rear Roller Size - 60 mm</p><p>Max User Weight - 350 lbs. / 158.8 kg</p><p>Cross Bar - Yes</p><p>Side Rail Material - ABS</p><p>End Cap Material - ABS<br/><br/></p>"
+          }
+        },
+        "specs_accordion_EUVYy7": {
+          "type": "specs_accordion",
+          "settings": {
+            "title": "<b>Technical Specs<b></b></b>",
+            "content": "<p>Assembled Dimensions - 77.2\" L x 37\" W x 67.6\" H / 196 x 94 x 171.6 cm</p><p>Assembled Weight - 282.2 lbs. / 128 kg</p><p>Shipping Weight - 341.7 lbs. / 155 kg</p><p>Shipping Dimensions - 88.6” x 33.3” x 15” / 225 x 84.5 x 38 cmE</p><p>lectrical Requirements - AC 110 volt and 220 volt 50/60 Hz (USA and Europe)<br/><br/></p>"
+          }
+        },
+        "spec_metric_gTwyMB": {
+          "type": "spec_metric",
+          "settings": {
+            "label": "Dimensions (in)",
+            "value": "77.2” L × 35.2” W × 67.6” H"
+          }
+        },
+        "spec_metric_hnUQ8V": {
+          "type": "spec_metric",
+          "settings": {
+            "label": "Dimensions (cm)",
+            "value": "196cm x 94cm x 171.6cm"
+          }
+        },
+        "spec_metric_YQVJ3H": {
+          "type": "spec_metric",
+          "settings": {
+            "label": "Console",
+            "value": "Backlit 7\" LCD (17.8cm)"
+          }
+        },
+        "spec_metric_YBi4Mi": {
+          "type": "spec_metric",
+          "settings": {
+            "label": "Stowed Dimensions (in)",
+            "value": "48.6” L × 37” W × 67.6” H"
+          }
+        },
+        "spec_metric_bQEnQn": {
+          "type": "spec_metric",
+          "settings": {
+            "label": "Stowed Dimensions (cm)",
+            "value": "123.5cm × 95cm × 171.6cm"
+          }
+        },
+        "spec_metric_t7epW9": {
+          "type": "spec_metric",
+          "settings": {
+            "label": "Product Weight",
+            "value": "282lbs (128kg)"
+          }
+        },
+        "spec_metric_8jqVtn": {
+          "type": "spec_metric",
+          "settings": {
+            "label": "Minimum Ceiling Height",
+            "value": "User Height + 20.75\" (52.7cm)"
+          }
+        },
+        "spec_metric_FtzDaY": {
+          "type": "spec_metric",
+          "settings": {
+            "label": "Maximum Use Weight",
+            "value": "35lbs (158.8kg)"
+          }
+        },
+        "warranty_metric_AzEkFk": {
+          "type": "warranty_metric",
+          "settings": {
+            "label": "Frame & Motor",
+            "value": "Lifetime"
+          }
+        },
+        "warranty_metric_tmgwWy": {
+          "type": "warranty_metric",
+          "settings": {
+            "label": "Mechanical Parts",
+            "value": "3 Years"
+          }
+        },
+        "warranty_metric_FpRdB9": {
+          "type": "warranty_metric",
+          "settings": {
+            "label": "Labour",
+            "value": "1 Year"
+          }
+        },
+        "jrny_slide_akepwp": {
+          "type": "jrny_slide",
+          "settings": {
+            "image": "shopify://shop_images/t9-jrny-radio-bg-2x.webp",
+            "title": "Find a playlistto power your P.R.",
+            "text": "An ever-fresh line up on JRNY Radio means you can always find a musical mood boost."
+          }
+        },
+        "jrny_slide_xpdUKN": {
+          "type": "jrny_slide",
+          "settings": {
+            "image": "shopify://shop_images/t9-04-deck-bg-2x.webp",
+            "title": "Flexzone XL Deck System",
+            "text": "An extra-wide running area and FlexZone cushioning provide the support and stability you need to go the distance."
+          }
+        },
+        "jrny_slide_MnmhUB": {
+          "type": "jrny_slide",
+          "settings": {
+            "image": "shopify://shop_images/t9-05-drive-system-bg-2x.webp",
+            "title": "MaxReact Drive System",
+            "text": "The ultra-responsive MaxReact Drive System lets you change your pace rapidly without lags or delays."
+          }
+        },
+        "jrny_slide_hCY6Ek": {
+          "type": "jrny_slide",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/t16-jrny-coaching-bg-1x.jpg",
+            "title": "Every day is different.",
+            "text": "Get a custom set of adaptive workouts to freshen up your routine."
+          }
+        },
+        "jrny_slide_KTYTfc": {
+          "type": "jrny_slide",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/t16-jrny-coaching-bg-1x.jpg",
+            "title": "Every day is different.",
+            "text": "Get a custom set of adaptive workouts to freshen up your routine."
+          }
+        }
+      },
+      "block_order": [
+        "specs_accordion_QLNXyM",
+        "specs_accordion_DnPXPT",
+        "specs_accordion_M49VgL",
+        "specs_accordion_VkWapR",
+        "specs_accordion_EUVYy7",
+        "spec_metric_gTwyMB",
+        "spec_metric_hnUQ8V",
+        "spec_metric_YQVJ3H",
+        "spec_metric_YBi4Mi",
+        "spec_metric_bQEnQn",
+        "spec_metric_t7epW9",
+        "spec_metric_8jqVtn",
+        "spec_metric_FtzDaY",
+        "warranty_metric_AzEkFk",
+        "warranty_metric_tmgwWy",
+        "warranty_metric_FpRdB9",
+        "jrny_slide_akepwp",
+        "jrny_slide_xpdUKN",
+        "jrny_slide_MnmhUB",
+        "jrny_slide_hCY6Ek",
+        "jrny_slide_KTYTfc"
+      ],
+      "settings": {
+        "dark_color_scheme": "scheme-1",
+        "light_color_scheme": "scheme-1",
+        "show_training": false,
+        "training_position": 3,
+        "training_heading": "The ultimate training experience",
+        "training_subheading": "Watch videos below to learn more.",
+        "fallback_training_video_url": "",
+        "fallback_training_tab_title_1": "Explore entertainment",
+        "fallback_training_tab_title_2": "Go further with JRNY",
+        "show_fitness": false,
+        "fitness_position": 1,
+        "fitness_heading": "Work out the way you want",
+        "fitness_subheading": "",
+        "fitness_left_image": "shopify://shop_images/Get_an_easy_secure_way_to_connect_your_Apple_Watch_to_the_T9_treadmill_to_keep_your_metris_in_sync..webp",
+        "fitness_left_title": "Connect to Apple Watch",
+        "fitness_left_text": "Get an easy, secure way to connect your Apple Watch to the T9 treadmill to keep your metris in sync.",
+        "fitness_left_pill_1": "Apple Watch",
+        "fitness_left_pill_2": "Galaxy Watch",
+        "fitness_right_image": "shopify://shop_images/t9-02-apps-bg-2x.jpg",
+        "fitness_right_title": "Train with your choice in fitness apps",
+        "fitness_right_text": "Connect with JRNY, Peloton and Zwift right from your phone or tablet.",
+        "show_specs": false,
+        "specs_position": 3,
+        "specs_heading": "Specs & Warranty",
+        "specs_subheading": "Equipment dimensions and warranty details.",
+        "spec_image_1": "shopify://shop_images/dimensions-t9-bg-xscreen-2x.webp",
+        "spec_image_1_alt": "Open treadmill dimensions",
+        "spec_image_2": "shopify://shop_images/dimensions-folded-t9-bg-2x.webp",
+        "spec_image_2_alt": "Folded treadmill dimensions",
+        "specs_group_heading": "Specs",
+        "warranty_group_heading": "Warranty",
+        "additional_specs_heading": "Additional Specs",
+        "show_membership": true,
+        "membership_position": 2,
+        "membership_heading": "The JRYN adaptive itness membership keeps you going",
+        "membership_subheading": ""
+      }
     }
   },
   "order": [
     "main",
     "related-products",
     "key_features_wQ7gFE",
-    "product_page_sections_nx3K7M"
+    "product_page_sections_nx3K7M",
+    "product_page_sections_YkKqYT"
   ]
 }
