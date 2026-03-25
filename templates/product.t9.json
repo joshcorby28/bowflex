@@ -100,32 +100,110 @@
     "product_page_sections_nx3K7M": {
       "type": "product-page-sections",
       "blocks": {
+        "spec_metric_xUctmp": {
+          "type": "spec_metric",
+          "settings": {
+            "label": "Dimensions (in)",
+            "value": "77.2” L × 35.2” W × 67.6” H"
+          }
+        },
+        "spec_metric_CPtxfc": {
+          "type": "spec_metric",
+          "settings": {
+            "label": "Dimensions (cm)",
+            "value": "196cm x 94cm x 171.6cm"
+          }
+        },
+        "spec_metric_tTXENK": {
+          "type": "spec_metric",
+          "settings": {
+            "label": "Console",
+            "value": "Backlit 7\" LCD (17.8cm)"
+          }
+        },
+        "spec_metric_p6QaMK": {
+          "type": "spec_metric",
+          "settings": {
+            "label": "Stowed Dimensions (in)",
+            "value": "48.6” L × 37” W × 67.6” H"
+          }
+        },
+        "spec_metric_7JDXFV": {
+          "type": "spec_metric",
+          "settings": {
+            "label": "Stowed Dimensions (cm)",
+            "value": "123.5cm × 95cm × 171.6cm"
+          }
+        },
+        "spec_metric_dYfz4h": {
+          "type": "spec_metric",
+          "settings": {
+            "label": "Product Weight",
+            "value": "282lbs (128kg)"
+          }
+        },
+        "spec_metric_ragDUp": {
+          "type": "spec_metric",
+          "settings": {
+            "label": "Minimum Ceiling Height",
+            "value": "User Height + 20.75\" (52.7cm)"
+          }
+        },
+        "spec_metric_rRCMHh": {
+          "type": "spec_metric",
+          "settings": {
+            "label": "Maximum Use Weight",
+            "value": "35lbs (158.8kg)"
+          }
+        },
+        "warranty_metric_eVpgHt": {
+          "type": "warranty_metric",
+          "settings": {
+            "label": "Frame & Motor",
+            "value": "Lifetime"
+          }
+        },
+        "warranty_metric_MqBmA3": {
+          "type": "warranty_metric",
+          "settings": {
+            "label": "Mechanical Parts",
+            "value": "3 Years"
+          }
+        },
+        "warranty_metric_JQ49x9": {
+          "type": "warranty_metric",
+          "settings": {
+            "label": "Labour",
+            "value": "1 Year"
+          }
+        },
         "jrny_slide_CUn9NW": {
           "type": "jrny_slide",
           "settings": {
             "image": "shopify://shop_images/t9-03-dial-bg-2x.webp",
-            "title": "Quick Response Technology",
-            "text": "Change speed and incline rapidly with intuitive dial controls - ideal for high- intensity interval training (HIIT)."
+            "title": "MaxReact Drive System",
+            "text": "The ultra-responsive MaxReact Drive System lets you change your pace rapidly without lags or delays."
           }
         },
         "jrny_slide_iGPaXL": {
           "type": "jrny_slide",
           "settings": {
-            "image": "shopify://shop_images/t16-jrny-coaching-bg-1x.jpg",
-            "title": "Every day is different.",
-            "text": "Get a custom set of adaptive workouts to freshen up your routine."
+            "image": "shopify://shop_images/t9-04-deck-bg-2x.webp",
+            "title": "Flexzone XL Deck System",
+            "text": "An extra-wide running area and FlexZone cushioning provide the support and stability you need to go the distance."
           }
         },
         "jrny_slide_VNnwkh": {
           "type": "jrny_slide",
           "settings": {
-            "image": "shopify://shop_images/t16-jrny-coaching-bg-1x.jpg",
+            "image": "shopify://shop_images/t9-05-drive-system-bg-2x.webp",
             "title": "Every day is different.",
             "text": "Get a custom set of adaptive workouts to freshen up your routine."
           }
         },
         "jrny_slide_KbWjJT": {
           "type": "jrny_slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/t16-jrny-coaching-bg-1x.jpg",
             "title": "Every day is different.",
@@ -134,6 +212,7 @@
         },
         "jrny_slide_A3dWc9": {
           "type": "jrny_slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/t16-jrny-coaching-bg-1x.jpg",
             "title": "Every day is different.",
@@ -142,6 +221,17 @@
         }
       },
       "block_order": [
+        "spec_metric_xUctmp",
+        "spec_metric_CPtxfc",
+        "spec_metric_tTXENK",
+        "spec_metric_p6QaMK",
+        "spec_metric_7JDXFV",
+        "spec_metric_dYfz4h",
+        "spec_metric_ragDUp",
+        "spec_metric_rRCMHh",
+        "warranty_metric_eVpgHt",
+        "warranty_metric_MqBmA3",
+        "warranty_metric_JQ49x9",
         "jrny_slide_CUn9NW",
         "jrny_slide_iGPaXL",
         "jrny_slide_VNnwkh",
@@ -151,11 +241,15 @@
       "settings": {
         "dark_color_scheme": "scheme-1",
         "light_color_scheme": "scheme-1",
+        "show_training": true,
+        "training_position": 1,
         "training_heading": "The ultimate training experience",
         "training_subheading": "Watch videos below to learn more.",
         "fallback_training_video_url": "",
         "fallback_training_tab_title_1": "Explore entertainment",
         "fallback_training_tab_title_2": "Go further with JRNY",
+        "show_fitness": true,
+        "fitness_position": 2,
         "fitness_heading": "Work out the way you want",
         "fitness_subheading": "",
         "fitness_left_image": "shopify://shop_images/Get_an_easy_secure_way_to_connect_your_Apple_Watch_to_the_T9_treadmill_to_keep_your_metris_in_sync..webp",
@@ -166,17 +260,21 @@
         "fitness_right_image": "shopify://shop_images/t9-02-apps-bg-2x.jpg",
         "fitness_right_title": "Train with your choice in fitness apps",
         "fitness_right_text": "Connect with JRNY, Peloton and Zwift right from your phone r tablet.",
+        "show_specs": true,
+        "specs_position": 3,
         "specs_heading": "Specs & Warranty",
         "specs_subheading": "Equipment dimensions and warranty details.",
-        "spec_image_1": "shopify://shop_images/dimensions-folded-t16-bg-2x.webp",
+        "spec_image_1": "shopify://shop_images/dimensions-t9-bg-xscreen-2x.webp",
         "spec_image_1_alt": "Open treadmill dimensions",
-        "spec_image_2": "shopify://shop_images/dimensions-folded-t16-bg-2x.webp",
+        "spec_image_2": "shopify://shop_images/dimensions-folded-t9-bg-2x.webp",
         "spec_image_2_alt": "Folded treadmill dimensions",
         "specs_group_heading": "Specs",
         "warranty_group_heading": "Warranty",
         "additional_specs_heading": "Additional Specs",
-        "membership_heading": "The JRNY adaptive fitness membership keeps you going.",
-        "membership_subheading": "Dummy carousel cards for membership benefits."
+        "show_membership": true,
+        "membership_position": 4,
+        "membership_heading": "Effortlessly customise your work out",
+        "membership_subheading": ""
       }
     },
     "key_features_wQ7gFE": {
