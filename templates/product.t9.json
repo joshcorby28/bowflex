@@ -124,8 +124,8 @@
         "specs_accordion_AdCndh": {
           "type": "specs_accordion",
           "settings": {
-            "title": "Console",
-            "content": "<p>Add your specification details here.</p>"
+            "title": "<b>Frame<b></b></b>",
+            "content": "<p>Folding - Yes (Fold on Pin)</p><p>Fold Flat - No</p><p>Transport Wheels - 2</p><p>Gas Shock - Yes</p><p>Front Roller Size - 60 mm</p><p>Rear Roller Size - 60 mm</p><p>Max User Weight - 350 lbs. / 158.8 kg</p><p>Cross Bar - Yes</p><p>Side Rail Material - ABS</p><p>End Cap Material - ABS<br/><br/></p>"
           }
         },
         "specs_accordion_67FNHH": {
