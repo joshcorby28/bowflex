@@ -131,7 +131,7 @@
         "specs_accordion_67FNHH": {
           "type": "specs_accordion",
           "settings": {
-            "title": "Technical Specs",
+            "title": "<b>Technical Specs<b></b></b>",
             "content": "<p>Assembled Dimensions - 77.2\" L x 37\" W x 67.6\" H / 196 x 94 x 171.6 cm</p><p>Assembled Weight - 282.2 lbs. / 128 kg</p><p>Shipping Weight - 341.7 lbs. / 155 kg</p><p>Shipping Dimensions - 88.6” x 33.3” x 15” / 225 x 84.5 x 38 cmE</p><p>lectrical Requirements - AC 110 volt and 220 volt 50/60 Hz (USA and Europe)<br/><br/></p>"
           }
         },
@@ -216,8 +216,8 @@
           "type": "jrny_slide",
           "settings": {
             "image": "shopify://shop_images/t9-03-dial-bg-2x.webp",
-            "title": "MaxReact Drive System",
-            "text": "The ultra-responsive MaxReact Drive System lets you change your pace rapidly without lags or delays."
+            "title": "Quick Reponse Technology",
+            "text": "Change speed and incline rapidly with intuitive dial controls - ideal for high-intensIty interval training (HIIT)."
           }
         },
         "jrny_slide_iGPaXL": {
@@ -232,8 +232,8 @@
           "type": "jrny_slide",
           "settings": {
             "image": "shopify://shop_images/t9-05-drive-system-bg-2x.webp",
-            "title": "Every day is different.",
-            "text": "Get a custom set of adaptive workouts to freshen up your routine."
+            "title": "MaxReact Drive System",
+            "text": "The ultra-responsive MaxReact Drive System lets you change your pace rapidly without lags or delays."
           }
         },
         "jrny_slide_KbWjJT": {
@@ -282,14 +282,14 @@
         "dark_color_scheme": "scheme-1",
         "light_color_scheme": "scheme-1",
         "show_training": true,
-        "training_position": 1,
+        "training_position": 3,
         "training_heading": "The ultimate training experience",
         "training_subheading": "Watch videos below to learn more.",
         "fallback_training_video_url": "",
         "fallback_training_tab_title_1": "Explore entertainment",
         "fallback_training_tab_title_2": "Go further with JRNY",
         "show_fitness": true,
-        "fitness_position": 2,
+        "fitness_position": 1,
         "fitness_heading": "Work out the way you want",
         "fitness_subheading": "",
         "fitness_left_image": "shopify://shop_images/Get_an_easy_secure_way_to_connect_your_Apple_Watch_to_the_T9_treadmill_to_keep_your_metris_in_sync..webp",
@@ -312,7 +312,7 @@
         "warranty_group_heading": "Warranty",
         "additional_specs_heading": "Additional Specs",
         "show_membership": true,
-        "membership_position": 4,
+        "membership_position": 2,
         "membership_heading": "Effortlessly customise your work out",
         "membership_subheading": ""
       }
