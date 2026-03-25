@@ -141,29 +141,33 @@
         "feature_slide_amHNf7": {
           "type": "feature_slide",
           "settings": {
-            "title": "Built for performance.",
-            "text": "Highlight key collection benefits in this feature slider."
+            "image": "shopify://shop_images/jrny-streaming-tv-0123-2x.webp",
+            "title": "Streaming Entertainment",
+            "text": "Follwow yuor workout and stream your favourite shows at the same time, including Netflix and Prime Video"
           }
         },
         "feature_slide_xEFExm": {
           "type": "feature_slide",
           "settings": {
-            "title": "Built for performance.",
-            "text": "Highlight key collection benefits in this feature slider."
+            "image": "shopify://shop_images/jrny-metrics-0123-2x.webp",
+            "title": "Integrated Automatic Tracking",
+            "text": "Closely monitor your progress as JRNY measures every workout."
           }
         },
         "feature_slide_NFDHwA": {
           "type": "feature_slide",
           "settings": {
-            "title": "Built for performance.",
-            "text": "Highlight key collection benefits in this feature slider."
+            "image": "shopify://shop_images/jrny-explore-the-world-0123-2x.webp",
+            "title": "Explore the World",
+            "text": "200+ scenic routes let you train in your dream destination."
           }
         },
         "feature_slide_CnPBWn": {
           "type": "feature_slide",
           "settings": {
-            "title": "Built for performance.",
-            "text": "Highlight key collection benefits in this feature slider."
+            "image": "shopify://shop_images/jrny-adaptive-workouts-0123-2x.webp",
+            "title": "Adaptive workouts",
+            "text": "Every day, a custom set of workouts to liven up your routine and keep things fun."
           }
         }
       },
