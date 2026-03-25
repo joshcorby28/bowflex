@@ -97,6 +97,94 @@
         "padding_bottom": 28
       }
     },
+    "key_features_wQ7gFE": {
+      "type": "key-features",
+      "blocks": {
+        "collection_circle_WdgdYr": {
+          "type": "collection-circle",
+          "settings": {
+            "collection_image": "shopify://shop_images/t9-feature-quick-response-2x.webp",
+            "collection_text": "Change speed and incline in a heartbeat"
+          }
+        },
+        "collection_circle_3PRirC": {
+          "type": "collection-circle",
+          "settings": {
+            "collection_image": "shopify://shop_images/t9-feature-deck-2x.png",
+            "collection_text": "Plenty of runway."
+          }
+        },
+        "collection_circle_HFwqiD": {
+          "type": "collection-circle",
+          "settings": {
+            "collection_image": "shopify://shop_images/t9-feature-apple-watch-2x.webp",
+            "collection_text": "Connect to Apple Watch."
+          }
+        },
+        "collection_circle_GceT4N": {
+          "type": "collection-circle",
+          "settings": {
+            "collection_image": "shopify://shop_images/t9-feature-incline-deck-2x.webp",
+            "collection_text": "Your next peak is just ahead."
+          }
+        },
+        "collection_circle_H9Exnf": {
+          "type": "collection-circle",
+          "settings": {
+            "collection_image": "shopify://shop_images/t9-feature-media-shelf-2x.webp",
+            "collection_text": "Keep your device in reach."
+          }
+        },
+        "collection_circle_NX6tQx": {
+          "type": "collection-circle",
+          "settings": {
+            "collection_image": "shopify://shop_images/t9-feature-console-app-2x.webp",
+            "collection_text": "Keep your options open."
+          }
+        },
+        "collection_circle_MkJ3xp": {
+          "type": "collection-circle",
+          "settings": {
+            "collection_image": "shopify://shop_images/t9-feature-flex-zone-2x.webp",
+            "collection_text": "Support and stability to go the distance."
+          }
+        },
+        "collection_circle_XaWJbT": {
+          "type": "collection-circle",
+          "settings": {
+            "collection_image": "shopify://shop_images/t9-feature-fan-2x.png",
+            "collection_text": "Undeniably cool."
+          }
+        },
+        "collection_circle_RKXytw": {
+          "type": "collection-circle",
+          "settings": {
+            "collection_image": "shopify://shop_images/t9-feature-cup-holder-2x.webp",
+            "collection_text": "Stay hydrated every step of the way."
+          }
+        }
+      },
+      "block_order": [
+        "collection_circle_WdgdYr",
+        "collection_circle_3PRirC",
+        "collection_circle_HFwqiD",
+        "collection_circle_GceT4N",
+        "collection_circle_H9Exnf",
+        "collection_circle_NX6tQx",
+        "collection_circle_MkJ3xp",
+        "collection_circle_XaWJbT",
+        "collection_circle_RKXytw"
+      ],
+      "name": "Key Features",
+      "settings": {
+        "section_heading": "Product Features",
+        "color_scheme": "",
+        "title": "Product Features",
+        "heading_size": "h1",
+        "padding_top": 32,
+        "padding_bottom": 36
+      }
+    },
     "product_page_sections_nx3K7M": {
       "type": "product-page-sections",
       "blocks": {
@@ -124,14 +212,14 @@
         "specs_accordion_AdCndh": {
           "type": "specs_accordion",
           "settings": {
-            "title": "<b>Frame<b></b></b>",
+            "title": "Frame",
             "content": "<p>Folding - Yes (Fold on Pin)</p><p>Fold Flat - No</p><p>Transport Wheels - 2</p><p>Gas Shock - Yes</p><p>Front Roller Size - 60 mm</p><p>Rear Roller Size - 60 mm</p><p>Max User Weight - 350 lbs. / 158.8 kg</p><p>Cross Bar - Yes</p><p>Side Rail Material - ABS</p><p>End Cap Material - ABS<br/><br/></p>"
           }
         },
         "specs_accordion_67FNHH": {
           "type": "specs_accordion",
           "settings": {
-            "title": "<b>Technical Specs<b></b></b>",
+            "title": "Technical Specs",
             "content": "<p>Assembled Dimensions - 77.2\" L x 37\" W x 67.6\" H / 196 x 94 x 171.6 cm</p><p>Assembled Weight - 282.2 lbs. / 128 kg</p><p>Shipping Weight - 341.7 lbs. / 155 kg</p><p>Shipping Dimensions - 88.6” x 33.3” x 15” / 225 x 84.5 x 38 cmE</p><p>lectrical Requirements - AC 110 volt and 220 volt 50/60 Hz (USA and Europe)<br/><br/></p>"
           }
         },
@@ -281,7 +369,7 @@
       "settings": {
         "dark_color_scheme": "scheme-1",
         "light_color_scheme": "scheme-1",
-        "show_training": true,
+        "show_training": false,
         "training_position": 3,
         "training_heading": "The ultimate training experience",
         "training_subheading": "Watch videos below to learn more.",
@@ -299,7 +387,7 @@
         "fitness_left_pill_2": "Galaxy Watch",
         "fitness_right_image": "shopify://shop_images/t9-02-apps-bg-2x.jpg",
         "fitness_right_title": "Train with your choice in fitness apps",
-        "fitness_right_text": "Connect with JRNY, Peloton and Zwift right from your phone r tablet.",
+        "fitness_right_text": "Connect with JRNY, Peloton and Zwift right from your phone or tablet.",
         "show_specs": true,
         "specs_position": 3,
         "specs_heading": "Specs & Warranty",
@@ -316,100 +404,12 @@
         "membership_heading": "Effortlessly customise your work out",
         "membership_subheading": ""
       }
-    },
-    "key_features_wQ7gFE": {
-      "type": "key-features",
-      "blocks": {
-        "collection_circle_WdgdYr": {
-          "type": "collection-circle",
-          "settings": {
-            "collection_image": "shopify://shop_images/t9-feature-quick-response-2x.webp",
-            "collection_text": "Change speed and incline in a heartbeat"
-          }
-        },
-        "collection_circle_3PRirC": {
-          "type": "collection-circle",
-          "settings": {
-            "collection_image": "shopify://shop_images/t9-feature-deck-2x.png",
-            "collection_text": "Plenty of runway."
-          }
-        },
-        "collection_circle_HFwqiD": {
-          "type": "collection-circle",
-          "settings": {
-            "collection_image": "shopify://shop_images/t9-feature-apple-watch-2x.webp",
-            "collection_text": "Connect to Apple Watch."
-          }
-        },
-        "collection_circle_GceT4N": {
-          "type": "collection-circle",
-          "settings": {
-            "collection_image": "shopify://shop_images/t9-feature-incline-deck-2x.webp",
-            "collection_text": "Your next peak is just ahead."
-          }
-        },
-        "collection_circle_H9Exnf": {
-          "type": "collection-circle",
-          "settings": {
-            "collection_image": "shopify://shop_images/t9-feature-media-shelf-2x.webp",
-            "collection_text": "Keep your device in reach."
-          }
-        },
-        "collection_circle_NX6tQx": {
-          "type": "collection-circle",
-          "settings": {
-            "collection_image": "shopify://shop_images/t9-feature-console-app-2x.webp",
-            "collection_text": "Keep your options open."
-          }
-        },
-        "collection_circle_MkJ3xp": {
-          "type": "collection-circle",
-          "settings": {
-            "collection_image": "shopify://shop_images/t9-feature-flex-zone-2x.webp",
-            "collection_text": "Support and stability to go the distance."
-          }
-        },
-        "collection_circle_XaWJbT": {
-          "type": "collection-circle",
-          "settings": {
-            "collection_image": "shopify://shop_images/t9-feature-fan-2x.png",
-            "collection_text": "Undeniably cool."
-          }
-        },
-        "collection_circle_RKXytw": {
-          "type": "collection-circle",
-          "settings": {
-            "collection_image": "shopify://shop_images/t9-feature-cup-holder-2x.webp",
-            "collection_text": "Stay hydrated every step of the way."
-          }
-        }
-      },
-      "block_order": [
-        "collection_circle_WdgdYr",
-        "collection_circle_3PRirC",
-        "collection_circle_HFwqiD",
-        "collection_circle_GceT4N",
-        "collection_circle_H9Exnf",
-        "collection_circle_NX6tQx",
-        "collection_circle_MkJ3xp",
-        "collection_circle_XaWJbT",
-        "collection_circle_RKXytw"
-      ],
-      "name": "Key Features",
-      "settings": {
-        "section_heading": "Product Features",
-        "color_scheme": "",
-        "title": "Product Features",
-        "heading_size": "h1",
-        "padding_top": 32,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
     "main",
     "related-products",
-    "product_page_sections_nx3K7M",
-    "key_features_wQ7gFE"
+    "key_features_wQ7gFE",
+    "product_page_sections_nx3K7M"
   ]
 }
