@@ -171,7 +171,7 @@
         ".pps__jrny {background: white; color: #1b1b1b;}",
         ".pps__jrny h3,.pps__jrny p {color: #1b1b1b;}",
         ".swiper-slide-active {opacity: 1 !important;}",
-        ".swiper-slide {border: none; opacity: 0.4;}"
+        ".swiper-slide {border: none; opacity: 100;}"
       ],
       "name": "Colleciton pahe sections",
       "settings": {
