@@ -117,22 +117,22 @@
         "collection_circle_HFwqiD": {
           "type": "collection-circle",
           "settings": {
-            "collection_image": "shopify://shop_images/t16-feature-touchscreen-1x.jpg",
-            "collection_text": "Appreciate the bigger picture."
+            "collection_image": "shopify://shop_images/t9-feature-apple-watch-2x.webp",
+            "collection_text": "Connect to Apple Watch."
           }
         },
         "collection_circle_GceT4N": {
           "type": "collection-circle",
           "settings": {
-            "collection_image": "shopify://shop_images/t16-feature-touchscreen-1x.jpg",
-            "collection_text": "Appreciate the bigger picture."
+            "collection_image": "shopify://shop_images/t9-feature-incline-deck-2x.webp",
+            "collection_text": "Your next peak is just ahead."
           }
         },
         "collection_circle_H9Exnf": {
           "type": "collection-circle",
           "settings": {
-            "collection_image": "shopify://shop_images/t16-feature-touchscreen-1x.jpg",
-            "collection_text": "Appreciate the bigger picture."
+            "collection_image": "shopify://shop_images/t9-feature-media-shelf-2x.webp",
+            "collection_text": "Keep your device in reach."
           }
         },
         "collection_circle_NX6tQx": {
@@ -181,7 +181,7 @@
         "color_scheme": "",
         "title": "Product Features",
         "heading_size": "h1",
-        "padding_top": 36,
+        "padding_top": 32,
         "padding_bottom": 36
       }
     },
