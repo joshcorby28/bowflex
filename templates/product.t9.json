@@ -97,6 +97,88 @@
         "padding_bottom": 28
       }
     },
+    "product_page_sections_nx3K7M": {
+      "type": "product-page-sections",
+      "blocks": {
+        "jrny_slide_CUn9NW": {
+          "type": "jrny_slide",
+          "settings": {
+            "image": "shopify://shop_images/t9-03-dial-bg-2x.webp",
+            "title": "Quick Response Technology",
+            "text": "Change speed and incline rapidly with intuitive dial controls - ideal for high- intensity interval training (HIIT)."
+          }
+        },
+        "jrny_slide_iGPaXL": {
+          "type": "jrny_slide",
+          "settings": {
+            "image": "shopify://shop_images/t16-jrny-coaching-bg-1x.jpg",
+            "title": "Every day is different.",
+            "text": "Get a custom set of adaptive workouts to freshen up your routine."
+          }
+        },
+        "jrny_slide_VNnwkh": {
+          "type": "jrny_slide",
+          "settings": {
+            "image": "shopify://shop_images/t16-jrny-coaching-bg-1x.jpg",
+            "title": "Every day is different.",
+            "text": "Get a custom set of adaptive workouts to freshen up your routine."
+          }
+        },
+        "jrny_slide_KbWjJT": {
+          "type": "jrny_slide",
+          "settings": {
+            "image": "shopify://shop_images/t16-jrny-coaching-bg-1x.jpg",
+            "title": "Every day is different.",
+            "text": "Get a custom set of adaptive workouts to freshen up your routine."
+          }
+        },
+        "jrny_slide_A3dWc9": {
+          "type": "jrny_slide",
+          "settings": {
+            "image": "shopify://shop_images/t16-jrny-coaching-bg-1x.jpg",
+            "title": "Every day is different.",
+            "text": "Get a custom set of adaptive workouts to freshen up your routine."
+          }
+        }
+      },
+      "block_order": [
+        "jrny_slide_CUn9NW",
+        "jrny_slide_iGPaXL",
+        "jrny_slide_VNnwkh",
+        "jrny_slide_KbWjJT",
+        "jrny_slide_A3dWc9"
+      ],
+      "settings": {
+        "dark_color_scheme": "scheme-1",
+        "light_color_scheme": "scheme-1",
+        "training_heading": "The ultimate training experience",
+        "training_subheading": "Watch videos below to learn more.",
+        "fallback_training_video_url": "",
+        "fallback_training_tab_title_1": "Explore entertainment",
+        "fallback_training_tab_title_2": "Go further with JRNY",
+        "fitness_heading": "Work out the way you want",
+        "fitness_subheading": "",
+        "fitness_left_image": "shopify://shop_images/Get_an_easy_secure_way_to_connect_your_Apple_Watch_to_the_T9_treadmill_to_keep_your_metris_in_sync..webp",
+        "fitness_left_title": "Connect to Apple Watch",
+        "fitness_left_text": "Get an easy, secure way to connect your Apple Watch to the T9 treadmill to keep your metris in sync.",
+        "fitness_left_pill_1": "Apple Watch",
+        "fitness_left_pill_2": "Galaxy Watch",
+        "fitness_right_image": "shopify://shop_images/t9-02-apps-bg-2x.jpg",
+        "fitness_right_title": "Train with your choice in fitness apps",
+        "fitness_right_text": "Connect with JRNY, Peloton and Zwift right from your phone r tablet.",
+        "specs_heading": "Specs & Warranty",
+        "specs_subheading": "Equipment dimensions and warranty details.",
+        "spec_image_1": "shopify://shop_images/dimensions-folded-t16-bg-2x.webp",
+        "spec_image_1_alt": "Open treadmill dimensions",
+        "spec_image_2": "shopify://shop_images/dimensions-folded-t16-bg-2x.webp",
+        "spec_image_2_alt": "Folded treadmill dimensions",
+        "specs_group_heading": "Specs",
+        "warranty_group_heading": "Warranty",
+        "additional_specs_heading": "Additional Specs",
+        "membership_heading": "The JRNY adaptive fitness membership keeps you going.",
+        "membership_subheading": "Dummy carousel cards for membership benefits."
+      }
+    },
     "key_features_wQ7gFE": {
       "type": "key-features",
       "blocks": {
@@ -184,94 +266,12 @@
         "padding_top": 32,
         "padding_bottom": 36
       }
-    },
-    "product_page_sections_nx3K7M": {
-      "type": "product-page-sections",
-      "blocks": {
-        "jrny_slide_CUn9NW": {
-          "type": "jrny_slide",
-          "settings": {
-            "image": "shopify://shop_images/t16-jrny-coaching-bg-1x.jpg",
-            "title": "Every day is different.",
-            "text": "Get a custom set of adaptive workouts to freshen up your routine."
-          }
-        },
-        "jrny_slide_iGPaXL": {
-          "type": "jrny_slide",
-          "settings": {
-            "image": "shopify://shop_images/t16-jrny-coaching-bg-1x.jpg",
-            "title": "Every day is different.",
-            "text": "Get a custom set of adaptive workouts to freshen up your routine."
-          }
-        },
-        "jrny_slide_VNnwkh": {
-          "type": "jrny_slide",
-          "settings": {
-            "image": "shopify://shop_images/t16-jrny-coaching-bg-1x.jpg",
-            "title": "Every day is different.",
-            "text": "Get a custom set of adaptive workouts to freshen up your routine."
-          }
-        },
-        "jrny_slide_KbWjJT": {
-          "type": "jrny_slide",
-          "settings": {
-            "image": "shopify://shop_images/t16-jrny-coaching-bg-1x.jpg",
-            "title": "Every day is different.",
-            "text": "Get a custom set of adaptive workouts to freshen up your routine."
-          }
-        },
-        "jrny_slide_A3dWc9": {
-          "type": "jrny_slide",
-          "settings": {
-            "image": "shopify://shop_images/t16-jrny-coaching-bg-1x.jpg",
-            "title": "Every day is different.",
-            "text": "Get a custom set of adaptive workouts to freshen up your routine."
-          }
-        }
-      },
-      "block_order": [
-        "jrny_slide_CUn9NW",
-        "jrny_slide_iGPaXL",
-        "jrny_slide_VNnwkh",
-        "jrny_slide_KbWjJT",
-        "jrny_slide_A3dWc9"
-      ],
-      "settings": {
-        "dark_color_scheme": "scheme-1",
-        "light_color_scheme": "scheme-1",
-        "training_heading": "The ultimate training experience",
-        "training_subheading": "Watch videos below to learn more.",
-        "fallback_training_video_url": "",
-        "fallback_training_tab_title_1": "Explore entertainment",
-        "fallback_training_tab_title_2": "Go further with JRNY",
-        "fitness_heading": "Work out the way you want",
-        "fitness_subheading": "",
-        "fitness_left_image": "shopify://shop_images/Get_an_easy_secure_way_to_connect_your_Apple_Watch_to_the_T9_treadmill_to_keep_your_metris_in_sync..webp",
-        "fitness_left_title": "Connect to Apple Watch",
-        "fitness_left_text": "Get an easy, secure way to connect your Apple Watch to the T9 treadmill to keep your metris in sync.",
-        "fitness_left_pill_1": "Apple Watch",
-        "fitness_left_pill_2": "Galaxy Watch",
-        "fitness_right_image": "shopify://shop_images/t9-02-apps-bg-2x.jpg",
-        "fitness_right_title": "Train with your choice in fitness apps",
-        "fitness_right_text": "Connect with JRNY, Peloton and Zwift right from your phone r tablet.",
-        "specs_heading": "Specs & Warranty",
-        "specs_subheading": "Equipment dimensions and warranty details.",
-        "spec_image_1": "shopify://shop_images/dimensions-folded-t16-bg-2x.webp",
-        "spec_image_1_alt": "Open treadmill dimensions",
-        "spec_image_2": "shopify://shop_images/dimensions-folded-t16-bg-2x.webp",
-        "spec_image_2_alt": "Folded treadmill dimensions",
-        "specs_group_heading": "Specs",
-        "warranty_group_heading": "Warranty",
-        "additional_specs_heading": "Additional Specs",
-        "membership_heading": "The JRNY adaptive fitness membership keeps you going.",
-        "membership_subheading": "Dummy carousel cards for membership benefits."
-      }
     }
   },
   "order": [
     "main",
     "related-products",
-    "key_features_wQ7gFE",
-    "product_page_sections_nx3K7M"
+    "product_page_sections_nx3K7M",
+    "key_features_wQ7gFE"
   ]
 }
