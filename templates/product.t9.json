@@ -110,7 +110,7 @@
         "specs_accordion_J8JT9p": {
           "type": "specs_accordion",
           "settings": {
-            "title": "Deck",
+            "title": "<b>Deck<b></b></b>",
             "content": "<p>Cushion System - FlexZone XL </p><p>Deck Thickness - 0.75” / 18 mm</p><p>Running Area - 22” x 60” / 56 cm x 152.4 cm</p><p>Running Belt Thickness - 1.6 mm</p><p>Step On Height - 8.7\" / 22.3 cm</p><p>Lubrication System- Silicone Oil</p><p>Reversible Deck - No<br/></p>"
           }
         },
@@ -131,8 +131,8 @@
         "specs_accordion_67FNHH": {
           "type": "specs_accordion",
           "settings": {
-            "title": "Console",
-            "content": "<p>Add your specification details here.</p>"
+            "title": "Technical Specs",
+            "content": "<p>Assembled Dimensions - 77.2\" L x 37\" W x 67.6\" H / 196 x 94 x 171.6 cm</p><p>Assembled Weight - 282.2 lbs. / 128 kg</p><p>Shipping Weight - 341.7 lbs. / 155 kg</p><p>Shipping Dimensions - 88.6” x 33.3” x 15” / 225 x 84.5 x 38 cmE</p><p>lectrical Requirements - AC 110 volt and 220 volt 50/60 Hz (USA and Europe)<br/><br/></p>"
           }
         },
         "spec_metric_xUctmp": {
