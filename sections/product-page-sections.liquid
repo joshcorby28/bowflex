@@ -7,48 +7,6 @@
   assign app_icons = section.blocks | where: 'type', 'app_icon'
   assign fallback_accordion_titles = 'Console,Deck,Drive System,Frame,Technical Specs' | split: ','
   assign fallback_training_video_url = section.settings.fallback_training_video_url
-
-  # Build section order array based on enabled and position settings
-  assign sections_order_list = ''
-  
-  # Training section
-  if section.settings.training_enabled
-    if section.settings.training_position > 0
-      assign sections_order_list = sections_order_list | append: 'training:' | append: section.settings.training_position | append: ','
-    else
-      assign sections_order_list = sections_order_list | append: 'training:999,'
-    endif
-  endif
-  
-  # Fitness section
-  if section.settings.fitness_enabled
-    if section.settings.fitness_position > 0
-      assign sections_order_list = sections_order_list | append: 'fitness:' | append: section.settings.fitness_position | append: ','
-    else
-      assign sections_order_list = sections_order_list | append: 'fitness:999,'
-    endif
-  endif
-  
-  # Specs section
-  if section.settings.specs_enabled
-    if section.settings.specs_position > 0
-      assign sections_order_list = sections_order_list | append: 'specs:' | append: section.settings.specs_position | append: ','
-    else
-      assign sections_order_list = sections_order_list | append: 'specs:999,'
-    endif
-  endif
-  
-  # JRNY section
-  if section.settings.jrny_enabled
-    if section.settings.jrny_position > 0
-      assign sections_order_list = sections_order_list | append: 'jrny:' | append: section.settings.jrny_position | append: ','
-    else
-      assign sections_order_list = sections_order_list | append: 'jrny:999,'
-    endif
-  endif
-
-  # Parse into array and sort by position
-  assign sections_order_list = sections_order_list | remove_last: ',' | split: ',' | sort: 'last'
 -%}
 
 {%- style -%}
@@ -472,9 +430,6 @@
   }
 {%- endstyle -%}
 
-{%- comment -%}Render sections based on enabled settings{%- endcomment -%}
-
-{%- if section.settings.training_enabled -%}
 <section class="pps color-{{ section.settings.dark_color_scheme }}" data-section-id="{{ section.id }}">
   <div class="pps__wrap page-width">
     <h2 class="pps__title">{{ section.settings.training_heading }}</h2>
@@ -635,10 +590,8 @@
     </div>
   </div>
 </section>
-{%- endif -%}
 
-{%- if section.settings.fitness_enabled -%}
-  <div class="pps__fitness color-{{ section.settings.dark_color_scheme }}"> color-{{ section.settings.light_color_scheme }}" data-section-id="{{ section.id }}">
+<section class="pps pps__specs color-{{ section.settings.light_color_scheme }}" data-section-id="{{ section.id }}">
   <div class="pps__wrap page-width">
     <h2 class="pps__title">{{ section.settings.specs_heading }}</h2>
     <p class="pps__subtitle">{{ section.settings.specs_subheading }}</p>
@@ -733,9 +686,7 @@
     </div>
   </div>
 </section>
-{%- endif -%}
 
-{%- if section.settings.jrny_enabled -%}
 <section class="pps pps__jrny color-{{ section.settings.dark_color_scheme }}" data-section-id="{{ section.id }}">
   <div class="pps__wrap page-width">
     <div class="pps__slider-head">
@@ -809,7 +760,6 @@
     <div class="pps__dots pps__jrny-pagination-{{ section.id }}"></div>
   </div>
 </section>
-{%- endif -%}
 
 <script>
   (() => {
@@ -903,31 +853,7 @@
     },
     {
       "type": "header",
-      "content": "Section Order Settings"
-    },
-    {
-      "type": "paragraph",
-      "content": "Use position numbers to reorder sections. Leave at 0 to use default order. Set enabled to false to hide a section."
-    },
-    {
-      "type": "header",
       "content": "Training section"
-    },
-    {
-      "type": "checkbox",
-      "id": "training_enabled",
-      "label": "Enable training section",
-      "default": true
-    },
-    {
-      "type": "range",
-      "id": "training_position",
-      "label": "Training section position",
-      "min": 0,
-      "max": 10,
-      "step": 1,
-      "default": 1,
-      "info": "Set to 0 for default order"
     },
     {
       "type": "text",
@@ -971,22 +897,6 @@
     {
       "type": "header",
       "content": "Entertainment + fitness section"
-    },
-    {
-      "type": "checkbox",
-      "id": "fitness_enabled",
-      "label": "Enable fitness section",
-      "default": true
-    },
-    {
-      "type": "range",
-      "id": "fitness_position",
-      "label": "Fitness section position",
-      "min": 0,
-      "max": 10,
-      "step": 1,
-      "default": 2,
-      "info": "Set to 0 for default order"
     },
     {
       "type": "text",
@@ -1051,22 +961,6 @@
       "content": "Specs + warranty section"
     },
     {
-      "type": "checkbox",
-      "id": "specs_enabled",
-      "label": "Enable specs section",
-      "default": true
-    },
-    {
-      "type": "range",
-      "id": "specs_position",
-      "label": "Specs section position",
-      "min": 0,
-      "max": 10,
-      "step": 1,
-      "default": 3,
-      "info": "Set to 0 for default order"
-    },
-    {
       "type": "text",
       "id": "specs_heading",
       "label": "Specs heading",
@@ -1121,22 +1015,6 @@
     {
       "type": "header",
       "content": "JRNY membership section"
-    },
-    {
-      "type": "checkbox",
-      "id": "jrny_enabled",
-      "label": "Enable JRNY section",
-      "default": true
-    },
-    {
-      "type": "range",
-      "id": "jrny_position",
-      "label": "JRNY section position",
-      "min": 0,
-      "max": 10,
-      "step": 1,
-      "default": 4,
-      "info": "Set to 0 for default order"
     },
     {
       "type": "text",
