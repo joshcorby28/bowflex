@@ -539,23 +539,29 @@
         "jrny_slide_MnmhUB": {
           "type": "jrny_slide",
           "settings": {
-            "image": "shopify://shop_images/t9-05-drive-system-bg-2x.webp",
-            "title": "MaxReact Drive System",
-            "text": "The ultra-responsive MaxReact Drive System lets you change your pace rapidly without lags or delays."
+            "image": "shopify://shop_images/t9-jrny-coaching-bg-2x.webp",
+            "title": "Go ahead, pick up the pace",
+            "text": "Your virtual coach gives you real-time encouragement and guidance for every run."
           }
         },
         "jrny_slide_hCY6Ek": {
           "type": "jrny_slide",
-          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/t16-jrny-coaching-bg-1x.jpg",
-            "title": "Every day is different.",
-            "text": "Get a custom set of adaptive workouts to freshen up your routine."
+            "image": "shopify://shop_images/t9-jrny-etw-bg-2x.webp",
+            "title": "Roam if you want to",
+            "text": "200+ Explore the World routes give you a beautiful new place to run each day"
+          }
+        },
+        "jrny_slide_Jq3WbE": {
+          "type": "jrny_slide",
+          "settings": {
+            "image": "shopify://shop_images/t9-jrny-whole-body-workouts-bg-2x.webp",
+            "title": "When you want a change of pace",
+            "text": "Work in some whole-body movement with yoga, Pilates and strength training classes."
           }
         },
         "jrny_slide_KTYTfc": {
           "type": "jrny_slide",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/t16-jrny-coaching-bg-1x.jpg",
             "title": "Every day is different.",
@@ -584,6 +590,7 @@
         "jrny_slide_xpdUKN",
         "jrny_slide_MnmhUB",
         "jrny_slide_hCY6Ek",
+        "jrny_slide_Jq3WbE",
         "jrny_slide_KTYTfc"
       ],
       "settings": {
