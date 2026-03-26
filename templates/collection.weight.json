@@ -89,6 +89,99 @@
         "padding_bottom": 36
       }
     },
+    "rich_text_pa9qmL": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_RYHL8q": {
+          "type": "heading",
+          "settings": {
+            "heading": "JRNY connectivity for at-home lifting experiences.",
+            "heading_size": "h1"
+          }
+        },
+        "text_NcBmhX": {
+          "type": "text",
+          "settings": {
+            "text": ""
+          }
+        },
+        "button_JPyiat": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_RYHL8q",
+        "text_NcBmhX",
+        "button_JPyiat"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-4",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "image_with_text_maGB6t": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_pXyjCa": {
+          "type": "heading",
+          "settings": {
+            "badge": "",
+            "badge_color": "#b4ff63",
+            "heading": "On-Demand Trainer-Led Workouts",
+            "heading_size": "h2"
+          }
+        },
+        "text_LrtYq4": {
+          "type": "text",
+          "settings": {
+            "text": "<p>With on-demand videos, and an ever-growing library of whole-body workout content, seamlessly experience the felling of truly personalied training from home</p>",
+            "text_style": "body"
+          }
+        },
+        "button_qpaXqa": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_pXyjCa",
+        "text_LrtYq4",
+        "button_qpaXqa"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/strength-trainer-workouts-bg-2x.webp",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "scheme-4",
+        "color_scheme": "scheme-4",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "colleciton_pahe_sections_NyEhVx": {
       "type": "colleciton-pahe-sections",
       "blocks": {
@@ -183,56 +276,6 @@
         "features_subheading": "JRNY gives you a million exciting reasons to jump on your BowFlex treadmill. With inspiring trainers, workouts that push you harder as you get stronger and streaming entertainment, you'll never find yourself in a fitness rut",
         "features_default_image": "shopify://shop_images/t16-jrny-coaching-bg-1x.jpg"
       }
-    },
-    "image_with_text_maGB6t": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_pXyjCa": {
-          "type": "heading",
-          "settings": {
-            "badge": "",
-            "badge_color": "#b4ff63",
-            "heading": "On-Demand Trainer-Led Workouts",
-            "heading_size": "h1"
-          }
-        },
-        "text_LrtYq4": {
-          "type": "text",
-          "settings": {
-            "text": "<p>With on-demand videos, and an ever-growing library of whole-body workout content, seamlessly experience the felling of truly personalied training from home</p>",
-            "text_style": "body"
-          }
-        },
-        "button_qpaXqa": {
-          "type": "button",
-          "settings": {
-            "button_label": "",
-            "button_link": "",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_pXyjCa",
-        "text_LrtYq4",
-        "button_qpaXqa"
-      ],
-      "name": "t:sections.image-with-text.presets.name",
-      "settings": {
-        "image": "shopify://shop_images/strength-trainer-workouts-bg-2x.webp",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
-        "image_behavior": "none",
-        "content_layout": "no-overlap",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "mobile_content_alignment": "left",
-        "section_color_scheme": "",
-        "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
@@ -240,7 +283,8 @@
     "video_dirrE8",
     "custom_liquid_AeKEPp",
     "product-grid",
-    "colleciton_pahe_sections_NyEhVx",
-    "image_with_text_maGB6t"
+    "rich_text_pa9qmL",
+    "image_with_text_maGB6t",
+    "colleciton_pahe_sections_NyEhVx"
   ]
 }
