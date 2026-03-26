@@ -1,0 +1,195 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "color_scheme": "scheme-1"
+      }
+    },
+    "video_dirrE8": {
+      "type": "video",
+      "blocks": {
+        "text_eVUcUH": {
+          "type": "text",
+          "settings": {
+            "show-quotes": false,
+            "show_review": false,
+            "border_radius": 25,
+            "backdrop_filter": false,
+            "stand_out_text": "{{ collection.metafields.custom.hero_title.value }}",
+            "heading": "{{ collection.metafields.custom.hero_subtitle.value }}",
+            "heading_text_color": "#ffffff",
+            "text": "",
+            "body_text_color": "#ffffff",
+            "button_link_one": "",
+            "link_one_text": "",
+            "button_link_one_style": "primary",
+            "button_link_two": "",
+            "link_two_text": "",
+            "button_link_two_style": "secondary"
+          }
+        }
+      },
+      "block_order": [
+        "text_eVUcUH"
+      ],
+      "name": "t:sections.video.presets.name",
+      "settings": {
+        "video": "{{ collection.metafields.custom.video_hero.value }}",
+        "poster_desktop": "{{ collection.image }}",
+        "no_video_mobile": false,
+        "show_overlay": true,
+        "overlay_color": "#000000",
+        "overlay_opacity": 19,
+        "full_width": true,
+        "horizontal_alignment": "middle-left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "custom_liquid_AeKEPp": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<div class=\"apr-message\">\n<div class=\"apr-inner page-width\">\n<h3>  Limited time: Save £300 on our Newest Treadmills!</h3\n</div>\n</div>\n\n<style>\n.apr-message {\nbackground:#000;\npadding: 10px;\ntext-align:center;\n}\n\n.apr-message h3 {\ncolor:white;\ntext-underline-offset: 8px;\n}\n</style>",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 52
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 16,
+        "columns_desktop": 1,
+        "columns_mobile": "1",
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "enable_filtering": false,
+        "filter_type": "horizontal",
+        "enable_sorting": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "colleciton_pahe_sections_NyEhVx": {
+      "type": "colleciton-pahe-sections",
+      "blocks": {
+        "jrny_slide_DfRBda": {
+          "type": "jrny_slide",
+          "settings": {
+            "image": "shopify://shop_images/maxreact-drive-system-2x.webp",
+            "title": "MaxReact Drive System",
+            "text": "The ultra-responsive Drive System lets you change your pace rapidly without lags or delays. (Available only on the T6 and T9 treadmills)."
+          }
+        },
+        "jrny_slide_GNEjyq": {
+          "type": "jrny_slide",
+          "settings": {
+            "image": "shopify://shop_images/connect-apple-watch-2x.webp",
+            "title": "Connect to Apple Watch",
+            "text": "Get an easy, secure way to Connect your Apple Watch to the T6 or T9 Treadmill and keep your metrics in sync."
+          }
+        },
+        "jrny_slide_Q9mdqp": {
+          "type": "jrny_slide",
+          "settings": {
+            "image": "shopify://shop_images/quickdial-controls-2x_e4d71df1-ae76-4600-b31c-9dcb9acea234.webp",
+            "title": "QuickDial Controls",
+            "text": "Roll the right-hand dial to adjust speed and the left-hand dial to change the incline - perfect for fast-paced interval training.  (Available only on the T6 and T9 Treadmills)."
+          }
+        },
+        "feature_slide_zeGR7f": {
+          "type": "feature_slide",
+          "settings": {
+            "image": "shopify://shop_images/jrny-on-demand-videos-0123-2x.webp",
+            "title": "Trainer Led Workouts",
+            "text": "Find an instructor for every mood, every fitness level."
+          }
+        },
+        "feature_slide_amHNf7": {
+          "type": "feature_slide",
+          "settings": {
+            "image": "shopify://shop_images/jrny-streaming-tv-0123-2x.webp",
+            "title": "Streaming Entertainment",
+            "text": "Follwow yuor workout and stream your favourite shows at the same time, including Netflix and Prime Video"
+          }
+        },
+        "feature_slide_xEFExm": {
+          "type": "feature_slide",
+          "settings": {
+            "image": "shopify://shop_images/jrny-metrics-0123-2x.webp",
+            "title": "Integrated Automatic Tracking",
+            "text": "Closely monitor your progress as JRNY measures every workout."
+          }
+        },
+        "feature_slide_NFDHwA": {
+          "type": "feature_slide",
+          "settings": {
+            "image": "shopify://shop_images/jrny-explore-the-world-0123-2x.webp",
+            "title": "Explore the World",
+            "text": "200+ scenic routes let you train in your dream destination."
+          }
+        },
+        "feature_slide_CnPBWn": {
+          "type": "feature_slide",
+          "settings": {
+            "image": "shopify://shop_images/jrny-adaptive-workouts-0123-2x.webp",
+            "title": "Adaptive workouts",
+            "text": "Every day, a custom set of workouts to liven up your routine and keep things fun."
+          }
+        }
+      },
+      "block_order": [
+        "jrny_slide_DfRBda",
+        "jrny_slide_GNEjyq",
+        "jrny_slide_Q9mdqp",
+        "feature_slide_zeGR7f",
+        "feature_slide_amHNf7",
+        "feature_slide_xEFExm",
+        "feature_slide_NFDHwA",
+        "feature_slide_CnPBWn"
+      ],
+      "custom_css": [
+        ".pps__jrny {background: white; color: #1b1b1b;}",
+        ".pps__jrny h3,.pps__jrny p {color: #1b1b1b;}",
+        ".swiper-slide-active {opacity: 1 !important;}",
+        ".swiper-slide {border: none; opacity: 100;}"
+      ],
+      "name": "Colleciton pahe sections",
+      "settings": {
+        "dark_color_scheme": "scheme-1",
+        "membership_heading": "Dial in your metrics.  Dial in your run.",
+        "membership_subheading": "",
+        "jrny_default_image": "shopify://shop_images/quickdial-controls-2x.webp",
+        "features_heading": "JRNY connectivity for at-home running experiences.",
+        "features_subheading": "JRNY gives you a million exciting reasons to jump on your BowFlex treadmill. With inspiring trainers, workouts that push you harder as you get stronger and streaming entertainment, you'll never find yourself in a fitness rut",
+        "features_default_image": "shopify://shop_images/t16-jrny-coaching-bg-1x.jpg"
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "video_dirrE8",
+    "custom_liquid_AeKEPp",
+    "product-grid",
+    "colleciton_pahe_sections_NyEhVx"
+  ]
+}
