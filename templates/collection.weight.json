@@ -183,6 +183,56 @@
         "features_subheading": "JRNY gives you a million exciting reasons to jump on your BowFlex treadmill. With inspiring trainers, workouts that push you harder as you get stronger and streaming entertainment, you'll never find yourself in a fitness rut",
         "features_default_image": "shopify://shop_images/t16-jrny-coaching-bg-1x.jpg"
       }
+    },
+    "image_with_text_maGB6t": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_pXyjCa": {
+          "type": "heading",
+          "settings": {
+            "badge": "",
+            "badge_color": "#b4ff63",
+            "heading": "On-Demand Trainer-Led Workouts",
+            "heading_size": "h2"
+          }
+        },
+        "text_LrtYq4": {
+          "type": "text",
+          "settings": {
+            "text": "<p>With on-demand videos, and an ever-growing library of whole-body workout content, seamlessly experience the felling of truly personalied training from home.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_qpaXqa": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_pXyjCa",
+        "text_LrtYq4",
+        "button_qpaXqa"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/strength-trainer-workouts-bg-2x.webp",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -190,6 +240,7 @@
     "video_dirrE8",
     "custom_liquid_AeKEPp",
     "product-grid",
-    "colleciton_pahe_sections_NyEhVx"
+    "colleciton_pahe_sections_NyEhVx",
+    "image_with_text_maGB6t"
   ]
 }
