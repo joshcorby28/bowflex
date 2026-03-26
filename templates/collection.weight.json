@@ -48,7 +48,7 @@
       "name": "t:sections.video.presets.name",
       "settings": {
         "video": "{{ collection.metafields.custom.video_hero.value }}",
-        "poster_desktop": "{{ collection.image }}",
+        "poster_desktop": "shopify://shop_images/weights-hero-rs1090-2026-2x.webp",
         "no_video_mobile": false,
         "show_overlay": true,
         "overlay_color": "#000000",
