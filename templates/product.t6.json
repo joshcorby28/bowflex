@@ -180,6 +180,13 @@
     "product_page_sections_nx3K7M": {
       "type": "product-page-sections",
       "blocks": {
+        "specs_accordion_6tdp4b": {
+          "type": "specs_accordion",
+          "settings": {
+            "title": "Console",
+            "content": "<p>Bluetooth Hardware - BT 4.0LE</p><p>Bluetooth Capabilities - FTMS, Speakers and Heart Rate</p><p>Bluetooth - FTMS App </p><p>CompatibleYesApple + Samsung Watch CompatibleYesHeart RateHand contact grips and Bluetooth heart rate strap compatibleBluetooth Media Control KeysVolumeDisplay Type8.8” x 2” / 224 mm x 53 mm black mask LCD with white backlight + 4 white LED windowsDisplay FeedbackTime, Distance, Calories, Speed, Incline, Pace, Laps, Heart Rate, Split Timer, Segment TimeProgramsManual, Muscle Toner, Calorie Goal, Distance Goal, Rolling Hills, Intervals, Strength Builder, Target Heart RateEnergy SaverYesOne-Button Quick StartYesPause ButtonYesButton TypeMembraneIncline Range0–15%Speed Range0.5–12 mphStorage FeaturesMobile Device Holder, Accessory TrayReading RackIntegrated into consolePersonal Fan1 (3 speed)Speakers3 Watt Stereo SpeakersUSB PortYes (USB A)<br/><br/></p>"
+          }
+        },
         "spec_metric_4L9LQd": {
           "type": "spec_metric",
           "settings": {
@@ -278,6 +285,7 @@
         }
       },
       "block_order": [
+        "specs_accordion_6tdp4b",
         "spec_metric_4L9LQd",
         "spec_metric_xbNqc3",
         "spec_metric_QfYXfy",
