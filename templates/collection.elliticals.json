@@ -63,7 +63,7 @@
       "type": "custom-liquid",
       "name": "t:sections.custom-liquid.presets.name",
       "settings": {
-        "custom_liquid": "<div class=\"apr-message\">\n<div class=\"apr-inner page-width\">\n<h3>  Limited time: Save £300 on our Newest Treadmills!</h3\n</div>\n</div>\n\n<style>\n.apr-message {\nbackground:#000;\npadding: 10px;\ntext-align:center;\n}\n\n.apr-message h3 {\ncolor:white;\ntext-underline-offset: 8px;\n}\n</style>",
+        "custom_liquid": "<div class=\"apr-message\">\n<div class=\"apr-inner page-width\">\n<h3>  Limited time: Save £300 on our Newest Ellipticals!</h3\n</div>\n</div>\n\n<style>\n.apr-message {\nbackground:#000;\npadding: 10px;\ntext-align:center;\n}\n\n.apr-message h3 {\ncolor:white;\ntext-underline-offset: 8px;\n}\n</style>",
         "color_scheme": "",
         "padding_top": 0,
         "padding_bottom": 52
@@ -96,8 +96,8 @@
           "type": "jrny_slide",
           "settings": {
             "image": "shopify://shop_images/maxreact-drive-system-2x.webp",
-            "title": "MaxReact Drive System",
-            "text": "The ultra-responsive Drive System lets you change your pace rapidly without lags or delays. (Available only on the T6 and T9 treadmills)."
+            "title": "Compact design",
+            "text": "Small footprint, big workout.  Save space with a product that's half the size of the average treadmill."
           }
         },
         "jrny_slide_GNEjyq": {
@@ -111,9 +111,9 @@
         "jrny_slide_Q9mdqp": {
           "type": "jrny_slide",
           "settings": {
-            "image": "shopify://shop_images/quickdial-controls-2x_e4d71df1-ae76-4600-b31c-9dcb9acea234.webp",
-            "title": "QuickDial Controls",
-            "text": "Roll the right-hand dial to adjust speed and the left-hand dial to change the incline - perfect for fast-paced interval training.  (Available only on the T6 and T9 Treadmills)."
+            "image": "shopify://shop_images/max-features-high-intensity-960x700_-_frame_at_0m1s.jpg",
+            "title": "High- or low-intensity training",
+            "text": "Mix it up acording to your mood.  Choose between full-body, high intensity intervals or low-intensity steady-state training."
           }
         },
         "feature_slide_zeGR7f": {
