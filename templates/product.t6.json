@@ -146,21 +146,14 @@
           "type": "collection-circle",
           "settings": {
             "collection_image": "shopify://shop_images/t6-feature-cup-holder-studio-2x.webp",
-            "collection_text": "Stay hydrated evert tep of the way <li>Water bottle holder</li><li>"
+            "collection_text": "Stay hydrated evert tep of the way Water bottle holder"
           }
         },
         "collection_circle_XaWJbT": {
           "type": "collection-circle",
           "settings": {
-            "collection_image": "shopify://shop_images/t9-feature-fan-2x.png",
+            "collection_image": "shopify://shop_images/t6-feature-fan-studio-2x.webp",
             "collection_text": "Undeniably cool."
-          }
-        },
-        "collection_circle_RKXytw": {
-          "type": "collection-circle",
-          "settings": {
-            "collection_image": "shopify://shop_images/t9-feature-cup-holder-2x.webp",
-            "collection_text": "Stay hydrated every step of the way."
           }
         }
       },
@@ -172,8 +165,7 @@
         "collection_circle_H9Exnf",
         "collection_circle_NX6tQx",
         "collection_circle_MkJ3xp",
-        "collection_circle_XaWJbT",
-        "collection_circle_RKXytw"
+        "collection_circle_XaWJbT"
       ],
       "name": "Key Features",
       "settings": {
