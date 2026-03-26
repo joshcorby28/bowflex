@@ -183,6 +183,56 @@
         "features_subheading": "JRNY gives you a million exciting reasons to jump on your BowFlex treadmill. With inspiring trainers, workouts that push you harder as you get stronger and streaming entertainment, you'll never find yourself in a fitness rut",
         "features_default_image": "shopify://shop_images/t16-jrny-coaching-bg-1x.jpg"
       }
+    },
+    "image_with_text_RP6JFy": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_PEM4tx": {
+          "type": "heading",
+          "settings": {
+            "badge": "",
+            "badge_color": "#b4ff63",
+            "heading": "No Space?  No Problem",
+            "heading_size": "h1"
+          }
+        },
+        "text_E9D6mV": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At less than half the size of the average treadmill, this space-saving, compact elliptical might just make your room look bigger.  </p>",
+            "text_style": "body"
+          }
+        },
+        "button_9DW6bL": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_PEM4tx",
+        "text_E9D6mV",
+        "button_9DW6bL"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/max-compact-space-2x.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -190,6 +240,7 @@
     "video_dirrE8",
     "custom_liquid_AeKEPp",
     "product-grid",
-    "colleciton_pahe_sections_NyEhVx"
+    "colleciton_pahe_sections_NyEhVx",
+    "image_with_text_RP6JFy"
   ]
 }
