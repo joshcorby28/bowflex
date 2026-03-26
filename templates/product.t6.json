@@ -1,0 +1,277 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "caption": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "caption",
+        "price",
+        "variant_picker",
+        "buy_buttons",
+        "description"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "",
+        "media_size": "large",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "thumbnail_slider",
+        "mobile_thumbnails": "hide",
+        "media_position": "left",
+        "image_zoom": "none",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "key_features_wQ7gFE": {
+      "type": "key-features",
+      "blocks": {
+        "collection_circle_WdgdYr": {
+          "type": "collection-circle",
+          "settings": {
+            "collection_image": "shopify://shop_images/t9-feature-quick-response-2x.webp",
+            "collection_text": "Change speed and incline in a heartbeat"
+          }
+        },
+        "collection_circle_3PRirC": {
+          "type": "collection-circle",
+          "settings": {
+            "collection_image": "shopify://shop_images/t9-feature-deck-2x.png",
+            "collection_text": "Plenty of runway."
+          }
+        },
+        "collection_circle_HFwqiD": {
+          "type": "collection-circle",
+          "settings": {
+            "collection_image": "shopify://shop_images/t9-feature-apple-watch-2x.webp",
+            "collection_text": "Connect to Apple Watch."
+          }
+        },
+        "collection_circle_GceT4N": {
+          "type": "collection-circle",
+          "settings": {
+            "collection_image": "shopify://shop_images/t9-feature-incline-deck-2x.webp",
+            "collection_text": "Your next peak is just ahead."
+          }
+        },
+        "collection_circle_H9Exnf": {
+          "type": "collection-circle",
+          "settings": {
+            "collection_image": "shopify://shop_images/t9-feature-media-shelf-2x.webp",
+            "collection_text": "Keep your device in reach."
+          }
+        },
+        "collection_circle_NX6tQx": {
+          "type": "collection-circle",
+          "settings": {
+            "collection_image": "shopify://shop_images/t9-feature-console-app-2x.webp",
+            "collection_text": "Keep your options open."
+          }
+        },
+        "collection_circle_MkJ3xp": {
+          "type": "collection-circle",
+          "settings": {
+            "collection_image": "shopify://shop_images/t9-feature-flex-zone-2x.webp",
+            "collection_text": "Support and stability to go the distance."
+          }
+        },
+        "collection_circle_XaWJbT": {
+          "type": "collection-circle",
+          "settings": {
+            "collection_image": "shopify://shop_images/t9-feature-fan-2x.png",
+            "collection_text": "Undeniably cool."
+          }
+        },
+        "collection_circle_RKXytw": {
+          "type": "collection-circle",
+          "settings": {
+            "collection_image": "shopify://shop_images/t9-feature-cup-holder-2x.webp",
+            "collection_text": "Stay hydrated every step of the way."
+          }
+        }
+      },
+      "block_order": [
+        "collection_circle_WdgdYr",
+        "collection_circle_3PRirC",
+        "collection_circle_HFwqiD",
+        "collection_circle_GceT4N",
+        "collection_circle_H9Exnf",
+        "collection_circle_NX6tQx",
+        "collection_circle_MkJ3xp",
+        "collection_circle_XaWJbT",
+        "collection_circle_RKXytw"
+      ],
+      "name": "Key Features",
+      "settings": {
+        "section_heading": "Product Features",
+        "color_scheme": "",
+        "title": "Product Features",
+        "heading_size": "h1",
+        "padding_top": 32,
+        "padding_bottom": 36
+      }
+    },
+    "product_page_sections_nx3K7M": {
+      "type": "product-page-sections",
+      "blocks": {
+        "jrny_slide_CUn9NW": {
+          "type": "jrny_slide",
+          "settings": {
+            "image": "shopify://shop_images/t16-jrny-coaching-bg-1x.jpg",
+            "title": "Every day is different.",
+            "text": "Get a custom set of adaptive workouts to freshen up your routine."
+          }
+        },
+        "jrny_slide_iGPaXL": {
+          "type": "jrny_slide",
+          "settings": {
+            "image": "shopify://shop_images/t16-jrny-coaching-bg-1x.jpg",
+            "title": "Every day is different.",
+            "text": "Get a custom set of adaptive workouts to freshen up your routine."
+          }
+        },
+        "jrny_slide_VNnwkh": {
+          "type": "jrny_slide",
+          "settings": {
+            "image": "shopify://shop_images/t16-jrny-coaching-bg-1x.jpg",
+            "title": "Every day is different.",
+            "text": "Get a custom set of adaptive workouts to freshen up your routine."
+          }
+        },
+        "jrny_slide_KbWjJT": {
+          "type": "jrny_slide",
+          "settings": {
+            "image": "shopify://shop_images/t16-jrny-coaching-bg-1x.jpg",
+            "title": "Every day is different.",
+            "text": "Get a custom set of adaptive workouts to freshen up your routine."
+          }
+        },
+        "jrny_slide_A3dWc9": {
+          "type": "jrny_slide",
+          "settings": {
+            "image": "shopify://shop_images/t16-jrny-coaching-bg-1x.jpg",
+            "title": "Every day is different.",
+            "text": "Get a custom set of adaptive workouts to freshen up your routine."
+          }
+        }
+      },
+      "block_order": [
+        "jrny_slide_CUn9NW",
+        "jrny_slide_iGPaXL",
+        "jrny_slide_VNnwkh",
+        "jrny_slide_KbWjJT",
+        "jrny_slide_A3dWc9"
+      ],
+      "settings": {
+        "dark_color_scheme": "scheme-1",
+        "light_color_scheme": "scheme-1",
+        "training_heading": "The ultimate training experience",
+        "training_subheading": "Watch videos below to learn more.",
+        "fallback_training_video_url": "",
+        "fallback_training_tab_title_1": "Explore entertainment",
+        "fallback_training_tab_title_2": "Go further with JRNY",
+        "fitness_heading": "Entertainment + fitness at your fingertips.",
+        "fitness_subheading": "Dummy content to represent media and app integrations.",
+        "fitness_left_image": "shopify://shop_images/t16-01-watch-2x.webp",
+        "fitness_left_title": "Connect to your watch",
+        "fitness_left_text": "Connect to Apple Watch or Samsung Galaxy Watch for a seamless way to keep your metrics in sync.",
+        "fitness_left_pill_1": "Apple Watch",
+        "fitness_left_pill_2": "Galaxy Watch",
+        "fitness_right_image": "shopify://shop_images/t16-02-app-2x.webp",
+        "fitness_right_title": "16” HD touchscreen",
+        "fitness_right_text": "Browse the web or access Netflix, YouTube, Spotify, JRNY, and more.",
+        "specs_heading": "Specs & Warranty",
+        "specs_subheading": "Equipment dimensions and warranty details.",
+        "spec_image_1": "shopify://shop_images/dimensions-folded-t16-bg-2x.webp",
+        "spec_image_1_alt": "Open treadmill dimensions",
+        "spec_image_2": "shopify://shop_images/dimensions-folded-t16-bg-2x.webp",
+        "spec_image_2_alt": "Folded treadmill dimensions",
+        "specs_group_heading": "Specs",
+        "warranty_group_heading": "Warranty",
+        "additional_specs_heading": "Additional Specs",
+        "membership_heading": "The JRNY adaptive fitness membership keeps you going.",
+        "membership_subheading": "Dummy carousel cards for membership benefits."
+      }
+    }
+  },
+  "order": [
+    "main",
+    "related-products",
+    "key_features_wQ7gFE",
+    "product_page_sections_nx3K7M"
+  ]
+}
