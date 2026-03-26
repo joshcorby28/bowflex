@@ -129,7 +129,7 @@
         "color_scheme": "scheme-4",
         "full_width": true,
         "padding_top": 40,
-        "padding_bottom": 52
+        "padding_bottom": 20
       }
     },
     "image_with_text_maGB6t": {
@@ -260,6 +260,7 @@
         "feature_slide_NFDHwA",
         "feature_slide_CnPBWn"
       ],
+      "disabled": true,
       "custom_css": [
         ".pps__jrny {background: white; color: #1b1b1b;}",
         ".pps__jrny h3,.pps__jrny p {color: #1b1b1b;}",
@@ -276,6 +277,63 @@
         "features_subheading": "JRNY gives you a million exciting reasons to jump on your BowFlex treadmill. With inspiring trainers, workouts that push you harder as you get stronger and streaming entertainment, you'll never find yourself in a fitness rut",
         "features_default_image": "shopify://shop_images/t16-jrny-coaching-bg-1x.jpg"
       }
+    },
+    "multicolumn_XRFgkn": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_APwinL": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/barbell-videos-how-to-2x.webp",
+            "title": "Trainer-led barbell & curl bar technique videos",
+            "text": "<p>Follow along with our exercise library to master perfect form for exercises like bench press, dead lift and more.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_J3pCdA": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/kettlebell-videos-how-to-2x.webp",
+            "title": "Trainer-led kettle bell technique videos",
+            "text": "<p>Here are a few of our favourite kettlebell exercises to help you get started with your kettlebell.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_jBD7dL": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/adjustible-weights-strength-building-plp-2x.webp",
+            "title": "Discove more strength workouts",
+            "text": "<p>Add variety to your routine with new full-body strength workouts from our Bowflex blog</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_APwinL",
+        "column_J3pCdA",
+        "column_jBD7dL"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -285,6 +343,7 @@
     "product-grid",
     "rich_text_pa9qmL",
     "image_with_text_maGB6t",
-    "colleciton_pahe_sections_NyEhVx"
+    "colleciton_pahe_sections_NyEhVx",
+    "multicolumn_XRFgkn"
   ]
 }
