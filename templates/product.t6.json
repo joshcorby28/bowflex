@@ -180,6 +180,27 @@
     "product_page_sections_nx3K7M": {
       "type": "product-page-sections",
       "blocks": {
+        "warranty_metric_FcVbGp": {
+          "type": "warranty_metric",
+          "settings": {
+            "label": "Frame & Motor",
+            "value": "Lifetime"
+          }
+        },
+        "warranty_metric_J4EyzN": {
+          "type": "warranty_metric",
+          "settings": {
+            "label": "Mechanical Parts",
+            "value": "3 Years"
+          }
+        },
+        "warranty_metric_HA7xjJ": {
+          "type": "warranty_metric",
+          "settings": {
+            "label": "Labour",
+            "value": "1 Year"
+          }
+        },
         "specs_accordion_6tdp4b": {
           "type": "specs_accordion",
           "settings": {
@@ -285,6 +306,9 @@
         }
       },
       "block_order": [
+        "warranty_metric_FcVbGp",
+        "warranty_metric_J4EyzN",
+        "warranty_metric_HA7xjJ",
         "specs_accordion_6tdp4b",
         "spec_metric_4L9LQd",
         "spec_metric_xbNqc3",
