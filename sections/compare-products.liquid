@@ -33,8 +33,9 @@
   #shopify-section-{{ section.id }} .compare-products__grid {
     display: grid;
     grid-template-columns: repeat(var(--compare-columns, 3), minmax(0, 1fr));
-    border-left: 1px solid {{ section.settings.border_color }};
-    border-top: 1px solid {{ section.settings.border_color }};
+gap: 60px;
+    border-bottom: none;
+    border: none;
   }
 
   #shopify-section-{{ section.id }} .compare-products__overview {
@@ -51,14 +52,13 @@
   #shopify-section-{{ section.id }} .compare-products__overview-grid {
     display: grid;
     grid-template-columns: repeat(var(--compare-columns, 3), minmax(0, 1fr));
-    gap: 0;
-    border-left: 1px solid {{ section.settings.border_color }};
-    border-top: 1px solid {{ section.settings.border_color }};
+gap: 60px;
+    border-bottom: none;
+    border: none;
   }
 
   #shopify-section-{{ section.id }} .compare-products__overview-col {
     border-right: 1px solid {{ section.settings.border_color }};
-    border-bottom: 1px solid {{ section.settings.border_color }};
     padding: 0;
     background: {{ section.settings.card_background }};
   }
