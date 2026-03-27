@@ -76,7 +76,7 @@
         "overview_title": "Overview",
         "button_label": "Add to Cart",
         "link_label": "View",
-        "payment_note": "Pay as low as",
+        "payment_note": "",
         "section_background": "#ffffff",
         "card_background": "#ffffff",
         "media_background": "#f3f3f5",
