@@ -393,9 +393,9 @@
         "jrny_slide_JrPyYw": {
           "type": "jrny_slide",
           "settings": {
-            "image": "shopify://shop_images/t16-jrny-coaching-bg-1x.jpg",
-            "title": "Every day is different.",
-            "text": "Get a custom set of adaptive workouts to freshen up your routine."
+            "image": "shopify://shop_images/t6-jrny-radio-bg-2x.webp",
+            "title": "Find a playlist to power your P.R.",
+            "text": "An ever-fresh line up on JRNY Radio means you can always find a musical mood boost."
           }
         },
         "jrny_slide_XrDExw": {
@@ -439,7 +439,7 @@
         "fallback_training_video_url": "",
         "fallback_training_tab_title_1": "Explore entertainment",
         "fallback_training_tab_title_2": "Go further with JRNY",
-        "show_fitness": true,
+        "show_fitness": false,
         "fitness_position": 2,
         "fitness_heading": "All the essentials for your run, plus total fitness app freedom",
         "fitness_subheading": "",
@@ -462,10 +462,10 @@
         "specs_group_heading": "Specs",
         "warranty_group_heading": "Warranty",
         "additional_specs_heading": "Additional Specs",
-        "show_membership": false,
+        "show_membership": true,
         "membership_position": 4,
         "membership_heading": "The JRNY adaptive fitness membership keeps you going.",
-        "membership_subheading": "Dummy carousel cards for membership benefits."
+        "membership_subheading": ""
       }
     }
   },
