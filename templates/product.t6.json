@@ -390,14 +390,6 @@
     "product_page_sections_7DntQy": {
       "type": "product-page-sections",
       "blocks": {
-        "jrny_slide_JWL7aU": {
-          "type": "jrny_slide",
-          "settings": {
-            "image": "shopify://shop_images/t16-jrny-coaching-bg-1x.jpg",
-            "title": "Every day is different.",
-            "text": "Get a custom set of adaptive workouts to freshen up your routine."
-          }
-        },
         "jrny_slide_JrPyYw": {
           "type": "jrny_slide",
           "settings": {
@@ -432,7 +424,6 @@
         }
       },
       "block_order": [
-        "jrny_slide_JWL7aU",
         "jrny_slide_JrPyYw",
         "jrny_slide_XrDExw",
         "jrny_slide_bqG9CR",
