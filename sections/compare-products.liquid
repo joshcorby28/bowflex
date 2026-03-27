@@ -1,6 +1,7 @@
 {%- liquid
   assign compare_collection = section.settings.collection
   assign product_limit = section.settings.products_to_show | default: 3
+  assign product_feature_blocks = section.blocks | where: 'type', 'product_features'
 -%}
 
 {%- style -%}
@@ -272,26 +273,11 @@
             </div>
 
             <ul class="compare-products__features">
-              {%- for block in section.blocks -%}
-                {%- assign feature_text = '' -%}
-
-                {%- case product_index -%}
-                  {%- when 1 -%}
-                    {%- assign feature_text = block.settings.product_1_text -%}
-                  {%- when 2 -%}
-                    {%- assign feature_text = block.settings.product_2_text -%}
-                  {%- when 3 -%}
-                    {%- assign feature_text = block.settings.product_3_text -%}
-                  {%- when 4 -%}
-                    {%- assign feature_text = block.settings.product_4_text -%}
-                  {%- when 5 -%}
-                    {%- assign feature_text = block.settings.product_5_text -%}
-                  {%- when 6 -%}
-                    {%- assign feature_text = block.settings.product_6_text -%}
-                {%- endcase -%}
-
-                {%- if feature_text != blank -%}
-                  <li {{ block.shopify_attributes }}>{{ feature_text }}</li>
+              {%- for block in product_feature_blocks -%}
+                {%- if block.settings.product_position == product_index -%}
+                  {%- if block.settings.feature_text != blank -%}
+                    <li {{ block.shopify_attributes }}>{{ block.settings.feature_text }}</li>
+                  {%- endif -%}
                 {%- endif -%}
               {%- endfor -%}
             </ul>
@@ -580,41 +566,28 @@
   ],
   "blocks": [
     {
-      "type": "feature_row",
-      "name": "Feature row",
+      "type": "product_features",
+      "name": "Product feature",
       "settings": [
         {
+          "type": "select",
+          "id": "product_position",
+          "label": "Product",
+          "default": "1",
+          "options": [
+            { "value": "1", "label": "Product 1" },
+            { "value": "2", "label": "Product 2" },
+            { "value": "3", "label": "Product 3" },
+            { "value": "4", "label": "Product 4" },
+            { "value": "5", "label": "Product 5" },
+            { "value": "6", "label": "Product 6" }
+          ]
+        },
+        {
           "type": "text",
-          "id": "product_1_text",
-          "label": "Product 1 text",
+          "id": "feature_text",
+          "label": "Feature text",
           "default": "16” HD touchscreen"
-        },
-        {
-          "type": "text",
-          "id": "product_2_text",
-          "label": "Product 2 text",
-          "default": "High-contrast, color LCD console"
-        },
-        {
-          "type": "text",
-          "id": "product_3_text",
-          "label": "Product 3 text",
-          "default": "Connect to Apple Watch® with Apple GymKit™ technology"
-        },
-        {
-          "type": "text",
-          "id": "product_4_text",
-          "label": "Product 4 text"
-        },
-        {
-          "type": "text",
-          "id": "product_5_text",
-          "label": "Product 5 text"
-        },
-        {
-          "type": "text",
-          "id": "product_6_text",
-          "label": "Product 6 text"
         }
       ]
     }
@@ -623,12 +596,12 @@
     {
       "name": "Compare products",
       "blocks": [
-        { "type": "feature_row" },
-        { "type": "feature_row" },
-        { "type": "feature_row" },
-        { "type": "feature_row" },
-        { "type": "feature_row" },
-        { "type": "feature_row" }
+        { "type": "product_features" },
+        { "type": "product_features" },
+        { "type": "product_features" },
+        { "type": "product_features" },
+        { "type": "product_features" },
+        { "type": "product_features" }
       ]
     }
   ]
