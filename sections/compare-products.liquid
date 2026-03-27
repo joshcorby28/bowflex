@@ -1,7 +1,7 @@
 {%- liquid
   assign compare_collection = section.settings.collection
   assign product_limit = section.settings.products_to_show | default: 3
-  assign overview_rows = section.blocks | where: 'type', 'overview_row'
+  assign overview_products = section.blocks | where: 'type', 'overview_product'
 -%}
 
 {%- style -%}
@@ -37,11 +37,86 @@
     border-top: 1px solid {{ section.settings.border_color }};
   }
 
+  #shopify-section-{{ section.id }} .compare-products__overview {
+    margin-top: 0;
+  }
+
   #shopify-section-{{ section.id }} .compare-products__overview-title {
-    margin: 0 0 24px;
+    margin: 48px 0 24px;
     color: {{ section.settings.heading_color }};
     font-size: 2.2rem;
     line-height: 1.2;
+  }
+
+  #shopify-section-{{ section.id }} .compare-products__overview-grid {
+    display: grid;
+    grid-template-columns: repeat(var(--compare-columns, 3), minmax(0, 1fr));
+    gap: 0;
+    border-left: 1px solid {{ section.settings.border_color }};
+    border-top: 1px solid {{ section.settings.border_color }};
+  }
+
+  #shopify-section-{{ section.id }} .compare-products__overview-col {
+    border-right: 1px solid {{ section.settings.border_color }};
+    border-bottom: 1px solid {{ section.settings.border_color }};
+    padding: 0;
+    background: {{ section.settings.card_background }};
+  }
+
+  #shopify-section-{{ section.id }} .compare-products__overview-media {
+    position: relative;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    background: {{ section.settings.media_background }};
+  }
+
+  #shopify-section-{{ section.id }} .compare-products__overview-media img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+  }
+
+  #shopify-section-{{ section.id }} .compare-products__video-play {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: rgba(0, 0, 0, 0.18);
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+  }
+
+  #shopify-section-{{ section.id }} .compare-products__video-play-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.92);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #shopify-section-{{ section.id }} .compare-products__video-play-icon svg {
+    fill: #111111;
+    width: 18px;
+    height: 18px;
+    margin-left: 3px;
+  }
+
+  #shopify-section-{{ section.id }} .compare-products__overview-features {
+    margin: 0;
+    padding: 20px 18px 24px 38px;
+    display: grid;
+    gap: 10px;
+    font-size: 1.25rem;
+    line-height: 1.55;
   }
 
   #shopify-section-{{ section.id }} .compare-products__card {
@@ -166,15 +241,6 @@
     white-space: nowrap;
   }
 
-  #shopify-section-{{ section.id }} .compare-products__features {
-    margin: 0;
-    padding: 0 18px 28px 38px;
-    display: grid;
-    gap: 12px;
-    font-size: 1.25rem;
-    line-height: 1.55;
-  }
-
   #shopify-section-{{ section.id }} .compare-products__empty {
     padding: 24px;
     border: 1px dashed {{ section.settings.border_color }};
@@ -183,7 +249,8 @@
   }
 
   @media screen and (max-width: 989px) {
-    #shopify-section-{{ section.id }} .compare-products__grid {
+    #shopify-section-{{ section.id }} .compare-products__grid,
+    #shopify-section-{{ section.id }} .compare-products__overview-grid {
       grid-template-columns: 1fr;
     }
   }
@@ -215,11 +282,10 @@
     {%- endif -%}
 
     {%- if compare_collection != blank and compare_collection.products_count > 0 -%}
-      {%- if section.settings.overview_title != blank -%}
-        <h3 class="compare-products__overview-title">{{ section.settings.overview_title }}</h3>
-      {%- endif -%}
+      {%- assign column_count = product_limit | at_most: compare_collection.products_count -%}
 
-      <div class="compare-products__grid" style="--compare-columns: {{ product_limit | at_most: compare_collection.products_count }};">
+      {%- comment -%} Row 1: Product cards {%- endcomment -%}
+      <div class="compare-products__grid" style="--compare-columns: {{ column_count }};">
         {%- for product in compare_collection.products limit: product_limit -%}
           {%- assign product_index = forloop.index -%}
           {%- assign badge_text = '' -%}
@@ -282,33 +348,61 @@
               <a class="compare-products__button" href="{{ product.url }}">{{ section.settings.button_label }}</a>
               <a class="compare-products__link" href="{{ product.url }}">{{ section.settings.link_label }} {{ product.title | remove: 'Treadmill' | strip }}</a>
             </div>
-
-            <ul class="compare-products__features">
-              {%- for block in overview_rows -%}
-                {%- assign feature_text = '' -%}
-                {%- case product_index -%}
-                  {%- when 1 -%}
-                    {%- assign feature_text = block.settings.product_1_feature -%}
-                  {%- when 2 -%}
-                    {%- assign feature_text = block.settings.product_2_feature -%}
-                  {%- when 3 -%}
-                    {%- assign feature_text = block.settings.product_3_feature -%}
-                  {%- when 4 -%}
-                    {%- assign feature_text = block.settings.product_4_feature -%}
-                  {%- when 5 -%}
-                    {%- assign feature_text = block.settings.product_5_feature -%}
-                  {%- when 6 -%}
-                    {%- assign feature_text = block.settings.product_6_feature -%}
-                {%- endcase -%}
-
-                {%- if feature_text != blank -%}
-                  <li {{ block.shopify_attributes }}>{{ feature_text }}</li>
-                {%- endif -%}
-              {%- endfor -%}
-            </ul>
           </article>
         {%- endfor -%}
       </div>
+
+      {%- comment -%} Row 2: Overview {%- endcomment -%}
+      {%- if overview_products.size > 0 -%}
+        <div class="compare-products__overview">
+          {%- if section.settings.overview_title != blank -%}
+            <h3 class="compare-products__overview-title">{{ section.settings.overview_title }}</h3>
+          {%- endif -%}
+
+          <div class="compare-products__overview-grid" style="--compare-columns: {{ column_count }};">
+            {%- for block in overview_products limit: product_limit -%}
+              <div class="compare-products__overview-col" {{ block.shopify_attributes }}>
+                {%- if block.settings.image != blank or block.settings.video_url != blank -%}
+                  <div class="compare-products__overview-media">
+                    {%- if block.settings.image != blank -%}
+                      {{ block.settings.image | image_url: width: 900 | image_tag: loading: 'lazy', widths: '360,540,720,900' }}
+                    {%- endif -%}
+
+                    {%- if block.settings.video_url != blank -%}
+                      <a class="compare-products__video-play" href="{{ block.settings.video_url }}" target="_blank" rel="noopener">
+                        <span class="compare-products__video-play-icon">
+                          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+                        </span>
+                        Watch Video
+                      </a>
+                    {%- endif -%}
+                  </div>
+                {%- endif -%}
+
+                {%- assign has_features = false -%}
+                {%- for i in (1..6) -%}
+                  {%- assign feature_key = 'feature_' | append: i -%}
+                  {%- if block.settings[feature_key] != blank -%}
+                    {%- assign has_features = true -%}
+                  {%- endif -%}
+                {%- endfor -%}
+
+                {%- if has_features -%}
+                  <ul class="compare-products__overview-features">
+                    {%- for i in (1..6) -%}
+                      {%- assign feature_key = 'feature_' | append: i -%}
+                      {%- if block.settings[feature_key] != blank -%}
+                        <li>{{ block.settings[feature_key] }}</li>
+                      {%- endif -%}
+                    {%- endfor -%}
+                  </ul>
+                {%- endif -%}
+              </div>
+            {%- endfor -%}
+          </div>
+        </div>
+      {%- endif -%}
+
     {%- else -%}
       <div class="compare-products__empty">Select a collection in the section settings to populate the compare section.</div>
     {%- endif -%}
@@ -597,41 +691,49 @@
   ],
   "blocks": [
     {
-      "type": "overview_row",
-      "name": "Overview row",
+      "type": "overview_product",
+      "name": "Overview: Product",
       "settings": [
         {
-          "type": "text",
-          "id": "product_1_feature",
-          "label": "Product 1 feature",
-          "default": "16” HD touchscreen"
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "url",
+          "id": "video_url",
+          "label": "Video URL",
+          "info": "Link to a video. A play button overlay will appear on the image."
         },
         {
           "type": "text",
-          "id": "product_2_feature",
-          "label": "Product 2 feature",
-          "default": "High-contrast, color LCD console"
+          "id": "feature_1",
+          "label": "Feature 1"
         },
         {
           "type": "text",
-          "id": "product_3_feature",
-          "label": "Product 3 feature",
-          "default": "Connect to Apple Watch® with Apple GymKit™ technology"
+          "id": "feature_2",
+          "label": "Feature 2"
         },
         {
           "type": "text",
-          "id": "product_4_feature",
-          "label": "Product 4 feature"
+          "id": "feature_3",
+          "label": "Feature 3"
         },
         {
           "type": "text",
-          "id": "product_5_feature",
-          "label": "Product 5 feature"
+          "id": "feature_4",
+          "label": "Feature 4"
         },
         {
           "type": "text",
-          "id": "product_6_feature",
-          "label": "Product 6 feature"
+          "id": "feature_5",
+          "label": "Feature 5"
+        },
+        {
+          "type": "text",
+          "id": "feature_6",
+          "label": "Feature 6"
         }
       ]
     }
@@ -640,12 +742,9 @@
     {
       "name": "Compare products",
       "blocks": [
-        { "type": "overview_row" },
-        { "type": "overview_row" },
-        { "type": "overview_row" },
-        { "type": "overview_row" },
-        { "type": "overview_row" },
-        { "type": "overview_row" }
+        { "type": "overview_product" },
+        { "type": "overview_product" },
+        { "type": "overview_product" }
       ]
     }
   ]
