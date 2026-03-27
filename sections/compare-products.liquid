@@ -1,0 +1,636 @@
+{%- liquid
+  assign compare_collection = section.settings.collection
+  assign product_limit = section.settings.products_to_show | default: 3
+-%}
+
+{%- style -%}
+  #shopify-section-{{ section.id }} .compare-products {
+    background: {{ section.settings.section_background }};
+    color: {{ section.settings.text_color }};
+  }
+
+  #shopify-section-{{ section.id }} .compare-products__wrap {
+    padding: 64px 20px;
+  }
+
+  #shopify-section-{{ section.id }} .compare-products__heading {
+    margin: 0 0 8px;
+    color: {{ section.settings.heading_color }};
+    font-size: clamp(3rem, 4vw, 6rem);
+    line-height: 1.02;
+    text-align: {{ section.settings.heading_alignment }};
+  }
+
+  #shopify-section-{{ section.id }} .compare-products__subheading {
+    margin: 0 0 32px;
+    color: {{ section.settings.text_color }};
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-align: {{ section.settings.heading_alignment }};
+  }
+
+  #shopify-section-{{ section.id }} .compare-products__grid {
+    display: grid;
+    grid-template-columns: repeat(var(--compare-columns, 3), minmax(0, 1fr));
+    border-left: 1px solid {{ section.settings.border_color }};
+    border-top: 1px solid {{ section.settings.border_color }};
+  }
+
+  #shopify-section-{{ section.id }} .compare-products__card {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid {{ section.settings.border_color }};
+    border-bottom: 1px solid {{ section.settings.border_color }};
+    background: {{ section.settings.card_background }};
+  }
+
+  #shopify-section-{{ section.id }} .compare-products__media {
+    position: relative;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    background: {{ section.settings.media_background }};
+  }
+
+  #shopify-section-{{ section.id }} .compare-products__media img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+  }
+
+  #shopify-section-{{ section.id }} .compare-products__badge {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    z-index: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 18px;
+    min-height: 36px;
+    border-radius: 12px;
+    background: {{ section.settings.badge_background }};
+    color: {{ section.settings.badge_text_color }};
+    font-size: 1.8rem;
+    line-height: 1;
+    font-weight: 600;
+  }
+
+  #shopify-section-{{ section.id }} .compare-products__badge--sale {
+    font-style: italic;
+  }
+
+  #shopify-section-{{ section.id }} .compare-products__copy {
+    padding: 20px 18px 0;
+  }
+
+  #shopify-section-{{ section.id }} .compare-products__title {
+    margin: 0 0 6px;
+    font-size: clamp(2.4rem, 2vw, 3.2rem);
+    line-height: 1.1;
+  }
+
+  #shopify-section-{{ section.id }} .compare-products__title a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  #shopify-section-{{ section.id }} .compare-products__description {
+    margin: 0;
+    color: {{ section.settings.muted_text_color }};
+    font-size: 1.25rem;
+    line-height: 1.5;
+  }
+
+  #shopify-section-{{ section.id }} .compare-products__price {
+    padding: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 12px;
+    align-items: baseline;
+    font-size: 1.25rem;
+  }
+
+  #shopify-section-{{ section.id }} .compare-products__price-current {
+    color: {{ section.settings.price_color }};
+    font-weight: 700;
+    font-size: 2rem;
+  }
+
+  #shopify-section-{{ section.id }} .compare-products__price-compare {
+    color: {{ section.settings.muted_text_color }};
+    text-decoration: line-through;
+  }
+
+  #shopify-section-{{ section.id }} .compare-products__price-note {
+    color: {{ section.settings.muted_text_color }};
+  }
+
+  #shopify-section-{{ section.id }} .compare-products__actions {
+    padding: 0 18px 20px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    justify-content: space-between;
+  }
+
+  #shopify-section-{{ section.id }} .compare-products__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 52px;
+    padding: 12px 28px;
+    flex: 1 1 auto;
+    border-radius: 2px;
+    background: {{ section.settings.button_background }};
+    color: {{ section.settings.button_text_color }};
+    text-decoration: none;
+    font-size: 1.8rem;
+    line-height: 1;
+    font-weight: 500;
+  }
+
+  #shopify-section-{{ section.id }} .compare-products__link {
+    color: {{ section.settings.link_color }};
+    font-size: 1.25rem;
+    text-decoration: underline;
+    white-space: nowrap;
+  }
+
+  #shopify-section-{{ section.id }} .compare-products__features {
+    margin: 0;
+    padding: 0 18px 28px 38px;
+    display: grid;
+    gap: 12px;
+    font-size: 1.25rem;
+    line-height: 1.55;
+  }
+
+  #shopify-section-{{ section.id }} .compare-products__empty {
+    padding: 24px;
+    border: 1px dashed {{ section.settings.border_color }};
+    color: {{ section.settings.muted_text_color }};
+    font-size: 1.25rem;
+  }
+
+  @media screen and (max-width: 989px) {
+    #shopify-section-{{ section.id }} .compare-products__grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media screen and (max-width: 749px) {
+    #shopify-section-{{ section.id }} .compare-products__wrap {
+      padding: 44px 16px;
+    }
+
+    #shopify-section-{{ section.id }} .compare-products__actions {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    #shopify-section-{{ section.id }} .compare-products__link {
+      text-align: right;
+    }
+  }
+{%- endstyle -%}
+
+<section class="compare-products color-{{ section.settings.color_scheme }}">
+  <div class="compare-products__wrap page-width">
+    {%- if section.settings.heading != blank -%}
+      <h2 class="compare-products__heading">{{ section.settings.heading }}</h2>
+    {%- endif -%}
+
+    {%- if section.settings.subheading != blank -%}
+      <p class="compare-products__subheading">{{ section.settings.subheading }}</p>
+    {%- endif -%}
+
+    {%- if compare_collection != blank and compare_collection.products_count > 0 -%}
+      <div class="compare-products__grid" style="--compare-columns: {{ product_limit | at_most: compare_collection.products_count }};">
+        {%- for product in compare_collection.products limit: product_limit -%}
+          {%- assign product_index = forloop.index -%}
+          {%- assign badge_text = '' -%}
+          {%- assign badge_style = '' -%}
+
+          {%- case product_index -%}
+            {%- when 1 -%}
+              {%- assign badge_text = section.settings.badge_text_1 -%}
+              {%- assign badge_style = section.settings.badge_style_1 -%}
+            {%- when 2 -%}
+              {%- assign badge_text = section.settings.badge_text_2 -%}
+              {%- assign badge_style = section.settings.badge_style_2 -%}
+            {%- when 3 -%}
+              {%- assign badge_text = section.settings.badge_text_3 -%}
+              {%- assign badge_style = section.settings.badge_style_3 -%}
+            {%- when 4 -%}
+              {%- assign badge_text = section.settings.badge_text_4 -%}
+              {%- assign badge_style = section.settings.badge_style_4 -%}
+            {%- when 5 -%}
+              {%- assign badge_text = section.settings.badge_text_5 -%}
+              {%- assign badge_style = section.settings.badge_style_5 -%}
+            {%- when 6 -%}
+              {%- assign badge_text = section.settings.badge_text_6 -%}
+              {%- assign badge_style = section.settings.badge_style_6 -%}
+          {%- endcase -%}
+
+          <article class="compare-products__card">
+            <div class="compare-products__media">
+              {%- if badge_text != blank -%}
+                <span class="compare-products__badge{% if badge_style == 'sale' %} compare-products__badge--sale{% endif %}">{{ badge_text }}</span>
+              {%- endif -%}
+
+              {%- if product.featured_image != blank -%}
+                <a href="{{ product.url }}">
+                  {{ product.featured_image | image_url: width: 900 | image_tag: loading: 'lazy', alt: product.featured_image.alt | default: product.title, widths: '360,540,720,900' }}
+                </a>
+              {%- else -%}
+                {{ 'product-1' | placeholder_svg_tag: 'placeholder-svg' }}
+              {%- endif -%}
+            </div>
+
+            <div class="compare-products__copy">
+              <h3 class="compare-products__title"><a href="{{ product.url }}">{{ product.title }}</a></h3>
+              {%- if product.description != blank -%}
+                <p class="compare-products__description">{{ product.description | strip_html | truncatewords: 12 }}</p>
+              {%- endif -%}
+            </div>
+
+            <div class="compare-products__price">
+              {%- if product.compare_at_price > product.price -%}
+                <span class="compare-products__price-compare">{{ product.compare_at_price | money }}</span>
+              {%- endif -%}
+              <span class="compare-products__price-current">{{ product.price | money }}</span>
+              {%- if section.settings.payment_note != blank -%}
+                <span class="compare-products__price-note">{{ section.settings.payment_note }}</span>
+              {%- endif -%}
+            </div>
+
+            <div class="compare-products__actions">
+              <a class="compare-products__button" href="{{ product.url }}">{{ section.settings.button_label }}</a>
+              <a class="compare-products__link" href="{{ product.url }}">{{ section.settings.link_label }} {{ product.title | remove: 'Treadmill' | strip }}</a>
+            </div>
+
+            <ul class="compare-products__features">
+              {%- for block in section.blocks -%}
+                {%- assign feature_text = '' -%}
+
+                {%- case product_index -%}
+                  {%- when 1 -%}
+                    {%- assign feature_text = block.settings.product_1_text -%}
+                  {%- when 2 -%}
+                    {%- assign feature_text = block.settings.product_2_text -%}
+                  {%- when 3 -%}
+                    {%- assign feature_text = block.settings.product_3_text -%}
+                  {%- when 4 -%}
+                    {%- assign feature_text = block.settings.product_4_text -%}
+                  {%- when 5 -%}
+                    {%- assign feature_text = block.settings.product_5_text -%}
+                  {%- when 6 -%}
+                    {%- assign feature_text = block.settings.product_6_text -%}
+                {%- endcase -%}
+
+                {%- if feature_text != blank -%}
+                  <li {{ block.shopify_attributes }}>{{ feature_text }}</li>
+                {%- endif -%}
+              {%- endfor -%}
+            </ul>
+          </article>
+        {%- endfor -%}
+      </div>
+    {%- else -%}
+      <div class="compare-products__empty">Select a collection in the section settings to populate the compare section.</div>
+    {%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Compare products",
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "scheme-1"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Compare Treadmills"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "Choose a collection to show products side by side."
+    },
+    {
+      "type": "select",
+      "id": "heading_alignment",
+      "label": "Heading alignment",
+      "default": "center",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        }
+      ]
+    },
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "Collection"
+    },
+    {
+      "type": "range",
+      "id": "products_to_show",
+      "label": "Products to show",
+      "min": 2,
+      "max": 6,
+      "step": 1,
+      "default": 3
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Primary button label",
+      "default": "Add to Cart"
+    },
+    {
+      "type": "text",
+      "id": "link_label",
+      "label": "Secondary link label",
+      "default": "View"
+    },
+    {
+      "type": "text",
+      "id": "payment_note",
+      "label": "Payment note",
+      "default": "Pay as low as"
+    },
+    {
+      "type": "header",
+      "content": "Colours"
+    },
+    {
+      "type": "color",
+      "id": "section_background",
+      "label": "Section background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "card_background",
+      "label": "Card background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "media_background",
+      "label": "Media background",
+      "default": "#f3f3f5"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading colour",
+      "default": "#111111"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text colour",
+      "default": "#111111"
+    },
+    {
+      "type": "color",
+      "id": "muted_text_color",
+      "label": "Muted text colour",
+      "default": "#4a4d58"
+    },
+    {
+      "type": "color",
+      "id": "border_color",
+      "label": "Border colour",
+      "default": "#d7d9df"
+    },
+    {
+      "type": "color",
+      "id": "price_color",
+      "label": "Price colour",
+      "default": "#4b52ff"
+    },
+    {
+      "type": "color",
+      "id": "button_background",
+      "label": "Button background",
+      "default": "#4b52ff"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Button text colour",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "link_color",
+      "label": "Link colour",
+      "default": "#3a3a3a"
+    },
+    {
+      "type": "header",
+      "content": "Badge colours"
+    },
+    {
+      "type": "color",
+      "id": "badge_background",
+      "label": "Badge background",
+      "default": "#b7f36e"
+    },
+    {
+      "type": "color",
+      "id": "badge_text_color",
+      "label": "Badge text colour",
+      "default": "#111111"
+    },
+    {
+      "type": "header",
+      "content": "Product 1 badge"
+    },
+    {
+      "type": "text",
+      "id": "badge_text_1",
+      "label": "Badge text",
+      "default": "New"
+    },
+    {
+      "type": "select",
+      "id": "badge_style_1",
+      "label": "Badge style",
+      "default": "new",
+      "options": [
+        { "value": "new", "label": "New" },
+        { "value": "sale", "label": "Sale" }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "Product 2 badge"
+    },
+    {
+      "type": "text",
+      "id": "badge_text_2",
+      "label": "Badge text",
+      "default": "Sale!"
+    },
+    {
+      "type": "select",
+      "id": "badge_style_2",
+      "label": "Badge style",
+      "default": "sale",
+      "options": [
+        { "value": "new", "label": "New" },
+        { "value": "sale", "label": "Sale" }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "Product 3 badge"
+    },
+    {
+      "type": "text",
+      "id": "badge_text_3",
+      "label": "Badge text",
+      "default": "New"
+    },
+    {
+      "type": "select",
+      "id": "badge_style_3",
+      "label": "Badge style",
+      "default": "new",
+      "options": [
+        { "value": "new", "label": "New" },
+        { "value": "sale", "label": "Sale" }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "Product 4 badge"
+    },
+    {
+      "type": "text",
+      "id": "badge_text_4",
+      "label": "Badge text"
+    },
+    {
+      "type": "select",
+      "id": "badge_style_4",
+      "label": "Badge style",
+      "default": "new",
+      "options": [
+        { "value": "new", "label": "New" },
+        { "value": "sale", "label": "Sale" }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "Product 5 badge"
+    },
+    {
+      "type": "text",
+      "id": "badge_text_5",
+      "label": "Badge text"
+    },
+    {
+      "type": "select",
+      "id": "badge_style_5",
+      "label": "Badge style",
+      "default": "new",
+      "options": [
+        { "value": "new", "label": "New" },
+        { "value": "sale", "label": "Sale" }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "Product 6 badge"
+    },
+    {
+      "type": "text",
+      "id": "badge_text_6",
+      "label": "Badge text"
+    },
+    {
+      "type": "select",
+      "id": "badge_style_6",
+      "label": "Badge style",
+      "default": "new",
+      "options": [
+        { "value": "new", "label": "New" },
+        { "value": "sale", "label": "Sale" }
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "type": "feature_row",
+      "name": "Feature row",
+      "settings": [
+        {
+          "type": "text",
+          "id": "product_1_text",
+          "label": "Product 1 text",
+          "default": "16” HD touchscreen"
+        },
+        {
+          "type": "text",
+          "id": "product_2_text",
+          "label": "Product 2 text",
+          "default": "High-contrast, color LCD console"
+        },
+        {
+          "type": "text",
+          "id": "product_3_text",
+          "label": "Product 3 text",
+          "default": "Connect to Apple Watch® with Apple GymKit™ technology"
+        },
+        {
+          "type": "text",
+          "id": "product_4_text",
+          "label": "Product 4 text"
+        },
+        {
+          "type": "text",
+          "id": "product_5_text",
+          "label": "Product 5 text"
+        },
+        {
+          "type": "text",
+          "id": "product_6_text",
+          "label": "Product 6 text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Compare products",
+      "blocks": [
+        { "type": "feature_row" },
+        { "type": "feature_row" },
+        { "type": "feature_row" },
+        { "type": "feature_row" },
+        { "type": "feature_row" },
+        { "type": "feature_row" }
+      ]
+    }
+  ]
+}
+{% endschema %}
