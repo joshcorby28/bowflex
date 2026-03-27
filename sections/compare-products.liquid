@@ -2,6 +2,8 @@
   assign compare_collection = section.settings.collection
   assign product_limit = section.settings.products_to_show | default: 3
   assign overview_products = section.blocks | where: 'type', 'overview_product'
+  assign accordions = section.blocks | where: 'type', 'accordion'
+  assign accordion_rows = section.blocks | where: 'type', 'accordion_row'
 -%}
 
 {%- style -%}
@@ -249,14 +251,112 @@ gap: 60px;
     font-size: 1.25rem;
   }
 
+  #shopify-section-{{ section.id }} .compare-products__accordions {
+    margin-top: 32px;
+  }
+
+  #shopify-section-{{ section.id }} .compare-products__accordion {
+    border-top: 1px solid {{ section.settings.border_color }};
+  }
+
+  #shopify-section-{{ section.id }} .compare-products__accordion:last-child {
+    border-bottom: 1px solid {{ section.settings.border_color }};
+  }
+
+  #shopify-section-{{ section.id }} .compare-products__accordion summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 4px;
+    font-size: 1.6rem;
+    font-weight: 400;
+    cursor: pointer;
+    list-style: none;
+    color: {{ section.settings.text_color }};
+    background: {{ section.settings.section_background }};
+  }
+
+  #shopify-section-{{ section.id }} .compare-products__accordion summary::-webkit-details-marker {
+    display: none;
+  }
+
+  #shopify-section-{{ section.id }} .compare-products__accordion-icon {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    transition: transform 0.25s ease;
+  }
+
+  #shopify-section-{{ section.id }} .compare-products__accordion[open] .compare-products__accordion-icon {
+    transform: rotate(180deg);
+  }
+
+  #shopify-section-{{ section.id }} .compare-products__accordion-body {
+    padding: 8px 0 32px;
+  }
+
+  #shopify-section-{{ section.id }} .compare-products__accordion-section {
+    margin-bottom: 32px;
+  }
+
+  #shopify-section-{{ section.id }} .compare-products__accordion-section:last-child {
+    margin-bottom: 0;
+  }
+
+  #shopify-section-{{ section.id }} .compare-products__accordion-row-heading {
+    margin: 0 0 16px;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: {{ section.settings.heading_color }};
+    border-top: 1px solid {{ section.settings.border_color }};
+    padding-top: 24px;
+  }
+
+  #shopify-section-{{ section.id }} .compare-products__accordion-grid {
+    display: grid;
+    grid-template-columns: repeat(var(--compare-columns, 3), minmax(0, 1fr));
+    gap: 0;
+  }
+
+  #shopify-section-{{ section.id }} .compare-products__accordion-cell {
+    padding: 0 16px;
+    font-size: 1.3rem;
+    line-height: 1.55;
+    color: {{ section.settings.text_color }};
+    border-right: 1px solid {{ section.settings.border_color }};
+  }
+
+  #shopify-section-{{ section.id }} .compare-products__accordion-cell:first-child {
+    padding-left: 0;
+  }
+
+  #shopify-section-{{ section.id }} .compare-products__accordion-cell:last-child {
+    border-right: none;
+  }
+
   @media screen and (max-width: 989px) {
     #shopify-section-{{ section.id }} .compare-products__grid,
-    #shopify-section-{{ section.id }} .compare-products__overview-grid {
+    #shopify-section-{{ section.id }} .compare-products__overview-grid,
+    #shopify-section-{{ section.id }} .compare-products__accordion-grid {
       grid-template-columns: 1fr;
+    }
+
+    #shopify-section-{{ section.id }} .compare-products__accordion-cell {
+      border-right: none;
+      border-bottom: 1px solid {{ section.settings.border_color }};
+      padding: 12px 0;
+    }
+
+    #shopify-section-{{ section.id }} .compare-products__accordion-cell:last-child {
+      border-bottom: none;
     }
   }
 
   @media screen and (max-width: 749px) {
+    #shopify-section-{{ section.id }} .compare-products__accordion-grid {
+      grid-template-columns: 1fr;
+    }
     #shopify-section-{{ section.id }} .compare-products__wrap {
       padding: 44px 16px;
     }
@@ -401,6 +501,41 @@ gap: 60px;
               </div>
             {%- endfor -%}
           </div>
+        </div>
+      {%- endif -%}
+
+      {%- comment -%} Accordions {%- endcomment -%}
+      {%- if accordions.size > 0 -%}
+        <div class="compare-products__accordions">
+          {%- for accordion in accordions -%}
+            {%- assign accordion_index = forloop.index -%}
+            {%- assign this_accordion_rows = accordion_rows | where: 'settings.accordion_index', accordion_index -%}
+            <details class="compare-products__accordion" {{ accordion.shopify_attributes }}>
+              <summary>
+                {{ accordion.settings.title }}
+                <svg class="compare-products__accordion-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </summary>
+              <div class="compare-products__accordion-body">
+                {%- for row in this_accordion_rows -%}
+                  <div class="compare-products__accordion-section" {{ row.shopify_attributes }}>
+                    {%- if row.settings.row_heading != blank -%}
+                      <h4 class="compare-products__accordion-row-heading">{{ row.settings.row_heading }}</h4>
+                    {%- endif -%}
+                    <div class="compare-products__accordion-grid" style="--compare-columns: {{ column_count }};">
+                      {%- for i in (1..6) limit: column_count -%}
+                        {%- assign cell_key = 'product_' | append: i | append: '_content' -%}
+                        <div class="compare-products__accordion-cell">
+                          {{ row.settings[cell_key] | newline_to_br }}
+                        </div>
+                      {%- endfor -%}
+                    </div>
+                  </div>
+                {%- endfor -%}
+              </div>
+            </details>
+          {%- endfor -%}
         </div>
       {%- endif -%}
 
@@ -692,6 +827,70 @@ gap: 60px;
   ],
   "blocks": [
     {
+      "type": "accordion",
+      "name": "Accordion",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "JRNY for Treadmills"
+        }
+      ]
+    },
+    {
+      "type": "accordion_row",
+      "name": "Accordion: Row",
+      "settings": [
+        {
+          "type": "range",
+          "id": "accordion_index",
+          "label": "Accordion number",
+          "info": "Which accordion this row belongs to (1 = first accordion, 2 = second, etc.)",
+          "min": 1,
+          "max": 6,
+          "step": 1,
+          "default": 1
+        },
+        {
+          "type": "text",
+          "id": "row_heading",
+          "label": "Row heading",
+          "default": "Display"
+        },
+        {
+          "type": "textarea",
+          "id": "product_1_content",
+          "label": "Product 1 content"
+        },
+        {
+          "type": "textarea",
+          "id": "product_2_content",
+          "label": "Product 2 content"
+        },
+        {
+          "type": "textarea",
+          "id": "product_3_content",
+          "label": "Product 3 content"
+        },
+        {
+          "type": "textarea",
+          "id": "product_4_content",
+          "label": "Product 4 content"
+        },
+        {
+          "type": "textarea",
+          "id": "product_5_content",
+          "label": "Product 5 content"
+        },
+        {
+          "type": "textarea",
+          "id": "product_6_content",
+          "label": "Product 6 content"
+        }
+      ]
+    },
+    {
       "type": "overview_product",
       "name": "Overview: Product",
       "settings": [
@@ -745,7 +944,10 @@ gap: 60px;
       "blocks": [
         { "type": "overview_product" },
         { "type": "overview_product" },
-        { "type": "overview_product" }
+        { "type": "overview_product" },
+        { "type": "accordion", "settings": { "title": "JRNY for Treadmills" } },
+        { "type": "accordion", "settings": { "title": "Product Details" } },
+        { "type": "accordion", "settings": { "title": "Specs & Dimensions" } }
       ]
     }
   ]
