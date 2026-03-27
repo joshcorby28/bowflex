@@ -421,13 +421,22 @@
             "title": "Roam if you want to",
             "text": "200+ Explore the World routes gives you a beautiful new place to run each day."
           }
+        },
+        "jrny_slide_3Bci8p": {
+          "type": "jrny_slide",
+          "settings": {
+            "image": "shopify://shop_images/t9-jrny-whole-body-workouts-bg-2x.webp",
+            "title": "When you want a change of pace",
+            "text": "Work in some whole-body movement with yoa, Pilates and strenth training classes."
+          }
         }
       },
       "block_order": [
         "jrny_slide_JrPyYw",
         "jrny_slide_XrDExw",
         "jrny_slide_bqG9CR",
-        "jrny_slide_eVWJUN"
+        "jrny_slide_eVWJUN",
+        "jrny_slide_3Bci8p"
       ],
       "settings": {
         "dark_color_scheme": "scheme-1",
