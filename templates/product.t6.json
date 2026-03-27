@@ -215,6 +215,13 @@
             "content": "<p><strong>Cushion System </strong>- FlexZone Deck</p><p><strong>Deck Thickness</strong> - 0.75” / 18 mm</p><p><strong>Running Area</strong> - 20” x 60” / 50.8 cm x 152.4 cm</p><p><strong>Running Belt Thickness</strong> - 1.6 mm</p><p><strong>Step On Height </strong>- 8.7” / 22 cm</p><p><strong>Lubrication System</strong> - Silicone Oil</p><p><strong>Reversible Deck</strong> - No<br/><br/></p>"
           }
         },
+        "specs_accordion_PcPNUb": {
+          "type": "specs_accordion",
+          "settings": {
+            "title": "<b>Frame<b></b></b>",
+            "content": "<p><strong>Folding</strong>- Yes (Fold on Pin)</p><p><strong>Fold Flat</strong> - No</p><p><strong>Transport Wheels</strong> - 2</p><p><strong>Gas Shock</strong> - Yes</p><p><strong>Front Roller Size</strong> - 60 mm</p><p><strong>Rear Roller Size</strong> - 46 mm</p><p><strong>Max User Weight</strong> - 325 lbs. / 147.4 kg</p><p><strong>Cross Bar</strong> - No</p><p><strong>Side Rail Material</strong> - ABS</p><p><strong>End Cap Material </strong>- ABS</p>"
+          }
+        },
         "spec_metric_4L9LQd": {
           "type": "spec_metric",
           "settings": {
@@ -318,6 +325,7 @@
         "warranty_metric_HA7xjJ",
         "specs_accordion_6tdp4b",
         "specs_accordion_F4Xeg8",
+        "specs_accordion_PcPNUb",
         "spec_metric_4L9LQd",
         "spec_metric_xbNqc3",
         "spec_metric_QfYXfy",
