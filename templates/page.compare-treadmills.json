@@ -1,0 +1,112 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "compare_products_KMUYGK": {
+      "type": "compare-products",
+      "blocks": {
+        "overview_product_RCNTzB": {
+          "type": "overview_product",
+          "settings": {
+            "image": "shopify://shop_images/t6-jrny-metrics-tracking-bg-2x.webp",
+            "video_url": "https://www.youtube.com/watch?v=-ahIiyjTRYk",
+            "feature_1": "16” HD touchscreen",
+            "feature_2": "Connect to Apple Watch® with Apple GymKit™ technology2",
+            "feature_3": "Train with Peloton®, and Zwift® from a phone or tablet3",
+            "feature_4": "Access JRNY, Netflix, Prime Video, Spotify, and more, from your touchscreen3",
+            "feature_5": "JRNY experienced through app on HD touchscreen",
+            "feature_6": "22\" W x 60\" L running path"
+          }
+        },
+        "overview_product_Nx8HKT": {
+          "type": "overview_product",
+          "settings": {
+            "image": "shopify://shop_images/t6-jrny-etw-bg-2x.webp",
+            "video_url": "https://www.youtube.com/watch?v=-ahIiyjTRYk",
+            "feature_1": "16” HD touchscreen",
+            "feature_2": "Connect to Apple Watch® with Apple GymKit™ technology2",
+            "feature_3": "Train with Peloton®, and Zwift® from a phone or tablet3",
+            "feature_4": "Access JRNY, Netflix, Prime Video, Spotify, and more, from your touchscreen3",
+            "feature_5": "JRNY experienced through app on HD touchscreen",
+            "feature_6": "22\" W x 60\" L running path"
+          }
+        },
+        "overview_product_xXnCrf": {
+          "type": "overview_product",
+          "settings": {
+            "image": "shopify://shop_images/t6-jrny-workout-selection-bg-2x.webp",
+            "video_url": "https://www.youtube.com/watch?v=-ahIiyjTRYk",
+            "feature_1": "16” HD touchscreen",
+            "feature_2": "Connect to Apple Watch® with Apple GymKit™ technology2",
+            "feature_3": "Train with Peloton®, and Zwift® from a phone or tablet3",
+            "feature_4": "Access JRNY, Netflix, Prime Video, Spotify, and more, from your touchscreen3",
+            "feature_5": "JRNY experienced through app on HD touchscreen",
+            "feature_6": "22\" W x 60\" L running path"
+          }
+        }
+      },
+      "block_order": [
+        "overview_product_RCNTzB",
+        "overview_product_Nx8HKT",
+        "overview_product_xXnCrf"
+      ],
+      "name": "Compare products",
+      "settings": {
+        "color_scheme": "",
+        "heading": "Compare Treadmills",
+        "subheading": "Choose a collection to show products side by side.",
+        "heading_alignment": "center",
+        "collection": "treadmills",
+        "products_to_show": 3,
+        "overview_title": "Overview",
+        "button_label": "Add to Cart",
+        "link_label": "View",
+        "payment_note": "Pay as low as",
+        "section_background": "#ffffff",
+        "card_background": "#ffffff",
+        "media_background": "#f3f3f5",
+        "heading_color": "#111111",
+        "text_color": "#111111",
+        "muted_text_color": "#4a4d58",
+        "border_color": "#d7d9df",
+        "price_color": "#4b52ff",
+        "button_background": "#4b52ff",
+        "button_text_color": "#ffffff",
+        "link_color": "#3a3a3a",
+        "badge_background": "#b7f36e",
+        "badge_text_color": "#111111",
+        "badge_text_1": "New",
+        "badge_style_1": "new",
+        "badge_text_2": "Sale!",
+        "badge_style_2": "sale",
+        "badge_text_3": "New",
+        "badge_style_3": "new",
+        "badge_text_4": "",
+        "badge_style_4": "new",
+        "badge_text_5": "",
+        "badge_style_5": "new",
+        "badge_text_6": "",
+        "badge_style_6": "new"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "compare_products_KMUYGK"
+  ]
+}
