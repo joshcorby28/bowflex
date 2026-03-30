@@ -41,7 +41,8 @@
             "product_1": "bowflex-8-5j-treadmill",
             "product_2": "bowflex-t56-treadmill",
             "cta_text": "Shop Sale",
-            "cta_url": "shopify://collections/sale"
+            "cta_url": "shopify://collections/sale",
+            "hide_compare_link": true
           }
         },
         "mega_menu_item_wKpfhg": {
@@ -51,7 +52,8 @@
             "product_1": "bowflex-heart-rate-strap",
             "product_2": "bowflex-stowable-bench-5-1s",
             "cta_text": "Shop Accessories",
-            "cta_url": "shopify://collections/accessories-parts"
+            "cta_url": "shopify://collections/accessories-parts",
+            "hide_compare_link": false
           }
         },
         "mega_menu_item_AxjBzf": {
@@ -61,7 +63,8 @@
             "product_1": "bowflex-1090i-dumbbell-pair-with-bowflex-stand",
             "product_2": "bowflex-552i-adjustable-dumbbell-pair",
             "cta_text": "Shop Weights",
-            "cta_url": "shopify://collections/weights-benches"
+            "cta_url": "shopify://collections/weights-benches",
+            "hide_compare_link": false
           }
         },
         "mega_menu_item_JT3fqL": {
@@ -71,7 +74,8 @@
             "product_1": "bowflex-max-trainer-m6i",
             "product_2": "bowflex-max-trainer-total-40",
             "cta_text": "Shop Ellipticals",
-            "cta_url": "shopify://collections/ellipticals"
+            "cta_url": "shopify://collections/ellipticals",
+            "hide_compare_link": false
           }
         },
         "mega_menu_item_z8hACX": {
@@ -81,7 +85,8 @@
             "product_1": "bowflex-t9-jrny-treadmill",
             "product_2": "bowflex-t6-folding-treadmill-smart-connected-running-machine-with-20-km-h-speed-15-incline-bluetooth-fitness-app-compatibility",
             "cta_text": "Shop Treadmills",
-            "cta_url": "shopify://collections/treadmills"
+            "cta_url": "shopify://collections/treadmills",
+            "hide_compare_link": false
           }
         }
       },
