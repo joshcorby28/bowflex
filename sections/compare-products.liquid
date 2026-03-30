@@ -509,7 +509,6 @@ gap: 60px;
         <div class="compare-products__accordions">
           {%- for accordion in accordions -%}
             {%- assign accordion_index = forloop.index -%}
-            {%- assign this_accordion_rows = accordion_rows | where: 'settings.accordion_index', accordion_index -%}
             <details class="compare-products__accordion" {{ accordion.shopify_attributes }}>
               <summary>
                 {{ accordion.settings.title }}
@@ -518,20 +517,22 @@ gap: 60px;
                 </svg>
               </summary>
               <div class="compare-products__accordion-body">
-                {%- for row in this_accordion_rows -%}
-                  <div class="compare-products__accordion-section" {{ row.shopify_attributes }}>
-                    {%- if row.settings.row_heading != blank -%}
-                      <h4 class="compare-products__accordion-row-heading">{{ row.settings.row_heading }}</h4>
-                    {%- endif -%}
-                    <div class="compare-products__accordion-grid" style="--compare-columns: {{ column_count }};">
-                      {%- for i in (1..6) limit: column_count -%}
-                        {%- assign cell_key = 'product_' | append: i | append: '_content' -%}
-                        <div class="compare-products__accordion-cell">
-                          {{ row.settings[cell_key] | newline_to_br }}
-                        </div>
-                      {%- endfor -%}
+                {%- for row in accordion_rows -%}
+                  {%- if row.settings.accordion_index == accordion_index -%}
+                    <div class="compare-products__accordion-section" {{ row.shopify_attributes }}>
+                      {%- if row.settings.row_heading != blank -%}
+                        <h4 class="compare-products__accordion-row-heading">{{ row.settings.row_heading }}</h4>
+                      {%- endif -%}
+                      <div class="compare-products__accordion-grid" style="--compare-columns: {{ column_count }};">
+                        {%- for i in (1..6) limit: column_count -%}
+                          {%- assign cell_key = 'product_' | append: i | append: '_content' -%}
+                          <div class="compare-products__accordion-cell">
+                            {{ row.settings[cell_key] | newline_to_br }}
+                          </div>
+                        {%- endfor -%}
+                      </div>
                     </div>
-                  </div>
+                  {%- endif -%}
                 {%- endfor -%}
               </div>
             </details>
