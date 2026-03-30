@@ -20,6 +20,38 @@
     "compare_products_KMUYGK": {
       "type": "compare-products",
       "blocks": {
+        "accordion_k6erfa": {
+          "type": "accordion",
+          "settings": {
+            "title": "JRNY for Treadmills"
+          }
+        },
+        "accordion_row_MNmYpR": {
+          "type": "accordion_row",
+          "settings": {
+            "accordion_index": 1,
+            "row_heading": "JRNY Features",
+            "product_1_content": "Individualized adaptive workouts\nExplore the World\nOn-demand classes\nReal-time coaching\nCurated music\nTracking",
+            "product_2_content": "Individualized adaptive workouts\nExplore the World\nOn-demand classes\nReal-time coaching\nCurated music\nTracking",
+            "product_3_content": "Individualized adaptive workouts\nExplore the World\nOn-demand classes\nReal-time coaching\nCurated music\nTracking",
+            "product_4_content": "",
+            "product_5_content": "",
+            "product_6_content": ""
+          }
+        },
+        "accordion_row_yrwgdw": {
+          "type": "accordion_row",
+          "settings": {
+            "accordion_index": 1,
+            "row_heading": "Streaming Entertainment",
+            "product_1_content": "JRNY Radio\nStreaming TV not available through the JRNY App.",
+            "product_2_content": "JRNY Radio\nStreaming TV not available through the JRNY App.",
+            "product_3_content": "JRNY Radio\nStreaming TV not available through the JRNY App.",
+            "product_4_content": "",
+            "product_5_content": "",
+            "product_6_content": ""
+          }
+        },
         "overview_product_RCNTzB": {
           "type": "overview_product",
           "settings": {
@@ -61,6 +93,9 @@
         }
       },
       "block_order": [
+        "accordion_k6erfa",
+        "accordion_row_MNmYpR",
+        "accordion_row_yrwgdw",
         "overview_product_RCNTzB",
         "overview_product_Nx8HKT",
         "overview_product_xXnCrf"
