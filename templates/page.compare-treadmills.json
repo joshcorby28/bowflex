@@ -84,6 +84,25 @@
             "product_6_content": ""
           }
         },
+        "accordion_RXngtT": {
+          "type": "accordion",
+          "settings": {
+            "title": "Specs"
+          }
+        },
+        "accordion_row_nTnPNQ": {
+          "type": "accordion_row",
+          "settings": {
+            "accordion_index": 3,
+            "row_heading": "Specs",
+            "product_1_content": "77.2\" L x 37\" W x 67.6\" H\n\n(196 x 94 x 171.6 cm)",
+            "product_2_content": "77.2\" L x 37\" W x 67.6\" H\n\n(196 x 94 x 171.6 cm)",
+            "product_3_content": "77.2\" L x 37\" W x 67.6\" H\n\n(196 x 94 x 171.6 cm)",
+            "product_4_content": "",
+            "product_5_content": "",
+            "product_6_content": ""
+          }
+        },
         "overview_product_RCNTzB": {
           "type": "overview_product",
           "settings": {
@@ -131,6 +150,8 @@
         "accordion_k6erfa",
         "accordion_row_MNmYpR",
         "accordion_row_yeVcC3",
+        "accordion_RXngtT",
+        "accordion_row_nTnPNQ",
         "overview_product_RCNTzB",
         "overview_product_Nx8HKT",
         "overview_product_xXnCrf"
