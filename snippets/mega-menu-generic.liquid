@@ -49,7 +49,9 @@
 
   <div class="mega-menu-actions">
     <a href="{{ cta_href }}" class="global-black-button">{{ cta_label }}</a>
-    <a href="/pages/compare-{{ menu_link.handle }}" class="mega-menu-compare-link">Compare {{ menu_link.title }}</a>
+    {%- unless hide_compare_link -%}
+      <a href="/pages/compare-{{ menu_link.handle }}" class="mega-menu-compare-link">Compare {{ menu_link.title }}</a>
+    {%- endunless -%}
   </div>
 </li>
 
@@ -91,7 +93,7 @@ details[open] > .header__submenu {
 .mega-menu-compare-link {
   display: block;
   text-align: center;
-  font-size: 16px;
+  font-size: 14px;
   color: #1b1b1b;
   margin-top: 10px;
   text-decoration: underline;
