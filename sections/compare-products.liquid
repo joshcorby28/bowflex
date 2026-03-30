@@ -256,24 +256,20 @@ gap: 60px;
   }
 
   #shopify-section-{{ section.id }} .compare-products__accordion {
-    border-top: 1px solid {{ section.settings.border_color }};
-  }
-
-  #shopify-section-{{ section.id }} .compare-products__accordion:last-child {
-    border-bottom: 1px solid {{ section.settings.border_color }};
+    margin-bottom: 30px;
   }
 
   #shopify-section-{{ section.id }} .compare-products__accordion summary {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 4px;
+    padding: 20px 16px;
     font-size: 1.6rem;
     font-weight: 400;
     cursor: pointer;
     list-style: none;
     color: {{ section.settings.text_color }};
-    background: {{ section.settings.section_background }};
+    background: #fafafa;
   }
 
   #shopify-section-{{ section.id }} .compare-products__accordion summary::-webkit-details-marker {
