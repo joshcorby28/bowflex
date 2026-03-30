@@ -20,20 +20,20 @@
     "compare_products_KMUYGK": {
       "type": "compare-products",
       "blocks": {
-        "accordion_k6erfa": {
+        "accordion_VztMkM": {
           "type": "accordion",
           "settings": {
             "title": "JRNY for Treadmills"
           }
         },
-        "accordion_row_MNmYpR": {
+        "accordion_row_nnCeGj": {
           "type": "accordion_row",
           "settings": {
-            "accordion_index": 1,
+            "accordion_index": 2,
             "row_heading": "JRNY Features",
-            "product_1_content": "Individualized adaptive workouts\nExplore the World\nOn-demand classes\nReal-time coaching\nCurated music\nTracking",
-            "product_2_content": "Individualized adaptive workouts\nExplore the World\nOn-demand classes\nReal-time coaching\nCurated music\nTracking",
-            "product_3_content": "Individualized adaptive workouts\nExplore the World\nOn-demand classes\nReal-time coaching\nCurated music\nTracking",
+            "product_1_content": "Bluetooth\niOS compatible\nAndroid compatible\nUSB charging port\nWi-Fi",
+            "product_2_content": "Bluetooth\niOS compatible\nAndroid compatible\nUSB charging port",
+            "product_3_content": "Bluetooth\niOS compatible\nAndroid compatible\nUSB charging port\nWi-Fi",
             "product_4_content": "",
             "product_5_content": "",
             "product_6_content": ""
@@ -47,6 +47,38 @@
             "product_1_content": "JRNY Radio\nStreaming TV not available through the JRNY App.",
             "product_2_content": "JRNY Radio\nStreaming TV not available through the JRNY App.",
             "product_3_content": "JRNY Radio\nStreaming TV not available through the JRNY App.",
+            "product_4_content": "",
+            "product_5_content": "",
+            "product_6_content": ""
+          }
+        },
+        "accordion_k6erfa": {
+          "type": "accordion",
+          "settings": {
+            "title": "Product Details"
+          }
+        },
+        "accordion_row_MNmYpR": {
+          "type": "accordion_row",
+          "settings": {
+            "accordion_index": 1,
+            "row_heading": "Connectivity",
+            "product_1_content": "Individualized adaptive workouts\nExplore the World\nOn-demand classes\nReal-time coaching\nCurated music\nTracking",
+            "product_2_content": "Individualized adaptive workouts\nExplore the World\nOn-demand classes\nReal-time coaching\nCurated music\nTracking",
+            "product_3_content": "Individualized adaptive workouts\nExplore the World\nOn-demand classes\nReal-time coaching\nCurated music\nTracking",
+            "product_4_content": "",
+            "product_5_content": "",
+            "product_6_content": ""
+          }
+        },
+        "accordion_row_yeVcC3": {
+          "type": "accordion_row",
+          "settings": {
+            "accordion_index": 1,
+            "row_heading": "Displayed Features",
+            "product_1_content": "Time Elapsed\nTime Goal\nTime Remaining\nClock\nMiles / Kilometers\nRPM\nCurrent Speed (MPH/KPH)\nPrevious Speed (MPH/KPH)\nPace\nAverage Pace\nHeart Rate\nPeak Heart Rate\nCalories\nCalories Per Hour\nWatts\nMETS\nElevation\nIncline\nPrevious Incline",
+            "product_2_content": "Time Elapsed\nTime Goal\nTime Remaining\nClock\nMiles / Kilometers\nRPM\nCurrent Speed (MPH/KPH)\nPrevious Speed (MPH/KPH)\nPace\nAverage Pace\nHeart Rate\nPeak Heart Rate\nCalories\nCalories Per Hour\nWatts\nMETS\nElevation\nIncline\nPrevious Incline",
+            "product_3_content": "Time Elapsed\nTime Goal\nTime Remaining\nClock\nMiles / Kilometers\nRPM\nCurrent Speed (MPH/KPH)\nPrevious Speed (MPH/KPH)\nPace\nAverage Pace\nHeart Rate\nPeak Heart Rate\nCalories\nCalories Per Hour\nWatts\nMETS\nElevation\nIncline\nPrevious Incline",
             "product_4_content": "",
             "product_5_content": "",
             "product_6_content": ""
@@ -93,9 +125,12 @@
         }
       },
       "block_order": [
+        "accordion_VztMkM",
+        "accordion_row_nnCeGj",
+        "accordion_row_yrwgdw",
         "accordion_k6erfa",
         "accordion_row_MNmYpR",
-        "accordion_row_yrwgdw",
+        "accordion_row_yeVcC3",
         "overview_product_RCNTzB",
         "overview_product_Nx8HKT",
         "overview_product_xXnCrf"
