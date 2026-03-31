@@ -97,113 +97,11 @@
         "padding_bottom": 28
       }
     },
-    "key_features_wQ7gFE": {
-      "type": "key-features",
-      "blocks": {
-        "collection_circle_WdgdYr": {
-          "type": "collection-circle",
-          "settings": {
-            "collection_image": "shopify://shop_images/Living_Room_1_840_Kettlebell_Stef_01213.jpg",
-            "collection_text": "Replaces 15 sets of dumbbells in one compact system"
-          }
-        },
-        "collection_circle_3PRirC": {
-          "type": "collection-circle",
-          "settings": {
-            "collection_image": "shopify://shop_images/840-feature-weight-selection-dial-bg-2x_a1c98a84-9b21-48fb-874b-77035a1a5a9d.webp",
-            "collection_text": "Selection dials easily take you from one exercise to the next"
-          }
-        },
-        "collection_circle_U87gYE": {
-          "type": "collection-circle",
-          "settings": {
-            "collection_image": "shopify://shop_images/Master_Bedroom_840_Kettlebell_Devin_03710.jpg",
-            "collection_text": ""
-          }
-        },
-        "collection_circle_HFwqiD": {
-          "type": "collection-circle",
-          "settings": {
-            "collection_image": "shopify://shop_images/840-feature-weight-plates-bg-2x_1.webp",
-            "collection_text": "Adjusts from 8 to 40 lbs (3.5 to 18 kg)"
-          }
-        },
-        "collection_circle_GceT4N": {
-          "type": "collection-circle",
-          "disabled": true,
-          "settings": {
-            "collection_image": "shopify://shop_images/t9-feature-incline-deck-2x.webp",
-            "collection_text": "Your next peak is just ahead."
-          }
-        },
-        "collection_circle_H9Exnf": {
-          "type": "collection-circle",
-          "disabled": true,
-          "settings": {
-            "collection_image": "shopify://shop_images/t9-feature-media-shelf-2x.webp",
-            "collection_text": "Keep your device in reach."
-          }
-        },
-        "collection_circle_NX6tQx": {
-          "type": "collection-circle",
-          "disabled": true,
-          "settings": {
-            "collection_image": "shopify://shop_images/t9-feature-console-app-2x.webp",
-            "collection_text": "Keep your options open."
-          }
-        },
-        "collection_circle_MkJ3xp": {
-          "type": "collection-circle",
-          "disabled": true,
-          "settings": {
-            "collection_image": "shopify://shop_images/t9-feature-flex-zone-2x.webp",
-            "collection_text": "Support and stability to go the distance."
-          }
-        },
-        "collection_circle_XaWJbT": {
-          "type": "collection-circle",
-          "disabled": true,
-          "settings": {
-            "collection_image": "shopify://shop_images/t9-feature-fan-2x.png",
-            "collection_text": "Undeniably cool."
-          }
-        },
-        "collection_circle_RKXytw": {
-          "type": "collection-circle",
-          "disabled": true,
-          "settings": {
-            "collection_image": "shopify://shop_images/t9-feature-cup-holder-2x.webp",
-            "collection_text": "Stay hydrated every step of the way."
-          }
-        }
-      },
-      "block_order": [
-        "collection_circle_WdgdYr",
-        "collection_circle_3PRirC",
-        "collection_circle_U87gYE",
-        "collection_circle_HFwqiD",
-        "collection_circle_GceT4N",
-        "collection_circle_H9Exnf",
-        "collection_circle_NX6tQx",
-        "collection_circle_MkJ3xp",
-        "collection_circle_XaWJbT",
-        "collection_circle_RKXytw"
-      ],
-      "name": "Key Features",
-      "settings": {
-        "section_heading": "Product Features",
-        "color_scheme": "",
-        "title": "Product Features",
-        "heading_size": "h1",
-        "padding_top": 32,
-        "padding_bottom": 36
-      }
-    },
     "video_bmWzBe": {
       "type": "video",
       "name": "Smarte Video Hero",
       "settings": {
-        "video": "shopify://files/videos/Kettlebell_16x9.mp4",
+        "video": "shopify://files/videos/5.1S_Stowable_Bench_16x9.mp4",
         "no_video_mobile": false,
         "show_overlay": false,
         "overlay_color": "#000000",
@@ -234,15 +132,15 @@
         "spec_metric_pDfeAt": {
           "type": "spec_metric",
           "settings": {
-            "label": "Dimensions (cm)",
-            "value": "8.8\" L x 7\" W x 12.5\" H"
+            "label": "Dimensions (in)",
+            "value": "61.3\" L x 28.1\" W x 49.5\" H"
           }
         },
         "spec_metric_3hGeEK": {
           "type": "spec_metric",
           "settings": {
             "label": "Dimensions (cm)",
-            "value": "22.4 x 17.8 x 31.8 cm"
+            "value": "155.6 x 71.3 x 125.8 cm"
           }
         },
         "spec_metric_3bE8zY": {
@@ -330,9 +228,9 @@
         "specs_position": 3,
         "specs_heading": "Specs & Warranty",
         "specs_subheading": "Equipment dimensions and warranty details.",
-        "spec_image_1": "shopify://shop_images/dimensions-840-bg-2x.webp",
+        "spec_image_1": "shopify://shop_images/dimensions-51s-bench-bg-2x.webp",
         "spec_image_1_alt": "Open treadmill dimensions",
-        "spec_image_2": "shopify://shop_images/840-feature-weight-plates-bg-2x_1.webp",
+        "spec_image_2": "shopify://shop_images/dimensions-51s-folded-bg-2x.webp",
         "spec_image_2_alt": "Folded treadmill dimensions",
         "specs_group_heading": "Specs",
         "warranty_group_heading": "Warranty",
@@ -347,7 +245,6 @@
   "order": [
     "main",
     "related-products",
-    "key_features_wQ7gFE",
     "video_bmWzBe",
     "product_page_sections_nx3K7M"
   ]
