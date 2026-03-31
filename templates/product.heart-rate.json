@@ -97,123 +97,6 @@
         "padding_bottom": 28
       }
     },
-    "key_features_wQ7gFE": {
-      "type": "key-features",
-      "blocks": {
-        "collection_circle_WdgdYr": {
-          "type": "collection-circle",
-          "settings": {
-            "collection_image": "shopify://shop_images/Living_Room_1_840_Kettlebell_Stef_01213.jpg",
-            "collection_text": "Replaces 15 sets of dumbbells in one compact system"
-          }
-        },
-        "collection_circle_3PRirC": {
-          "type": "collection-circle",
-          "settings": {
-            "collection_image": "shopify://shop_images/840-feature-weight-selection-dial-bg-2x_a1c98a84-9b21-48fb-874b-77035a1a5a9d.webp",
-            "collection_text": "Selection dials easily take you from one exercise to the next"
-          }
-        },
-        "collection_circle_U87gYE": {
-          "type": "collection-circle",
-          "settings": {
-            "collection_image": "shopify://shop_images/Master_Bedroom_840_Kettlebell_Devin_03710.jpg",
-            "collection_text": ""
-          }
-        },
-        "collection_circle_HFwqiD": {
-          "type": "collection-circle",
-          "settings": {
-            "collection_image": "shopify://shop_images/840-feature-weight-plates-bg-2x_1.webp",
-            "collection_text": "Adjusts from 8 to 40 lbs (3.5 to 18 kg)"
-          }
-        },
-        "collection_circle_GceT4N": {
-          "type": "collection-circle",
-          "disabled": true,
-          "settings": {
-            "collection_image": "shopify://shop_images/t9-feature-incline-deck-2x.webp",
-            "collection_text": "Your next peak is just ahead."
-          }
-        },
-        "collection_circle_H9Exnf": {
-          "type": "collection-circle",
-          "disabled": true,
-          "settings": {
-            "collection_image": "shopify://shop_images/t9-feature-media-shelf-2x.webp",
-            "collection_text": "Keep your device in reach."
-          }
-        },
-        "collection_circle_NX6tQx": {
-          "type": "collection-circle",
-          "disabled": true,
-          "settings": {
-            "collection_image": "shopify://shop_images/t9-feature-console-app-2x.webp",
-            "collection_text": "Keep your options open."
-          }
-        },
-        "collection_circle_MkJ3xp": {
-          "type": "collection-circle",
-          "disabled": true,
-          "settings": {
-            "collection_image": "shopify://shop_images/t9-feature-flex-zone-2x.webp",
-            "collection_text": "Support and stability to go the distance."
-          }
-        },
-        "collection_circle_XaWJbT": {
-          "type": "collection-circle",
-          "disabled": true,
-          "settings": {
-            "collection_image": "shopify://shop_images/t9-feature-fan-2x.png",
-            "collection_text": "Undeniably cool."
-          }
-        },
-        "collection_circle_RKXytw": {
-          "type": "collection-circle",
-          "disabled": true,
-          "settings": {
-            "collection_image": "shopify://shop_images/t9-feature-cup-holder-2x.webp",
-            "collection_text": "Stay hydrated every step of the way."
-          }
-        }
-      },
-      "block_order": [
-        "collection_circle_WdgdYr",
-        "collection_circle_3PRirC",
-        "collection_circle_U87gYE",
-        "collection_circle_HFwqiD",
-        "collection_circle_GceT4N",
-        "collection_circle_H9Exnf",
-        "collection_circle_NX6tQx",
-        "collection_circle_MkJ3xp",
-        "collection_circle_XaWJbT",
-        "collection_circle_RKXytw"
-      ],
-      "name": "Key Features",
-      "settings": {
-        "section_heading": "Product Features",
-        "color_scheme": "",
-        "title": "Product Features",
-        "heading_size": "h1",
-        "padding_top": 32,
-        "padding_bottom": 36
-      }
-    },
-    "video_bmWzBe": {
-      "type": "video",
-      "name": "Smarte Video Hero",
-      "settings": {
-        "video": "shopify://files/videos/Kettlebell_16x9.mp4",
-        "no_video_mobile": false,
-        "show_overlay": false,
-        "overlay_color": "#000000",
-        "overlay_opacity": 50,
-        "full_width": true,
-        "horizontal_alignment": "middle-center",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "product_page_sections_nx3K7M": {
       "type": "product-page-sections",
       "blocks": {
@@ -326,7 +209,7 @@
         "fitness_right_image": "shopify://shop_images/t16-02-app-2x.webp",
         "fitness_right_title": "16” HD touchscreen",
         "fitness_right_text": "Browse the web or access Netflix, YouTube, Spotify, JRNY, and more.",
-        "show_specs": true,
+        "show_specs": false,
         "specs_position": 3,
         "specs_heading": "Specs & Warranty",
         "specs_subheading": "Equipment dimensions and warranty details.",
@@ -347,8 +230,6 @@
   "order": [
     "main",
     "related-products",
-    "key_features_wQ7gFE",
-    "video_bmWzBe",
     "product_page_sections_nx3K7M"
   ]
 }
