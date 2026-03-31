@@ -248,15 +248,15 @@
         "spec_metric_3bE8zY": {
           "type": "spec_metric",
           "settings": {
-            "label": "15 Weight Settings (Per Dumbbell - lbs)",
-            "value": "5, 7.5, 10, 12.5, 15, 17.5, 20, 22.5, 25, 30, 35, 40, 45, 50, and 52.5 lbs"
+            "label": "6 Weight Settings (lbs)",
+            "value": "8, 12, 20, 25, 35 and 40 lbs"
           }
         },
         "spec_metric_m6q4dD": {
           "type": "spec_metric",
           "settings": {
-            "label": "15 Weight Settings (Per Dumbbell - kg)",
-            "value": "2.3, 3.4, 4.5, 5.7, 6.8, 8.0, 9.0, 10.2, 11.4, 13.6, 15.9, 18.2, 20.5, 22.7, 23.9 kg"
+            "label": "6 Weight Settings (kg)",
+            "value": "3.5, 5.5, 9, 11, 16 and 18 kg"
           }
         },
         "jrny_slide_iGPaXL": {
