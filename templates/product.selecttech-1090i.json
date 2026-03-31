@@ -103,22 +103,22 @@
         "collection_circle_WdgdYr": {
           "type": "collection-circle",
           "settings": {
-            "collection_image": "shopify://shop_images/t9-feature-quick-response-2x.webp",
-            "collection_text": "Change speed and incline in a heartbeat"
+            "collection_image": "shopify://shop_images/BFX_ATF_SelectTech_1090_Single_Feature_01_NoGraphic.jpg",
+            "collection_text": "An ergonomic, non-slip handle provides extra control and comfort with each lift."
           }
         },
         "collection_circle_3PRirC": {
           "type": "collection-circle",
           "settings": {
-            "collection_image": "shopify://shop_images/t9-feature-deck-2x.png",
-            "collection_text": "Plenty of runway."
+            "collection_image": "shopify://shop_images/BFX_ATF_SelectTech_1090_Single_Feature_07_NoGraphic.jpg",
+            "collection_text": "Switch between weight settings with a quick twist of the dials, from 5 to 52.5 pounds per dumbbell."
           }
         },
         "collection_circle_HFwqiD": {
           "type": "collection-circle",
           "settings": {
-            "collection_image": "shopify://shop_images/t9-feature-apple-watch-2x.webp",
-            "collection_text": "Connect to Apple Watch."
+            "collection_image": "shopify://shop_images/BFX_ATF_SelectTech_1090_Single_Feature_05_NoGraphic.jpg",
+            "collection_text": "Reinforced with durable metal plates and a locking system to keep weights in-place."
           }
         },
         "collection_circle_GceT4N": {
@@ -188,6 +188,48 @@
     "product_page_sections_nx3K7M": {
       "type": "product-page-sections",
       "blocks": {
+        "specs_accordion_kG6NdJ": {
+          "type": "specs_accordion",
+          "settings": {
+            "title": "",
+            "content": ""
+          }
+        },
+        "warranty_metric_dpqTUg": {
+          "type": "warranty_metric",
+          "settings": {
+            "label": "Parts",
+            "value": "2 Years"
+          }
+        },
+        "spec_metric_pDfeAt": {
+          "type": "spec_metric",
+          "settings": {
+            "label": "Dimensions (Per Dumbbell - cm)",
+            "value": "17.5” L × 9.5” W × 10” H"
+          }
+        },
+        "spec_metric_3hGeEK": {
+          "type": "spec_metric",
+          "settings": {
+            "label": "Dimensions (Per Dumbbell - cm)",
+            "value": "44.4 x 24.2 x 25.3"
+          }
+        },
+        "spec_metric_3bE8zY": {
+          "type": "spec_metric",
+          "settings": {
+            "label": "15 Weight Settings (Per Dumbbell - lbs)",
+            "value": "5, 7.5, 10, 12.5, 15, 17.5, 20, 22.5, 25, 30, 35, 40, 45, 50, and 52.5 lbs"
+          }
+        },
+        "spec_metric_m6q4dD": {
+          "type": "spec_metric",
+          "settings": {
+            "label": "15 Weight Settings (Per Dumbbell - kg)",
+            "value": "2.3, 3.4, 4.5, 5.7, 6.8, 8.0, 9.0, 10.2, 11.4, 13.6, 15.9, 18.2, 20.5, 22.7, 23.9 kg"
+          }
+        },
         "jrny_slide_iGPaXL": {
           "type": "jrny_slide",
           "settings": {
@@ -222,6 +264,12 @@
         }
       },
       "block_order": [
+        "specs_accordion_kG6NdJ",
+        "warranty_metric_dpqTUg",
+        "spec_metric_pDfeAt",
+        "spec_metric_3hGeEK",
+        "spec_metric_3bE8zY",
+        "spec_metric_m6q4dD",
         "jrny_slide_iGPaXL",
         "jrny_slide_VNnwkh",
         "jrny_slide_KbWjJT",
@@ -237,7 +285,7 @@
         "fallback_training_video_url": "",
         "fallback_training_tab_title_1": "Explore entertainment",
         "fallback_training_tab_title_2": "Go further with JRNY",
-        "show_fitness": true,
+        "show_fitness": false,
         "fitness_position": 2,
         "fitness_heading": "Entertainment + fitness at your fingertips.",
         "fitness_subheading": "Dummy content to represent media and app integrations.",
@@ -253,17 +301,32 @@
         "specs_position": 3,
         "specs_heading": "Specs & Warranty",
         "specs_subheading": "Equipment dimensions and warranty details.",
-        "spec_image_1": "shopify://shop_images/dimensions-folded-t16-bg-2x.webp",
+        "spec_image_1": "shopify://shop_images/BFX_ATF_SelectTech_1090_Single_Product_dims_01_50fbe534-7b34-4777-ac1e-e6a06b1a68b9.jpg",
         "spec_image_1_alt": "Open treadmill dimensions",
-        "spec_image_2": "shopify://shop_images/dimensions-folded-t16-bg-2x.webp",
+        "spec_image_2": "shopify://shop_images/BFX_ATF_SelectTech_1090_Single_Product_dims_02_68fb92e3-2bbe-4742-abe7-f163d78c5c0e.jpg",
         "spec_image_2_alt": "Folded treadmill dimensions",
         "specs_group_heading": "Specs",
         "warranty_group_heading": "Warranty",
-        "additional_specs_heading": "Additional Specs",
+        "additional_specs_heading": "",
         "show_membership": true,
         "membership_position": 4,
         "membership_heading": "JRNY adaptive fitness membership",
         "membership_subheading": ""
+      }
+    },
+    "video_bmWzBe": {
+      "type": "video",
+      "name": "Smarte Video Hero",
+      "settings": {
+        "video": "shopify://files/videos/BowFlex-SelectTech-1090-Product-Video_EN.mp4",
+        "no_video_mobile": false,
+        "show_overlay": false,
+        "overlay_color": "#000000",
+        "overlay_opacity": 50,
+        "full_width": true,
+        "horizontal_alignment": "middle-center",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
@@ -271,6 +334,7 @@
     "main",
     "related-products",
     "key_features_wQ7gFE",
-    "product_page_sections_nx3K7M"
+    "product_page_sections_nx3K7M",
+    "video_bmWzBe"
   ]
 }
