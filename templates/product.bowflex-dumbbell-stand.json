@@ -103,7 +103,7 @@
         "collection_circle_WdgdYr": {
           "type": "collection-circle",
           "settings": {
-            "collection_image": "shopify://shop_images/552i.png",
+            "collection_image": "shopify://shop_images/Bowflex_Stand_1.png",
             "collection_text": "Replaces 15 sets of dumbbells in one compact system"
           }
         },
@@ -117,7 +117,7 @@
         "collection_circle_HFwqiD": {
           "type": "collection-circle",
           "settings": {
-            "collection_image": "shopify://shop_images/552i_2.png",
+            "collection_image": "shopify://shop_images/Bowflex_Stand.png",
             "collection_text": "Adjusts from 5 to 52.5 lbs (2 to 24 kg) per dumbbell"
           }
         },
