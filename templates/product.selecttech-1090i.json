@@ -123,6 +123,7 @@
         },
         "collection_circle_GceT4N": {
           "type": "collection-circle",
+          "disabled": true,
           "settings": {
             "collection_image": "shopify://shop_images/t9-feature-incline-deck-2x.webp",
             "collection_text": "Your next peak is just ahead."
@@ -130,6 +131,7 @@
         },
         "collection_circle_H9Exnf": {
           "type": "collection-circle",
+          "disabled": true,
           "settings": {
             "collection_image": "shopify://shop_images/t9-feature-media-shelf-2x.webp",
             "collection_text": "Keep your device in reach."
@@ -137,6 +139,7 @@
         },
         "collection_circle_NX6tQx": {
           "type": "collection-circle",
+          "disabled": true,
           "settings": {
             "collection_image": "shopify://shop_images/t9-feature-console-app-2x.webp",
             "collection_text": "Keep your options open."
@@ -144,6 +147,7 @@
         },
         "collection_circle_MkJ3xp": {
           "type": "collection-circle",
+          "disabled": true,
           "settings": {
             "collection_image": "shopify://shop_images/t9-feature-flex-zone-2x.webp",
             "collection_text": "Support and stability to go the distance."
@@ -151,6 +155,7 @@
         },
         "collection_circle_XaWJbT": {
           "type": "collection-circle",
+          "disabled": true,
           "settings": {
             "collection_image": "shopify://shop_images/t9-feature-fan-2x.png",
             "collection_text": "Undeniably cool."
@@ -158,6 +163,7 @@
         },
         "collection_circle_RKXytw": {
           "type": "collection-circle",
+          "disabled": true,
           "settings": {
             "collection_image": "shopify://shop_images/t9-feature-cup-holder-2x.webp",
             "collection_text": "Stay hydrated every step of the way."
