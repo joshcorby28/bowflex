@@ -195,7 +195,7 @@
       "type": "video",
       "name": "Smarte Video Hero",
       "settings": {
-        "video": "shopify://files/videos/BowFlex-SelectTech-1090-Product-Video_EN.mp4",
+        "video": "shopify://files/videos/Bowflex-SelectTech-552-Product-Video-Cut-Down_International.mp4",
         "no_video_mobile": false,
         "show_overlay": false,
         "overlay_color": "#000000",
@@ -227,14 +227,14 @@
           "type": "spec_metric",
           "settings": {
             "label": "Dimensions (Per Dumbbell - cm)",
-            "value": "17.5” L × 9.5” W × 10” H"
+            "value": "16.9” L × 8.3” W × 9” H"
           }
         },
         "spec_metric_3hGeEK": {
           "type": "spec_metric",
           "settings": {
             "label": "Dimensions (Per Dumbbell - cm)",
-            "value": "44.4 x 24.2 x 25.3"
+            "value": "43 L x 21.2 W x 25.3 x 22.8 H"
           }
         },
         "spec_metric_3bE8zY": {
@@ -322,9 +322,9 @@
         "specs_position": 3,
         "specs_heading": "Specs & Warranty",
         "specs_subheading": "Equipment dimensions and warranty details.",
-        "spec_image_1": "shopify://shop_images/BFX_ATF_SelectTech_1090_Single_Product_dims_01_50fbe534-7b34-4777-ac1e-e6a06b1a68b9.jpg",
+        "spec_image_1": "shopify://shop_images/BFX_ATF_SelectTech_552_Single_Product_dims_02.jpg",
         "spec_image_1_alt": "Open treadmill dimensions",
-        "spec_image_2": "shopify://shop_images/BFX_ATF_SelectTech_1090_Single_Product_dims_02_68fb92e3-2bbe-4742-abe7-f163d78c5c0e.jpg",
+        "spec_image_2": "shopify://shop_images/BFX_ATF_SelectTech_552_Single_Product_dims_01_75b36f9e-7fd1-4e06-a779-b63522cd8767.jpg",
         "spec_image_2_alt": "Folded treadmill dimensions",
         "specs_group_heading": "Specs",
         "warranty_group_heading": "Warranty",
