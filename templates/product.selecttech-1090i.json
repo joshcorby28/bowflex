@@ -191,6 +191,21 @@
         "padding_bottom": 36
       }
     },
+    "video_bmWzBe": {
+      "type": "video",
+      "name": "Smarte Video Hero",
+      "settings": {
+        "video": "shopify://files/videos/BowFlex-SelectTech-1090-Product-Video_EN.mp4",
+        "no_video_mobile": false,
+        "show_overlay": false,
+        "overlay_color": "#000000",
+        "overlay_opacity": 50,
+        "full_width": true,
+        "horizontal_alignment": "middle-center",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "product_page_sections_nx3K7M": {
       "type": "product-page-sections",
       "blocks": {
@@ -319,28 +334,13 @@
         "membership_heading": "JRNY adaptive fitness membership",
         "membership_subheading": ""
       }
-    },
-    "video_bmWzBe": {
-      "type": "video",
-      "name": "Smarte Video Hero",
-      "settings": {
-        "video": "shopify://files/videos/BowFlex-SelectTech-1090-Product-Video_EN.mp4",
-        "no_video_mobile": false,
-        "show_overlay": false,
-        "overlay_color": "#000000",
-        "overlay_opacity": 50,
-        "full_width": true,
-        "horizontal_alignment": "middle-center",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
     "main",
     "related-products",
     "key_features_wQ7gFE",
-    "product_page_sections_nx3K7M",
-    "video_bmWzBe"
+    "video_bmWzBe",
+    "product_page_sections_nx3K7M"
   ]
 }
