@@ -203,7 +203,7 @@
       "type": "video",
       "name": "Smarte Video Hero",
       "settings": {
-        "video": "shopify://files/videos/Bowflex-SelectTech-552-Product-Video-Cut-Down_International.mp4",
+        "video": "shopify://files/videos/Kettlebell_16x9.mp4",
         "no_video_mobile": false,
         "show_overlay": false,
         "overlay_color": "#000000",
@@ -234,15 +234,15 @@
         "spec_metric_pDfeAt": {
           "type": "spec_metric",
           "settings": {
-            "label": "Dimensions (Per Dumbbell - cm)",
-            "value": "16.9” L × 8.3” W × 9” H"
+            "label": "Dimensions (cm)",
+            "value": "8.8\" L x 7\" W x 12.5\" H"
           }
         },
         "spec_metric_3hGeEK": {
           "type": "spec_metric",
           "settings": {
-            "label": "Dimensions (Per Dumbbell - cm)",
-            "value": "43 L x 21.2 W x 25.3 x 22.8 H"
+            "label": "Dimensions (cm)",
+            "value": "22.4 x 17.8 x 31.8 cm"
           }
         },
         "spec_metric_3bE8zY": {
@@ -330,9 +330,9 @@
         "specs_position": 3,
         "specs_heading": "Specs & Warranty",
         "specs_subheading": "Equipment dimensions and warranty details.",
-        "spec_image_1": "shopify://shop_images/BFX_ATF_SelectTech_552_Single_Product_dims_02.jpg",
+        "spec_image_1": "shopify://shop_images/dimensions-840-bg-2x.webp",
         "spec_image_1_alt": "Open treadmill dimensions",
-        "spec_image_2": "shopify://shop_images/BFX_ATF_SelectTech_552_Single_Product_dims_01_75b36f9e-7fd1-4e06-a779-b63522cd8767.jpg",
+        "spec_image_2": "shopify://shop_images/840-feature-weight-plates-bg-2x_1.webp",
         "spec_image_2_alt": "Folded treadmill dimensions",
         "specs_group_heading": "Specs",
         "warranty_group_heading": "Warranty",
