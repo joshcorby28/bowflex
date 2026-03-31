@@ -267,7 +267,7 @@
         "specs_group_heading": "Specs",
         "warranty_group_heading": "Warranty",
         "additional_specs_heading": "",
-        "show_membership": true,
+        "show_membership": false,
         "membership_position": 4,
         "membership_heading": "JRNY adaptive fitness membership",
         "membership_subheading": ""
