@@ -188,14 +188,6 @@
     "product_page_sections_nx3K7M": {
       "type": "product-page-sections",
       "blocks": {
-        "jrny_slide_CUn9NW": {
-          "type": "jrny_slide",
-          "settings": {
-            "image": "shopify://shop_images/t16-jrny-coaching-bg-1x.jpg",
-            "title": "Every day is different.",
-            "text": "Get a custom set of adaptive workouts to freshen up your routine."
-          }
-        },
         "jrny_slide_iGPaXL": {
           "type": "jrny_slide",
           "settings": {
@@ -230,7 +222,6 @@
         }
       },
       "block_order": [
-        "jrny_slide_CUn9NW",
         "jrny_slide_iGPaXL",
         "jrny_slide_VNnwkh",
         "jrny_slide_KbWjJT",
@@ -239,11 +230,15 @@
       "settings": {
         "dark_color_scheme": "scheme-1",
         "light_color_scheme": "scheme-1",
+        "show_training": false,
+        "training_position": 1,
         "training_heading": "The ultimate training experience",
         "training_subheading": "Watch videos below to learn more.",
         "fallback_training_video_url": "",
         "fallback_training_tab_title_1": "Explore entertainment",
         "fallback_training_tab_title_2": "Go further with JRNY",
+        "show_fitness": true,
+        "fitness_position": 2,
         "fitness_heading": "Entertainment + fitness at your fingertips.",
         "fitness_subheading": "Dummy content to represent media and app integrations.",
         "fitness_left_image": "shopify://shop_images/t16-01-watch-2x.webp",
@@ -254,6 +249,8 @@
         "fitness_right_image": "shopify://shop_images/t16-02-app-2x.webp",
         "fitness_right_title": "16” HD touchscreen",
         "fitness_right_text": "Browse the web or access Netflix, YouTube, Spotify, JRNY, and more.",
+        "show_specs": true,
+        "specs_position": 3,
         "specs_heading": "Specs & Warranty",
         "specs_subheading": "Equipment dimensions and warranty details.",
         "spec_image_1": "shopify://shop_images/dimensions-folded-t16-bg-2x.webp",
@@ -263,6 +260,8 @@
         "specs_group_heading": "Specs",
         "warranty_group_heading": "Warranty",
         "additional_specs_heading": "Additional Specs",
+        "show_membership": true,
+        "membership_position": 4,
         "membership_heading": "The JRNY adaptive fitness membership keeps you going.",
         "membership_subheading": "Dummy carousel cards for membership benefits."
       }
