@@ -103,21 +103,28 @@
         "collection_circle_WdgdYr": {
           "type": "collection-circle",
           "settings": {
-            "collection_image": "shopify://shop_images/552i.png",
+            "collection_image": "shopify://shop_images/Living_Room_1_840_Kettlebell_Stef_01213.jpg",
             "collection_text": "Replaces 15 sets of dumbbells in one compact system"
           }
         },
         "collection_circle_3PRirC": {
           "type": "collection-circle",
           "settings": {
-            "collection_image": "shopify://shop_images/552i_1.png",
+            "collection_image": "shopify://shop_images/840-feature-weight-selection-dial-bg-2x_a1c98a84-9b21-48fb-874b-77035a1a5a9d.webp",
             "collection_text": "Easy-to-use weight selection dials for fast switching between exercises"
+          }
+        },
+        "collection_circle_U87gYE": {
+          "type": "collection-circle",
+          "settings": {
+            "collection_image": "shopify://shop_images/Master_Bedroom_840_Kettlebell_Devin_03710.jpg",
+            "collection_text": ""
           }
         },
         "collection_circle_HFwqiD": {
           "type": "collection-circle",
           "settings": {
-            "collection_image": "shopify://shop_images/552i_2.png",
+            "collection_image": "shopify://shop_images/840-feature-weight-plates-bg-2x_1.webp",
             "collection_text": "Adjusts from 5 to 52.5 lbs (2 to 24 kg) per dumbbell"
           }
         },
@@ -173,6 +180,7 @@
       "block_order": [
         "collection_circle_WdgdYr",
         "collection_circle_3PRirC",
+        "collection_circle_U87gYE",
         "collection_circle_HFwqiD",
         "collection_circle_GceT4N",
         "collection_circle_H9Exnf",
