@@ -192,7 +192,7 @@
           "type": "jrny_slide",
           "settings": {
             "image": "shopify://shop_images/jrny-radio-tablet-bg-2x.webp",
-            "title": "Add some rhythm to your reps.",
+            "title": "Add some rhythm to your reps",
             "text": "Curated JRNY Radio stations let you workout too your favourite tunes."
           }
         },
@@ -200,16 +200,16 @@
           "type": "jrny_slide",
           "settings": {
             "image": "shopify://shop_images/Syndigo_2x_Column_JRNY_BYODv2_04_2x_5ea85cad-6183-4f45-95e8-d06b9ae1c17f.jpg",
-            "title": "Every day is different.",
-            "text": "Get a custom set of adaptive workouts to freshen up your routine."
+            "title": "Refresh your memory",
+            "text": "JRNY remembers how much weight you lifted today so it can make informed recommendations tomorrow."
           }
         },
         "jrny_slide_KbWjJT": {
           "type": "jrny_slide",
           "settings": {
             "image": "shopify://shop_images/jrny-full-body-workouts-m-lr-0623-bg-2x.webp",
-            "title": "Every day is different.",
-            "text": "Get a custom set of adaptive workouts to freshen up your routine."
+            "title": "Mix in some whole-body movement",
+            "text": "Yoga, Pilates and strength training give you options when you want a change of pace."
           }
         },
         "jrny_slide_A3dWc9": {
