@@ -125,8 +125,22 @@
         "warranty_metric_dpqTUg": {
           "type": "warranty_metric",
           "settings": {
+            "label": "Frame",
+            "value": "30 Years"
+          }
+        },
+        "warranty_metric_hFRc3f": {
+          "type": "warranty_metric",
+          "settings": {
             "label": "Parts",
-            "value": "2 Years"
+            "value": "1 Year"
+          }
+        },
+        "warranty_metric_gi7wD3": {
+          "type": "warranty_metric",
+          "settings": {
+            "label": "Upholstery",
+            "value": "1 Year"
           }
         },
         "spec_metric_pDfeAt": {
@@ -143,18 +157,32 @@
             "value": "155.6 x 71.3 x 125.8 cm"
           }
         },
+        "spec_metric_cXcPJp": {
+          "type": "spec_metric",
+          "settings": {
+            "label": "Stowed Dimensions (in)",
+            "value": "23.9\" L x 28.1\" W x 52.3\" H"
+          }
+        },
+        "spec_metric_8hjLPc": {
+          "type": "spec_metric",
+          "settings": {
+            "label": "Stowed Dimensions (cm)",
+            "value": "77.2” L × 35.2” W × 67.6” H"
+          }
+        },
         "spec_metric_3bE8zY": {
           "type": "spec_metric",
           "settings": {
-            "label": "6 Weight Settings (lbs)",
-            "value": "8, 12, 20, 25, 35 and 40 lbs"
+            "label": "Max. User  + Load Weight",
+            "value": "600 lbs (272 kg)"
           }
         },
         "spec_metric_m6q4dD": {
           "type": "spec_metric",
           "settings": {
-            "label": "6 Weight Settings (kg)",
-            "value": "3.5, 5.5, 9, 11, 16 and 18 kg"
+            "label": "Product Weight",
+            "value": "60 lbs (27.2 kg)"
           }
         },
         "jrny_slide_iGPaXL": {
@@ -193,8 +221,12 @@
       "block_order": [
         "specs_accordion_kG6NdJ",
         "warranty_metric_dpqTUg",
+        "warranty_metric_hFRc3f",
+        "warranty_metric_gi7wD3",
         "spec_metric_pDfeAt",
         "spec_metric_3hGeEK",
+        "spec_metric_cXcPJp",
+        "spec_metric_8hjLPc",
         "spec_metric_3bE8zY",
         "spec_metric_m6q4dD",
         "jrny_slide_iGPaXL",
