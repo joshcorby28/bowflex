@@ -45,9 +45,7 @@
       "block_order": [
         "text_eVUcUH"
       ],
-      "custom_css": [
-        ".heading {text-align:left;}"
-      ],
+      "custom_css": [],
       "name": "t:sections.video.presets.name",
       "settings": {
         "video": "{{ collection.metafields.custom.video_hero.value }}",
