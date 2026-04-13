@@ -1,7 +1,8 @@
 /* Custom */
 
 .product__title h1 {
-  font-size:28px;
+  font-size:34px;
+  font-weight: 400;
 }
 
 .price__sale .price-item--last {
