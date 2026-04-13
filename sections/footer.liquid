@@ -99,9 +99,20 @@
       <div class="custom-footer__column custom-footer__column--social">
         <h3>Stay Connected</h3>
         <p>Unlock your potential alongside other dedicated individuals.</p>
-        {%- if section.settings.show_social and has_social_icons -%}
-          {%- render 'social-icons', class: 'custom-footer__social' -%}
-        {%- endif -%}
+        <div class="custom-footer__social-icons">
+          <a href="https://www.facebook.com/Bowflex/" target="_blank" rel="noopener" aria-label="Facebook" class="custom-footer__social-icon">
+            <i class='bx bxl-facebook'></i>
+          </a>
+          <a href="https://instagram.com/bowflex/" target="_blank" rel="noopener" aria-label="Instagram" class="custom-footer__social-icon">
+            <i class='bx bxl-instagram'></i>
+          </a>
+          <a href="https://www.youtube.com/user/BowflexStories" target="_blank" rel="noopener" aria-label="YouTube" class="custom-footer__social-icon">
+            <i class='bx bxl-youtube'></i>
+          </a>
+          <a href="https://www.pinterest.com/bowflex/" target="_blank" rel="noopener" aria-label="Pinterest" class="custom-footer__social-icon">
+            <i class='bx bxl-pinterest'></i>
+          </a>
+        </div>
 
         <h3 class="custom-footer__blog-title"><a href="/blogs/news">BowFlex Blog</a></h3>
         <ul>
