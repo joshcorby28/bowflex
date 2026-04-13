@@ -48,6 +48,13 @@
             "show_gift_card_recipient": true
           }
         },
+        "popup_VyRw38": {
+          "type": "popup",
+          "settings": {
+            "text": "Shipping and Delivery",
+            "page": "shipping-information"
+          }
+        },
         "description": {
           "type": "description",
           "settings": {}
@@ -60,6 +67,7 @@
         "price",
         "variant_picker",
         "buy_buttons",
+        "popup_VyRw38",
         "description"
       ],
       "settings": {
