@@ -1,5 +1,6 @@
 {% comment %}theme-check-disable UndefinedObject{% endcomment %}
 {{ 'section-footer.css' | asset_url | stylesheet_tag }}
+<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 {{ 'component-newsletter.css' | asset_url | stylesheet_tag }}
 {{ 'component-list-payment.css' | asset_url | stylesheet_tag }}
 {{ 'component-list-social.css' | asset_url | stylesheet_tag }}
@@ -48,8 +49,12 @@
       </a>
 
       <div class="custom-footer__top-links">
-        <a href="tel:8006188853" class="custom-footer__top-link">01494 412420</a>
-        <a href="/pages/support" class="custom-footer__top-link">Support Home</a>
+        <a href="tel:8006188853" class="custom-footer__top-link">
+          <i class='bx bx-phone custom-footer__top-link-icon'></i>01494 412420
+        </a>
+        <a href="/pages/support" class="custom-footer__top-link">
+          <i class='bx bx-support custom-footer__top-link-icon'></i>Support Home
+        </a>
       </div>
     </div>
 

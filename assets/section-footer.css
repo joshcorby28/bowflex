@@ -44,10 +44,18 @@
 }
 
 .custom-footer__top-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
   text-decoration: none;
   color: #121212;
   font-size: 1.6rem;
   font-weight: 600;
+}
+
+.custom-footer__top-link-icon {
+  font-size: 2rem;
+  line-height: 1;
 }
 
 .custom-footer__top-link:hover {
