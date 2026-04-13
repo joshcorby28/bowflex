@@ -16,9 +16,9 @@
 }
 
 .price__regular span {
-  color:#141414;
-  font-size:18px;
-  font-weight:700;
+    font-size: 24px;
+    font-weight: 400;
+    color: #4041f1;
 }
 
 .product-media-container.constrain-height.media-fit-contain {
