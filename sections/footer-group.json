@@ -29,7 +29,8 @@
         "cta_HWJ6n8"
       ],
       "custom_css": [
-        ".cta-bar__message {font-weight:500;}"
+        ".cta-bar__message {font-weight: 500;}",
+        "@media only screen and (max-width: 800px) {.cta-bar__inner {flex-direction: column;}.cta-bar__message {font-size: 17px;}}"
       ],
       "name": "CTA Bar",
       "settings": {

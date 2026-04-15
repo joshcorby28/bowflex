@@ -49,11 +49,34 @@
         "padding_top": 60,
         "padding_bottom": 64
       }
+    },
+    "swiper_hero_4GXc8j": {
+      "type": "swiper-hero",
+      "blocks": {
+        "slide_T4HwNR": {
+          "type": "slide",
+          "settings": {
+            "badge": "New",
+            "badge_color": "#b4ff63",
+            "heading": "Upgrade your training",
+            "subtext": "Promotional text goes here",
+            "small_text": "Limited time only",
+            "button_label": "Shop Now",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_T4HwNR"
+      ],
+      "name": "Swiper Hero Split",
+      "settings": {}
     }
   },
   "order": [
     "main",
     "hero_slider_nPXiya",
-    "form"
+    "form",
+    "swiper_hero_4GXc8j"
   ]
 }
