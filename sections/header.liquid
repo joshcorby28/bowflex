@@ -350,32 +350,47 @@ font-size:14px;
 
 
 <script>
-  const items = document.querySelectorAll(".mega-menu");
+  document.addEventListener('DOMContentLoaded', function () {
+    var navDetails = document.querySelectorAll('.header__inline-menu details');
 
-  items.forEach(item => {
-    const content = item.querySelector('.mega-menu__content');
+    navDetails.forEach(function (details) {
+      var summary = details.querySelector('summary');
+      var leaveTimeout;
 
-    item.addEventListener("mouseenter", () => {
-      items.forEach(i => {
-        if (i !== item) i.removeAttribute("open");
+      // Click navigates to the top-level link instead of toggling the dropdown
+      summary.addEventListener('click', function (e) {
+        var url = summary.dataset.url;
+        if (url) {
+          e.preventDefault();
+          window.location.href = url;
+        }
       });
-      item.setAttribute("open", true);
-    });
 
-    let leaveTimeout;
+      // Open dropdown on hover
+      details.addEventListener('mouseenter', function () {
+        clearTimeout(leaveTimeout);
+        navDetails.forEach(function (d) {
+          if (d !== details) d.removeAttribute('open');
+        });
+        details.setAttribute('open', '');
+      });
 
-    item.addEventListener("mouseleave", () => {
-      leaveTimeout = setTimeout(() => {
-        item.removeAttribute("open");
-      }, 300);
-    });
+      details.addEventListener('mouseleave', function () {
+        leaveTimeout = setTimeout(function () {
+          details.removeAttribute('open');
+        }, 250);
+      });
 
-    content.addEventListener("mouseenter", () => {
-      clearTimeout(leaveTimeout);
-    });
-
-    content.addEventListener("mouseleave", () => {
-      item.removeAttribute("open");
+      // Keep open while hovering the dropdown content
+      var content = details.querySelector('.mega-menu__content, .header__submenu');
+      if (content) {
+        content.addEventListener('mouseenter', function () {
+          clearTimeout(leaveTimeout);
+        });
+        content.addEventListener('mouseleave', function () {
+          details.removeAttribute('open');
+        });
+      }
     });
   });
 </script>

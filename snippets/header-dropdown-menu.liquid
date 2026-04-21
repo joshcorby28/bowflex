@@ -9,8 +9,8 @@
   class="header__menu-item list-menu__item link focus-inset
     {% if link.current %} header__active-menu-item{% endif %}
     {% if link.title contains 'Sale' or link.handle contains 'sale' %} sale-menu-item{% endif %}"
+  data-url="{{ link.url }}"
 >
-
                 <span>
                   {{ link.title | escape }}
                 </span>
