@@ -175,7 +175,7 @@
 {%- endstyle -%}
 
 <div class="color-{{ section.settings.color_scheme }} gradient">
-  <div class="page-width section-{{ section.id }}-padding">
+  <div class="page-width{% if section.settings.narrow_width %} page-width--narrow{% endif %} section-{{ section.id }}-padding">
     <div class="cg-wrap">
 
       {%- if section.settings.heading != blank -%}
@@ -321,6 +321,13 @@
       "id": "view_all_label",
       "default": "View All",
       "label": "'View All' button label"
+    },
+    {
+      "type": "checkbox",
+      "id": "narrow_width",
+      "label": "Narrow width",
+      "default": false,
+      "info": "Constrains the section to a narrower container"
     },
     {
       "type": "color_scheme",

@@ -260,7 +260,7 @@
 </style>
 
 <div class="color-{{ section.settings.color_scheme }} gradient">
-  <div class="page-width section-{{ section.id }}-padding">
+  <div class="page-width{% if section.settings.narrow_width %} page-width--narrow{% endif %} section-{{ section.id }}-padding">
     <div class="sbc-wrap sbc-wrap--{% if anchor_mode %}anchor{% else %}tabs{% endif %}" data-sbc-section="{{ section.id }}">
 
       {%- if section.settings.heading != blank -%}
@@ -536,6 +536,13 @@
       "step": 1,
       "default": 3,
       "label": "Columns on desktop"
+    },
+    {
+      "type": "checkbox",
+      "id": "narrow_width",
+      "label": "Narrow width",
+      "default": false,
+      "info": "Constrains the section to a narrower container"
     },
     {
       "type": "color_scheme",
