@@ -54,7 +54,7 @@
             "collection": "treadmill-sale",
             "tab_label": "Treadmills",
             "panel_heading": "Treadmills",
-            "compare_url": ""
+            "compare_url": "shopify://pages/compare-treadmills"
           }
         },
         "category_tab_dLTYie": {
