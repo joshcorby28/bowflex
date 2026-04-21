@@ -40,6 +40,7 @@
         "columns_desktop": 3,
         "show_view_all": false,
         "view_all_label": "View All",
+        "narrow_width": true,
         "color_scheme": "",
         "padding_top": 60,
         "padding_bottom": 60
@@ -88,6 +89,7 @@
         "anchor_mode": true,
         "products_to_show": 6,
         "columns_desktop": 3,
+        "narrow_width": true,
         "color_scheme": "",
         "padding_top": 60,
         "padding_bottom": 60
@@ -234,6 +236,7 @@
         "feature_slide_NFDHwA",
         "feature_slide_CnPBWn"
       ],
+      "disabled": true,
       "custom_css": [
         ".pps__jrny {background: white; color: #1b1b1b;}",
         ".pps__jrny h3,.pps__jrny p {color: #1b1b1b;}",
