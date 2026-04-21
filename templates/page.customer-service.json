@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "contact": {
@@ -8,7 +17,7 @@
           "settings": {
             "icon": "phone",
             "title": "General Sales",
-            "content": "<p><a href=\"tel:01494412420\">01494 412420</a></p><p>Monday–Friday: 9 a.m.–5 p.m. GMT<br>Saturday & Sunday: Closed</p>"
+            "content": "<p><a href=\"tel:01494412420\">01494 412420</a></p><p>Monday–Friday: 9 a.m.–5 p.m. GMT<br/>Saturday & Sunday: Closed</p>"
           }
         },
         "card_support": {
@@ -28,13 +37,19 @@
           }
         }
       },
-      "block_order": ["card_sales", "card_support", "card_facebook"],
+      "block_order": [
+        "card_sales",
+        "card_support",
+        "card_facebook"
+      ],
       "settings": {
         "heading": "Contact Us",
         "heading_size": "h1",
         "email_label": "Email",
         "email_link_1_label": "Product Support",
-        "email_link_1_url": "\/pages\/contact",
+        "email_link_1_url": "/pages/contact",
+        "email_link_2_label": "",
+        "email_link_2_url": "",
         "email_note": "Please allow up to 2 business days for a reply.",
         "color_scheme": "scheme-1",
         "padding_top": 60,
@@ -49,7 +64,8 @@
           "settings": {
             "heading": "How do I register my Bowflex product?",
             "icon": "none",
-            "row_content": "<p>You can register your Bowflex product online at our product registration page. You’ll need your model number and serial number, which can be found on the label attached to your equipment.</p>"
+            "row_content": "<p>You can register your Bowflex product online at our product registration page. You’ll need your model number and serial number, which can be found on the label attached to your equipment.</p>",
+            "page": ""
           }
         },
         "faq_2": {
@@ -57,7 +73,8 @@
           "settings": {
             "heading": "What is the warranty on my Bowflex product?",
             "icon": "none",
-            "row_content": "<p>Warranty coverage varies by product. Most Bowflex home gyms include a lifetime frame warranty, 10-year parts warranty, and 2-year labour warranty. Please refer to your product’s documentation or contact our support team for specific warranty details.</p>"
+            "row_content": "<p>Warranty coverage varies by product. Most Bowflex home gyms include a lifetime frame warranty, 10-year parts warranty, and 2-year labour warranty. Please refer to your product’s documentation or contact our support team for specific warranty details.</p>",
+            "page": ""
           }
         },
         "faq_3": {
@@ -65,7 +82,8 @@
           "settings": {
             "heading": "How do I order replacement parts?",
             "icon": "none",
-            "row_content": "<p>Replacement parts can be ordered by contacting our Parts & Tech Support team by phone or through our contact form. Please have your model number and serial number ready when you call.</p>"
+            "row_content": "<p>Replacement parts can be ordered by contacting our Parts & Tech Support team by phone or through our contact form. Please have your model number and serial number ready when you call.</p>",
+            "page": ""
           }
         },
         "faq_4": {
@@ -73,7 +91,8 @@
           "settings": {
             "heading": "What is your returns policy?",
             "icon": "none",
-            "row_content": "<p>We offer a 6-week in-home trial on most products. If you are not satisfied, you may return the product within 6 weeks of delivery for a full refund (less shipping costs). Please contact our support team to arrange a return.</p>"
+            "row_content": "<p>We offer a 6-week in-home trial on most products. If you are not satisfied, you may return the product within 6 weeks of delivery for a full refund (less shipping costs). Please contact our support team to arrange a return.</p>",
+            "page": ""
           }
         },
         "faq_5": {
@@ -81,7 +100,8 @@
           "settings": {
             "heading": "How do I track my order?",
             "icon": "none",
-            "row_content": "<p>Once your order has been dispatched you will receive a tracking email with a link to track your delivery. If you have not received this email or have questions about your delivery, please contact our support team.</p>"
+            "row_content": "<p>Once your order has been dispatched you will receive a tracking email with a link to track your delivery. If you have not received this email or have questions about your delivery, please contact our support team.</p>",
+            "page": ""
           }
         },
         "faq_6": {
@@ -89,11 +109,19 @@
           "settings": {
             "heading": "Do you offer assembly services?",
             "icon": "none",
-            "row_content": "<p>Assembly services are available on selected products. This option can be added during the checkout process. Please contact our team if you need more information about assembly for a specific product.</p>"
+            "row_content": "<p>Assembly services are available on selected products. This option can be added during the checkout process. Please contact our team if you need more information about assembly for a specific product.</p>",
+            "page": ""
           }
         }
       },
-      "block_order": ["faq_1", "faq_2", "faq_3", "faq_4", "faq_5", "faq_6"],
+      "block_order": [
+        "faq_1",
+        "faq_2",
+        "faq_3",
+        "faq_4",
+        "faq_5",
+        "faq_6"
+      ],
       "settings": {
         "caption": "",
         "heading": "Frequently Asked Questions",
@@ -103,6 +131,8 @@
         "container_color_scheme": "scheme-2",
         "color_scheme": "scheme-2",
         "open_first_collapsible_row": true,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
         "padding_top": 60,
         "padding_bottom": 60
       }
@@ -118,5 +148,9 @@
       }
     }
   },
-  "order": ["contact", "faq", "form"]
+  "order": [
+    "contact",
+    "faq",
+    "form"
+  ]
 }
