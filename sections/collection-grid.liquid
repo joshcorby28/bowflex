@@ -18,7 +18,13 @@
   }
 
   .cg-heading {
-    margin-bottom: 2.4rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .cg-subtitle {
+    font-size: 1.6rem;
+    color: rgba(var(--color-foreground), 0.65);
+    margin: 0 0 2.4rem;
   }
 
   .cg-grid {
@@ -178,6 +184,12 @@
         </h2>
       {%- endif -%}
 
+      {%- if section.settings.subtitle != blank -%}
+        <p class="cg-subtitle{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+          {{ section.settings.subtitle }}
+        </p>
+      {%- endif -%}
+
       <div class="cg-grid">
         {%- if section.settings.collection != blank -%}
           {%- for product in section.settings.collection.products limit: section.settings.products_to_show -%}
@@ -269,6 +281,12 @@
       ],
       "default": "h1",
       "label": "Heading size"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": ""
     },
     {
       "type": "collection",
