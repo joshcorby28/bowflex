@@ -18,6 +18,63 @@
         "color_scheme": "scheme-1"
       }
     },
+    "custom_liquid_AeKEPp": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<div class=\"apr-message\">\n<div class=\"apr-inner page-width\">\n<h1>  Fresh Start Savings</h1>\n<span> Save up to $700! Shop all of our limited-time offers below. </span>\n</div>\n</div>\n\n<style>\n.apr-message {\nbackground:#000;\npadding: 10px;\ncolor:white;\npadding-bottom:40px;\ntext-align:center;\n}\n\n\n\n.apr-message h1 {\ncolor:white;\nmargin-bottom:10px;\ntext-underline-offset: 8px;\n}\n</style>",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "shop_by_category_67MeMw": {
+      "type": "shop-by-category",
+      "blocks": {
+        "category_tab_DF6RDf": {
+          "type": "category_tab",
+          "settings": {
+            "collection": "treadmill-sale",
+            "tab_label": "Treadmills",
+            "panel_heading": "",
+            "compare_url": ""
+          }
+        },
+        "category_tab_dLTYie": {
+          "type": "category_tab",
+          "settings": {
+            "collection": "weights-sale",
+            "tab_label": "Weights & Benches",
+            "panel_heading": "",
+            "compare_url": ""
+          }
+        },
+        "category_tab_aNPxyH": {
+          "type": "category_tab",
+          "settings": {
+            "collection": "trainers-sale",
+            "tab_label": "Trainers",
+            "panel_heading": "",
+            "compare_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "category_tab_DF6RDf",
+        "category_tab_dLTYie",
+        "category_tab_aNPxyH"
+      ],
+      "name": "Shop by Category",
+      "settings": {
+        "heading": "Shop by Category",
+        "heading_size": "h1",
+        "products_to_show": 6,
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
     "video_dirrE8": {
       "type": "video",
       "blocks": {
@@ -45,6 +102,7 @@
       "block_order": [
         "text_eVUcUH"
       ],
+      "disabled": true,
       "name": "t:sections.video.presets.name",
       "settings": {
         "video": "{{ collection.metafields.custom.video_hero.value }}",
@@ -57,16 +115,6 @@
         "horizontal_alignment": "middle-left",
         "padding_top": 0,
         "padding_bottom": 0
-      }
-    },
-    "custom_liquid_AeKEPp": {
-      "type": "custom-liquid",
-      "name": "t:sections.custom-liquid.presets.name",
-      "settings": {
-        "custom_liquid": "<div class=\"apr-message\">\n<div class=\"apr-inner page-width\">\n<h1>  Fresh Start Savings</h1>\n<span> Save up to $700! Shop all of our limited-time offers below. </span>\n</div>\n</div>\n\n<style>\n.apr-message {\nbackground:#000;\npadding: 10px;\ncolor:white;\npadding-bottom:40px;\ntext-align:center;\n}\n\n\n\n.apr-message h1 {\ncolor:white;\nmargin-bottom:10px;\ntext-underline-offset: 8px;\n}\n</style>",
-        "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 52
       }
     },
     "product-grid": {
@@ -184,61 +232,14 @@
         "features_subheading": "JRNY gives you a million exciting reasons to jump on your BowFlex treadmill. With inspiring trainers, workouts that push you harder as you get stronger and streaming entertainment, you'll never find yourself in a fitness rut",
         "features_default_image": "shopify://shop_images/t16-jrny-coaching-bg-1x.jpg"
       }
-    },
-    "shop_by_category_67MeMw": {
-      "type": "shop-by-category",
-      "blocks": {
-        "category_tab_DF6RDf": {
-          "type": "category_tab",
-          "settings": {
-            "collection": "treadmills",
-            "tab_label": "",
-            "panel_heading": "",
-            "compare_url": ""
-          }
-        },
-        "category_tab_dLTYie": {
-          "type": "category_tab",
-          "settings": {
-            "collection": "",
-            "tab_label": "",
-            "panel_heading": "",
-            "compare_url": ""
-          }
-        },
-        "category_tab_aNPxyH": {
-          "type": "category_tab",
-          "settings": {
-            "collection": "",
-            "tab_label": "",
-            "panel_heading": "",
-            "compare_url": ""
-          }
-        }
-      },
-      "block_order": [
-        "category_tab_DF6RDf",
-        "category_tab_dLTYie",
-        "category_tab_aNPxyH"
-      ],
-      "name": "Shop by Category",
-      "settings": {
-        "heading": "Shop by Category",
-        "heading_size": "h1",
-        "products_to_show": 6,
-        "columns_desktop": 3,
-        "color_scheme": "",
-        "padding_top": 60,
-        "padding_bottom": 60
-      }
     }
   },
   "order": [
     "banner",
-    "video_dirrE8",
     "custom_liquid_AeKEPp",
+    "shop_by_category_67MeMw",
+    "video_dirrE8",
     "product-grid",
-    "colleciton_pahe_sections_NyEhVx",
-    "shop_by_category_67MeMw"
+    "colleciton_pahe_sections_NyEhVx"
   ]
 }
