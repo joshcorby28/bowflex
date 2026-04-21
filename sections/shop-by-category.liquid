@@ -1,6 +1,8 @@
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
 
+{%- assign anchor_mode = section.settings.anchor_mode -%}
+
 {%- style -%}
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
@@ -23,7 +25,7 @@
     margin-bottom: 2.4rem;
   }
 
-  /* Tab nav */
+  /* ── Tab nav ── */
   .sbc-tabs {
     display: flex;
     align-items: center;
@@ -31,10 +33,25 @@
     flex-wrap: wrap;
     gap: 0;
     margin-bottom: 3.2rem;
-    border-bottom: none;
   }
 
-  .sbc-tab {
+  /* Sticky nav in anchor mode */
+  .sbc-tabs--sticky {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: rgb(var(--color-background));
+    padding: 1.2rem 0;
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(var(--color-foreground), 0.1);
+    margin-left: calc(-1 * var(--page-width-margin, 1.5rem));
+    margin-right: calc(-1 * var(--page-width-margin, 1.5rem));
+    padding-left: var(--page-width-margin, 1.5rem);
+    padding-right: var(--page-width-margin, 1.5rem);
+  }
+
+  .sbc-tab,
+  a.sbc-tab {
     background: none;
     border: none;
     padding: 0.6rem 1.6rem;
@@ -47,11 +64,13 @@
     opacity: 0.7;
   }
 
-  .sbc-tab:hover {
+  .sbc-tab:hover,
+  a.sbc-tab:hover {
     opacity: 1;
   }
 
-  .sbc-tab.is-active {
+  .sbc-tab.is-active,
+  a.sbc-tab.is-active {
     opacity: 1;
     font-weight: 600;
     text-decoration: underline;
@@ -64,13 +83,20 @@
     user-select: none;
   }
 
-  /* Panels */
-  .sbc-panel {
+  /* ── Panels — tab mode ── */
+  .sbc-wrap--tabs .sbc-panel {
     display: none;
   }
 
-  .sbc-panel.is-active {
+  .sbc-wrap--tabs .sbc-panel.is-active {
     display: block;
+  }
+
+  /* ── Panels — anchor mode ── */
+  .sbc-wrap--anchor .sbc-panel {
+    display: block;
+    padding-top: 4rem;
+    scroll-margin-top: 80px;
   }
 
   .sbc-panel-heading {
@@ -79,7 +105,12 @@
     margin-bottom: 2.4rem;
   }
 
-  /* Product grid */
+  /* Divider between anchor sections */
+  .sbc-wrap--anchor .sbc-panel + .sbc-panel {
+    border-top: 1px solid rgba(var(--color-foreground), 0.08);
+  }
+
+  /* ── Product grid ── */
   .sbc-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -99,7 +130,7 @@
     }
   }
 
-  /* Product card */
+  /* ── Product card ── */
   .sbc-card {
     background: #f5f5f5;
     border-radius: 8px;
@@ -142,6 +173,7 @@
     margin: 0 0 0.4rem;
     color: rgb(var(--color-foreground));
     text-decoration: none;
+    display: block;
   }
 
   .sbc-card__title:hover {
@@ -207,7 +239,7 @@
     color: rgb(var(--color-background));
   }
 
-  /* Compare button */
+  /* ── Compare button ── */
   .sbc-compare {
     display: flex;
     justify-content: center;
@@ -234,7 +266,7 @@
 
 <div class="color-{{ section.settings.color_scheme }} gradient">
   <div class="page-width section-{{ section.id }}-padding">
-    <div class="sbc-wrap">
+    <div class="sbc-wrap sbc-wrap--{% if anchor_mode %}anchor{% else %}tabs{% endif %}" data-sbc-section="{{ section.id }}">
 
       {%- if section.settings.heading != blank -%}
         <h2 class="sbc-heading {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
@@ -244,31 +276,53 @@
 
       {%- if section.blocks.size > 0 -%}
 
-        <div class="sbc-tabs" role="tablist">
+        {%- comment -%} Tab / anchor nav {%- endcomment -%}
+        <div
+          class="sbc-tabs{% if anchor_mode %} sbc-tabs--sticky{% endif %}"
+          role="{% if anchor_mode %}navigation{% else %}tablist{% endif %}"
+          aria-label="Product categories"
+          data-sbc-tabs
+        >
           {%- for block in section.blocks -%}
             {%- assign tab_label = block.settings.tab_label -%}
             {%- if tab_label == blank and block.settings.collection != blank -%}
               {%- assign tab_label = block.settings.collection.title -%}
             {%- endif -%}
-            <button
-              class="sbc-tab{% if forloop.first %} is-active{% endif %}"
-              role="tab"
-              aria-selected="{% if forloop.first %}true{% else %}false{% endif %}"
-              aria-controls="sbc-panel-{{ block.id }}"
-              data-sbc-tab="{{ block.id }}"
-              {{ block.shopify_attributes }}
-            >
-              {{- tab_label -}}
-              {%- if block.settings.collection != blank -%}
-                &nbsp;({{ block.settings.collection.all_products_count }})
-              {%- endif -%}
-            </button>
+
+            {%- if anchor_mode -%}
+              <a
+                href="#sbc-panel-{{ block.id }}"
+                class="sbc-tab{% if forloop.first %} is-active{% endif %}"
+                data-sbc-anchor="{{ block.id }}"
+              >
+                {{- tab_label -}}
+                {%- if block.settings.collection != blank -%}
+                  &nbsp;({{ block.settings.collection.all_products_count }})
+                {%- endif -%}
+              </a>
+            {%- else -%}
+              <button
+                class="sbc-tab{% if forloop.first %} is-active{% endif %}"
+                role="tab"
+                aria-selected="{% if forloop.first %}true{% else %}false{% endif %}"
+                aria-controls="sbc-panel-{{ block.id }}"
+                data-sbc-tab="{{ block.id }}"
+                {{ block.shopify_attributes }}
+              >
+                {{- tab_label -}}
+                {%- if block.settings.collection != blank -%}
+                  &nbsp;({{ block.settings.collection.all_products_count }})
+                {%- endif -%}
+              </button>
+            {%- endif -%}
+
             {%- unless forloop.last -%}
               <span class="sbc-tab-sep" aria-hidden="true">|</span>
             {%- endunless -%}
           {%- endfor -%}
         </div>
 
+        {%- comment -%} Panels {%- endcomment -%}
         {%- for block in section.blocks -%}
           {%- assign panel_heading = block.settings.panel_heading -%}
           {%- if panel_heading == blank and block.settings.collection != blank -%}
@@ -276,10 +330,11 @@
           {%- endif -%}
 
           <div
-            class="sbc-panel{% if forloop.first %} is-active{% endif %}"
+            class="sbc-panel{% unless anchor_mode %}{% if forloop.first %} is-active{% endif %}{% endunless %}"
             id="sbc-panel-{{ block.id }}"
-            role="tabpanel"
-            aria-labelledby="sbc-tab-{{ block.id }}"
+            {% unless anchor_mode %}role="tabpanel" aria-labelledby="sbc-tab-{{ block.id }}"{% endunless %}
+            data-sbc-panel="{{ block.id }}"
+            {{ block.shopify_attributes }}
           >
             {%- if panel_heading != blank -%}
               <h3 class="sbc-panel-heading">{{ panel_heading }}</h3>
@@ -357,37 +412,83 @@
 </div>
 
 <script>
-  (function () {
-    var section = document.currentScript.closest('.color-{{ section.settings.color_scheme }}') || document;
+(function () {
+  var IS_ANCHOR = {{ anchor_mode | json }};
 
-    function initTabs(root) {
-      var tabs = root.querySelectorAll('[data-sbc-tab]');
-      var panels = root.querySelectorAll('.sbc-panel');
-
-      tabs.forEach(function (tab) {
-        tab.addEventListener('click', function () {
-          var targetId = 'sbc-panel-' + tab.dataset.sbcTab;
-
-          tabs.forEach(function (t) {
-            t.classList.remove('is-active');
-            t.setAttribute('aria-selected', 'false');
-          });
-          panels.forEach(function (p) { p.classList.remove('is-active'); });
-
-          tab.classList.add('is-active');
-          tab.setAttribute('aria-selected', 'true');
-          var panel = root.querySelector('#' + targetId);
-          if (panel) panel.classList.add('is-active');
-        });
-      });
-    }
-
-    if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', function () { initTabs(section); });
+  function init(wrap) {
+    if (IS_ANCHOR) {
+      initAnchor(wrap);
     } else {
-      initTabs(section);
+      initTabs(wrap);
     }
-  })();
+  }
+
+  /* ── Tab mode ── */
+  function initTabs(wrap) {
+    var tabs   = wrap.querySelectorAll('[data-sbc-tab]');
+    var panels = wrap.querySelectorAll('[data-sbc-panel]');
+
+    tabs.forEach(function (tab) {
+      tab.addEventListener('click', function () {
+        tabs.forEach(function (t) {
+          t.classList.remove('is-active');
+          t.setAttribute('aria-selected', 'false');
+        });
+        panels.forEach(function (p) { p.classList.remove('is-active'); });
+
+        tab.classList.add('is-active');
+        tab.setAttribute('aria-selected', 'true');
+        var panel = wrap.querySelector('#sbc-panel-' + tab.dataset.sbcTab);
+        if (panel) panel.classList.add('is-active');
+      });
+    });
+  }
+
+  /* ── Anchor mode ── */
+  function initAnchor(wrap) {
+    var links  = wrap.querySelectorAll('[data-sbc-anchor]');
+    var panels = wrap.querySelectorAll('[data-sbc-panel]');
+
+    /* Smooth scroll on click, suppress default jump */
+    links.forEach(function (link) {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        var target = document.getElementById('sbc-panel-' + link.dataset.sbcAnchor);
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+    /* Highlight active tab as panels enter viewport */
+    if ('IntersectionObserver' in window) {
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            var id = entry.target.dataset.sbcPanel;
+            links.forEach(function (l) { l.classList.remove('is-active'); });
+            var active = wrap.querySelector('[data-sbc-anchor="' + id + '"]');
+            if (active) active.classList.add('is-active');
+          }
+        });
+      }, { rootMargin: '-20% 0px -60% 0px', threshold: 0 });
+
+      panels.forEach(function (p) { observer.observe(p); });
+    }
+  }
+
+  function ready(fn) {
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', fn);
+    } else {
+      fn();
+    }
+  }
+
+  ready(function () {
+    document.querySelectorAll('[data-sbc-section="{{ section.id }}"]').forEach(init);
+  });
+})();
 </script>
 
 {% schema %}
@@ -417,13 +518,20 @@
       "label": "Heading size"
     },
     {
+      "type": "checkbox",
+      "id": "anchor_mode",
+      "label": "Anchor link mode",
+      "default": false,
+      "info": "Show all collections stacked — tabs become anchor links that scroll to each section"
+    },
+    {
       "type": "range",
       "id": "products_to_show",
       "min": 2,
       "max": 12,
       "step": 1,
       "default": 6,
-      "label": "Max products per tab"
+      "label": "Max products per category"
     },
     {
       "type": "range",
