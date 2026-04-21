@@ -28,6 +28,23 @@
         "padding_bottom": 0
       }
     },
+    "collection_grid_jrCrrP": {
+      "type": "collection-grid",
+      "name": "Collection Grid",
+      "settings": {
+        "heading": "Great Value. Incredible Results.",
+        "heading_size": "h1",
+        "subtitle": "Get the best fitness equipment for under $1,000.",
+        "collection": "under-1000-sale",
+        "products_to_show": 3,
+        "columns_desktop": 3,
+        "show_view_all": false,
+        "view_all_label": "View All",
+        "color_scheme": "",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
     "shop_by_category_67MeMw": {
       "type": "shop-by-category",
       "blocks": {
@@ -237,6 +254,7 @@
   "order": [
     "banner",
     "custom_liquid_AeKEPp",
+    "collection_grid_jrCrrP",
     "shop_by_category_67MeMw",
     "video_dirrE8",
     "product-grid",
