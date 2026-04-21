@@ -36,7 +36,7 @@
           "settings": {
             "collection": "treadmill-sale",
             "tab_label": "Treadmills",
-            "panel_heading": "",
+            "panel_heading": "Treadmills",
             "compare_url": ""
           }
         },
@@ -45,7 +45,7 @@
           "settings": {
             "collection": "weights-sale",
             "tab_label": "Weights & Benches",
-            "panel_heading": "",
+            "panel_heading": "Weights & Benches",
             "compare_url": ""
           }
         },
@@ -54,7 +54,7 @@
           "settings": {
             "collection": "trainers-sale",
             "tab_label": "Trainers",
-            "panel_heading": "",
+            "panel_heading": "Trainers",
             "compare_url": ""
           }
         }
