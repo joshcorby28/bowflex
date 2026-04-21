@@ -85,6 +85,7 @@
       "settings": {
         "heading": "Shop by Category",
         "heading_size": "h1",
+        "anchor_mode": true,
         "products_to_show": 6,
         "columns_desktop": 3,
         "color_scheme": "",
