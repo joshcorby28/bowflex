@@ -1,0 +1,351 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+  .cs-contact {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .cs-contact__heading {
+    margin-bottom: 3rem;
+  }
+
+  .cs-contact__email-block {
+    padding-bottom: 3rem;
+    margin-bottom: 3rem;
+    border-bottom: 1px solid rgba(var(--color-foreground), 0.1);
+  }
+
+  .cs-contact__email-icon {
+    font-size: 4rem;
+    line-height: 1;
+    margin-bottom: 0.75rem;
+    display: block;
+    color: rgb(var(--color-foreground));
+  }
+
+  .cs-contact__email-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 0 0 0.75rem;
+  }
+
+  .cs-contact__email-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.75rem;
+  }
+
+  .cs-contact__email-links a {
+    color: rgb(var(--color-foreground));
+    text-decoration: underline;
+  }
+
+  .cs-contact__email-note {
+    font-style: italic;
+    opacity: 0.65;
+    font-size: 1.3rem;
+    margin: 0;
+  }
+
+  .cs-contact__cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.4rem;
+    text-align: left;
+  }
+
+  @media screen and (min-width: 750px) {
+    .cs-contact__cards {
+      grid-template-columns: repeat({{ section.blocks.size | default: 3 }}, 1fr);
+      text-align: left;
+    }
+  }
+
+  .cs-contact__card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .cs-contact__card-icon {
+    font-size: 3.2rem;
+    line-height: 1;
+    color: rgb(var(--color-foreground));
+    margin-bottom: 0.25rem;
+  }
+
+  .cs-contact__card-title {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: 0 0 0.25rem;
+  }
+
+  .cs-contact__card-content {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    opacity: 0.75;
+  }
+
+  .cs-contact__card-content p {
+    margin: 0 0 0.25rem;
+  }
+
+  .cs-contact__card-content a {
+    color: rgb(var(--color-foreground));
+    text-decoration: underline;
+  }
+
+  .cs-contact__card-content strong {
+    font-weight: 600;
+    opacity: 1;
+    color: rgb(var(--color-foreground));
+  }
+{%- endstyle -%}
+
+<div class="color-{{ section.settings.color_scheme }} gradient">
+  <div class="page-width section-{{ section.id }}-padding">
+    <div class="cs-contact">
+
+      {%- if section.settings.heading != blank -%}
+        <h2 class="cs-contact__heading {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+          {{ section.settings.heading }}
+        </h2>
+      {%- endif -%}
+
+      {%- if section.settings.email_label != blank or section.settings.email_note != blank -%}
+        <div class="cs-contact__email-block{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+          <span class="cs-contact__email-icon">
+            <i class="bx bx-envelope"></i>
+          </span>
+          <h3 class="cs-contact__email-title">{{ section.settings.email_label | default: 'Email' }}</h3>
+          <div class="cs-contact__email-links">
+            {%- if section.settings.email_link_1_label != blank -%}
+              {%- if section.settings.email_link_1_url != blank -%}
+                <a href="{{ section.settings.email_link_1_url }}">{{ section.settings.email_link_1_label }}</a>
+              {%- else -%}
+                <span>{{ section.settings.email_link_1_label }}</span>
+              {%- endif -%}
+            {%- endif -%}
+            {%- if section.settings.email_link_2_label != blank -%}
+              {%- if section.settings.email_link_2_url != blank -%}
+                <a href="{{ section.settings.email_link_2_url }}">{{ section.settings.email_link_2_label }}</a>
+              {%- else -%}
+                <span>{{ section.settings.email_link_2_label }}</span>
+              {%- endif -%}
+            {%- endif -%}
+          </div>
+          {%- if section.settings.email_note != blank -%}
+            <p class="cs-contact__email-note">{{ section.settings.email_note }}</p>
+          {%- endif -%}
+        </div>
+      {%- endif -%}
+
+      {%- if section.blocks.size > 0 -%}
+        <div class="cs-contact__cards">
+          {%- for block in section.blocks -%}
+            <div class="cs-contact__card{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}" {{ block.shopify_attributes }}>
+              <div class="cs-contact__card-icon">
+                {%- case block.settings.icon -%}
+                  {%- when 'phone' -%}<i class="bx bx-mobile-alt"></i>
+                  {%- when 'email' -%}<i class="bx bx-envelope"></i>
+                  {%- when 'chat' -%}<i class="bx bx-chat"></i>
+                  {%- when 'facebook' -%}<i class="bx bxl-facebook"></i>
+                  {%- when 'instagram' -%}<i class="bx bxl-instagram"></i>
+                  {%- when 'support' -%}<i class="bx bx-support"></i>
+                  {%- when 'map' -%}<i class="bx bx-map-pin"></i>
+                  {%- when 'clock' -%}<i class="bx bx-time-five"></i>
+                  {%- else -%}<i class="bx bx-info-circle"></i>
+                {%- endcase -%}
+              </div>
+              {%- if block.settings.title != blank -%}
+                <h3 class="cs-contact__card-title">{{ block.settings.title }}</h3>
+              {%- endif -%}
+              {%- if block.settings.content != blank -%}
+                <div class="cs-contact__card-content">{{ block.settings.content }}</div>
+              {%- endif -%}
+            </div>
+          {%- endfor -%}
+        </div>
+      {%- endif -%}
+
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Customer Service Contact",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "default": "Contact Us",
+      "label": "Heading"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        { "value": "h2", "label": "Small" },
+        { "value": "h1", "label": "Medium" },
+        { "value": "h0", "label": "Large" }
+      ],
+      "default": "h1",
+      "label": "Heading size"
+    },
+    {
+      "type": "header",
+      "content": "Email block"
+    },
+    {
+      "type": "text",
+      "id": "email_label",
+      "default": "Email",
+      "label": "Email heading"
+    },
+    {
+      "type": "text",
+      "id": "email_link_1_label",
+      "default": "Product Support",
+      "label": "Link 1 label"
+    },
+    {
+      "type": "url",
+      "id": "email_link_1_url",
+      "label": "Link 1 URL"
+    },
+    {
+      "type": "text",
+      "id": "email_link_2_label",
+      "label": "Link 2 label"
+    },
+    {
+      "type": "url",
+      "id": "email_link_2_url",
+      "label": "Link 2 URL"
+    },
+    {
+      "type": "text",
+      "id": "email_note",
+      "default": "Please allow up to 2 business days for a reply.",
+      "label": "Note below links"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "Section padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding top",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding bottom",
+      "default": 60
+    }
+  ],
+  "blocks": [
+    {
+      "type": "contact_card",
+      "name": "Contact card",
+      "settings": [
+        {
+          "type": "select",
+          "id": "icon",
+          "label": "Icon",
+          "options": [
+            { "value": "phone", "label": "Phone" },
+            { "value": "email", "label": "Email" },
+            { "value": "chat", "label": "Live chat" },
+            { "value": "facebook", "label": "Facebook" },
+            { "value": "instagram", "label": "Instagram" },
+            { "value": "support", "label": "Support" },
+            { "value": "map", "label": "Map pin" },
+            { "value": "clock", "label": "Clock" }
+          ],
+          "default": "phone"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "General Sales"
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Details",
+          "default": "<p><a href=\"tel:01494412420\">01494 412420</a></p><p>Monday–Friday: 9 a.m.–5 p.m. GMT<br>Saturday &amp; Sunday: Closed</p>"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Customer Service Contact",
+      "blocks": [
+        {
+          "type": "contact_card",
+          "settings": {
+            "icon": "phone",
+            "title": "General Sales",
+            "content": "<p><a href=\"tel:01494412420\">01494 412420</a></p><p>Monday–Friday: 9 a.m.–5 p.m. GMT<br>Saturday &amp; Sunday: Closed</p>"
+          }
+        },
+        {
+          "type": "contact_card",
+          "settings": {
+            "icon": "phone",
+            "title": "Parts & Tech Support",
+            "content": "<p><a href=\"tel:01494412420\">01494 412420</a></p><p><strong>In-Warranty Product Support</strong><br>Monday–Friday: 9 a.m.–5 p.m. GMT<br>Saturday &amp; Sunday: Closed</p><p><strong>Out-of-Warranty Product Support</strong><br>Monday–Friday: 9 a.m.–5 p.m. GMT</p>"
+          }
+        },
+        {
+          "type": "contact_card",
+          "settings": {
+            "icon": "facebook",
+            "title": "Facebook",
+            "content": "<p><a href=\"https://www.facebook.com/BowflexUK\">Bowflex UK</a></p><p>Monday–Friday: 9 a.m.–5 p.m. GMT</p>"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,122 @@
+{
+  "sections": {
+    "contact": {
+      "type": "customer-service-contact",
+      "blocks": {
+        "card_sales": {
+          "type": "contact_card",
+          "settings": {
+            "icon": "phone",
+            "title": "General Sales",
+            "content": "<p><a href=\"tel:01494412420\">01494 412420</a></p><p>Monday–Friday: 9 a.m.–5 p.m. GMT<br>Saturday & Sunday: Closed</p>"
+          }
+        },
+        "card_support": {
+          "type": "contact_card",
+          "settings": {
+            "icon": "phone",
+            "title": "Parts & Tech Support",
+            "content": "<p><a href=\"tel:01494412420\">01494 412420</a></p><p><strong>In-Warranty Product Support</strong><br>Monday–Friday: 9 a.m.–5 p.m. GMT<br>Saturday & Sunday: Closed</p><p><strong>Out-of-Warranty Product Support</strong><br>Monday–Friday: 9 a.m.–5 p.m. GMT</p>"
+          }
+        },
+        "card_facebook": {
+          "type": "contact_card",
+          "settings": {
+            "icon": "facebook",
+            "title": "Facebook",
+            "content": "<p><a href=\"https://www.facebook.com/BowflexUK\">Bowflex UK</a></p><p>Monday–Friday: 9 a.m.–5 p.m. GMT</p>"
+          }
+        }
+      },
+      "block_order": ["card_sales", "card_support", "card_facebook"],
+      "settings": {
+        "heading": "Contact Us",
+        "heading_size": "h1",
+        "email_label": "Email",
+        "email_link_1_label": "Product Support",
+        "email_link_1_url": "\/pages\/contact",
+        "email_note": "Please allow up to 2 business days for a reply.",
+        "color_scheme": "scheme-1",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "faq": {
+      "type": "collapsible-content",
+      "blocks": {
+        "faq_1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do I register my Bowflex product?",
+            "icon": "none",
+            "row_content": "<p>You can register your Bowflex product online at our product registration page. You’ll need your model number and serial number, which can be found on the label attached to your equipment.</p>"
+          }
+        },
+        "faq_2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is the warranty on my Bowflex product?",
+            "icon": "none",
+            "row_content": "<p>Warranty coverage varies by product. Most Bowflex home gyms include a lifetime frame warranty, 10-year parts warranty, and 2-year labour warranty. Please refer to your product’s documentation or contact our support team for specific warranty details.</p>"
+          }
+        },
+        "faq_3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do I order replacement parts?",
+            "icon": "none",
+            "row_content": "<p>Replacement parts can be ordered by contacting our Parts & Tech Support team by phone or through our contact form. Please have your model number and serial number ready when you call.</p>"
+          }
+        },
+        "faq_4": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is your returns policy?",
+            "icon": "none",
+            "row_content": "<p>We offer a 6-week in-home trial on most products. If you are not satisfied, you may return the product within 6 weeks of delivery for a full refund (less shipping costs). Please contact our support team to arrange a return.</p>"
+          }
+        },
+        "faq_5": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do I track my order?",
+            "icon": "none",
+            "row_content": "<p>Once your order has been dispatched you will receive a tracking email with a link to track your delivery. If you have not received this email or have questions about your delivery, please contact our support team.</p>"
+          }
+        },
+        "faq_6": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Do you offer assembly services?",
+            "icon": "none",
+            "row_content": "<p>Assembly services are available on selected products. This option can be added during the checkout process. Please contact our team if you need more information about assembly for a specific product.</p>"
+          }
+        }
+      },
+      "block_order": ["faq_1", "faq_2", "faq_3", "faq_4", "faq_5", "faq_6"],
+      "settings": {
+        "caption": "",
+        "heading": "Frequently Asked Questions",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "container_color_scheme": "scheme-2",
+        "color_scheme": "scheme-2",
+        "open_first_collapsible_row": true,
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "form": {
+      "type": "contact-form",
+      "settings": {
+        "heading": "Still need help? Send us a message",
+        "heading_size": "h1",
+        "color_scheme": "scheme-1",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    }
+  },
+  "order": ["contact", "faq", "form"]
+}
