@@ -252,21 +252,21 @@
           "settings": {
             "image": "shopify://shop_images/552i_media_1.png",
             "caption": "Only £459.99 with £240 Off + Free Shipping!",
-            "heading": "BowFlex 552i Adjustable Dumbbells (Pair) with BowFlex Media Stand Bundle",
+            "heading": "552i Adjustable Dumbbells (Pair) with Media Stand",
             "text": "<p>Elevate your home gym</p>",
             "button_label": "Shop 552i",
-            "button_link": "#"
+            "button_link": "shopify://products/bowflex-552i-dumbbell-with-bowflex-stand"
           }
         },
         "row_htHnbU": {
           "type": "row",
           "settings": {
-            "image": "shopify://shop_images/c6-bike-m-lr-0623-bg-1x.jpg",
-            "caption": "Only £899 with £100 Off + Free Shipping!",
-            "heading": "BowFlex C6 Bike",
-            "text": "<p>Explore a variety of world-class app experiences.</p>",
-            "button_label": "Shop C6 Bike",
-            "button_link": "#"
+            "image": "shopify://shop_images/1_612d5328-cd1f-4fec-8373-94aee181f6b2.webp",
+            "caption": "Only £3,499.99 with Free Shipping!",
+            "heading": "Max Trainer Total 40",
+            "text": "<p>Push your limits and transform your training</p>",
+            "button_label": "Shop Max Trainer",
+            "button_link": "shopify://products/bowflex-max-trainer-total-40"
           }
         }
       },
