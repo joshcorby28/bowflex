@@ -61,6 +61,32 @@
             "title": "JRNY for Treadmills"
           }
         },
+        "accordion_row_Wf8Nwh": {
+          "type": "accordion_row",
+          "settings": {
+            "accordion_index": 1,
+            "row_heading": "Streaming Entertainment",
+            "product_1_content": "JRNY Radio\nStreaming TV not available through the JRNY App.",
+            "product_2_content": "",
+            "product_3_content": "",
+            "product_4_content": "",
+            "product_5_content": "",
+            "product_6_content": ""
+          }
+        },
+        "accordion_row_kd7grP": {
+          "type": "accordion_row",
+          "settings": {
+            "accordion_index": 1,
+            "row_heading": "Connectivity",
+            "product_1_content": "JRNY Radio\nStreaming TV not available through the JRNY App.",
+            "product_2_content": "Individualized adaptive workouts",
+            "product_3_content": "",
+            "product_4_content": "",
+            "product_5_content": "",
+            "product_6_content": ""
+          }
+        },
         "accordion_VefepC": {
           "type": "accordion",
           "settings": {
@@ -79,6 +105,8 @@
         "overview_product_hKEyAc",
         "overview_product_mB8GXr",
         "accordion_etwzEx",
+        "accordion_row_Wf8Nwh",
+        "accordion_row_kd7grP",
         "accordion_VefepC",
         "accordion_yx3Hdn"
       ],
