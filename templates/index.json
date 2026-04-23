@@ -250,11 +250,11 @@
         "row_aKUCaw": {
           "type": "row",
           "settings": {
-            "image": "shopify://shop_images/xtreme-2se-gym-f-lr-bg-1x.jpg",
-            "caption": "Only £999 with £500 Off + Free Shipping!",
-            "heading": "Xtreme 2 SE",
-            "text": "<p>Get the ultimate all-in-one home gym system.</p>",
-            "button_label": "Shop Xtreme 2 SE",
+            "image": "shopify://shop_images/552i_media_1.png",
+            "caption": "Only £459.99 with £240 Off + Free Shipping!",
+            "heading": "BowFlex 552i Adjustable Dumbbells (Pair) with BowFlex Media Stand Bundle",
+            "text": "<p>Elevate your home gym</p>",
+            "button_label": "Shop 552i",
             "button_link": "#"
           }
         },
@@ -310,14 +310,14 @@
         "text_XHg477": {
           "type": "text",
           "settings": {
-            "text": "<p>See best-selling cardio favorites at SchwinnFitness.com</p>",
+            "text": "<p>See best-selling cardio favorites at Johnson Fitness</p>",
             "text_style": "body"
           }
         },
         "button_8BeHXU": {
           "type": "button",
           "settings": {
-            "button_label": "Shop Schwinn",
+            "button_label": "Shop Johnson Fitness",
             "button_link": "#",
             "button_style_secondary": false
           }
@@ -372,6 +372,7 @@
       "block_order": [
         "cta_ekCKLQ"
       ],
+      "disabled": true,
       "name": "CTA Bar",
       "settings": {
         "color_scheme": "scheme-4",
