@@ -127,7 +127,7 @@
           "type": "button",
           "settings": {
             "button_label": "Shop Sale",
-            "button_link": "#",
+            "button_link": "shopify://collections/sale",
             "button_style_secondary": false,
             "button_label_2": "",
             "button_link_2": "",
@@ -318,7 +318,7 @@
           "type": "button",
           "settings": {
             "button_label": "Shop Johnson Fitness",
-            "button_link": "#",
+            "button_link": "https://uk.johnsonfitness.com/",
             "button_style_secondary": false
           }
         }
@@ -330,7 +330,7 @@
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "image": "shopify://shop_images/brand-crossover-shw290r-bg-2x.webp",
+        "image": "shopify://shop_images/Airdyne.webp",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
