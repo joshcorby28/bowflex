@@ -106,10 +106,36 @@
             "title": "Product Details"
           }
         },
+        "accordion_row_Ng4ctX": {
+          "type": "accordion_row",
+          "settings": {
+            "accordion_index": 1,
+            "row_heading": "JRNY Features",
+            "product_1_content": "Bluetooth\niOS compatible\nAndroid compatible\nUSB charging port\nWi-Fi",
+            "product_2_content": "Bluetooth\niOS compatible\nAndroid compatible\nUSB charging port\nWi-Fi",
+            "product_3_content": "",
+            "product_4_content": "",
+            "product_5_content": "",
+            "product_6_content": ""
+          }
+        },
         "accordion_yx3Hdn": {
           "type": "accordion",
           "settings": {
             "title": "Specs & Dimensions"
+          }
+        },
+        "accordion_row_6HndXM": {
+          "type": "accordion_row",
+          "settings": {
+            "accordion_index": 1,
+            "row_heading": "Specs",
+            "product_1_content": "77.2\" L x 37\" W x 67.6\" H\n\n(196 x 94 x 171.6 cm)",
+            "product_2_content": "77.2\" L x 37\" W x 67.6\" H\n\n(196 x 94 x 171.6 cm)",
+            "product_3_content": "",
+            "product_4_content": "",
+            "product_5_content": "",
+            "product_6_content": ""
           }
         }
       },
@@ -122,7 +148,9 @@
         "accordion_row_kd7grP",
         "accordion_row_fQFhAy",
         "accordion_VefepC",
-        "accordion_yx3Hdn"
+        "accordion_row_Ng4ctX",
+        "accordion_yx3Hdn",
+        "accordion_row_6HndXM"
       ],
       "name": "Compare products",
       "settings": {
