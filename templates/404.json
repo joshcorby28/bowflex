@@ -11,6 +11,7 @@
   "sections": {
     "main": {
       "type": "main-404",
+      "disabled": true,
       "settings": {}
     },
     "compare_products_DBJmFy": {
@@ -19,25 +20,27 @@
         "overview_product_imaijK": {
           "type": "overview_product",
           "settings": {
+            "image": "shopify://shop_images/1_612d5328-cd1f-4fec-8373-94aee181f6b2.webp",
             "video_url": "",
-            "feature_1": "",
-            "feature_2": "",
-            "feature_3": "",
-            "feature_4": "",
-            "feature_5": "",
-            "feature_6": ""
+            "feature_1": "16” Adjustable HD Touchscreen - Immersive display for guided workouts, stats, entertainment, and virtual coaching.",
+            "feature_2": "20 Levels of Resistance - Fine-tune your intensity – from recovery sessions to all-out HIIT bursts.",
+            "feature_3": "6-Grip Handlebars - Versatile handle positions for total-body activation.",
+            "feature_4": "Elliptical + Stepper MotionCombines smooth movement with vertical stepping to maximise burn in minimal time.",
+            "feature_5": "Built-in JRNY® ExperienceEnjoy adaptive workouts, Explore the World® scenic routes, and trainer-led classes.",
+            "feature_6": "Bluetooth® ConnectivityIncludes Bluetooth® speakers and a heart rate armband for seamless tracking."
           }
         },
         "overview_product_hKEyAc": {
           "type": "overview_product",
           "settings": {
+            "image": "shopify://shop_images/m6-in-home-f-ll.webp",
             "video_url": "",
-            "feature_1": "",
-            "feature_2": "",
-            "feature_3": "",
-            "feature_4": "",
-            "feature_5": "",
-            "feature_6": ""
+            "feature_1": "Elliptical-Stepper Hybrid Motion - Delivers a high-calorie, low-impact workout that is easier on joints than running or traditional treadmills.",
+            "feature_2": "16 Levels of Magnetic Resistance - Easily adjust intensity for HIIT sessions, interval training, or steady-state cardio.",
+            "feature_3": "Full-Body Engagement - 4-grip handlebars activate arms, chest, back, legs, and core in one efficient movement.",
+            "feature_4": "Backlit LCD Console - Displays burn rate and key workout metrics clearly, even in low-light environments.",
+            "feature_5": "JRNY® App Compatibility - Access adaptive workouts, trainer-led sessions, performance tracking, and scenic routes via phone or tablet.",
+            "feature_6": "Compact Home Gym Footprint - Vertical design maximises workout intensity while minimising floor space."
           }
         },
         "overview_product_mB8GXr": {
