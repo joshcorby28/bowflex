@@ -181,7 +181,7 @@
           "type": "button",
           "settings": {
             "button_label": "Shop Treadmills",
-            "button_link": "#",
+            "button_link": "shopify://collections/treadmills",
             "button_style_secondary": false
           }
         }
@@ -244,7 +244,7 @@
             "heading": "840 Kettlebells",
             "text": "<p>Adjusts from 8 to 40 lbs.</p>",
             "button_label": "Shop 840 Kettlebells",
-            "button_link": "#"
+            "button_link": "shopify://products/bowflex-840-kettlebell"
           }
         },
         "row_aKUCaw": {
