@@ -83,9 +83,9 @@
       "settings": {
         "color_scheme": "",
         "heading": "Compare Ellipticals",
-        "subheading": "Choose a collection to show products side by side.",
+        "subheading": "Coompare our most popular ellipticals",
         "heading_alignment": "center",
-        "collection": "",
+        "collection": "ellipticals",
         "products_to_show": 3,
         "overview_title": "Overview",
         "button_label": "Add to Cart",
