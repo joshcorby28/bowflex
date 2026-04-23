@@ -1,10 +1,126 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
-      "type": "main-404"
+      "type": "main-404",
+      "settings": {}
+    },
+    "compare_products_DBJmFy": {
+      "type": "compare-products",
+      "blocks": {
+        "overview_product_imaijK": {
+          "type": "overview_product",
+          "settings": {
+            "video_url": "",
+            "feature_1": "",
+            "feature_2": "",
+            "feature_3": "",
+            "feature_4": "",
+            "feature_5": "",
+            "feature_6": ""
+          }
+        },
+        "overview_product_hKEyAc": {
+          "type": "overview_product",
+          "settings": {
+            "video_url": "",
+            "feature_1": "",
+            "feature_2": "",
+            "feature_3": "",
+            "feature_4": "",
+            "feature_5": "",
+            "feature_6": ""
+          }
+        },
+        "overview_product_mB8GXr": {
+          "type": "overview_product",
+          "settings": {
+            "video_url": "",
+            "feature_1": "",
+            "feature_2": "",
+            "feature_3": "",
+            "feature_4": "",
+            "feature_5": "",
+            "feature_6": ""
+          }
+        },
+        "accordion_etwzEx": {
+          "type": "accordion",
+          "settings": {
+            "title": "JRNY for Treadmills"
+          }
+        },
+        "accordion_VefepC": {
+          "type": "accordion",
+          "settings": {
+            "title": "Product Details"
+          }
+        },
+        "accordion_yx3Hdn": {
+          "type": "accordion",
+          "settings": {
+            "title": "Specs & Dimensions"
+          }
+        }
+      },
+      "block_order": [
+        "overview_product_imaijK",
+        "overview_product_hKEyAc",
+        "overview_product_mB8GXr",
+        "accordion_etwzEx",
+        "accordion_VefepC",
+        "accordion_yx3Hdn"
+      ],
+      "name": "Compare products",
+      "settings": {
+        "color_scheme": "",
+        "heading": "Compare Ellipticals",
+        "subheading": "Choose a collection to show products side by side.",
+        "heading_alignment": "center",
+        "collection": "",
+        "products_to_show": 3,
+        "overview_title": "Overview",
+        "button_label": "Add to Cart",
+        "link_label": "View",
+        "payment_note": "Pay as low as",
+        "section_background": "#ffffff",
+        "card_background": "#ffffff",
+        "media_background": "#f3f3f5",
+        "heading_color": "#111111",
+        "text_color": "#111111",
+        "muted_text_color": "#4a4d58",
+        "border_color": "#d7d9df",
+        "price_color": "#4b52ff",
+        "button_background": "#4b52ff",
+        "button_text_color": "#ffffff",
+        "link_color": "#3a3a3a",
+        "badge_background": "#b7f36e",
+        "badge_text_color": "#111111",
+        "badge_text_1": "New",
+        "badge_style_1": "new",
+        "badge_text_2": "Sale!",
+        "badge_style_2": "sale",
+        "badge_text_3": "New",
+        "badge_style_3": "new",
+        "badge_text_4": "",
+        "badge_style_4": "new",
+        "badge_text_5": "",
+        "badge_style_5": "new",
+        "badge_text_6": "",
+        "badge_style_6": "new"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "compare_products_DBJmFy"
   ]
 }
