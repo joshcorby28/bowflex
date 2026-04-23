@@ -87,6 +87,19 @@
             "product_6_content": ""
           }
         },
+        "accordion_row_fQFhAy": {
+          "type": "accordion_row",
+          "settings": {
+            "accordion_index": 1,
+            "row_heading": "Connectivity",
+            "product_1_content": "Time Elapsed\nTime Goal\nTime Remaining\nClock\nMiles / Kilometers\nRPM\nCurrent Speed (MPH/KPH)\nPrevious Speed (MPH/KPH)\nPace\nAverage Pace\nHeart Rate\nPeak Heart Rate\nCalories\nCalories Per Hour\nWatts\nMETS\nElevation\nIncline\nPrevious Incline",
+            "product_2_content": "Time Elapsed\nTime Goal\nTime Remaining\nClock\nMiles / Kilometers\nRPM\nCurrent Speed (MPH/KPH)\nPrevious Speed (MPH/KPH)\nPace\nAverage Pace\nHeart Rate\nPeak Heart Rate\nCalories\nCalories Per Hour\nWatts\nMETS\nElevation\nIncline\nPrevious Incline",
+            "product_3_content": "",
+            "product_4_content": "",
+            "product_5_content": "",
+            "product_6_content": ""
+          }
+        },
         "accordion_VefepC": {
           "type": "accordion",
           "settings": {
@@ -107,6 +120,7 @@
         "accordion_etwzEx",
         "accordion_row_Wf8Nwh",
         "accordion_row_kd7grP",
+        "accordion_row_fQFhAy",
         "accordion_VefepC",
         "accordion_yx3Hdn"
       ],
