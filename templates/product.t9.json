@@ -126,7 +126,7 @@
           "type": "collection-circle",
           "settings": {
             "collection_image": "shopify://shop_images/t9-feature-apple-watch-2x.webp",
-            "collection_text": "Connect to Apple Watch."
+            "collection_text": "Connect to Apple Watch®"
           }
         },
         "collection_circle_GceT4N": {
@@ -389,13 +389,13 @@
         "fitness_heading": "Work out the way you want",
         "fitness_subheading": "",
         "fitness_left_image": "shopify://shop_images/Get_an_easy_secure_way_to_connect_your_Apple_Watch_to_the_T9_treadmill_to_keep_your_metris_in_sync..webp",
-        "fitness_left_title": "Connect to Apple Watch",
+        "fitness_left_title": "Connect to Apple Watch®",
         "fitness_left_text": "Get an easy, secure way to connect your Apple Watch to the T9 treadmill to keep your metris in sync.",
         "fitness_left_pill_1": "Apple Watch",
         "fitness_left_pill_2": "Galaxy Watch",
         "fitness_right_image": "shopify://shop_images/t9-02-apps-bg-2x.jpg",
         "fitness_right_title": "Train with your choice in fitness apps",
-        "fitness_right_text": "Connect with JRNY, Peloton and Zwift right from your phone or tablet.",
+        "fitness_right_text": "Connect with JRNY®, Peloton® and Zwift® right from your phone or tablet.",
         "show_specs": true,
         "specs_position": 3,
         "specs_heading": "Specs & Warranty",
