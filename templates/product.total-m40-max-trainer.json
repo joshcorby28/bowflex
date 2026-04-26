@@ -922,8 +922,9 @@
         "jrny_slide_wfqkMj": {
           "type": "jrny_slide",
           "settings": {
-            "title": "Every day is different.",
-            "text": "Get a custom set of adaptive workouts to freshen up your routine."
+            "image": "shopify://shop_images/mt16-jrny-tracking-metrics-bg-2x.jpg",
+            "title": "Track every new peak.",
+            "text": "Data and performance metrics help you visualise your progress."
           }
         },
         "app_icon_cQyMeL": {
