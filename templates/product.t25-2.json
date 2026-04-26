@@ -206,7 +206,7 @@
         "specs_accordion_6tdp4b": {
           "type": "specs_accordion",
           "settings": {
-            "title": "<b>Console</b>",
+            "title": "Console",
             "content": "<p><strong>Bluetooth Hardware</strong> - BT 4.0LE</p><p><strong>Bluetooth Capabilities</strong> - FTMS, Speakers and Heart Rate</p><p><strong>Bluetooth FTMS App Compatible</strong> - Yes</p><p><strong>Apple + Samsung Watch Compatible</strong> - Yes</p><p><strong>Heart Rate</strong> - Hand contact grips and Bluetooth heart rate strap compatible</p><p><strong>Bluetooth Media Control Keys </strong>- Volume</p><p><strong>Display Type</strong> - 8.8” x 2” / 224 mm x 53 mm black mask LCD with white backlight + 4 white LED windows</p><p><strong>Display Feedback</strong> - Time, Distance, Calories, Speed, Incline, Pace, Laps, Heart Rate, Split Timer, Segment Time</p><p><strong>Programs</strong> - Manual, Muscle Toner, Calorie Goal, Distance Goal, Rolling Hills, Intervals, Strength Builder, Target Heart Rate</p><p><strong>Energy Saver </strong>- Yes</p><p><strong>One-Button Quick Start</strong> - Yes</p><p><strong>Pause Button</strong> - Yes</p><p><strong>Button Type </strong>- Membrane</p><p><strong>Incline Range</strong> - 0–12%</p><p><strong>Speed Range</strong> - 0.5–12 mph</p><p><strong>Storage Features</strong> - Mobile Device Holder, Accessory Tray</p><p><strong>Reading Rack</strong> - Integrated into console</p><p><strong>Personal Fan</strong> - 1 (3 speed)</p><p><strong>Speakers</strong> - 3 Watt Stereo Speakers</p><p><strong>USB Port</strong> - Yes (USB A)</p>"
           }
         },
@@ -235,28 +235,28 @@
           "type": "spec_metric",
           "settings": {
             "label": "Dimensions (in)",
-            "value": "76\" L x 35\" W x 71\" H"
+            "value": "85\" L x 39.6\" W x 65.3\" H"
           }
         },
         "spec_metric_xbNqc3": {
           "type": "spec_metric",
           "settings": {
             "label": "Dimensions (cm)",
-            "value": "193 x 86.6 x 144.7"
+            "value": "215.8 x 100.5 x 165.9"
           }
         },
         "spec_metric_QfYXfy": {
           "type": "spec_metric",
           "settings": {
             "label": "Stowed Dimensions (in)",
-            "value": "44\" L x 35\" W x 71\" H"
+            "value": "44.5\" L x 39.6\" W x 70\" H"
           }
         },
         "spec_metric_WaC3Nd": {
           "type": "spec_metric",
           "settings": {
             "label": "Stowed Dimensions (cm)",
-            "value": "121.9 x 86.4 x 157.5"
+            "value": "113 x 100.5 x 177.7"
           }
         },
         "spec_metric_cwVnMQ": {
@@ -364,21 +364,21 @@
         "fitness_position": 2,
         "fitness_heading": "",
         "fitness_subheading": "",
-        "fitness_left_image": "shopify://shop_images/BFX_T8.5J_MELINDA_DEN_UPSTAIRS_2624_1_1.jpg",
+        "fitness_left_image": "shopify://shop_images/BFX_ATF_Treadmill_10_Feature_01_NoGraphic.jpg",
         "fitness_left_title": "MaxReact Drive System",
         "fitness_left_text": "The ultra-responsive Drive System lets you change speed and incline rapidly—perfect for fast-paced interval training.",
         "fitness_left_pill_1": "",
         "fitness_left_pill_2": "",
-        "fitness_right_image": "shopify://shop_images/BFX_T8.5J_MELINDA_DEN_UPSTAIRS_3215_1.jpg",
+        "fitness_right_image": "shopify://shop_images/BFX_ATF_Treadmill_10_Feature_03_cf74a58b-e940-4a3e-a3bc-923e2184d66b.jpg",
         "fitness_right_title": "Flex Zone Deck Cushioning",
         "fitness_right_text": "Go ahead, pick up the pace. With a 20\" wide running area and Flex Zone cushioning, you have the support and stability you need to go the distance.",
         "show_specs": true,
         "specs_position": 3,
         "specs_heading": "Specs & Warranty",
         "specs_subheading": "Equipment dimensions and warranty details.",
-        "spec_image_1": "shopify://shop_images/dimensions-t6-bg-xscreen-2x.webp",
+        "spec_image_1": "shopify://shop_images/BFX_ATF_Treadmill_10_Product_dims_01_6a645dc1-10c4-4d6b-8b4e-22dc763fcd8d.jpg",
         "spec_image_1_alt": "Open treadmill dimensions",
-        "spec_image_2": "shopify://shop_images/dimensions-folded-t6-bg-2x.webp",
+        "spec_image_2": "shopify://shop_images/BFX_ATF_Treadmill_10_Product_dims_02_c0e91c4a-62d7-4df6-8b3e-edf4fb791629.jpg",
         "spec_image_2_alt": "Folded treadmill dimensions",
         "specs_group_heading": "Specs",
         "warranty_group_heading": "Warranty",
