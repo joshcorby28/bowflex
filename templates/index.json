@@ -15,7 +15,7 @@
         "slide_UqYVdX": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Screenshot_2026-02-24_at_15.09.47.png",
+            "image": "shopify://shop_images/images_6cd7dda4-2715-4bf8-b9fd-240ad5022992.jpg",
             "badge": "New",
             "badge_color": "#b4ff63",
             "heading": "Upgrade your training",
@@ -23,6 +23,18 @@
             "small_text": "Limited time only",
             "button_label": "Shop Now",
             "button_link": "shopify://products/bowflex-max-trainer-m6i"
+          }
+        },
+        "slide_PpdjmM": {
+          "type": "slide",
+          "settings": {
+            "badge": "New",
+            "badge_color": "#b4ff63",
+            "heading": "Upgrade your training",
+            "subtext": "Promotional text goes here",
+            "small_text": "Limited time only",
+            "button_label": "Shop Now",
+            "button_link": ""
           }
         },
         "slide_pVaTN4": {
@@ -41,6 +53,7 @@
       },
       "block_order": [
         "slide_UqYVdX",
+        "slide_PpdjmM",
         "slide_pVaTN4"
       ],
       "name": "Swiper Hero Split",
