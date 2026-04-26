@@ -356,6 +356,7 @@
         "jrny_slide_KbWjJT",
         "jrny_slide_A3dWc9"
       ],
+      "disabled": true,
       "settings": {
         "dark_color_scheme": "scheme-1",
         "light_color_scheme": "scheme-1",
@@ -761,6 +762,7 @@
         "app_icon_CnjbYw",
         "app_icon_6wzpDD"
       ],
+      "disabled": true,
       "name": "Product page sections",
       "settings": {
         "dark_color_scheme": "",
@@ -801,6 +803,256 @@
         "membership_heading": "JRNY adaptive fitness membership",
         "membership_subheading": ""
       }
+    },
+    "product_page_sections_iQKzdD": {
+      "type": "product-page-sections",
+      "blocks": {
+        "training_tab_qPmbUy": {
+          "type": "training_tab",
+          "settings": {
+            "tab_title": "Explore entertainment",
+            "video_embed_url": ""
+          }
+        },
+        "training_tab_DxREa4": {
+          "type": "training_tab",
+          "settings": {
+            "tab_title": "Explore entertainment",
+            "video_embed_url": ""
+          }
+        },
+        "spec_metric_FqNBEx": {
+          "type": "spec_metric",
+          "settings": {
+            "label": "Dimensions",
+            "value": "77.2” L × 35.2” W × 67.6” H"
+          }
+        },
+        "spec_metric_dJpBkD": {
+          "type": "spec_metric",
+          "settings": {
+            "label": "Dimensions",
+            "value": "77.2” L × 35.2” W × 67.6” H"
+          }
+        },
+        "warranty_metric_XEpdXm": {
+          "type": "warranty_metric",
+          "settings": {
+            "label": "Frame & Motor",
+            "value": "Lifetime"
+          }
+        },
+        "warranty_metric_97MFyn": {
+          "type": "warranty_metric",
+          "settings": {
+            "label": "Frame & Motor",
+            "value": "Lifetime"
+          }
+        },
+        "specs_accordion_GaLNw8": {
+          "type": "specs_accordion",
+          "settings": {
+            "title": "Console",
+            "content": "<p>Add your specification details here.</p>"
+          }
+        },
+        "specs_accordion_7cQXrK": {
+          "type": "specs_accordion",
+          "settings": {
+            "title": "Console",
+            "content": "<p>Add your specification details here.</p>"
+          }
+        },
+        "jrny_slide_DQ3RGE": {
+          "type": "jrny_slide",
+          "settings": {
+            "image": "shopify://shop_images/mt16-jrny-radio-intl-bg-2x.jpg",
+            "title": "Find your HIIT tracks",
+            "text": "JRNY Radio has high-energy playlists for your sprints and chill tracks for your recovery."
+          }
+        },
+        "jrny_slide_ePAPxC": {
+          "type": "jrny_slide",
+          "settings": {
+            "image": "shopify://shop_images/mt16-jrny-workout-selection-bg-2x.jpg",
+            "title": "A new hill every day.",
+            "text": "Get a new set of adaptive workouts every time you climb on your Max Trainer."
+          }
+        },
+        "jrny_slide_QPMg4R": {
+          "type": "jrny_slide",
+          "settings": {
+            "image": "shopify://shop_images/mt16-jrny-coaching-bg-2x.webp",
+            "title": "Rise to new heights.",
+            "text": "Your virtual coach keeps you motivated and moving, every step of the way."
+          }
+        },
+        "jrny_slide_yGP97Q": {
+          "type": "jrny_slide",
+          "settings": {
+            "title": "Every day is different.",
+            "text": "Get a custom set of adaptive workouts to freshen up your routine."
+          }
+        },
+        "jrny_slide_K6qDbx": {
+          "type": "jrny_slide",
+          "settings": {
+            "title": "Every day is different.",
+            "text": "Get a custom set of adaptive workouts to freshen up your routine."
+          }
+        },
+        "jrny_slide_dDncTB": {
+          "type": "jrny_slide",
+          "settings": {
+            "title": "Every day is different.",
+            "text": "Get a custom set of adaptive workouts to freshen up your routine."
+          }
+        },
+        "jrny_slide_LxyynB": {
+          "type": "jrny_slide",
+          "settings": {
+            "title": "Every day is different.",
+            "text": "Get a custom set of adaptive workouts to freshen up your routine."
+          }
+        },
+        "jrny_slide_wfqkMj": {
+          "type": "jrny_slide",
+          "settings": {
+            "title": "Every day is different.",
+            "text": "Get a custom set of adaptive workouts to freshen up your routine."
+          }
+        },
+        "app_icon_cQyMeL": {
+          "type": "app_icon",
+          "settings": {
+            "icon_alt": "App icon"
+          }
+        },
+        "app_icon_YCzFPM": {
+          "type": "app_icon",
+          "settings": {
+            "icon_alt": "App icon"
+          }
+        },
+        "app_icon_QXdjcP": {
+          "type": "app_icon",
+          "settings": {
+            "icon_alt": "App icon"
+          }
+        },
+        "app_icon_mCWnBG": {
+          "type": "app_icon",
+          "settings": {
+            "icon_alt": "App icon"
+          }
+        },
+        "app_icon_AnrEgB": {
+          "type": "app_icon",
+          "settings": {
+            "icon_alt": "App icon"
+          }
+        },
+        "app_icon_YakiNj": {
+          "type": "app_icon",
+          "settings": {
+            "icon_alt": "App icon"
+          }
+        },
+        "app_icon_CPXb9e": {
+          "type": "app_icon",
+          "settings": {
+            "icon_alt": "App icon"
+          }
+        },
+        "app_icon_FLGJFJ": {
+          "type": "app_icon",
+          "settings": {
+            "icon_alt": "App icon"
+          }
+        },
+        "app_icon_kqhznH": {
+          "type": "app_icon",
+          "settings": {
+            "icon_alt": "App icon"
+          }
+        },
+        "app_icon_raHwmx": {
+          "type": "app_icon",
+          "settings": {
+            "icon_alt": "App icon"
+          }
+        },
+        "app_icon_PnE93h": {
+          "type": "app_icon",
+          "settings": {
+            "icon_alt": "App icon"
+          }
+        }
+      },
+      "block_order": [
+        "training_tab_qPmbUy",
+        "training_tab_DxREa4",
+        "spec_metric_FqNBEx",
+        "spec_metric_dJpBkD",
+        "warranty_metric_XEpdXm",
+        "warranty_metric_97MFyn",
+        "specs_accordion_GaLNw8",
+        "specs_accordion_7cQXrK",
+        "jrny_slide_DQ3RGE",
+        "jrny_slide_ePAPxC",
+        "jrny_slide_QPMg4R",
+        "jrny_slide_yGP97Q",
+        "jrny_slide_K6qDbx",
+        "jrny_slide_dDncTB",
+        "jrny_slide_LxyynB",
+        "jrny_slide_wfqkMj",
+        "app_icon_cQyMeL",
+        "app_icon_YCzFPM",
+        "app_icon_QXdjcP",
+        "app_icon_mCWnBG",
+        "app_icon_AnrEgB",
+        "app_icon_YakiNj",
+        "app_icon_CPXb9e",
+        "app_icon_FLGJFJ",
+        "app_icon_kqhznH",
+        "app_icon_raHwmx",
+        "app_icon_PnE93h"
+      ],
+      "name": "Product page sections",
+      "settings": {
+        "dark_color_scheme": "",
+        "light_color_scheme": "",
+        "show_training": false,
+        "training_position": 1,
+        "training_heading": "The ultimate training experience",
+        "training_subheading": "Watch videos below to learn more.",
+        "fallback_training_video_url": "",
+        "fallback_training_tab_title_1": "Explore entertainment",
+        "fallback_training_tab_title_2": "Go further with JRNY",
+        "show_fitness": false,
+        "fitness_position": 2,
+        "fitness_heading": "Entertainment + fitness at your fingertips.",
+        "fitness_subheading": "Connect your watch and stream your favorite apps while you work out.",
+        "fitness_left_title": "Connect to your watch",
+        "fitness_left_text": "Connect to Apple Watch® or Samsung Galaxy Watch for a seamless way to keep your metrics in sync.",
+        "fitness_left_pill_1": "Apple Watch®",
+        "fitness_left_pill_2": "Galaxy Watch®",
+        "fitness_right_title": "16” HD touchscreen",
+        "fitness_right_text": "Browse the web or access Netflix, YouTube, Spotify, JRNY®, and more.",
+        "show_specs": true,
+        "specs_position": 3,
+        "specs_heading": "Specs & Warranty",
+        "specs_subheading": "Equipment dimensions and warranty details.",
+        "spec_image_1_alt": "Open treadmill dimensions",
+        "spec_image_2_alt": "Folded treadmill dimensions",
+        "specs_group_heading": "Specs",
+        "warranty_group_heading": "Warranty",
+        "additional_specs_heading": "Additional Specs",
+        "show_membership": true,
+        "membership_position": 4,
+        "membership_heading": "The JRNY® adaptive fitness membership keeps you going.",
+        "membership_subheading": ""
+      }
     }
   },
   "order": [
@@ -809,6 +1061,7 @@
     "key_features_wQ7gFE",
     "product_page_sections_nx3K7M",
     "product_page_sections_7DntQy",
-    "product_page_sections_nagEHM"
+    "product_page_sections_nagEHM",
+    "product_page_sections_iQKzdD"
   ]
 }
