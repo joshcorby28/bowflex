@@ -393,7 +393,7 @@
         "jrny_slide_JrPyYw": {
           "type": "jrny_slide",
           "settings": {
-            "image": "shopify://shop_images/t6-jrny-radio-bg-2x.webp",
+            "image": "shopify://shop_images/t10-jrny-radio-intl-bg-2x.webp",
             "title": "Find a playlist to power your P.R.",
             "text": "An ever-fresh line up on JRNY Radio means you can always find a musical mood boost."
           }
@@ -401,7 +401,7 @@
         "jrny_slide_XrDExw": {
           "type": "jrny_slide",
           "settings": {
-            "image": "shopify://shop_images/t6-jrny-workout-selection-bg-2x.webp",
+            "image": "shopify://shop_images/every_day.jpg",
             "title": "Every day is different.",
             "text": "Get a custom set of adaptive workouts to freshen up your routine."
           }
@@ -409,7 +409,7 @@
         "jrny_slide_bqG9CR": {
           "type": "jrny_slide",
           "settings": {
-            "image": "shopify://shop_images/t6-jrny-coaching-bg-2x.webp",
+            "image": "shopify://shop_images/go_ahead.webp",
             "title": "Go ahead, pick up the pace",
             "text": "Your virtual coach gives you real-time encouragement and guidance for every run."
           }
@@ -417,7 +417,7 @@
         "jrny_slide_eVWJUN": {
           "type": "jrny_slide",
           "settings": {
-            "image": "shopify://shop_images/t16-jrny-coaching-bg-1x.jpg",
+            "image": "shopify://shop_images/roam.webp",
             "title": "Roam if you want to",
             "text": "200+ Explore the World routes gives you a beautiful new place to run each day."
           }
