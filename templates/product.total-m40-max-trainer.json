@@ -824,15 +824,15 @@
         "spec_metric_FqNBEx": {
           "type": "spec_metric",
           "settings": {
-            "label": "Dimensions",
-            "value": "77.2” L × 35.2” W × 67.6” H"
+            "label": "Dimensions (cm)",
+            "value": "125 x 78.2 x 166 cm"
           }
         },
         "spec_metric_dJpBkD": {
           "type": "spec_metric",
           "settings": {
-            "label": "Dimensions",
-            "value": "77.2” L × 35.2” W × 67.6” H"
+            "label": "Dimensions (in)",
+            "value": "49.3\" L x 30.8\" W x 65.7\" H"
           }
         },
         "warranty_metric_XEpdXm": {
@@ -1048,7 +1048,9 @@
         "specs_position": 3,
         "specs_heading": "Specs & Warranty",
         "specs_subheading": "Equipment dimensions and warranty details.",
+        "spec_image_1": "shopify://shop_images/dimensions-mt16-bg-2x-cm.webp",
         "spec_image_1_alt": "Open treadmill dimensions",
+        "spec_image_2": "shopify://shop_images/dimensions-screen-mt16-bg-2x-cm.webp",
         "spec_image_2_alt": "Folded treadmill dimensions",
         "specs_group_heading": "Specs",
         "warranty_group_heading": "Warranty",
