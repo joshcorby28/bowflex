@@ -185,9 +185,258 @@
         "padding_bottom": 36
       }
     },
+    "rich_text_DD4tAV": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_ddFhYr": {
+          "type": "heading",
+          "settings": {
+            "heading": "All the essentials for your run, plus total fitness app freedom",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_ddFhYr"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "scheme-4",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "product_page_sections_f8t6GT": {
+      "type": "product-page-sections",
+      "blocks": {
+        "training_tab_XVh6Lq": {
+          "type": "training_tab",
+          "settings": {
+            "tab_title": "Explore entertainment",
+            "video_embed_url": ""
+          }
+        },
+        "warranty_metric_HVYDwM": {
+          "type": "warranty_metric",
+          "settings": {
+            "label": "Frame & Motor",
+            "value": "Lifetime"
+          }
+        },
+        "warranty_metric_QEMQ78": {
+          "type": "warranty_metric",
+          "settings": {
+            "label": "Mechanical Parts",
+            "value": "3 Years"
+          }
+        },
+        "warranty_metric_kWnf3Q": {
+          "type": "warranty_metric",
+          "settings": {
+            "label": "Labour",
+            "value": "1 Year"
+          }
+        },
+        "specs_accordion_mVmDYk": {
+          "type": "specs_accordion",
+          "settings": {
+            "title": "<b>Console<b></b></b>",
+            "content": "<p><strong>Bluetooth Hardware</strong> - BT 4.0LE</p><p><strong>Bluetooth Capabilities</strong> - FTMS, Speakers and Heart Rate</p><p><strong>Bluetooth FTMS App Compatible</strong> - Yes</p><p><strong>Apple + Samsung Watch Compatible</strong> - Yes</p><p><strong>Heart Rate</strong> - Hand contact grips and Bluetooth heart rate strap compatible</p><p><strong>Bluetooth Media Control Keys </strong>- Volume</p><p><strong>Display Type</strong> - 8.8” x 2” / 224 mm x 53 mm black mask LCD with white backlight + 4 white LED windows</p><p><strong>Display Feedback</strong> - Time, Distance, Calories, Speed, Incline, Pace, Laps, Heart Rate, Split Timer, Segment Time</p><p><strong>Programs</strong> - Manual, Muscle Toner, Calorie Goal, Distance Goal, Rolling Hills, Intervals, Strength Builder, Target Heart Rate</p><p><strong>Energy Saver </strong>- Yes</p><p><strong>One-Button Quick Start</strong> - Yes</p><p><strong>Pause Button</strong> - Yes</p><p><strong>Button Type </strong>- Membrane</p><p><strong>Incline Range</strong> - 0–15%</p><p><strong>Speed Range</strong> - 0.5–12 mph</p><p><strong>Storage Features</strong> - Mobile Device Holder, Accessory Tray</p><p><strong>Reading Rack</strong> - Integrated into console</p><p><strong>Personal Fan</strong> - 1 (3 speed)</p><p><strong>Speakers</strong> - 3 Watt Stereo Speakers</p><p><strong>USB Port</strong> - Yes (USB A)</p>"
+          }
+        },
+        "specs_accordion_69dHTQ": {
+          "type": "specs_accordion",
+          "settings": {
+            "title": "<b>Deck<b></b></b>",
+            "content": "<p><strong>Cushion System </strong>- FlexZone Deck</p><p><strong>Deck Thickness</strong> - 0.75” / 18 mm</p><p><strong>Running Area</strong> - 20” x 60” / 50.8 cm x 152.4 cm</p><p><strong>Running Belt Thickness</strong> - 1.6 mm</p><p><strong>Step On Height </strong>- 8.7” / 22 cm</p><p><strong>Lubrication System</strong> - Silicone Oil</p><p><strong>Reversible Deck</strong> - No<br/><br/></p>"
+          }
+        },
+        "specs_accordion_EdCrJP": {
+          "type": "specs_accordion",
+          "settings": {
+            "title": "<b>Frame<b></b></b>",
+            "content": "<p><strong>Folding</strong>- Yes (Fold on Pin)</p><p><strong>Fold Flat</strong> - No</p><p><strong>Transport Wheels</strong> - 2</p><p><strong>Gas Shock</strong> - Yes</p><p><strong>Front Roller Size</strong> - 60 mm</p><p><strong>Rear Roller Size</strong> - 46 mm</p><p><strong>Max User Weight</strong> - 325 lbs. / 147.4 kg</p><p><strong>Cross Bar</strong> - No</p><p><strong>Side Rail Material</strong> - ABS</p><p><strong>End Cap Material </strong>- ABS</p>"
+          }
+        },
+        "specs_accordion_brpRLC": {
+          "type": "specs_accordion",
+          "settings": {
+            "title": "<b>Technical Specs<b></b></b>",
+            "content": "<p><strong>Assembled Dimensions</strong> - 76” L x 35” W x 71” H / 196 x 89.7 x 181 cm</p><p><strong>Assembled Weight </strong>- 234 lbs. / 106 kg</p><p><strong>Shipping Weight</strong> - 293 lbs. / 133 kg</p><p><strong>Shipping Dimensions </strong>- 81.5” x 29.9” x 13.4” / 207 x 76 x 34 cm</p><p><strong>Electrical Requirements</strong> - AC 110 volt and 220 volt 50/60 Hz (USA and Europe)<br/><br/></p>"
+          }
+        },
+        "spec_metric_CiP6cC": {
+          "type": "spec_metric",
+          "settings": {
+            "label": "Dimensions (in)",
+            "value": "76\" L x 35\" W x 71\" H"
+          }
+        },
+        "spec_metric_fHk748": {
+          "type": "spec_metric",
+          "settings": {
+            "label": "Dimensions (cm)",
+            "value": "196 x 89.7 x 181"
+          }
+        },
+        "spec_metric_wz3BBV": {
+          "type": "spec_metric",
+          "settings": {
+            "label": "Stowed Dimensions (in)",
+            "value": "44\" L x 35\" W x 71\" H"
+          }
+        },
+        "spec_metric_EWNpwy": {
+          "type": "spec_metric",
+          "settings": {
+            "label": "Stowed Dimensions (cm)",
+            "value": "113 x 89.7 x 181"
+          }
+        },
+        "spec_metric_UkpttD": {
+          "type": "spec_metric",
+          "settings": {
+            "label": "Minimum Ceiling Height",
+            "value": "User height + 20.75\" / 52.7cm"
+          }
+        },
+        "spec_metric_qjLDci": {
+          "type": "spec_metric",
+          "settings": {
+            "label": "Console",
+            "value": "Dual LED/LCD"
+          }
+        },
+        "spec_metric_kVBDwc": {
+          "type": "spec_metric",
+          "settings": {
+            "label": "Product Weight",
+            "value": "233.7 lbs (106 kg)"
+          }
+        },
+        "spec_metric_QKgtmH": {
+          "type": "spec_metric",
+          "settings": {
+            "label": "Maximum User Weight",
+            "value": "325 lbs (147 kg)"
+          }
+        },
+        "jrny_slide_q3YNcX": {
+          "type": "jrny_slide",
+          "settings": {
+            "image": "shopify://shop_images/t16-jrny-coaching-bg-1x.jpg",
+            "title": "Every day is different.",
+            "text": "Get a custom set of adaptive workouts to freshen up your routine."
+          }
+        },
+        "jrny_slide_ndjiyY": {
+          "type": "jrny_slide",
+          "settings": {
+            "image": "shopify://shop_images/t16-jrny-coaching-bg-1x.jpg",
+            "title": "Every day is different.",
+            "text": "Get a custom set of adaptive workouts to freshen up your routine."
+          }
+        },
+        "jrny_slide_ykzJ8y": {
+          "type": "jrny_slide",
+          "settings": {
+            "image": "shopify://shop_images/t16-jrny-coaching-bg-1x.jpg",
+            "title": "Every day is different.",
+            "text": "Get a custom set of adaptive workouts to freshen up your routine."
+          }
+        },
+        "jrny_slide_DV9gEM": {
+          "type": "jrny_slide",
+          "settings": {
+            "image": "shopify://shop_images/t16-jrny-coaching-bg-1x.jpg",
+            "title": "Every day is different.",
+            "text": "Get a custom set of adaptive workouts to freshen up your routine."
+          }
+        },
+        "jrny_slide_VC9HYp": {
+          "type": "jrny_slide",
+          "settings": {
+            "image": "shopify://shop_images/t16-jrny-coaching-bg-1x.jpg",
+            "title": "Every day is different.",
+            "text": "Get a custom set of adaptive workouts to freshen up your routine."
+          }
+        }
+      },
+      "block_order": [
+        "training_tab_XVh6Lq",
+        "warranty_metric_HVYDwM",
+        "warranty_metric_QEMQ78",
+        "warranty_metric_kWnf3Q",
+        "specs_accordion_mVmDYk",
+        "specs_accordion_69dHTQ",
+        "specs_accordion_EdCrJP",
+        "specs_accordion_brpRLC",
+        "spec_metric_CiP6cC",
+        "spec_metric_fHk748",
+        "spec_metric_wz3BBV",
+        "spec_metric_EWNpwy",
+        "spec_metric_UkpttD",
+        "spec_metric_qjLDci",
+        "spec_metric_kVBDwc",
+        "spec_metric_QKgtmH",
+        "jrny_slide_q3YNcX",
+        "jrny_slide_ndjiyY",
+        "jrny_slide_ykzJ8y",
+        "jrny_slide_DV9gEM",
+        "jrny_slide_VC9HYp"
+      ],
+      "settings": {
+        "dark_color_scheme": "scheme-1",
+        "light_color_scheme": "scheme-1",
+        "show_training": false,
+        "training_position": 1,
+        "training_heading": "The ultimate training experience",
+        "training_subheading": "Watch videos below to learn more.",
+        "fallback_training_video_url": "",
+        "fallback_training_tab_title_1": "Explore entertainment",
+        "fallback_training_tab_title_2": "Go further with JRNY",
+        "show_fitness": true,
+        "fitness_position": 2,
+        "fitness_heading": "",
+        "fitness_subheading": "",
+        "fitness_left_image": "shopify://shop_images/t6-01-watch-2x.webp",
+        "fitness_left_title": "Connect to your watch",
+        "fitness_left_text": "Connect to Apple Watch™ or Samsung Galaxy Watch for a seamless way to keep your metrics in sync.",
+        "fitness_left_pill_1": "Apple Watch",
+        "fitness_left_pill_2": "Galaxy Watch",
+        "fitness_right_image": "shopify://shop_images/t6-jrny-workout-selection-bg-2x.webp",
+        "fitness_right_title": "Fitness app flexibility",
+        "fitness_right_text": "Keep your options open. Train with popular fitness apps including JRNY®, Peloton®, and Zwift®, right from your phone or tablet.",
+        "show_specs": false,
+        "specs_position": 3,
+        "specs_heading": "Specs & Warranty",
+        "specs_subheading": "Equipment dimensions and warranty details.",
+        "spec_image_1": "shopify://shop_images/dimensions-t6-bg-xscreen-2x.webp",
+        "spec_image_1_alt": "Open treadmill dimensions",
+        "spec_image_2": "shopify://shop_images/dimensions-folded-t6-bg-2x.webp",
+        "spec_image_2_alt": "Folded treadmill dimensions",
+        "specs_group_heading": "Specs",
+        "warranty_group_heading": "Warranty",
+        "additional_specs_heading": "Additional Specs",
+        "show_membership": false,
+        "membership_position": 4,
+        "membership_heading": "The JRNY adaptive fitness membership keeps you going.",
+        "membership_subheading": "Dummy carousel cards for membership benefits."
+      }
+    },
     "product_page_sections_nx3K7M": {
       "type": "product-page-sections",
       "blocks": {
+        "training_tab_HHha7G": {
+          "type": "training_tab",
+          "settings": {
+            "tab_title": "Explore entertainment",
+            "video_embed_url": ""
+          }
+        },
         "warranty_metric_FcVbGp": {
           "type": "warranty_metric",
           "settings": {
@@ -335,6 +584,7 @@
         }
       },
       "block_order": [
+        "training_tab_HHha7G",
         "warranty_metric_FcVbGp",
         "warranty_metric_J4EyzN",
         "warranty_metric_HA7xjJ",
@@ -373,8 +623,8 @@
         "fitness_left_image": "shopify://shop_images/t6-03-drive-system-2x.webp",
         "fitness_left_title": "MaxReact Drive System",
         "fitness_left_text": "The ultra-responsive Drive System lets you change speed and incline rapidly—perfect for fast-paced interval training.",
-        "fitness_left_pill_1": "Apple Watch",
-        "fitness_left_pill_2": "Galaxy Watch",
+        "fitness_left_pill_1": "",
+        "fitness_left_pill_2": "",
         "fitness_right_image": "shopify://shop_images/t6-04-deck-2x.jpg",
         "fitness_right_title": "Flex Zone Deck Cushioning",
         "fitness_right_text": "Go ahead, pick up the pace. With a 20\" wide running area and Flex Zone cushioning, you have the support and stability you need to go the distance.",
@@ -499,6 +749,8 @@
     "main",
     "related-products",
     "key_features_wQ7gFE",
+    "rich_text_DD4tAV",
+    "product_page_sections_f8t6GT",
     "product_page_sections_nx3K7M",
     "product_page_sections_7DntQy"
   ]
