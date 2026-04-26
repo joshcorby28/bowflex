@@ -142,29 +142,11 @@
             "collection_text": "Undeniably cool.  Built-in fan with 3 speeds."
           }
         },
-        "collection_circle_JAVYEw": {
-          "type": "collection-circle",
-          "settings": {
-            "collection_text": ""
-          }
-        },
-        "collection_circle_htxLEb": {
-          "type": "collection-circle",
-          "settings": {
-            "collection_text": ""
-          }
-        },
         "collection_circle_MkJ3xp": {
           "type": "collection-circle",
           "settings": {
             "collection_image": "shopify://shop_images/T25_4.png",
             "collection_text": "Plenty of runway.  56 cm W x 152 cm L (22\" X 60\") running path."
-          }
-        },
-        "collection_circle_4zwJUD": {
-          "type": "collection-circle",
-          "settings": {
-            "collection_text": ""
           }
         },
         "collection_circle_XaWJbT": {
@@ -182,10 +164,7 @@
         "collection_circle_GceT4N",
         "collection_circle_H9Exnf",
         "collection_circle_NX6tQx",
-        "collection_circle_JAVYEw",
-        "collection_circle_htxLEb",
         "collection_circle_MkJ3xp",
-        "collection_circle_4zwJUD",
         "collection_circle_XaWJbT"
       ],
       "name": "Key Features",
