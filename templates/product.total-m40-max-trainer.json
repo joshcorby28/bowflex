@@ -856,6 +856,13 @@
             "value": "70.5 kg (155.4 lbs)"
           }
         },
+        "spec_metric_URpTWb": {
+          "type": "spec_metric",
+          "settings": {
+            "label": "Maximum User Weight",
+            "value": "136 kg (300 lbs)"
+          }
+        },
         "warranty_metric_XEpdXm": {
           "type": "warranty_metric",
           "settings": {
@@ -1023,6 +1030,7 @@
         "spec_metric_VXpXYB",
         "spec_metric_6Fezyn",
         "spec_metric_eLhEQK",
+        "spec_metric_URpTWb",
         "warranty_metric_XEpdXm",
         "warranty_metric_97MFyn",
         "specs_accordion_GaLNw8",
