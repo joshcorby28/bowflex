@@ -175,6 +175,7 @@
         "collection_circle_MkJ3xp",
         "collection_circle_XaWJbT"
       ],
+      "disabled": true,
       "name": "Key Features",
       "settings": {
         "section_heading": "Product Features",
@@ -182,6 +183,21 @@
         "title": "Product Features",
         "heading_size": "h1",
         "padding_top": 32,
+        "padding_bottom": 36
+      }
+    },
+    "video_FJDAYJ": {
+      "type": "video",
+      "name": "Smarte Video Hero",
+      "settings": {
+        "video": "shopify://files/videos/BowFlex_Product-Demo_INT_T85J-Treadmill_1920x1080.mp4",
+        "no_video_mobile": false,
+        "show_overlay": true,
+        "overlay_color": "#000000",
+        "overlay_opacity": 50,
+        "full_width": true,
+        "horizontal_alignment": "middle-center",
+        "padding_top": 36,
         "padding_bottom": 36
       }
     },
@@ -382,9 +398,9 @@
         "specs_position": 3,
         "specs_heading": "Specs & Warranty",
         "specs_subheading": "Equipment dimensions and warranty details.",
-        "spec_image_1": "shopify://shop_images/dimensions-t6-bg-xscreen-2x.webp",
+        "spec_image_1": "shopify://shop_images/BowFlex_T85J_Treadmill_ATF_3_cdfe6651-f680-4a13-966e-95c0d14e914e.jpg",
         "spec_image_1_alt": "Open treadmill dimensions",
-        "spec_image_2": "shopify://shop_images/dimensions-folded-t6-bg-2x.webp",
+        "spec_image_2": "shopify://shop_images/T8.5J_Console_Hero_R.png",
         "spec_image_2_alt": "Folded treadmill dimensions",
         "specs_group_heading": "Specs",
         "warranty_group_heading": "Warranty",
@@ -499,6 +515,7 @@
     "main",
     "related-products",
     "key_features_wQ7gFE",
+    "video_FJDAYJ",
     "product_page_sections_nx3K7M",
     "product_page_sections_7DntQy"
   ]
