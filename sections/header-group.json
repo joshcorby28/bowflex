@@ -17,7 +17,7 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "For a limited time only → Save up to £500!",
+            "text": "For a limited time only → Save up to £1,000!",
             "link": "shopify://collections/sale",
             "button_text": "Shop Sale"
           }
