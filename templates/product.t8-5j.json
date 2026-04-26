@@ -192,7 +192,7 @@
       "settings": {
         "video": "shopify://files/videos/BowFlex_Product-Demo_INT_T85J-Treadmill_1920x1080.mp4",
         "no_video_mobile": false,
-        "show_overlay": true,
+        "show_overlay": false,
         "overlay_color": "#000000",
         "overlay_opacity": 50,
         "full_width": true,
