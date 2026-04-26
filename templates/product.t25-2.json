@@ -180,6 +180,13 @@
     "product_page_sections_nx3K7M": {
       "type": "product-page-sections",
       "blocks": {
+        "specs_accordion_fWDVLK": {
+          "type": "specs_accordion",
+          "settings": {
+            "title": "",
+            "content": ""
+          }
+        },
         "warranty_metric_FcVbGp": {
           "type": "warranty_metric",
           "settings": {
@@ -299,6 +306,7 @@
         }
       },
       "block_order": [
+        "specs_accordion_fWDVLK",
         "warranty_metric_FcVbGp",
         "warranty_metric_J4EyzN",
         "warranty_metric_HA7xjJ",
