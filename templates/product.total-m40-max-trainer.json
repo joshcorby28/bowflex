@@ -185,6 +185,21 @@
         "padding_bottom": 36
       }
     },
+    "video_teTYLc": {
+      "type": "video",
+      "name": "Smarte Video Hero",
+      "settings": {
+        "video": "shopify://files/videos/BowFlex-Max-Total-40-Product-Video_International (1).mp4",
+        "no_video_mobile": false,
+        "show_overlay": false,
+        "overlay_color": "#000000",
+        "overlay_opacity": 50,
+        "full_width": false,
+        "horizontal_alignment": "middle-center",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "product_page_sections_nx3K7M": {
       "type": "product-page-sections",
       "blocks": {
@@ -1082,6 +1097,7 @@
     "main",
     "related-products",
     "key_features_wQ7gFE",
+    "video_teTYLc",
     "product_page_sections_nx3K7M",
     "product_page_sections_7DntQy",
     "product_page_sections_nagEHM",
