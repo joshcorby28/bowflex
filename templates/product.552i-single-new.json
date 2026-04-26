@@ -313,15 +313,15 @@
         "training_subheading": "Watch videos below to learn more.",
         "fallback_training_video_url": "",
         "fallback_training_tab_title_1": "Explore entertainment",
-        "fallback_training_tab_title_2": "Go further with JRNY",
+        "fallback_training_tab_title_2": "Go further with JRNY®",
         "show_fitness": false,
         "fitness_position": 2,
         "fitness_heading": "Entertainment + fitness at your fingertips.",
         "fitness_subheading": "Dummy content to represent media and app integrations.",
         "fitness_left_image": "shopify://shop_images/t16-01-watch-2x.webp",
         "fitness_left_title": "Connect to your watch",
-        "fitness_left_text": "Connect to Apple Watch or Samsung Galaxy Watch for a seamless way to keep your metrics in sync.",
-        "fitness_left_pill_1": "Apple Watch",
+        "fitness_left_text": "Connect to Apple Watch® or Samsung Galaxy Watch for a seamless way to keep your metrics in sync.",
+        "fitness_left_pill_1": "Apple Watch®",
         "fitness_left_pill_2": "Galaxy Watch",
         "fitness_right_image": "shopify://shop_images/t16-02-app-2x.webp",
         "fitness_right_title": "16” HD touchscreen",
@@ -339,7 +339,7 @@
         "additional_specs_heading": "",
         "show_membership": true,
         "membership_position": 4,
-        "membership_heading": "JRNY adaptive fitness membership",
+        "membership_heading": "JRNY® adaptive fitness membership",
         "membership_subheading": ""
       }
     }
