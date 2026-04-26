@@ -898,22 +898,25 @@
         "jrny_slide_K6qDbx": {
           "type": "jrny_slide",
           "settings": {
-            "title": "Every day is different.",
-            "text": "Get a custom set of adaptive workouts to freshen up your routine."
+            "image": "shopify://shop_images/mt16-jrny-streaming-bg-2x.jpg",
+            "title": "Stay entertained all the way.",
+            "text": "Follow your workout and stream your favourite shows at the same time, including Netflix and Prime Video."
           }
         },
         "jrny_slide_dDncTB": {
           "type": "jrny_slide",
           "settings": {
-            "title": "Every day is different.",
-            "text": "Get a custom set of adaptive workouts to freshen up your routine."
+            "image": "shopify://shop_images/mt16-jrny-fitness-trainer-bg-2x.jpg",
+            "title": "Classes made for Max Trainer.",
+            "text": "Find trainer-led workouts developed specifically for Max Trainer ellipticals."
           }
         },
         "jrny_slide_LxyynB": {
           "type": "jrny_slide",
           "settings": {
-            "title": "Every day is different.",
-            "text": "Get a custom set of adaptive workouts to freshen up your routine."
+            "image": "shopify://shop_images/jrny-full-body-workouts-m-lr-0623-bg-2x.webp",
+            "title": "Add a little floor work in.",
+            "text": "Yoga, Pilates and strength training give you options when you want a change of pace."
           }
         },
         "jrny_slide_wfqkMj": {
