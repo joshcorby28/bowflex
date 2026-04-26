@@ -835,6 +835,27 @@
             "value": "49.3\" L x 30.8\" W x 65.7\" H"
           }
         },
+        "spec_metric_VXpXYB": {
+          "type": "spec_metric",
+          "settings": {
+            "label": "Console",
+            "value": "16\" HD Touchscreen"
+          }
+        },
+        "spec_metric_6Fezyn": {
+          "type": "spec_metric",
+          "settings": {
+            "label": "Minimum Ceiling Height",
+            "value": "User Height + 53.0 cm"
+          }
+        },
+        "spec_metric_eLhEQK": {
+          "type": "spec_metric",
+          "settings": {
+            "label": "Product Weight",
+            "value": "70.5 kg (155.4 lbs)"
+          }
+        },
         "warranty_metric_XEpdXm": {
           "type": "warranty_metric",
           "settings": {
@@ -999,6 +1020,9 @@
         "training_tab_DxREa4",
         "spec_metric_FqNBEx",
         "spec_metric_dJpBkD",
+        "spec_metric_VXpXYB",
+        "spec_metric_6Fezyn",
+        "spec_metric_eLhEQK",
         "warranty_metric_XEpdXm",
         "warranty_metric_97MFyn",
         "specs_accordion_GaLNw8",
