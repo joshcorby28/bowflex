@@ -137,10 +137,15 @@
         },
         "collection_circle_NX6tQx": {
           "type": "collection-circle",
-          "disabled": true,
           "settings": {
-            "collection_image": "shopify://shop_images/t6-feature-media-shelf-swivel-2x.webp",
+            "collection_image": "shopify://shop_images/T25_6.png",
             "collection_text": "Undeniably cool.  Built-in fan with 3 speeds."
+          }
+        },
+        "collection_circle_JAVYEw": {
+          "type": "collection-circle",
+          "settings": {
+            "collection_text": ""
           }
         },
         "collection_circle_htxLEb": {
@@ -177,6 +182,7 @@
         "collection_circle_GceT4N",
         "collection_circle_H9Exnf",
         "collection_circle_NX6tQx",
+        "collection_circle_JAVYEw",
         "collection_circle_htxLEb",
         "collection_circle_MkJ3xp",
         "collection_circle_4zwJUD",
