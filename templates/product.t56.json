@@ -1,0 +1,499 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "caption": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "caption",
+        "price",
+        "variant_picker",
+        "buy_buttons",
+        "description"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "",
+        "media_size": "large",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "thumbnail_slider",
+        "mobile_thumbnails": "hide",
+        "media_position": "left",
+        "image_zoom": "none",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "key_features_wQ7gFE": {
+      "type": "key-features",
+      "blocks": {
+        "collection_circle_WdgdYr": {
+          "type": "collection-circle",
+          "settings": {
+            "collection_image": "shopify://shop_images/T56.png",
+            "collection_text": "Reach for that higher peak. -5% - 20% motorized incline."
+          }
+        },
+        "collection_circle_3PRirC": {
+          "type": "collection-circle",
+          "settings": {
+            "collection_image": "shopify://shop_images/Bowflex8.5J_1.png",
+            "collection_text": "No lags or delays  Ultra-responsive MaxReact Drive System"
+          }
+        },
+        "collection_circle_HFwqiD": {
+          "type": "collection-circle",
+          "settings": {
+            "collection_image": "shopify://shop_images/Bowflex8.5J_2.png",
+            "collection_text": "Plenty of runway 20\"W x 60\" L running path"
+          }
+        },
+        "collection_circle_GceT4N": {
+          "type": "collection-circle",
+          "settings": {
+            "collection_image": "shopify://shop_images/Bowflex8.5J_3.png",
+            "collection_text": "Your next peak is just ahead  Up to 15% motorised incline"
+          }
+        },
+        "collection_circle_H9Exnf": {
+          "type": "collection-circle",
+          "disabled": true,
+          "settings": {
+            "collection_image": "shopify://shop_images/t6-feature-flex-zone-studio-2x.webp",
+            "collection_text": "Support and stability to go the distance  Flex Zone Deck System"
+          }
+        },
+        "collection_circle_NX6tQx": {
+          "type": "collection-circle",
+          "disabled": true,
+          "settings": {
+            "collection_image": "shopify://shop_images/t6-feature-media-shelf-swivel-2x.webp",
+            "collection_text": "Keep your phone or tablet in reach  Tllt the media shelf forward or back"
+          }
+        },
+        "collection_circle_MkJ3xp": {
+          "type": "collection-circle",
+          "settings": {
+            "collection_image": "shopify://shop_images/Bowflex8.5J_4.png",
+            "collection_text": "Stay hydrated evert tep of the way Water bottle holder"
+          }
+        },
+        "collection_circle_XaWJbT": {
+          "type": "collection-circle",
+          "settings": {
+            "collection_image": "shopify://shop_images/Bowflex8.5J_5.png",
+            "collection_text": "Undeniably cool."
+          }
+        }
+      },
+      "block_order": [
+        "collection_circle_WdgdYr",
+        "collection_circle_3PRirC",
+        "collection_circle_HFwqiD",
+        "collection_circle_GceT4N",
+        "collection_circle_H9Exnf",
+        "collection_circle_NX6tQx",
+        "collection_circle_MkJ3xp",
+        "collection_circle_XaWJbT"
+      ],
+      "name": "Key Features",
+      "settings": {
+        "section_heading": "Product Features",
+        "color_scheme": "",
+        "title": "Product Features",
+        "heading_size": "h1",
+        "padding_top": 32,
+        "padding_bottom": 36
+      }
+    },
+    "product_page_sections_nx3K7M": {
+      "type": "product-page-sections",
+      "blocks": {
+        "warranty_metric_FcVbGp": {
+          "type": "warranty_metric",
+          "settings": {
+            "label": "Frame & Motor",
+            "value": "Lifetime"
+          }
+        },
+        "warranty_metric_J4EyzN": {
+          "type": "warranty_metric",
+          "settings": {
+            "label": "Mechanical Parts",
+            "value": "3 Years"
+          }
+        },
+        "warranty_metric_HA7xjJ": {
+          "type": "warranty_metric",
+          "settings": {
+            "label": "Labour",
+            "value": "1 Year"
+          }
+        },
+        "specs_accordion_6tdp4b": {
+          "type": "specs_accordion",
+          "settings": {
+            "title": "<b>Console</b>",
+            "content": "<p><strong>Bluetooth Hardware</strong> - BT 4.0LE</p><p><strong>Bluetooth Capabilities</strong> - FTMS, Speakers and Heart Rate</p><p><strong>Bluetooth FTMS App Compatible</strong> - Yes</p><p><strong>Apple + Samsung Watch Compatible</strong> - Yes</p><p><strong>Heart Rate</strong> - Hand contact grips and Bluetooth heart rate strap compatible</p><p><strong>Bluetooth Media Control Keys </strong>- Volume</p><p><strong>Display Type</strong> - 8.8” x 2” / 224 mm x 53 mm black mask LCD with white backlight + 4 white LED windows</p><p><strong>Display Feedback</strong> - Time, Distance, Calories, Speed, Incline, Pace, Laps, Heart Rate, Split Timer, Segment Time</p><p><strong>Programs</strong> - Manual, Muscle Toner, Calorie Goal, Distance Goal, Rolling Hills, Intervals, Strength Builder, Target Heart Rate</p><p><strong>Energy Saver </strong>- Yes</p><p><strong>One-Button Quick Start</strong> - Yes</p><p><strong>Pause Button</strong> - Yes</p><p><strong>Button Type </strong>- Membrane</p><p><strong>Incline Range</strong> - 0–12%</p><p><strong>Speed Range</strong> - 0.5–12 mph</p><p><strong>Storage Features</strong> - Mobile Device Holder, Accessory Tray</p><p><strong>Reading Rack</strong> - Integrated into console</p><p><strong>Personal Fan</strong> - 1 (3 speed)</p><p><strong>Speakers</strong> - 3 Watt Stereo Speakers</p><p><strong>USB Port</strong> - Yes (USB A)</p>"
+          }
+        },
+        "specs_accordion_F4Xeg8": {
+          "type": "specs_accordion",
+          "settings": {
+            "title": "<b>Deck</b>",
+            "content": "<p><strong>Cushion System </strong>- Supportive 3-zone deck cushioning</p><p><strong>Deck Thickness</strong> - 0.75” / 18 mm</p><p><strong>Running Area</strong> - 20” x 60” / 50.8 cm x 152.4 cm</p><p><strong>Running Belt Thickness</strong> - 1.6 mm</p><p><strong>Step On Height </strong>- 8.7” / 22 cm</p><p><strong>Lubrication System</strong> - Silicone Oil</p><p><strong>Reversible Deck</strong> - No<br/><br/></p>"
+          }
+        },
+        "specs_accordion_PcPNUb": {
+          "type": "specs_accordion",
+          "settings": {
+            "title": "<b>Frame<b></b></b>",
+            "content": "<p><strong>Folding</strong>- Yes (Fold on Pin)</p><p><strong>Fold Flat</strong> - No</p><p><strong>Transport Wheels</strong> - 2</p><p><strong>Gas Shock</strong> - Yes</p><p><strong>Front Roller Size</strong> - 60 mm</p><p><strong>Rear Roller Size</strong> - 46 mm</p><p><strong>Max User Weight</strong> - 325 lbs. / 147.4 kg</p><p><strong>Cross Bar</strong> - No</p><p><strong>Side Rail Material</strong> - ABS</p><p><strong>End Cap Material </strong>- ABS</p>"
+          }
+        },
+        "specs_accordion_XMxhxK": {
+          "type": "specs_accordion",
+          "settings": {
+            "title": "<b>Technical Specs</b>",
+            "content": "<p><strong>Assembled Dimensions</strong> - 76” L x 35” W x 71” H / 196 x 89.7 x 181 cm</p><p><strong>Assembled Weight </strong>- 234 lbs. / 106 kg</p><p><strong>Shipping Weight</strong> - 293 lbs. / 133 kg</p><p><strong>Shipping Dimensions </strong>- 81.5” x 29.9” x 13.4” / 207 x 76 x 34 cm</p><p><strong>Electrical Requirements</strong> - AC 110 volt and 220 volt 50/60 Hz (USA and Europe)<br/><br/></p>"
+          }
+        },
+        "spec_metric_4L9LQd": {
+          "type": "spec_metric",
+          "settings": {
+            "label": "Dimensions (in)",
+            "value": "76\" L x 35\" W x 71\" H"
+          }
+        },
+        "spec_metric_xbNqc3": {
+          "type": "spec_metric",
+          "settings": {
+            "label": "Dimensions (cm)",
+            "value": "193 x 86.6 x 144.7"
+          }
+        },
+        "spec_metric_QfYXfy": {
+          "type": "spec_metric",
+          "settings": {
+            "label": "Stowed Dimensions (in)",
+            "value": "44\" L x 35\" W x 71\" H"
+          }
+        },
+        "spec_metric_WaC3Nd": {
+          "type": "spec_metric",
+          "settings": {
+            "label": "Stowed Dimensions (cm)",
+            "value": "121.9 x 86.4 x 157.5"
+          }
+        },
+        "spec_metric_cwVnMQ": {
+          "type": "spec_metric",
+          "settings": {
+            "label": "Minimum Ceiling Height",
+            "value": "User height + 20.75\" / 52.7cm"
+          }
+        },
+        "spec_metric_mmNyxw": {
+          "type": "spec_metric",
+          "settings": {
+            "label": "Console",
+            "value": "Dual LED/LCD"
+          }
+        },
+        "spec_metric_Yt3Vdq": {
+          "type": "spec_metric",
+          "settings": {
+            "label": "Product Weight",
+            "value": "233.7 lbs (84.8 kg)"
+          }
+        },
+        "spec_metric_9xP8KC": {
+          "type": "spec_metric",
+          "settings": {
+            "label": "Maximum User Weight",
+            "value": "325 lbs (147 kg)"
+          }
+        },
+        "jrny_slide_CUn9NW": {
+          "type": "jrny_slide",
+          "settings": {
+            "image": "shopify://shop_images/t16-jrny-coaching-bg-1x.jpg",
+            "title": "Every day is different.",
+            "text": "Get a custom set of adaptive workouts to freshen up your routine."
+          }
+        },
+        "jrny_slide_iGPaXL": {
+          "type": "jrny_slide",
+          "settings": {
+            "image": "shopify://shop_images/t16-jrny-coaching-bg-1x.jpg",
+            "title": "Every day is different.",
+            "text": "Get a custom set of adaptive workouts to freshen up your routine."
+          }
+        },
+        "jrny_slide_VNnwkh": {
+          "type": "jrny_slide",
+          "settings": {
+            "image": "shopify://shop_images/t16-jrny-coaching-bg-1x.jpg",
+            "title": "Every day is different.",
+            "text": "Get a custom set of adaptive workouts to freshen up your routine."
+          }
+        },
+        "jrny_slide_KbWjJT": {
+          "type": "jrny_slide",
+          "settings": {
+            "image": "shopify://shop_images/t16-jrny-coaching-bg-1x.jpg",
+            "title": "Every day is different.",
+            "text": "Get a custom set of adaptive workouts to freshen up your routine."
+          }
+        },
+        "jrny_slide_A3dWc9": {
+          "type": "jrny_slide",
+          "settings": {
+            "image": "shopify://shop_images/t16-jrny-coaching-bg-1x.jpg",
+            "title": "Every day is different.",
+            "text": "Get a custom set of adaptive workouts to freshen up your routine."
+          }
+        }
+      },
+      "block_order": [
+        "warranty_metric_FcVbGp",
+        "warranty_metric_J4EyzN",
+        "warranty_metric_HA7xjJ",
+        "specs_accordion_6tdp4b",
+        "specs_accordion_F4Xeg8",
+        "specs_accordion_PcPNUb",
+        "specs_accordion_XMxhxK",
+        "spec_metric_4L9LQd",
+        "spec_metric_xbNqc3",
+        "spec_metric_QfYXfy",
+        "spec_metric_WaC3Nd",
+        "spec_metric_cwVnMQ",
+        "spec_metric_mmNyxw",
+        "spec_metric_Yt3Vdq",
+        "spec_metric_9xP8KC",
+        "jrny_slide_CUn9NW",
+        "jrny_slide_iGPaXL",
+        "jrny_slide_VNnwkh",
+        "jrny_slide_KbWjJT",
+        "jrny_slide_A3dWc9"
+      ],
+      "settings": {
+        "dark_color_scheme": "scheme-1",
+        "light_color_scheme": "scheme-1",
+        "show_training": false,
+        "training_position": 1,
+        "training_heading": "The ultimate training experience",
+        "training_subheading": "Watch videos below to learn more.",
+        "fallback_training_video_url": "",
+        "fallback_training_tab_title_1": "Explore entertainment",
+        "fallback_training_tab_title_2": "Go further with JRNY",
+        "show_fitness": true,
+        "fitness_position": 2,
+        "fitness_heading": "",
+        "fitness_subheading": "",
+        "fitness_left_image": "shopify://shop_images/BFX_T8.5J_MELINDA_DEN_UPSTAIRS_2624_1_1.jpg",
+        "fitness_left_title": "MaxReact Drive System",
+        "fitness_left_text": "The ultra-responsive Drive System lets you change speed and incline rapidly—perfect for fast-paced interval training.",
+        "fitness_left_pill_1": "Apple Watch",
+        "fitness_left_pill_2": "Galaxy Watch",
+        "fitness_right_image": "shopify://shop_images/BFX_T8.5J_MELINDA_DEN_UPSTAIRS_3215_1.jpg",
+        "fitness_right_title": "Flex Zone Deck Cushioning",
+        "fitness_right_text": "Go ahead, pick up the pace. With a 20\" wide running area and Flex Zone cushioning, you have the support and stability you need to go the distance.",
+        "show_specs": true,
+        "specs_position": 3,
+        "specs_heading": "Specs & Warranty",
+        "specs_subheading": "Equipment dimensions and warranty details.",
+        "spec_image_1": "shopify://shop_images/dimensions-t6-bg-xscreen-2x.webp",
+        "spec_image_1_alt": "Open treadmill dimensions",
+        "spec_image_2": "shopify://shop_images/dimensions-folded-t6-bg-2x.webp",
+        "spec_image_2_alt": "Folded treadmill dimensions",
+        "specs_group_heading": "Specs",
+        "warranty_group_heading": "Warranty",
+        "additional_specs_heading": "Additional Specs",
+        "show_membership": false,
+        "membership_position": 4,
+        "membership_heading": "The JRNY adaptive fitness membership keeps you going.",
+        "membership_subheading": "Dummy carousel cards for membership benefits."
+      }
+    },
+    "product_page_sections_7DntQy": {
+      "type": "product-page-sections",
+      "blocks": {
+        "jrny_slide_JrPyYw": {
+          "type": "jrny_slide",
+          "settings": {
+            "image": "shopify://shop_images/t6-jrny-radio-bg-2x.webp",
+            "title": "Find a playlist to power your P.R.",
+            "text": "An ever-fresh line up on JRNY Radio means you can always find a musical mood boost."
+          }
+        },
+        "jrny_slide_XrDExw": {
+          "type": "jrny_slide",
+          "settings": {
+            "image": "shopify://shop_images/t6-jrny-workout-selection-bg-2x.webp",
+            "title": "Every day is different.",
+            "text": "Get a custom set of adaptive workouts to freshen up your routine."
+          }
+        },
+        "jrny_slide_bqG9CR": {
+          "type": "jrny_slide",
+          "settings": {
+            "image": "shopify://shop_images/t6-jrny-coaching-bg-2x.webp",
+            "title": "Go ahead, pick up the pace",
+            "text": "Your virtual coach gives you real-time encouragement and guidance for every run."
+          }
+        },
+        "jrny_slide_eVWJUN": {
+          "type": "jrny_slide",
+          "settings": {
+            "image": "shopify://shop_images/t16-jrny-coaching-bg-1x.jpg",
+            "title": "Roam if you want to",
+            "text": "200+ Explore the World routes gives you a beautiful new place to run each day."
+          }
+        },
+        "jrny_slide_3Bci8p": {
+          "type": "jrny_slide",
+          "settings": {
+            "image": "shopify://shop_images/t9-jrny-whole-body-workouts-bg-2x.webp",
+            "title": "When you want a change of pace",
+            "text": "Work in some whole-body movement with yoa, Pilates and strenth training classes."
+          }
+        },
+        "jrny_slide_tpRRww": {
+          "type": "jrny_slide",
+          "settings": {
+            "image": "shopify://shop_images/t6-jrny-metrics-tracking-bg-2x.webp",
+            "title": "Celebrate your success",
+            "text": "Data and performance tracking shows you just how far you've come"
+          }
+        }
+      },
+      "block_order": [
+        "jrny_slide_JrPyYw",
+        "jrny_slide_XrDExw",
+        "jrny_slide_bqG9CR",
+        "jrny_slide_eVWJUN",
+        "jrny_slide_3Bci8p",
+        "jrny_slide_tpRRww"
+      ],
+      "settings": {
+        "dark_color_scheme": "scheme-1",
+        "light_color_scheme": "scheme-1",
+        "show_training": false,
+        "training_position": 1,
+        "training_heading": "The ultimate training experience",
+        "training_subheading": "Watch videos below to learn more.",
+        "fallback_training_video_url": "",
+        "fallback_training_tab_title_1": "Explore entertainment",
+        "fallback_training_tab_title_2": "Go further with JRNY",
+        "show_fitness": false,
+        "fitness_position": 2,
+        "fitness_heading": "All the essentials for your run, plus total fitness app freedom",
+        "fitness_subheading": "",
+        "fitness_left_image": "shopify://shop_images/t6-01-watch-2x.webp",
+        "fitness_left_title": "Connect to your watch",
+        "fitness_left_text": "Connect to Apple Watch or Samsung Galaxy Watch for a seamless way to keep your metrics in sync.",
+        "fitness_left_pill_1": "Apple Watch",
+        "fitness_left_pill_2": "Galaxy Watch",
+        "fitness_right_image": "shopify://shop_images/t6-02-app-2x.webp",
+        "fitness_right_title": "Fitness App Flexibility",
+        "fitness_right_text": "Keep your options open.  Train with popular fitness apps including JRNY, Peloton and Zwift right from your phone or tablet.",
+        "show_specs": false,
+        "specs_position": 3,
+        "specs_heading": "Specs & Warranty",
+        "specs_subheading": "Equipment dimensions and warranty details.",
+        "spec_image_1": "shopify://shop_images/dimensions-folded-t16-bg-2x.webp",
+        "spec_image_1_alt": "Open treadmill dimensions",
+        "spec_image_2": "shopify://shop_images/dimensions-folded-t16-bg-2x.webp",
+        "spec_image_2_alt": "Folded treadmill dimensions",
+        "specs_group_heading": "Specs",
+        "warranty_group_heading": "Warranty",
+        "additional_specs_heading": "Additional Specs",
+        "show_membership": true,
+        "membership_position": 4,
+        "membership_heading": "The JRNY adaptive fitness membership keeps you going.",
+        "membership_subheading": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "related-products",
+    "key_features_wQ7gFE",
+    "product_page_sections_nx3K7M",
+    "product_page_sections_7DntQy"
+  ]
+}
