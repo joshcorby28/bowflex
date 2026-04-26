@@ -233,56 +233,56 @@
           "type": "spec_metric",
           "settings": {
             "label": "Dimensions (in)",
-            "value": "76\" L x 35\" W x 71\" H"
+            "value": "85\" L x 39.6\" W x 70\" H"
           }
         },
         "spec_metric_xbNqc3": {
           "type": "spec_metric",
           "settings": {
             "label": "Dimensions (cm)",
-            "value": "193 x 86.6 x 144.7"
+            "value": "215.8 x 100.5 x 177.7 cm"
           }
         },
         "spec_metric_QfYXfy": {
           "type": "spec_metric",
           "settings": {
             "label": "Stowed Dimensions (in)",
-            "value": "44\" L x 35\" W x 71\" H"
+            "value": "44.5\" L x 39.6\" W x 70\" H"
           }
         },
         "spec_metric_WaC3Nd": {
           "type": "spec_metric",
           "settings": {
             "label": "Stowed Dimensions (cm)",
-            "value": "121.9 x 86.4 x 157.5"
+            "value": "113 x 100.5 x 177.7 cm"
           }
         },
         "spec_metric_cwVnMQ": {
           "type": "spec_metric",
           "settings": {
             "label": "Minimum Ceiling Height",
-            "value": "User height + 20.75\" / 52.7cm"
+            "value": "User height + 16.1\" / 41cm"
           }
         },
         "spec_metric_mmNyxw": {
           "type": "spec_metric",
           "settings": {
             "label": "Console",
-            "value": "Dual LED/LCD"
+            "value": "Console w/ HD Touchscreen 56cm"
           }
         },
         "spec_metric_Yt3Vdq": {
           "type": "spec_metric",
           "settings": {
             "label": "Product Weight",
-            "value": "233.7 lbs (84.8 kg)"
+            "value": "336 lbs (152.4 kg)"
           }
         },
         "spec_metric_9xP8KC": {
           "type": "spec_metric",
           "settings": {
             "label": "Maximum User Weight",
-            "value": "325 lbs (147 kg)"
+            "value": "400 lbs (181.4 kg)"
           }
         },
         "jrny_slide_CUn9NW": {
@@ -358,7 +358,7 @@
         "fallback_training_video_url": "",
         "fallback_training_tab_title_1": "Explore entertainment",
         "fallback_training_tab_title_2": "Go further with JRNY",
-        "show_fitness": true,
+        "show_fitness": false,
         "fitness_position": 2,
         "fitness_heading": "",
         "fitness_subheading": "",
@@ -374,9 +374,9 @@
         "specs_position": 3,
         "specs_heading": "Specs & Warranty",
         "specs_subheading": "Equipment dimensions and warranty details.",
-        "spec_image_1": "shopify://shop_images/dimensions-t6-bg-xscreen-2x.webp",
+        "spec_image_1": "shopify://shop_images/dimensions-t22-bg-2x-cm_a8189ec7-4fe5-430a-b52a-31e49035cc3f.webp",
         "spec_image_1_alt": "Open treadmill dimensions",
-        "spec_image_2": "shopify://shop_images/dimensions-folded-t6-bg-2x.webp",
+        "spec_image_2": "shopify://shop_images/dimensions-folded-t22-bg-2x-cm_b6e82fb1-4dc3-4091-b77a-5a5e57c87349.webp",
         "spec_image_2_alt": "Folded treadmill dimensions",
         "specs_group_heading": "Specs",
         "warranty_group_heading": "Warranty",
