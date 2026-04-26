@@ -180,6 +180,13 @@
     "product_page_sections_nx3K7M": {
       "type": "product-page-sections",
       "blocks": {
+        "specs_accordion_nPWR4T": {
+          "type": "specs_accordion",
+          "settings": {
+            "title": "",
+            "content": ""
+          }
+        },
         "warranty_metric_FcVbGp": {
           "type": "warranty_metric",
           "settings": {
@@ -199,34 +206,6 @@
           "settings": {
             "label": "Labour",
             "value": "1 Year"
-          }
-        },
-        "specs_accordion_6tdp4b": {
-          "type": "specs_accordion",
-          "settings": {
-            "title": "<b>Console</b>",
-            "content": "<p><strong>Bluetooth Hardware</strong> - BT 4.0LE</p><p><strong>Bluetooth Capabilities</strong> - FTMS, Speakers and Heart Rate</p><p><strong>Bluetooth FTMS App Compatible</strong> - Yes</p><p><strong>Apple + Samsung Watch Compatible</strong> - Yes</p><p><strong>Heart Rate</strong> - Hand contact grips and Bluetooth heart rate strap compatible</p><p><strong>Bluetooth Media Control Keys </strong>- Volume</p><p><strong>Display Type</strong> - 8.8” x 2” / 224 mm x 53 mm black mask LCD with white backlight + 4 white LED windows</p><p><strong>Display Feedback</strong> - Time, Distance, Calories, Speed, Incline, Pace, Laps, Heart Rate, Split Timer, Segment Time</p><p><strong>Programs</strong> - Manual, Muscle Toner, Calorie Goal, Distance Goal, Rolling Hills, Intervals, Strength Builder, Target Heart Rate</p><p><strong>Energy Saver </strong>- Yes</p><p><strong>One-Button Quick Start</strong> - Yes</p><p><strong>Pause Button</strong> - Yes</p><p><strong>Button Type </strong>- Membrane</p><p><strong>Incline Range</strong> - 0–12%</p><p><strong>Speed Range</strong> - 0.5–12 mph</p><p><strong>Storage Features</strong> - Mobile Device Holder, Accessory Tray</p><p><strong>Reading Rack</strong> - Integrated into console</p><p><strong>Personal Fan</strong> - 1 (3 speed)</p><p><strong>Speakers</strong> - 3 Watt Stereo Speakers</p><p><strong>USB Port</strong> - Yes (USB A)</p>"
-          }
-        },
-        "specs_accordion_F4Xeg8": {
-          "type": "specs_accordion",
-          "settings": {
-            "title": "<b>Deck</b>",
-            "content": "<p><strong>Cushion System </strong>- Supportive 3-zone deck cushioning</p><p><strong>Deck Thickness</strong> - 0.75” / 18 mm</p><p><strong>Running Area</strong> - 20” x 60” / 50.8 cm x 152.4 cm</p><p><strong>Running Belt Thickness</strong> - 1.6 mm</p><p><strong>Step On Height </strong>- 8.7” / 22 cm</p><p><strong>Lubrication System</strong> - Silicone Oil</p><p><strong>Reversible Deck</strong> - No<br/><br/></p>"
-          }
-        },
-        "specs_accordion_PcPNUb": {
-          "type": "specs_accordion",
-          "settings": {
-            "title": "<b>Frame<b></b></b>",
-            "content": "<p><strong>Folding</strong>- Yes (Fold on Pin)</p><p><strong>Fold Flat</strong> - No</p><p><strong>Transport Wheels</strong> - 2</p><p><strong>Gas Shock</strong> - Yes</p><p><strong>Front Roller Size</strong> - 60 mm</p><p><strong>Rear Roller Size</strong> - 46 mm</p><p><strong>Max User Weight</strong> - 325 lbs. / 147.4 kg</p><p><strong>Cross Bar</strong> - No</p><p><strong>Side Rail Material</strong> - ABS</p><p><strong>End Cap Material </strong>- ABS</p>"
-          }
-        },
-        "specs_accordion_XMxhxK": {
-          "type": "specs_accordion",
-          "settings": {
-            "title": "<b>Technical Specs</b>",
-            "content": "<p><strong>Assembled Dimensions</strong> - 76” L x 35” W x 71” H / 196 x 89.7 x 181 cm</p><p><strong>Assembled Weight </strong>- 234 lbs. / 106 kg</p><p><strong>Shipping Weight</strong> - 293 lbs. / 133 kg</p><p><strong>Shipping Dimensions </strong>- 81.5” x 29.9” x 13.4” / 207 x 76 x 34 cm</p><p><strong>Electrical Requirements</strong> - AC 110 volt and 220 volt 50/60 Hz (USA and Europe)<br/><br/></p>"
           }
         },
         "spec_metric_4L9LQd": {
@@ -327,13 +306,10 @@
         }
       },
       "block_order": [
+        "specs_accordion_nPWR4T",
         "warranty_metric_FcVbGp",
         "warranty_metric_J4EyzN",
         "warranty_metric_HA7xjJ",
-        "specs_accordion_6tdp4b",
-        "specs_accordion_F4Xeg8",
-        "specs_accordion_PcPNUb",
-        "specs_accordion_XMxhxK",
         "spec_metric_4L9LQd",
         "spec_metric_xbNqc3",
         "spec_metric_QfYXfy",
@@ -380,7 +356,7 @@
         "spec_image_2_alt": "Folded treadmill dimensions",
         "specs_group_heading": "Specs",
         "warranty_group_heading": "Warranty",
-        "additional_specs_heading": "Additional Specs",
+        "additional_specs_heading": "",
         "show_membership": false,
         "membership_position": 4,
         "membership_heading": "The JRNY adaptive fitness membership keeps you going.",
