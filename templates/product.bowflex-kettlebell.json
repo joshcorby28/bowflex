@@ -122,11 +122,18 @@
             "collection_text": "Selection dials easily take you from one exercise to the next"
           }
         },
+        "collection_circle_AixGD4": {
+          "type": "collection-circle",
+          "disabled": true,
+          "settings": {
+            "collection_text": ""
+          }
+        },
         "collection_circle_U87gYE": {
           "type": "collection-circle",
           "settings": {
             "collection_image": "shopify://shop_images/Master_Bedroom_840_Kettlebell_Devin_03710.jpg",
-            "collection_text": ""
+            "collection_text": "On demand workouts available with the JRNY app"
           }
         },
         "collection_circle_HFwqiD": {
@@ -188,6 +195,7 @@
       "block_order": [
         "collection_circle_WdgdYr",
         "collection_circle_3PRirC",
+        "collection_circle_AixGD4",
         "collection_circle_U87gYE",
         "collection_circle_HFwqiD",
         "collection_circle_GceT4N",
