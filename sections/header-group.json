@@ -45,7 +45,7 @@
             "product_5": "bowflex-max-trainer-m6i",
             "cta_text": "Shop Sale",
             "cta_url": "shopify://collections/sale",
-            "hide_compare_link": false
+            "hide_compare_link": true
           }
         },
         "mega_menu_item_wKpfhg": {
@@ -59,7 +59,7 @@
             "product_5": "",
             "cta_text": "Shop Accessories",
             "cta_url": "shopify://collections/accessories-parts",
-            "hide_compare_link": false
+            "hide_compare_link": true
           }
         },
         "mega_menu_item_AxjBzf": {
