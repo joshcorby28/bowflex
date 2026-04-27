@@ -112,7 +112,7 @@
           "type": "collection-circle",
           "settings": {
             "collection_image": "shopify://shop_images/1090i.png",
-            "collection_text": "Ready for your next reps.  <br>Selection dials easily take you from one exercise to the next."
+            "collection_text": "Ready for your next reps.  Selection dials easily take you from one exercise to the next."
           }
         },
         "collection_circle_WdgdYr": {
@@ -126,7 +126,7 @@
           "type": "collection-circle",
           "settings": {
             "collection_image": "shopify://shop_images/1090i_2.png",
-            "collection_text": "Always close at hand.  Storage trays keep your weights organised and off the floor."
+            "collection_text": "Always close at hand.  Storage trays keep your weights organised"
           }
         },
         "collection_circle_GceT4N": {
