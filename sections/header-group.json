@@ -73,7 +73,7 @@
             "product_5": "",
             "cta_text": "Shop Weights",
             "cta_url": "shopify://collections/weights-benches",
-            "hide_compare_link": true
+            "hide_compare_link": false
           }
         },
         "mega_menu_item_JT3fqL": {
