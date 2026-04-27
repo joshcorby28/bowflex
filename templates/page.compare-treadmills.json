@@ -20,30 +20,30 @@
     "compare_products_KMUYGK": {
       "type": "compare-products",
       "blocks": {
-        "accordion_VztMkM": {
-          "type": "accordion",
-          "settings": {
-            "title": "JRNY for Treadmills"
-          }
-        },
-        "accordion_row_nnCeGj": {
+        "accordion_row_Y84YMj": {
           "type": "accordion_row",
           "settings": {
-            "accordion_index": 2,
-            "row_heading": "JRNY Features",
-            "product_1_content": "Bluetooth\niOS compatible\nAndroid compatible\nUSB charging port\nWi-Fi",
-            "product_2_content": "Bluetooth\niOS compatible\nAndroid compatible\nUSB charging port",
-            "product_3_content": "Bluetooth\niOS compatible\nAndroid compatible\nUSB charging port\nWi-Fi",
+            "accordion_index": 1,
+            "row_heading": "Display",
+            "product_1_content": "",
+            "product_2_content": "",
+            "product_3_content": "",
             "product_4_content": "",
             "product_5_content": "",
             "product_6_content": ""
+          }
+        },
+        "accordion_VztMkM": {
+          "type": "accordion",
+          "settings": {
+            "title": "Product Details"
           }
         },
         "accordion_row_yrwgdw": {
           "type": "accordion_row",
           "settings": {
             "accordion_index": 1,
-            "row_heading": "Streaming Entertainment",
+            "row_heading": "",
             "product_1_content": "Experienced through the JRNY App for phone or tablet.\nJRNY App Membership recommended\n\nIndividualized adaptive workouts\nExplore the World\nOn-demand classes\nReal-time coaching\nCurated music\nTracking",
             "product_2_content": "Experienced through the JRNY App for phone or tablet.\nJRNY App Membership recommended\n\nIndividualized adaptive workouts\nExplore the World\nOn-demand classes\nReal-time coaching\nCurated music\nTracking",
             "product_3_content": "Experienced through the JRNY App for phone or tablet.\nJRNY App Membership recommended\n\nIndividualized adaptive workouts\nExplore the World\nOn-demand classes\nReal-time coaching\nCurated music\nTracking",
@@ -52,8 +52,22 @@
             "product_6_content": ""
           }
         },
+        "accordion_row_nnCeGj": {
+          "type": "accordion_row",
+          "settings": {
+            "accordion_index": 2,
+            "row_heading": "Connectivity",
+            "product_1_content": "Bluetooth\niOS compatible\nAndroid compatible\nUSB charging port\nWi-Fi",
+            "product_2_content": "Bluetooth\niOS compatible\nAndroid compatible\nUSB charging port",
+            "product_3_content": "Bluetooth\niOS compatible\nAndroid compatible\nUSB charging port\nWi-Fi",
+            "product_4_content": "",
+            "product_5_content": "",
+            "product_6_content": ""
+          }
+        },
         "accordion_k6erfa": {
           "type": "accordion",
+          "disabled": true,
           "settings": {
             "title": "Product Details"
           }
@@ -62,10 +76,10 @@
           "type": "accordion_row",
           "settings": {
             "accordion_index": 1,
-            "row_heading": "Connectivity",
-            "product_1_content": "Individualized adaptive workouts\nExplore the World\nOn-demand classes\nReal-time coaching\nCurated music\nTracking",
-            "product_2_content": "Individualized adaptive workouts\nExplore the World\nOn-demand classes\nReal-time coaching\nCurated music\nTracking",
-            "product_3_content": "Individualized adaptive workouts\nExplore the World\nOn-demand classes\nReal-time coaching\nCurated music\nTracking",
+            "row_heading": "Displayed Metrics",
+            "product_1_content": "Time Elapsed\nTime Goal\nTime Remaining\nClock\nMiles / Kilometers\nRPM\nCurrent Speed (MPH/KPH)\nPrevious Speed (MPH/KPH)\nPace\nAverage Pace\nHeart Rate\nPeak Heart Rate\nCalories\nCalories Per Hour\nWatts\nMETS\nElevation\nIncline\nPrevious Incline",
+            "product_2_content": "Time\nSpeed\nIncline\nDistance\nCalories\nHeart rate\nSplit Time\nPace\nLaps\nWorkout Program",
+            "product_3_content": "Time\nSpeed\nIncline\nDistance\nCalories\nHeart rate\nSplit Time\nPace\nLaps\nSegment Time\nWorkout Program",
             "product_4_content": "",
             "product_5_content": "",
             "product_6_content": ""
@@ -75,10 +89,23 @@
           "type": "accordion_row",
           "settings": {
             "accordion_index": 1,
-            "row_heading": "Displayed Features",
-            "product_1_content": "Time Elapsed\nTime Goal\nTime Remaining\nClock\nMiles / Kilometers\nRPM\nCurrent Speed (MPH/KPH)\nPrevious Speed (MPH/KPH)\nPace\nAverage Pace\nHeart Rate\nPeak Heart Rate\nCalories\nCalories Per Hour\nWatts\nMETS\nElevation\nIncline\nPrevious Incline",
-            "product_2_content": "Time Elapsed\nTime Goal\nTime Remaining\nClock\nMiles / Kilometers\nRPM\nCurrent Speed (MPH/KPH)\nPrevious Speed (MPH/KPH)\nPace\nAverage Pace\nHeart Rate\nPeak Heart Rate\nCalories\nCalories Per Hour\nWatts\nMETS\nElevation\nIncline\nPrevious Incline",
-            "product_3_content": "Time Elapsed\nTime Goal\nTime Remaining\nClock\nMiles / Kilometers\nRPM\nCurrent Speed (MPH/KPH)\nPrevious Speed (MPH/KPH)\nPace\nAverage Pace\nHeart Rate\nPeak Heart Rate\nCalories\nCalories Per Hour\nWatts\nMETS\nElevation\nIncline\nPrevious Incline",
+            "row_heading": "Connectivity",
+            "product_1_content": "Bluetooth\niOS compatible\nAndroid compatible\nUSB charging port\nWi-Fi",
+            "product_2_content": "Bluetooth\niOS compatible\nAndroid compatible\nUSB charging port\nWi-Fi",
+            "product_3_content": "Bluetooth\niOS compatible\nAndroid compatible\nUSB charging port\nWi-Fi",
+            "product_4_content": "",
+            "product_5_content": "",
+            "product_6_content": ""
+          }
+        },
+        "accordion_row_xLe9YL": {
+          "type": "accordion_row",
+          "settings": {
+            "accordion_index": 1,
+            "row_heading": "Additional Features",
+            "product_1_content": "Water bottle holder\nTransport wheels\nBuilt-in Bluetooth speakers\nMedia shelf / tablet holder\nBuilt-in fan",
+            "product_2_content": "Water bottle holder\nTransport wheels\nBuilt-in Bluetooth speakers\nMedia shelf / tablet holder\nBuilt-in fan",
+            "product_3_content": "Water bottle holder\nTransport wheels\nBuilt-in Bluetooth speakers\nMedia shelf / tablet holder\nBuilt-in fan",
             "product_4_content": "",
             "product_5_content": "",
             "product_6_content": ""
@@ -86,6 +113,7 @@
         },
         "accordion_RXngtT": {
           "type": "accordion",
+          "disabled": true,
           "settings": {
             "title": "Specs"
           }
@@ -144,12 +172,14 @@
         }
       },
       "block_order": [
+        "accordion_row_Y84YMj",
         "accordion_VztMkM",
-        "accordion_row_nnCeGj",
         "accordion_row_yrwgdw",
+        "accordion_row_nnCeGj",
         "accordion_k6erfa",
         "accordion_row_MNmYpR",
         "accordion_row_yeVcC3",
+        "accordion_row_xLe9YL",
         "accordion_RXngtT",
         "accordion_row_nTnPNQ",
         "overview_product_RCNTzB",
