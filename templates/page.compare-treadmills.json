@@ -44,9 +44,9 @@
           "settings": {
             "accordion_index": 1,
             "row_heading": "Streaming Entertainment",
-            "product_1_content": "JRNY Radio\nStreaming TV not available through the JRNY App.",
-            "product_2_content": "JRNY Radio\nStreaming TV not available through the JRNY App.",
-            "product_3_content": "JRNY Radio\nStreaming TV not available through the JRNY App.",
+            "product_1_content": "Experienced through the JRNY App for phone or tablet.\nJRNY App Membership recommended\n\nIndividualized adaptive workouts\nExplore the World\nOn-demand classes\nReal-time coaching\nCurated music\nTracking",
+            "product_2_content": "Experienced through the JRNY App for phone or tablet.\nJRNY App Membership recommended\n\nIndividualized adaptive workouts\nExplore the World\nOn-demand classes\nReal-time coaching\nCurated music\nTracking",
+            "product_3_content": "Experienced through the JRNY App for phone or tablet.\nJRNY App Membership recommended\n\nIndividualized adaptive workouts\nExplore the World\nOn-demand classes\nReal-time coaching\nCurated music\nTracking",
             "product_4_content": "",
             "product_5_content": "",
             "product_6_content": ""
@@ -107,20 +107,20 @@
           "type": "overview_product",
           "settings": {
             "image": "shopify://shop_images/t6-jrny-metrics-tracking-bg-2x.webp",
-            "video_url": "https://www.youtube.com/watch?v=-ahIiyjTRYk",
-            "feature_1": "16” HD touchscreen",
-            "feature_2": "Connect to Apple Watch® with Apple GymKit™ technology2",
-            "feature_3": "Train with Peloton®, and Zwift® from a phone or tablet3",
-            "feature_4": "Access JRNY, Netflix, Prime Video, Spotify, and more, from your touchscreen3",
-            "feature_5": "JRNY experienced through app on HD touchscreen",
-            "feature_6": "22\" W x 60\" L running path"
+            "video_url": "",
+            "feature_1": "Connect to Apple Watch® with Apple GymKit™ technology",
+            "feature_2": "JRNY experienced through app on phone or tablet",
+            "feature_3": "20\" W x 60\" L running path",
+            "feature_4": "Up to 15% incline",
+            "feature_5": "0 - 12 mph",
+            "feature_6": "Stowed Dimensions 44\" L x 35\" W x 71\" H(113 x 89.7 x 181 cm)"
           }
         },
         "overview_product_Nx8HKT": {
           "type": "overview_product",
           "settings": {
-            "image": "shopify://shop_images/t6-jrny-etw-bg-2x.webp",
-            "video_url": "https://www.youtube.com/watch?v=-ahIiyjTRYk",
+            "image": "shopify://shop_images/t9-jrny-etw-bg-2x.webp",
+            "video_url": "",
             "feature_1": "16” HD touchscreen",
             "feature_2": "Connect to Apple Watch® with Apple GymKit™ technology2",
             "feature_3": "Train with Peloton®, and Zwift® from a phone or tablet3",
@@ -132,8 +132,8 @@
         "overview_product_xXnCrf": {
           "type": "overview_product",
           "settings": {
-            "image": "shopify://shop_images/t6-jrny-workout-selection-bg-2x.webp",
-            "video_url": "https://www.youtube.com/watch?v=-ahIiyjTRYk",
+            "image": "shopify://shop_images/BFX_ATF_Treadmill_10_Feature_01_NoGraphic_1.jpg",
+            "video_url": "",
             "feature_1": "16” HD touchscreen",
             "feature_2": "Connect to Apple Watch® with Apple GymKit™ technology2",
             "feature_3": "Train with Peloton®, and Zwift® from a phone or tablet3",
