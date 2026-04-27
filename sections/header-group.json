@@ -38,8 +38,11 @@
           "type": "mega_menu_item",
           "settings": {
             "menu_handle": "sale",
-            "product_1": "bowflex-8-5j-treadmill",
-            "product_2": "bowflex-t56-treadmill",
+            "product_1": "bowflex-t6-folding-treadmill-smart-connected-running-machine-with-20-km-h-speed-15-incline-bluetooth-fitness-app-compatibility",
+            "product_2": "bowflex-t9-jrny-treadmill",
+            "product_3": "bowflex-552i-adjustable-dumbbell-pair",
+            "product_4": "bowflex-max-trainer-total-40",
+            "product_5": "bowflex-max-trainer-m6i",
             "cta_text": "Shop Sale",
             "cta_url": "shopify://collections/sale",
             "hide_compare_link": true
@@ -51,6 +54,9 @@
             "menu_handle": "accessories & parts",
             "product_1": "bowflex-heart-rate-strap",
             "product_2": "bowflex-stowable-bench-5-1s",
+            "product_3": "",
+            "product_4": "",
+            "product_5": "",
             "cta_text": "Shop Accessories",
             "cta_url": "shopify://collections/accessories-parts",
             "hide_compare_link": false
@@ -62,6 +68,9 @@
             "menu_handle": "weights & benches",
             "product_1": "bowflex-1090i-dumbbell-pair-with-bowflex-stand",
             "product_2": "bowflex-552i-adjustable-dumbbell-pair",
+            "product_3": "",
+            "product_4": "",
+            "product_5": "",
             "cta_text": "Shop Weights",
             "cta_url": "shopify://collections/weights-benches",
             "hide_compare_link": false
@@ -73,6 +82,9 @@
             "menu_handle": "ellipticals",
             "product_1": "bowflex-max-trainer-m6i",
             "product_2": "bowflex-max-trainer-total-40",
+            "product_3": "",
+            "product_4": "",
+            "product_5": "",
             "cta_text": "Shop Ellipticals",
             "cta_url": "shopify://collections/ellipticals",
             "hide_compare_link": false
@@ -84,6 +96,9 @@
             "menu_handle": "treadmills",
             "product_1": "bowflex-t9-jrny-treadmill",
             "product_2": "bowflex-t6-folding-treadmill-smart-connected-running-machine-with-20-km-h-speed-15-incline-bluetooth-fitness-app-compatibility",
+            "product_3": "",
+            "product_4": "",
+            "product_5": "",
             "cta_text": "Shop Treadmills",
             "cta_url": "shopify://collections/treadmills",
             "hide_compare_link": false
