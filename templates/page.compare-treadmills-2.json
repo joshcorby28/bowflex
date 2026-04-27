@@ -1,0 +1,233 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "compare_products_KMUYGK": {
+      "type": "compare-products",
+      "blocks": {
+        "accordion_row_Y84YMj": {
+          "type": "accordion_row",
+          "settings": {
+            "accordion_index": 1,
+            "row_heading": "Display",
+            "product_1_content": "",
+            "product_2_content": "",
+            "product_3_content": "",
+            "product_4_content": "",
+            "product_5_content": "",
+            "product_6_content": ""
+          }
+        },
+        "accordion_VztMkM": {
+          "type": "accordion",
+          "settings": {
+            "title": "Product Details"
+          }
+        },
+        "accordion_row_yrwgdw": {
+          "type": "accordion_row",
+          "settings": {
+            "accordion_index": 1,
+            "row_heading": "",
+            "product_1_content": "Experienced through the JRNY App for phone or tablet.\nJRNY App Membership recommended\n\nIndividualized adaptive workouts\nExplore the World\nOn-demand classes\nReal-time coaching\nCurated music\nTracking",
+            "product_2_content": "Experienced through the JRNY App for phone or tablet.\nJRNY App Membership recommended\n\nIndividualized adaptive workouts\nExplore the World\nOn-demand classes\nReal-time coaching\nCurated music\nTracking",
+            "product_3_content": "Experienced through the JRNY App for phone or tablet.\nJRNY App Membership recommended\n\nIndividualized adaptive workouts\nExplore the World\nOn-demand classes\nReal-time coaching\nCurated music\nTracking",
+            "product_4_content": "",
+            "product_5_content": "",
+            "product_6_content": ""
+          }
+        },
+        "accordion_row_nnCeGj": {
+          "type": "accordion_row",
+          "settings": {
+            "accordion_index": 2,
+            "row_heading": "Connectivity",
+            "product_1_content": "Bluetooth\niOS compatible\nAndroid compatible\nUSB charging port\nWi-Fi",
+            "product_2_content": "Bluetooth\niOS compatible\nAndroid compatible\nUSB charging port",
+            "product_3_content": "Bluetooth\niOS compatible\nAndroid compatible\nUSB charging port\nWi-Fi",
+            "product_4_content": "",
+            "product_5_content": "",
+            "product_6_content": ""
+          }
+        },
+        "accordion_k6erfa": {
+          "type": "accordion",
+          "disabled": true,
+          "settings": {
+            "title": "Product Details"
+          }
+        },
+        "accordion_row_MNmYpR": {
+          "type": "accordion_row",
+          "settings": {
+            "accordion_index": 1,
+            "row_heading": "Displayed Metrics",
+            "product_1_content": "Time Elapsed\nTime Goal\nTime Remaining\nClock\nMiles / Kilometers\nRPM\nCurrent Speed (MPH/KPH)\nPrevious Speed (MPH/KPH)\nPace\nAverage Pace\nHeart Rate\nPeak Heart Rate\nCalories\nCalories Per Hour\nWatts\nMETS\nElevation\nIncline\nPrevious Incline",
+            "product_2_content": "Time\nSpeed\nIncline\nDistance\nCalories\nHeart rate\nSplit Time\nPace\nLaps\nWorkout Program",
+            "product_3_content": "Time\nSpeed\nIncline\nDistance\nCalories\nHeart rate\nSplit Time\nPace\nLaps\nSegment Time\nWorkout Program",
+            "product_4_content": "",
+            "product_5_content": "",
+            "product_6_content": ""
+          }
+        },
+        "accordion_row_yeVcC3": {
+          "type": "accordion_row",
+          "settings": {
+            "accordion_index": 1,
+            "row_heading": "Connectivity",
+            "product_1_content": "Bluetooth\niOS compatible\nAndroid compatible\nUSB charging port\nWi-Fi",
+            "product_2_content": "Bluetooth\niOS compatible\nAndroid compatible\nUSB charging port\nWi-Fi",
+            "product_3_content": "Bluetooth\niOS compatible\nAndroid compatible\nUSB charging port\nWi-Fi",
+            "product_4_content": "",
+            "product_5_content": "",
+            "product_6_content": ""
+          }
+        },
+        "accordion_row_xLe9YL": {
+          "type": "accordion_row",
+          "settings": {
+            "accordion_index": 1,
+            "row_heading": "Additional Features",
+            "product_1_content": "Water bottle holder\nTransport wheels\nBuilt-in Bluetooth speakers\nMedia shelf / tablet holder\nBuilt-in fan",
+            "product_2_content": "Water bottle holder\nTransport wheels\nBuilt-in Bluetooth speakers\nMedia shelf / tablet holder\nBuilt-in fan",
+            "product_3_content": "Water bottle holder\nTransport wheels\nBuilt-in Bluetooth speakers\nMedia shelf / tablet holder\nBuilt-in fan",
+            "product_4_content": "",
+            "product_5_content": "",
+            "product_6_content": ""
+          }
+        },
+        "accordion_RXngtT": {
+          "type": "accordion",
+          "disabled": true,
+          "settings": {
+            "title": "Specs"
+          }
+        },
+        "accordion_row_nTnPNQ": {
+          "type": "accordion_row",
+          "settings": {
+            "accordion_index": 3,
+            "row_heading": "Specs",
+            "product_1_content": "77.2\" L x 37\" W x 67.6\" H\n\n(196 x 94 x 171.6 cm)",
+            "product_2_content": "77.2\" L x 37\" W x 67.6\" H\n\n(196 x 94 x 171.6 cm)",
+            "product_3_content": "77.2\" L x 37\" W x 67.6\" H\n\n(196 x 94 x 171.6 cm)",
+            "product_4_content": "",
+            "product_5_content": "",
+            "product_6_content": ""
+          }
+        },
+        "overview_product_RCNTzB": {
+          "type": "overview_product",
+          "settings": {
+            "image": "shopify://shop_images/t6-jrny-metrics-tracking-bg-2x.webp",
+            "video_url": "",
+            "feature_1": "Connect to Apple Watch® with Apple GymKit™ technology",
+            "feature_2": "JRNY experienced through app on phone or tablet",
+            "feature_3": "20\" W x 60\" L running path",
+            "feature_4": "Up to 15% incline",
+            "feature_5": "0 - 12 mph",
+            "feature_6": "Stowed Dimensions 44\" L x 35\" W x 71\" H(113 x 89.7 x 181 cm)"
+          }
+        },
+        "overview_product_Nx8HKT": {
+          "type": "overview_product",
+          "settings": {
+            "image": "shopify://shop_images/t9-jrny-etw-bg-2x.webp",
+            "video_url": "",
+            "feature_1": "High-contrast, color LCD console",
+            "feature_2": "Connect to Apple Watch® with Apple GymKit™ technology",
+            "feature_3": "JRNY experienced through app on phone or tablet",
+            "feature_4": "22\" W x 60\" L running path",
+            "feature_5": "Up to 15% incline",
+            "feature_6": "0 - 12 mph"
+          }
+        },
+        "overview_product_xXnCrf": {
+          "type": "overview_product",
+          "settings": {
+            "image": "shopify://shop_images/BFX_ATF_Treadmill_10_Feature_01_NoGraphic_1.jpg",
+            "video_url": "",
+            "feature_1": "10” HD adjustable touchscreen",
+            "feature_2": "Built in JRNY experience",
+            "feature_3": "-5% decline to 15% incline",
+            "feature_4": "Speeds of up to 12 mph",
+            "feature_5": "Comfort Tech Deck Cushioning",
+            "feature_6": "Bluetooth audio and heart rate tracking"
+          }
+        }
+      },
+      "block_order": [
+        "accordion_row_Y84YMj",
+        "accordion_VztMkM",
+        "accordion_row_yrwgdw",
+        "accordion_row_nnCeGj",
+        "accordion_k6erfa",
+        "accordion_row_MNmYpR",
+        "accordion_row_yeVcC3",
+        "accordion_row_xLe9YL",
+        "accordion_RXngtT",
+        "accordion_row_nTnPNQ",
+        "overview_product_RCNTzB",
+        "overview_product_Nx8HKT",
+        "overview_product_xXnCrf"
+      ],
+      "name": "Compare products",
+      "settings": {
+        "color_scheme": "",
+        "heading": "Compare Treadmills",
+        "subheading": "Compare our most popular treadmills",
+        "heading_alignment": "center",
+        "collection": "treadmills",
+        "products_to_show": 3,
+        "overview_title": "Overview",
+        "button_label": "Add to Cart",
+        "link_label": "View",
+        "payment_note": "",
+        "section_background": "#ffffff",
+        "card_background": "#ffffff",
+        "media_background": "#f3f3f5",
+        "heading_color": "#111111",
+        "text_color": "#111111",
+        "muted_text_color": "#4a4d58",
+        "border_color": "#d7d9df",
+        "price_color": "#4b52ff",
+        "button_background": "#4b52ff",
+        "button_text_color": "#ffffff",
+        "link_color": "#3a3a3a",
+        "badge_background": "#b7f36e",
+        "badge_text_color": "#111111",
+        "badge_text_1": "New",
+        "badge_style_1": "new",
+        "badge_text_2": "Sale!",
+        "badge_style_2": "sale",
+        "badge_text_3": "New",
+        "badge_style_3": "new",
+        "badge_text_4": "",
+        "badge_style_4": "new",
+        "badge_text_5": "",
+        "badge_style_5": "new",
+        "badge_text_6": "",
+        "badge_style_6": "new"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "compare_products_KMUYGK"
+  ]
+}
