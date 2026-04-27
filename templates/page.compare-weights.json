@@ -35,6 +35,7 @@
         },
         "accordion_VztMkM": {
           "type": "accordion",
+          "disabled": true,
           "settings": {
             "title": "Product Details"
           }
@@ -136,12 +137,12 @@
           "settings": {
             "image": "shopify://shop_images/BFX_ATF_SelectTech_1090_Single_Feature_02_NoGraphic.jpg",
             "video_url": "",
-            "feature_1": "Connect to Apple Watch® with Apple GymKit™ technology",
-            "feature_2": "JRNY experienced through app on phone or tablet",
-            "feature_3": "20\" W x 60\" L running path",
-            "feature_4": "Up to 15% incline",
-            "feature_5": "0 - 12 mph",
-            "feature_6": "Stowed Dimensions 44\" L x 35\" W x 71\" H(113 x 89.7 x 181 cm)"
+            "feature_1": "4 to 41 kg / 10 to 90 lbs per adjustable dumbbell",
+            "feature_2": "Replaces 17 sets of weights",
+            "feature_3": "Weight selection dial",
+            "feature_4": "East to use selection dials",
+            "feature_5": "Storage tray",
+            "feature_6": ""
           }
         },
         "overview_product_Nx8HKT": {
@@ -149,12 +150,12 @@
           "settings": {
             "image": "shopify://shop_images/BFX_ATF_SelectTech_1090_Single_Feature_06_NoGraphic.jpg",
             "video_url": "",
-            "feature_1": "High-contrast, color LCD console",
-            "feature_2": "Connect to Apple Watch® with Apple GymKit™ technology",
-            "feature_3": "JRNY experienced through app on phone or tablet",
-            "feature_4": "22\" W x 60\" L running path",
-            "feature_5": "Up to 15% incline",
-            "feature_6": "0 - 12 mph"
+            "feature_1": "4 to 41 kg / 10 to 90 lbs per adjustable dumbbell",
+            "feature_2": "Replaces 17 sets of weights",
+            "feature_3": "Weight selection dial",
+            "feature_4": "East to use selection dials",
+            "feature_5": "Storage tray",
+            "feature_6": ""
           }
         },
         "overview_product_xXnCrf": {
@@ -162,12 +163,12 @@
           "settings": {
             "image": "shopify://shop_images/BFX_ATF_SelectTech_1090_Single_Feature_10_NoGraphic.jpg",
             "video_url": "",
-            "feature_1": "10” HD adjustable touchscreen",
-            "feature_2": "Built in JRNY experience",
-            "feature_3": "-5% decline to 15% incline",
-            "feature_4": "Speeds of up to 12 mph",
-            "feature_5": "Comfort Tech Deck Cushioning",
-            "feature_6": "Bluetooth audio and heart rate tracking"
+            "feature_1": "Replaces 17 sets of traditional dumbbells",
+            "feature_2": "Quick, dial-based weight adjustments for seamless transitions",
+            "feature_3": "Compact design ideal for home gyms",
+            "feature_4": "Ergonomic stand supports safe lifting posture",
+            "feature_5": "Built in media rack for phones and tablets",
+            "feature_6": "Compatible with JRNY digital fitness platform"
           }
         }
       },
