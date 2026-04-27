@@ -45,7 +45,7 @@
             "product_5": "bowflex-max-trainer-m6i",
             "cta_text": "Shop Sale",
             "cta_url": "shopify://collections/sale",
-            "hide_compare_link": true
+            "hide_compare_link": false
           }
         },
         "mega_menu_item_wKpfhg": {
@@ -66,14 +66,14 @@
           "type": "mega_menu_item",
           "settings": {
             "menu_handle": "weights & benches",
-            "product_1": "bowflex-1090i-dumbbell-pair-with-bowflex-stand",
-            "product_2": "bowflex-552i-adjustable-dumbbell-pair",
-            "product_3": "",
-            "product_4": "",
+            "product_1": "bowflex-1090i-adjustable-dumbbells-pair",
+            "product_2": "bowflex-552i-dumbbell-with-bowflex-stand",
+            "product_3": "bowflex-552i-adjustable-dumbbells-pair-5-1s-bench-bundle",
+            "product_4": "bowflex-840-kettle-bell-pair",
             "product_5": "",
             "cta_text": "Shop Weights",
             "cta_url": "shopify://collections/weights-benches",
-            "hide_compare_link": false
+            "hide_compare_link": true
           }
         },
         "mega_menu_item_JT3fqL": {
@@ -90,15 +90,30 @@
             "hide_compare_link": false
           }
         },
+        "mega_menu_item_LUjAPr": {
+          "type": "mega_menu_item",
+          "disabled": true,
+          "settings": {
+            "menu_handle": "",
+            "product_1": "",
+            "product_2": "",
+            "product_3": "",
+            "product_4": "",
+            "product_5": "",
+            "cta_text": "Shop now",
+            "cta_url": "",
+            "hide_compare_link": false
+          }
+        },
         "mega_menu_item_z8hACX": {
           "type": "mega_menu_item",
           "settings": {
             "menu_handle": "treadmills",
             "product_1": "bowflex-t9-jrny-treadmill",
             "product_2": "bowflex-t6-folding-treadmill-smart-connected-running-machine-with-20-km-h-speed-15-incline-bluetooth-fitness-app-compatibility",
-            "product_3": "",
-            "product_4": "",
-            "product_5": "",
+            "product_3": "bowflex-t25-treadmill",
+            "product_4": "bowflex-t56-treadmill",
+            "product_5": "bowflex-8-5j-treadmill",
             "cta_text": "Shop Treadmills",
             "cta_url": "shopify://collections/treadmills",
             "hide_compare_link": false
@@ -110,6 +125,7 @@
         "mega_menu_item_wKpfhg",
         "mega_menu_item_AxjBzf",
         "mega_menu_item_JT3fqL",
+        "mega_menu_item_LUjAPr",
         "mega_menu_item_z8hACX"
       ],
       "settings": {
