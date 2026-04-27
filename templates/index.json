@@ -54,7 +54,7 @@
           "settings": {
             "text": "For a limited time only → Save up to £1,000!",
             "white-button": false,
-            "link": "#",
+            "link": "shopify://collections/sale",
             "button_text": "Shop Now"
           }
         }
