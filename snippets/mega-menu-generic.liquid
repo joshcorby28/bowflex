@@ -47,6 +47,60 @@
     {%- endif -%}
   {%- endif -%}
 
+  {%- if product_3 != blank -%}
+    {%- assign p = all_products[product_3] -%}
+    {%- if p != blank -%}
+      <a href="{{ p.url }}" class="mega-product-card">
+        <div class="mega-product-image">
+          {{ p.featured_image | image_url: width: 160 | image_tag }}
+        </div>
+        <div class="mega-product-info">
+          <div class="mega-product-title">{{ p.title }}</div>
+          <div class="mega-product-subtitle">{{ p.metafields.custom.short_text }}</div>
+        </div>
+        {%- if p.tags contains 'New' -%}
+          <span class="mega-badge">New</span>
+        {%- endif -%}
+      </a>
+    {%- endif -%}
+  {%- endif -%}
+
+  {%- if product_4 != blank -%}
+    {%- assign p = all_products[product_4] -%}
+    {%- if p != blank -%}
+      <a href="{{ p.url }}" class="mega-product-card">
+        <div class="mega-product-image">
+          {{ p.featured_image | image_url: width: 160 | image_tag }}
+        </div>
+        <div class="mega-product-info">
+          <div class="mega-product-title">{{ p.title }}</div>
+          <div class="mega-product-subtitle">{{ p.metafields.custom.short_text }}</div>
+        </div>
+        {%- if p.tags contains 'New' -%}
+          <span class="mega-badge">New</span>
+        {%- endif -%}
+      </a>
+    {%- endif -%}
+  {%- endif -%}
+
+  {%- if product_5 != blank -%}
+    {%- assign p = all_products[product_5] -%}
+    {%- if p != blank -%}
+      <a href="{{ p.url }}" class="mega-product-card">
+        <div class="mega-product-image">
+          {{ p.featured_image | image_url: width: 160 | image_tag }}
+        </div>
+        <div class="mega-product-info">
+          <div class="mega-product-title">{{ p.title }}</div>
+          <div class="mega-product-subtitle">{{ p.metafields.custom.short_text }}</div>
+        </div>
+        {%- if p.tags contains 'New' -%}
+          <span class="mega-badge">New</span>
+        {%- endif -%}
+      </a>
+    {%- endif -%}
+  {%- endif -%}
+
   <div class="mega-menu-actions">
     <a href="{{ cta_href }}" class="global-black-button">{{ cta_label }}</a>
     {%- unless hide_compare_link -%}
