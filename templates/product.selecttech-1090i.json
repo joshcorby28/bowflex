@@ -108,25 +108,25 @@
     "key_features_wQ7gFE": {
       "type": "key-features",
       "blocks": {
-        "collection_circle_WdgdYr": {
-          "type": "collection-circle",
-          "settings": {
-            "collection_image": "shopify://shop_images/BFX_ATF_SelectTech_1090_Single_Feature_01_NoGraphic.jpg",
-            "collection_text": "An ergonomic, non-slip handle provides extra control and comfort with each lift."
-          }
-        },
         "collection_circle_3PRirC": {
           "type": "collection-circle",
           "settings": {
-            "collection_image": "shopify://shop_images/BFX_ATF_SelectTech_1090_Single_Feature_07_NoGraphic.jpg",
-            "collection_text": "Switch between weight settings with a quick twist of the dials, from 5 to 52.5 pounds per dumbbell."
+            "collection_image": "shopify://shop_images/1090i.png",
+            "collection_text": "Ready for your next reps.  <br>Selection dials easily take you from one exercise to the next."
+          }
+        },
+        "collection_circle_WdgdYr": {
+          "type": "collection-circle",
+          "settings": {
+            "collection_image": "shopify://shop_images/1090i_1.png",
+            "collection_text": "Your next goal - under control.  4 to 41kg per adjustable dumbbell"
           }
         },
         "collection_circle_HFwqiD": {
           "type": "collection-circle",
           "settings": {
-            "collection_image": "shopify://shop_images/BFX_ATF_SelectTech_1090_Single_Feature_05_NoGraphic.jpg",
-            "collection_text": "Reinforced with durable metal plates and a locking system to keep weights in-place."
+            "collection_image": "shopify://shop_images/1090i_2.png",
+            "collection_text": "Always close at hand.  Storage trays keep your weights organised and off the floor."
           }
         },
         "collection_circle_GceT4N": {
@@ -179,8 +179,8 @@
         }
       },
       "block_order": [
-        "collection_circle_WdgdYr",
         "collection_circle_3PRirC",
+        "collection_circle_WdgdYr",
         "collection_circle_HFwqiD",
         "collection_circle_GceT4N",
         "collection_circle_H9Exnf",
