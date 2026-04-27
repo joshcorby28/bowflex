@@ -134,7 +134,7 @@
         "overview_product_RCNTzB": {
           "type": "overview_product",
           "settings": {
-            "image": "shopify://shop_images/t6-jrny-metrics-tracking-bg-2x.webp",
+            "image": "shopify://shop_images/BFX_ATF_SelectTech_1090_Single_Feature_02_NoGraphic.jpg",
             "video_url": "",
             "feature_1": "Connect to Apple Watch® with Apple GymKit™ technology",
             "feature_2": "JRNY experienced through app on phone or tablet",
@@ -147,7 +147,7 @@
         "overview_product_Nx8HKT": {
           "type": "overview_product",
           "settings": {
-            "image": "shopify://shop_images/t9-jrny-etw-bg-2x.webp",
+            "image": "shopify://shop_images/BFX_ATF_SelectTech_1090_Single_Feature_06_NoGraphic.jpg",
             "video_url": "",
             "feature_1": "High-contrast, color LCD console",
             "feature_2": "Connect to Apple Watch® with Apple GymKit™ technology",
@@ -160,7 +160,7 @@
         "overview_product_xXnCrf": {
           "type": "overview_product",
           "settings": {
-            "image": "shopify://shop_images/BFX_ATF_Treadmill_10_Feature_01_NoGraphic_1.jpg",
+            "image": "shopify://shop_images/BFX_ATF_SelectTech_1090_Single_Feature_10_NoGraphic.jpg",
             "video_url": "",
             "feature_1": "10” HD adjustable touchscreen",
             "feature_2": "Built in JRNY experience",
@@ -189,10 +189,10 @@
       "name": "Compare products",
       "settings": {
         "color_scheme": "",
-        "heading": "Compare Treadmills",
-        "subheading": "Compare our most popular treadmills",
+        "heading": "Compare Weights",
+        "subheading": "Compare our most popular weights",
         "heading_alignment": "center",
-        "collection": "treadmills",
+        "collection": "weights-benches",
         "products_to_show": 3,
         "overview_title": "Overview",
         "button_label": "Add to Cart",
