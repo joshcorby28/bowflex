@@ -11,13 +11,192 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "compare_products_U8yVgC": {
+      "type": "compare-products",
+      "blocks": {
+        "overview_product_zMKHY3": {
+          "type": "overview_product",
+          "settings": {
+            "image": "shopify://shop_images/1_612d5328-cd1f-4fec-8373-94aee181f6b2.webp",
+            "video_url": "",
+            "feature_1": "16” Adjustable HD Touchscreen - Immersive display for guided workouts, stats, entertainment, and virtual coaching.",
+            "feature_2": "20 Levels of Resistance - Fine-tune your intensity – from recovery sessions to all-out HIIT bursts.",
+            "feature_3": "6-Grip Handlebars - Versatile handle positions for total-body activation.",
+            "feature_4": "Elliptical + Stepper MotionCombines smooth movement with vertical stepping to maximise burn in minimal time.",
+            "feature_5": "Built-in JRNY® ExperienceEnjoy adaptive workouts, Explore the World® scenic routes, and trainer-led classes.",
+            "feature_6": "Bluetooth® ConnectivityIncludes Bluetooth® speakers and a heart rate armband for seamless tracking."
+          }
+        },
+        "overview_product_rLxaBb": {
+          "type": "overview_product",
+          "settings": {
+            "image": "shopify://shop_images/m6-in-home-f-ll.webp",
+            "video_url": "",
+            "feature_1": "Elliptical-Stepper Hybrid Motion - Delivers a high-calorie, low-impact workout that is easier on joints than running or traditional treadmills.",
+            "feature_2": "16 Levels of Magnetic Resistance - Easily adjust intensity for HIIT sessions, interval training, or steady-state cardio.",
+            "feature_3": "Full-Body Engagement - 4-grip handlebars activate arms, chest, back, legs, and core in one efficient movement.",
+            "feature_4": "Backlit LCD Console - Displays burn rate and key workout metrics clearly, even in low-light environments.",
+            "feature_5": "JRNY® App Compatibility - Access adaptive workouts, trainer-led sessions, performance tracking, and scenic routes via phone or tablet.",
+            "feature_6": "Compact Home Gym Footprint - Vertical design maximises workout intensity while minimising floor space."
+          }
+        },
+        "overview_product_4zaRyp": {
+          "type": "overview_product",
+          "settings": {
+            "video_url": "",
+            "feature_1": "",
+            "feature_2": "",
+            "feature_3": "",
+            "feature_4": "",
+            "feature_5": "",
+            "feature_6": ""
+          }
+        },
+        "accordion_L4fWhz": {
+          "type": "accordion",
+          "settings": {
+            "title": "JRNY for Max"
+          }
+        },
+        "accordion_row_JCB9kJ": {
+          "type": "accordion_row",
+          "settings": {
+            "accordion_index": 1,
+            "row_heading": "Streaming Entertainment",
+            "product_1_content": "JRNY Radio\nStreaming TV not available through the JRNY App.",
+            "product_2_content": "JRNY Radio\nStreaming TV not available through the JRNY App.",
+            "product_3_content": "",
+            "product_4_content": "",
+            "product_5_content": "",
+            "product_6_content": ""
+          }
+        },
+        "accordion_row_VY34kJ": {
+          "type": "accordion_row",
+          "settings": {
+            "accordion_index": 1,
+            "row_heading": "Connectivity",
+            "product_1_content": "Individualized adaptive workouts\nExplore the World\nOn-demand classes\nReal-time coaching\nCurated music\nTracking",
+            "product_2_content": "Individualized adaptive workouts\nExplore the World\nOn-demand classes\nReal-time coaching\nCurated music\nTracking",
+            "product_3_content": "",
+            "product_4_content": "",
+            "product_5_content": "",
+            "product_6_content": ""
+          }
+        },
+        "accordion_row_fJTBhN": {
+          "type": "accordion_row",
+          "settings": {
+            "accordion_index": 1,
+            "row_heading": "Display Features",
+            "product_1_content": "Time Elapsed\nTime Goal\nTime Remaining\nClock\nMiles / Kilometers\nRPM\nCurrent Speed (MPH/KPH)\nPrevious Speed (MPH/KPH)\nPace\nAverage Pace\nHeart Rate\nPeak Heart Rate\nCalories\nCalories Per Hour\nWatts\nMETS\nElevation\nIncline\nPrevious Incline",
+            "product_2_content": "Time Elapsed\nTime Goal\nTime Remaining\nClock\nMiles / Kilometers\nRPM\nCurrent Speed (MPH/KPH)\nPrevious Speed (MPH/KPH)\nPace\nAverage Pace\nHeart Rate\nPeak Heart Rate\nCalories\nCalories Per Hour\nWatts\nMETS\nElevation\nIncline\nPrevious Incline",
+            "product_3_content": "",
+            "product_4_content": "",
+            "product_5_content": "",
+            "product_6_content": ""
+          }
+        },
+        "accordion_6CXrMm": {
+          "type": "accordion",
+          "settings": {
+            "title": "Product Details"
+          }
+        },
+        "accordion_row_k64mGB": {
+          "type": "accordion_row",
+          "settings": {
+            "accordion_index": 1,
+            "row_heading": "JRNY Features",
+            "product_1_content": "Bluetooth\niOS compatible\nAndroid compatible\nUSB charging port\nWi-Fi",
+            "product_2_content": "Bluetooth\niOS compatible\nAndroid compatible\nUSB charging port\nWi-Fi",
+            "product_3_content": "",
+            "product_4_content": "",
+            "product_5_content": "",
+            "product_6_content": ""
+          }
+        },
+        "accordion_MjWjmV": {
+          "type": "accordion",
+          "settings": {
+            "title": "Specs & Dimensions"
+          }
+        },
+        "accordion_row_jrabNA": {
+          "type": "accordion_row",
+          "settings": {
+            "accordion_index": 1,
+            "row_heading": "Specs",
+            "product_1_content": "77.2\" L x 37\" W x 67.6\" H\n\n(196 x 94 x 171.6 cm)",
+            "product_2_content": "77.2\" L x 37\" W x 67.6\" H\n\n(196 x 94 x 171.6 cm)",
+            "product_3_content": "",
+            "product_4_content": "",
+            "product_5_content": "",
+            "product_6_content": ""
+          }
+        }
+      },
+      "block_order": [
+        "overview_product_zMKHY3",
+        "overview_product_rLxaBb",
+        "overview_product_4zaRyp",
+        "accordion_L4fWhz",
+        "accordion_row_JCB9kJ",
+        "accordion_row_VY34kJ",
+        "accordion_row_fJTBhN",
+        "accordion_6CXrMm",
+        "accordion_row_k64mGB",
+        "accordion_MjWjmV",
+        "accordion_row_jrabNA"
+      ],
+      "name": "Compare products",
+      "settings": {
+        "color_scheme": "",
+        "heading": "Compare Ellipticals",
+        "subheading": "Coompare our most popular ellipticals",
+        "heading_alignment": "center",
+        "collection": "ellipticals",
+        "products_to_show": 3,
+        "overview_title": "Overview",
+        "button_label": "Add to Cart",
+        "link_label": "View",
+        "payment_note": "Pay as low as",
+        "section_background": "#ffffff",
+        "card_background": "#ffffff",
+        "media_background": "#f3f3f5",
+        "heading_color": "#111111",
+        "text_color": "#111111",
+        "muted_text_color": "#4a4d58",
+        "border_color": "#d7d9df",
+        "price_color": "#4b52ff",
+        "button_background": "#4b52ff",
+        "button_text_color": "#ffffff",
+        "link_color": "#3a3a3a",
+        "badge_background": "#b7f36e",
+        "badge_text_color": "#111111",
+        "badge_text_1": "New",
+        "badge_style_1": "new",
+        "badge_text_2": "Sale!",
+        "badge_style_2": "sale",
+        "badge_text_3": "New",
+        "badge_style_3": "new",
+        "badge_text_4": "",
+        "badge_style_4": "new",
+        "badge_text_5": "",
+        "badge_style_5": "new",
+        "badge_text_6": "",
+        "badge_style_6": "new"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "compare_products_U8yVgC"
   ]
 }
