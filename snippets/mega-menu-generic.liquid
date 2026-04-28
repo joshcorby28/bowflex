@@ -103,10 +103,15 @@
 
   <div class="mega-menu-actions">
     <a href="{{ cta_href }}" class="global-black-button">{{ cta_label }}</a>
-    {%- unless hide_compare_link -%}
-      {%- assign compare_href = compare_link_url | default: '/pages/compare-' | append: menu_link.handle -%}
-      <a href="{{ compare_href }}" class="mega-menu-compare-link">Compare {{ menu_link.title }}</a>
-    {%- endunless -%}
+{%- unless hide_compare_link -%}
+  {%- assign compare_href = compare_link_url -%}
+
+  {%- if compare_href == blank -%}
+    {%- assign compare_href = '/pages/compare-' | append: menu_link.handle -%}
+  {%- endif -%}
+
+  <a href="{{ compare_href }}" class="mega-menu-compare-link">Compare {{ menu_link.title }}</a>
+{%- endunless -%}
   </div>
 </li>
 
