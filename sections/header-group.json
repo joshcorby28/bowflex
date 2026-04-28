@@ -45,6 +45,7 @@
             "product_5": "bowflex-max-trainer-m6i",
             "cta_text": "Shop Sale",
             "cta_url": "shopify://collections/sale",
+            "compare_link_url": "",
             "hide_compare_link": true
           }
         },
@@ -59,6 +60,7 @@
             "product_5": "",
             "cta_text": "Shop Accessories",
             "cta_url": "shopify://collections/accessories-parts",
+            "compare_link_url": "",
             "hide_compare_link": true
           }
         },
@@ -73,6 +75,7 @@
             "product_5": "",
             "cta_text": "Shop Weights",
             "cta_url": "shopify://collections/weights-benches",
+            "compare_link_url": "shopify://pages/compare-weights",
             "hide_compare_link": false
           }
         },
@@ -87,6 +90,7 @@
             "product_5": "",
             "cta_text": "Shop Ellipticals",
             "cta_url": "shopify://collections/ellipticals",
+            "compare_link_url": "",
             "hide_compare_link": false
           }
         },
@@ -102,6 +106,7 @@
             "product_5": "",
             "cta_text": "Shop now",
             "cta_url": "",
+            "compare_link_url": "",
             "hide_compare_link": false
           }
         },
@@ -116,6 +121,7 @@
             "product_5": "bowflex-8-5j-treadmill",
             "cta_text": "Shop Treadmills",
             "cta_url": "shopify://collections/treadmills",
+            "compare_link_url": "",
             "hide_compare_link": false
           }
         }
