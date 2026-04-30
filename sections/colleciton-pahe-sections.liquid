@@ -253,22 +253,23 @@
     const sectionRoot = document.querySelector('#shopify-section-{{ section.id }}');
     if (!sectionRoot || typeof Swiper === 'undefined') return;
 
-    const sharedSliderConfig = {
-      slidesPerView: 1,
-      spaceBetween: 12,
-      loop: true,
-        centeredSlides: false,
-  initialSlide: 1,
-      breakpoints: {
-        250: {
-          slidesPerView: 1.5,
-          centeredSlides: true,
-        },
-        890: {
-          slidesPerView: 3
-        }
-      }
-    };
+const sharedSliderConfig = {
+  slidesPerView: 1,
+  spaceBetween: 12,
+  loop: false,
+  centeredSlides: false,
+  initialSlide: 0,
+  breakpoints: {
+    250: {
+      slidesPerView: 1.5,
+      centeredSlides: false
+    },
+    890: {
+      slidesPerView: 3,
+      centeredSlides: false
+    }
+  }
+};
 
     const jrnySwiperSelector = `.pps__jrny-swiper-{{ section.id }}`;
     if (sectionRoot.querySelector(jrnySwiperSelector)) {
