@@ -50,7 +50,8 @@
       "settings": {
         "video": "{{ collection.metafields.custom.video_hero.value }}",
         "poster_desktop": "shopify://shop_images/weights-hero-rs1090-2026-2x.webp",
-        "no_video_mobile": false,
+        "poster_mobile": "shopify://shop_images/weights-hero-rs1090-2026-2x.webp",
+        "no_video_mobile": true,
         "show_overlay": true,
         "overlay_color": "#000000",
         "overlay_opacity": 19,
