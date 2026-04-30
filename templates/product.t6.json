@@ -404,9 +404,9 @@
         "fitness_subheading": "",
         "fitness_left_image": "shopify://shop_images/t6-01-watch-2x.webp",
         "fitness_left_title": "Connect to your watch",
-        "fitness_left_text": "Connect to Apple Watch™ or Samsung Galaxy Watch for a seamless way to keep your metrics in sync.",
-        "fitness_left_pill_1": "Apple Watch",
-        "fitness_left_pill_2": "Galaxy Watch",
+        "fitness_left_text": "Connect to Apple Watch™ or Samsung Galaxy Watch® for a seamless way to keep your metrics in sync.",
+        "fitness_left_pill_1": "Apple Watch®",
+        "fitness_left_pill_2": "Galaxy Watch®",
         "fitness_right_image": "shopify://shop_images/t6-jrny-workout-selection-bg-2x.webp",
         "fitness_right_title": "Fitness app flexibility",
         "fitness_right_text": "Keep your options open. Train with popular fitness apps including JRNY®, Peloton®, and Zwift®, right from your phone or tablet.",
@@ -653,7 +653,7 @@
           "settings": {
             "image": "shopify://shop_images/t6-jrny-radio-bg-2x.webp",
             "title": "Find a playlist to power your P.R.",
-            "text": "An ever-fresh line up on JRNY Radio means you can always find a musical mood boost."
+            "text": "An ever-fresh line up on JRNY® Radio means you can always find a musical mood boost."
           }
         },
         "jrny_slide_XrDExw": {
@@ -740,7 +740,7 @@
         "additional_specs_heading": "Additional Specs",
         "show_membership": true,
         "membership_position": 4,
-        "membership_heading": "The JRNY adaptive fitness membership keeps you going.",
+        "membership_heading": "The JRNY® adaptive fitness membership keeps you going.",
         "membership_subheading": ""
       }
     }
