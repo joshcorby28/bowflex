@@ -17,7 +17,7 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "For a limited time only → Save up to £1,000!",
+            "text": "Save up to £1,000!",
             "link": "shopify://collections/sale",
             "button_text": "Shop Sale"
           }
@@ -90,7 +90,7 @@
             "product_5": "",
             "cta_text": "Shop Ellipticals",
             "cta_url": "shopify://collections/ellipticals",
-            "compare_link_url": "",
+            "compare_link_url": "shopify://pages/compare-ellipticals",
             "hide_compare_link": false
           }
         },
