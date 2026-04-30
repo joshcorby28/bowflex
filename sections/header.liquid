@@ -237,57 +237,13 @@ justify-content: space-between;}
 
 
 .header-top {
-  background: transparent;
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  align-items: center;
-  gap: 16px;
-  padding-top: 14px;
-  padding-bottom: 14px;
+	background: transparent;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	padding-top: 14px;
+	padding-bottom: 14px;
   border-bottom: 1px solid #d4d4d4;
-}
-
-.header__heading-link {
-  justify-self: center;
-}
-
-.header__heading-logo-wrapper {
-  max-width: 180px;
-}
-
-.header__heading-logo {
-  max-width: 100%;
-  height: auto;
-}
-
-.header__icons {
-  justify-self: end;
-  display: flex;
-  align-items: center;
-}
-
-@media screen and (max-width: 750px) {
-  .header-top {
-    grid-template-columns: auto 1fr auto;
-    gap: 8px;
-  }
-
-  .header__heading-logo-wrapper {
-    max-width: 135px;
-  }
-
-  .header__icons {
-    gap: 8px !important;
-  }
-
-  .header__icons .header__icon {
-    font-size: 0 !important;
-  }
-
-  .header__icons .header__icon .icon,
-  .header__icons .header__icon i {
-    font-size: 22px !important;
-  }
 }
 
 .header-bottom {
@@ -394,47 +350,32 @@ font-size:14px;
 
 
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    var navDetails = document.querySelectorAll('.header__inline-menu details');
+  const items = document.querySelectorAll(".mega-menu");
 
-    navDetails.forEach(function (details) {
-      var summary = details.querySelector('summary');
-      var leaveTimeout;
+  items.forEach(item => {
+    const content = item.querySelector('.mega-menu__content');
 
-      // Click navigates to the top-level link instead of toggling the dropdown
-      summary.addEventListener('click', function (e) {
-        var url = summary.dataset.url;
-        if (url) {
-          e.preventDefault();
-          window.location.href = url;
-        }
+    item.addEventListener("mouseenter", () => {
+      items.forEach(i => {
+        if (i !== item) i.removeAttribute("open");
       });
+      item.setAttribute("open", true);
+    });
 
-      // Open dropdown on hover
-      details.addEventListener('mouseenter', function () {
-        clearTimeout(leaveTimeout);
-        navDetails.forEach(function (d) {
-          if (d !== details) d.removeAttribute('open');
-        });
-        details.setAttribute('open', '');
-      });
+    let leaveTimeout;
 
-      details.addEventListener('mouseleave', function () {
-        leaveTimeout = setTimeout(function () {
-          details.removeAttribute('open');
-        }, 250);
-      });
+    item.addEventListener("mouseleave", () => {
+      leaveTimeout = setTimeout(() => {
+        item.removeAttribute("open");
+      }, 300);
+    });
 
-      // Keep open while hovering the dropdown content
-      var content = details.querySelector('.mega-menu__content, .header__submenu');
-      if (content) {
-        content.addEventListener('mouseenter', function () {
-          clearTimeout(leaveTimeout);
-        });
-        content.addEventListener('mouseleave', function () {
-          details.removeAttribute('open');
-        });
-      }
+    content.addEventListener("mouseenter", () => {
+      clearTimeout(leaveTimeout);
+    });
+
+    content.addEventListener("mouseleave", () => {
+      item.removeAttribute("open");
     });
   });
 </script>
@@ -831,21 +772,6 @@ font-size:14px;
           "label": "Featured product 2"
         },
         {
-          "type": "product",
-          "id": "product_3",
-          "label": "Featured product 3"
-        },
-        {
-          "type": "product",
-          "id": "product_4",
-          "label": "Featured product 4"
-        },
-        {
-          "type": "product",
-          "id": "product_5",
-          "label": "Featured product 5"
-        },
-        {
           "type": "text",
           "id": "cta_text",
           "label": "Button text",
@@ -855,12 +781,6 @@ font-size:14px;
           "type": "url",
           "id": "cta_url",
           "label": "Button link (optional)"
-        },
-        {
-          "type": "url",
-          "id": "compare_link_url",
-          "label": "Compare link URL (optional)",
-          "info": "Defaults to /pages/compare-{menu-handle} if left blank"
         },
         {
           "type": "checkbox",
