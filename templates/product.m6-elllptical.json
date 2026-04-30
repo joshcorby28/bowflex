@@ -608,7 +608,7 @@
           "settings": {
             "image": "shopify://shop_images/m6-jrny-radio-bg-2x.jpg",
             "title": "Find your HIIT tracks",
-            "text": "JRNY Radio has high-energy playlists for your sprints and chill tracks for your recovery."
+            "text": "JRNY® Radio has high-energy playlists for your sprints and chill tracks for your recovery."
           }
         },
         "jrny_slide_emWP4L": {
@@ -798,7 +798,7 @@
         "additional_specs_heading": "",
         "show_membership": true,
         "membership_position": 4,
-        "membership_heading": "JRNY adaptive fitness membership",
+        "membership_heading": "JRNY® adaptive fitness membership",
         "membership_subheading": ""
       }
     }
