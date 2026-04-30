@@ -451,6 +451,29 @@ font-size:14px;
       item.removeAttribute("open");
     });
   });
+
+  // Make top-level nav links with submenus navigate on click (hover opens dropdown)
+  document.querySelectorAll('summary[data-url]').forEach(summary => {
+    summary.addEventListener('click', function(e) {
+      const url = this.dataset.url;
+      if (url && url !== '#' && url !== '') {
+        e.preventDefault();
+        window.location.href = url;
+      }
+    });
+  });
+
+  // Open dropdowns on hover for the dropdown menu style
+  document.querySelectorAll('header-menu details').forEach(details => {
+    let hoverTimeout;
+    details.addEventListener('mouseenter', () => {
+      clearTimeout(hoverTimeout);
+      details.setAttribute('open', '');
+    });
+    details.addEventListener('mouseleave', () => {
+      hoverTimeout = setTimeout(() => details.removeAttribute('open'), 200);
+    });
+  });
 </script>
 
 
@@ -854,6 +877,11 @@ font-size:14px;
           "type": "url",
           "id": "cta_url",
           "label": "Button link (optional)"
+        },
+        {
+          "type": "url",
+          "id": "compare_link_url",
+          "label": "Compare link URL (overrides default)"
         },
         {
           "type": "checkbox",
