@@ -120,16 +120,70 @@
                       </div>
                     </details>
                   {%- else -%}
-                    <a
-                      id="HeaderDrawer-{{ link.handle }}"
-                      href="{{ link.url }}"
-                      class="menu-drawer__menu-item list-menu__item link link--text focus-inset{% if link.current %} menu-drawer__menu-item--active{% endif %}"
-                      {% if link.current %}
-                        aria-current="page"
-                      {% endif %}
-                    >
-                      {{ link.title | escape }}
-                    </a>
+                    {%- assign menu_handle = link.handle | downcase -%}
+                    {%- assign matched_mega_block = blank -%}
+                    {%- for block in section.blocks -%}
+                      {%- if block.type == 'mega_menu_item' and block.settings.menu_handle != blank -%}
+                        {%- assign block_handle = block.settings.menu_handle | handleize -%}
+                        {%- if block_handle == menu_handle -%}
+                          {%- assign matched_mega_block = block -%}
+                          {%- break -%}
+                        {%- endif -%}
+                      {%- endif -%}
+                    {%- endfor -%}
+
+                    {%- if matched_mega_block != blank -%}
+                      <div class="menu-drawer__split-row">
+                        <a
+                          id="HeaderDrawer-{{ link.handle }}"
+                          href="{{ link.url }}"
+                          class="menu-drawer__split-link link link--text focus-inset{% if link.current %} menu-drawer__menu-item--active{% endif %}"
+                          {% if link.current %}
+                            aria-current="page"
+                          {% endif %}
+                        >
+                          {{ link.title | escape }}
+                        </a>
+                        <button
+                          type="button"
+                          class="menu-drawer__split-toggle focus-inset"
+                          aria-expanded="false"
+                          aria-controls="DrawerMega-{{ forloop.index }}"
+                          aria-label="Show {{ link.title | escape }} products"
+                        >
+                          <span class="svg-wrapper">
+                            {{- 'icon-caret.svg' | inline_asset_content -}}
+                          </span>
+                        </button>
+                      </div>
+                      <div id="DrawerMega-{{ forloop.index }}" class="menu-drawer__mega-content" hidden>
+                        <ul class="list-unstyled">
+                          {% render 'mega-menu-generic',
+                            menu_link: link,
+                            product_1: matched_mega_block.settings.product_1,
+                            product_2: matched_mega_block.settings.product_2,
+                            product_3: matched_mega_block.settings.product_3,
+                            product_4: matched_mega_block.settings.product_4,
+                            product_5: matched_mega_block.settings.product_5,
+                            cta_text: matched_mega_block.settings.cta_text,
+                            cta_url: matched_mega_block.settings.cta_url,
+                            compare_link_url: matched_mega_block.settings.compare_link_url,
+                            hide_compare_link: matched_mega_block.settings.hide_compare_link
+                          %}
+                        </ul>
+                      </div>
+                    {%- else -%}
+                      <a
+                        id="HeaderDrawer-{{ link.handle }}"
+                        href="{{ link.url }}"
+                        class="menu-drawer__menu-item list-menu__item link link--text focus-inset{% if link.current %} menu-drawer__menu-item--active{% endif %}"
+                        {% if link.current %}
+                          aria-current="page"
+                        {% endif %}
+                      >
+                        {{ link.title | escape }}
+                      </a>
+                    {%- endif -%}
                   {%- endif -%}
                 </li>
               {%- endfor -%}
@@ -293,3 +347,67 @@
     </div>
   </details>
 </header-drawer>
+
+<style>
+  .menu-drawer__split-row {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(var(--color-foreground), 0.08);
+  }
+
+  .menu-drawer__split-link {
+    flex: 1;
+    padding: 1.2rem 0;
+    font-size: 1.4rem;
+    color: rgb(var(--color-foreground));
+  }
+
+  .menu-drawer__split-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4.4rem;
+    height: 4.4rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: rgb(var(--color-foreground));
+    flex-shrink: 0;
+    transition: transform 0.2s ease;
+  }
+
+  .menu-drawer__split-toggle[aria-expanded='true'] .svg-wrapper svg {
+    transform: rotate(180deg);
+  }
+
+  .menu-drawer__split-toggle .svg-wrapper svg {
+    transition: transform 0.2s ease;
+  }
+
+  .menu-drawer__mega-content {
+    padding-bottom: 1.2rem;
+  }
+
+  .menu-drawer__mega-content .mega-products {
+    padding: 12px 0;
+  }
+
+  .menu-drawer__mega-content .mega-menu-actions {
+    padding: 0 14px;
+  }
+</style>
+
+<script>
+  document.querySelectorAll('.menu-drawer__split-toggle').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var expanded = this.getAttribute('aria-expanded') === 'true';
+      var target = document.getElementById(this.getAttribute('aria-controls'));
+      this.setAttribute('aria-expanded', expanded ? 'false' : 'true');
+      if (expanded) {
+        target.setAttribute('hidden', '');
+      } else {
+        target.removeAttribute('hidden');
+      }
+    });
+  });
+</script>
