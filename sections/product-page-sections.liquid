@@ -829,10 +829,9 @@
     const jrnySwiperSelector = `.pps__jrny-swiper-{{ section.id }}`;
     if (typeof Swiper !== 'undefined' && sectionRoot.querySelector(jrnySwiperSelector)) {
       new Swiper(jrnySwiperSelector, {
-        initialSlide: 0,
         slidesPerView: 1.5,
         spaceBetween: 12,
-        loop: false,
+        loop: true,
         pagination: {
           el: `.pps__jrny-pagination-{{ section.id }}`,
           clickable: true
@@ -844,9 +843,11 @@
         breakpoints: {
           750: {
             slidesPerView: 2
+                    loop: false,
           },
           990: {
             slidesPerView: 3
+                                loop: false,
           }
         }
       });
