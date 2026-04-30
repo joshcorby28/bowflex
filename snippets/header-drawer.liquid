@@ -352,28 +352,38 @@
   .menu-drawer__split-row {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid rgba(var(--color-foreground), 0.08);
   }
 
   .menu-drawer__split-link {
     flex: 1;
-    padding: 1.2rem 0;
-    font-size: 1.4rem;
+    padding: 1.1rem 0 1.1rem 3rem;
+    font-size: 1.8rem;
     color: rgb(var(--color-foreground));
+    text-decoration: none;
+  }
+
+  .menu-drawer__split-link:hover {
+    color: rgb(var(--color-foreground));
+    background: none;
   }
 
   .menu-drawer__split-toggle {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 4.4rem;
-    height: 4.4rem;
-    background: none;
-    border: none;
+    width: 5.2rem;
+    min-height: 4.4rem;
+    flex-shrink: 0;
     cursor: pointer;
     color: rgb(var(--color-foreground));
-    flex-shrink: 0;
-    transition: transform 0.2s ease;
+    border: none;
+    background: none;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  .menu-drawer__split-toggle::before {
+    display: none;
   }
 
   .menu-drawer__split-toggle[aria-expanded='true'] .svg-wrapper svg {
@@ -389,11 +399,11 @@
   }
 
   .menu-drawer__mega-content .mega-products {
-    padding: 12px 0;
+    padding: 12px 3rem;
   }
 
   .menu-drawer__mega-content .mega-menu-actions {
-    padding: 0 14px;
+    padding: 0 3rem;
   }
 </style>
 
