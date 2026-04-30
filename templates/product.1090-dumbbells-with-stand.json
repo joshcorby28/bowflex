@@ -265,7 +265,7 @@
           "settings": {
             "image": "shopify://shop_images/jrny-radio-tablet-bg-2x.webp",
             "title": "Add some rhythm to your reps",
-            "text": "Curated JRNY Radio stations let you workout too your favourite tunes."
+            "text": "Curated JRNY® Radio stations let you workout too your favourite tunes."
           }
         },
         "jrny_slide_VNnwkh": {
@@ -273,7 +273,7 @@
           "settings": {
             "image": "shopify://shop_images/Syndigo_2x_Column_JRNY_BYODv2_04_2x_5ea85cad-6183-4f45-95e8-d06b9ae1c17f.jpg",
             "title": "Refresh your memory",
-            "text": "JRNY remembers how much weight you lifted today so it can make informed recommendations tomorrow."
+            "text": "JRNY® remembers how much weight you lifted today so it can make informed recommendations tomorrow."
           }
         },
         "jrny_slide_KbWjJT": {
@@ -340,7 +340,7 @@
         "additional_specs_heading": "",
         "show_membership": true,
         "membership_position": 4,
-        "membership_heading": "JRNY adaptive fitness membership",
+        "membership_heading": "JRNY® adaptive fitness membership",
         "membership_subheading": ""
       }
     }
