@@ -21,8 +21,12 @@
     {% endif %}
 
     <div class="hero-product-card__features">
-      <span>📱 JRNY App®</span>
-      <span>⌚ Connect to Apple Watch®</span>
+      {% if card_product.metafields.custom.show_jrny == true %}
+        <span>📱 JRNY App®</span>
+      {% endif %}
+      {% if card_product.metafields.custom.show_watch == true %}
+        <span>⌚ Connect to Apple Watch®</span>
+      {% endif %}
     </div>
 
     <div class="hero-product-card__price">
