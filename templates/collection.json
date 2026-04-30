@@ -49,6 +49,7 @@
       "settings": {
         "video": "{{ collection.metafields.custom.video_hero.value }}",
         "poster_desktop": "{{ collection.image }}",
+        "video_mobile": "shopify://files/videos/treadmills-homepage-hero-1920x700.mp4",
         "no_video_mobile": false,
         "show_overlay": true,
         "overlay_color": "#000000",
