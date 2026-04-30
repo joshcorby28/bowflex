@@ -632,15 +632,30 @@
     display: none;
     width: 100%;
   }
+@media screen and (max-width: 700px) {
+  .smarte-video-hero .video-section {
+    min-height: 420px;
+    height: 420px;
+  }
+
+  .smarte-video-hero .video-section .desktop-video {
+    display: none;
+  }
+
   .smarte-video-hero .video-section .mobile-video {
     display: block;
-    min-height: 650px;
-    max-height: 750px;
+    height: 420px;
+    min-height: 420px;
+    max-height: 420px;
     width: 100%;
   }
-  .smarte-video-hero .video-section video {
-    height: 100vh;
+
+  .smarte-video-hero .video-section .mobile-video video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
   }
+}
   .smarte-video-hero .video-section .hero-overlay-wrapper {
     position: absolute;
     top: 0;
