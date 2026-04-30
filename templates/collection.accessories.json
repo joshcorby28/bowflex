@@ -49,7 +49,8 @@
       "settings": {
         "video": "{{ collection.metafields.custom.video_hero.value }}",
         "poster_desktop": "{{ collection.image }}",
-        "no_video_mobile": false,
+        "poster_mobile": "shopify://shop_images/bowflex-accessories-bg-2x.webp",
+        "no_video_mobile": true,
         "show_overlay": true,
         "overlay_color": "#000000",
         "overlay_opacity": 19,
