@@ -353,8 +353,23 @@
     display: none;
   }
 
+  .menu-drawer__menu-item--active,
+  .menu-drawer__menu-item:focus,
+  .menu-drawer__close-button:focus,
+  .menu-drawer__menu-item:hover,
+  .menu-drawer__close-button:hover {
+    background-color: transparent;
+  }
+
   .menu-drawer__menu-item {
     font-size: 1.4rem;
+  }
+
+  .menu-drawer__menu-item > .svg-wrapper svg,
+  .menu-drawer__split-toggle .svg-wrapper svg {
+    width: 10px;
+    height: 10px;
+    stroke-width: 1;
   }
 
   .menu-drawer__split-row {
