@@ -204,6 +204,7 @@
       "name": "Smarte Video Hero",
       "settings": {
         "video": "shopify://files/videos/BowFlex-SelectTech-1090-Product-Video_EN.mp4",
+        "video_mobile": "shopify://files/videos/BowFlex-SelectTech-1090-Product-Video_EN.mp4",
         "no_video_mobile": false,
         "show_overlay": false,
         "overlay_color": "#000000",
