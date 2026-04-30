@@ -1,0 +1,106 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "collapsible_content_B9KjTL": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_Wafy74": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do I register my Bowflex product?",
+            "icon": "none",
+            "row_content": "<p>You can register your Bowflex product online at our product registration page. You’ll need your model number and serial number, which can be found on the label attached to your equipment.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_FhTKTG": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is the warranty on my Bowflex product?",
+            "icon": "none",
+            "row_content": "<p>Warranty coverage varies by product. Most Bowflex home gyms include a lifetime frame warranty, 10-year parts warranty, and 2-year labour warranty. Please refer to your product’s documentation or contact our support team for specific warranty details.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_jY4Hcf": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do I order replacement parts?",
+            "icon": "none",
+            "row_content": "<p>Replacement parts can be ordered by contacting our Parts & Tech Support team by phone or through our contact form. Please have your model number and serial number ready when you call.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_LRUCUw": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is your returns policy?",
+            "icon": "none",
+            "row_content": "<p>We offer a 6-week in-home trial on most products. If you are not satisfied, you may return the product within 6 weeks of delivery for a full refund (less shipping costs). Please contact our support team to arrange a return.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_qfMg3N": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do I track my order?",
+            "icon": "none",
+            "row_content": "<p>Once your order has been dispatched you will receive a tracking email with a link to track your delivery. If you have not received this email or have questions about your delivery, please contact our support team.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_rn7VBP": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Do you offer assembly services?",
+            "icon": "none",
+            "row_content": "<p>Assembly services are available on selected products. This option can be added during the checkout process. Please contact our team if you need more information about assembly for a specific product.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_Wafy74",
+        "collapsible_row_FhTKTG",
+        "collapsible_row_jY4Hcf",
+        "collapsible_row_LRUCUw",
+        "collapsible_row_qfMg3N",
+        "collapsible_row_rn7VBP"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Frequently Asked Questions",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "container_color_scheme": "scheme-2",
+        "color_scheme": "scheme-2",
+        "open_first_collapsible_row": true,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    }
+  },
+  "order": [
+    "main",
+    "collapsible_content_B9KjTL"
+  ]
+}
