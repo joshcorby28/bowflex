@@ -391,8 +391,8 @@
         "fitness_left_image": "shopify://shop_images/Get_an_easy_secure_way_to_connect_your_Apple_Watch_to_the_T9_treadmill_to_keep_your_metris_in_sync..webp",
         "fitness_left_title": "Connect to Apple Watch®",
         "fitness_left_text": "Get an easy, secure way to connect your Apple Watch to the T9 treadmill to keep your metris in sync.",
-        "fitness_left_pill_1": "Apple Watch",
-        "fitness_left_pill_2": "Galaxy Watch",
+        "fitness_left_pill_1": "Apple Watch®",
+        "fitness_left_pill_2": "Galaxy Watch®",
         "fitness_right_image": "shopify://shop_images/t9-02-apps-bg-2x.jpg",
         "fitness_right_title": "Train with your choice in fitness apps",
         "fitness_right_text": "Connect with JRNY®, Peloton® and Zwift® right from your phone or tablet.",
@@ -533,7 +533,7 @@
           "settings": {
             "image": "shopify://shop_images/t9-jrny-radio-bg-2x.webp",
             "title": "Find a playlist to power your PR",
-            "text": "An ever-fresh line up on JRNY Radio means you can always find a musical mood boost."
+            "text": "An ever-fresh line up on JRNY® Radio means you can always find a musical mood boost."
           }
         },
         "jrny_slide_xpdUKN": {
@@ -645,7 +645,7 @@
         "additional_specs_heading": "Additional Specs",
         "show_membership": true,
         "membership_position": 2,
-        "membership_heading": "The JRYN adaptive fitness membership keeps you going",
+        "membership_heading": "The JRNY® adaptive fitness membership keeps you going",
         "membership_subheading": ""
       }
     }
