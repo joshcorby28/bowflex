@@ -52,7 +52,7 @@
         "cta_Ja7Bbc": {
           "type": "cta",
           "settings": {
-            "text": "Save up to £1,000!",
+            "text": "Check our sale savings!",
             "white-button": false,
             "link": "shopify://collections/sale",
             "button_text": "Shop Now"
