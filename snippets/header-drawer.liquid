@@ -440,18 +440,25 @@
   .menu-drawer__mega-content .mega-menu-actions {
     padding: 0 3rem;
   }
+
+  .menu-drawer__mega-content .global-black-button {
+    font-size: 1.1rem;
+  }
 </style>
 
 <script>
   document.querySelectorAll('.menu-drawer__split-toggle').forEach(function(btn) {
     btn.addEventListener('click', function() {
       var expanded = this.getAttribute('aria-expanded') === 'true';
-      var target = document.getElementById(this.getAttribute('aria-controls'));
-      this.setAttribute('aria-expanded', expanded ? 'false' : 'true');
-      if (expanded) {
-        target.setAttribute('hidden', '');
-      } else {
-        target.removeAttribute('hidden');
+
+      document.querySelectorAll('.menu-drawer__split-toggle').forEach(function(other) {
+        other.setAttribute('aria-expanded', 'false');
+        document.getElementById(other.getAttribute('aria-controls')).setAttribute('hidden', '');
+      });
+
+      if (!expanded) {
+        this.setAttribute('aria-expanded', 'true');
+        document.getElementById(this.getAttribute('aria-controls')).removeAttribute('hidden');
       }
     });
   });
