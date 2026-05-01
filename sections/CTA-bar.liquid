@@ -37,25 +37,28 @@ class="{% if section.blocks.first.settings.white-button %}global-white-button{% 
 </div>
 
 <style>
+  /* DESKTOP FIX */
   .cta-bar__inner {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center !important;
     padding: 15px;
     min-height: 90px;
+  }
+
+  .img-and-text {
+    display: flex;
+    align-items: center !important;
+    gap: 10px;
+    height: 100%;
   }
 
   .cta-bar__message {
     font-size: 24px;
     letter-spacing: 0;
-    margin: 0;
-    line-height: 1.2;
-  }
-
-  .img-and-text {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 1 !important;
   }
 
   .img-and-text img {
@@ -63,13 +66,20 @@ class="{% if section.blocks.first.settings.white-button %}global-white-button{% 
     display: block;
   }
 
-  .cta-bar__inner a {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
+  /* FORCE BUTTON TO CENTER */
+  .cta-bar__inner a.global-black-button,
+  .cta-bar__inner a.global-white-button {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 0 !important;
+    line-height: 1 !important;
+    height: 44px;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
   }
 
+  /* MOBILE (KEEP THIS) */
   @media screen and (max-width: 749px) {
     .cta-bar__inner {
       display: flex !important;
