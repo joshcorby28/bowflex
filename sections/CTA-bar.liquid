@@ -37,9 +37,8 @@ class="{% if section.blocks.first.settings.white-button %}global-white-button{% 
 </div>
 
 <style>
-  /* DESKTOP FIX */
   .cta-bar__inner {
-    display: flex;
+    display: flex !important;
     justify-content: space-between;
     align-items: center !important;
     padding: 15px;
@@ -47,10 +46,11 @@ class="{% if section.blocks.first.settings.white-button %}global-white-button{% 
   }
 
   .img-and-text {
-    display: flex;
+    display: flex !important;
     align-items: center !important;
     gap: 10px;
-    height: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
   }
 
   .cta-bar__message {
@@ -58,7 +58,7 @@ class="{% if section.blocks.first.settings.white-button %}global-white-button{% 
     letter-spacing: 0;
     margin: 0 !important;
     padding: 0 !important;
-    line-height: 1 !important;
+    line-height: 44px !important;
   }
 
   .img-and-text img {
@@ -66,37 +66,22 @@ class="{% if section.blocks.first.settings.white-button %}global-white-button{% 
     display: block;
   }
 
-  /* FORCE BUTTON TO CENTER */
   .cta-bar__inner a.global-black-button,
   .cta-bar__inner a.global-white-button {
-    display: flex !important;
+    display: inline-flex !important;
     align-items: center !important;
     justify-content: center !important;
+    height: 44px !important;
+    min-height: 44px !important;
+    line-height: 44px !important;
     margin: 0 !important;
-    line-height: 1 !important;
-    height: 44px;
     padding-top: 0 !important;
     padding-bottom: 0 !important;
-    @media screen and (min-width: 750px) {
-  .cta-bar__inner {
-    display: flex !important;
-    align-items: center !important;
   }
 
-  .img-and-text,
-  .cta-bar__message,
-  .cta-bar__inner a {
-    align-self: center !important;
-  }
-}
-  }
-
-  /* MOBILE (KEEP THIS) */
   @media screen and (max-width: 749px) {
     .cta-bar__inner {
-      display: flex !important;
       flex-direction: column;
-      align-items: center;
       justify-content: center;
       gap: 16px;
       text-align: center;
@@ -110,8 +95,7 @@ class="{% if section.blocks.first.settings.white-button %}global-white-button{% 
 
     .cta-bar__message {
       font-size: 28px;
-      line-height: 1.1;
-      margin: 0;
+      line-height: 1.1 !important;
       max-width: 280px;
     }
 
