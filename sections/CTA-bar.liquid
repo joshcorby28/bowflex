@@ -77,6 +77,18 @@ class="{% if section.blocks.first.settings.white-button %}global-white-button{% 
     height: 44px;
     padding-top: 0 !important;
     padding-bottom: 0 !important;
+    @media screen and (min-width: 750px) {
+  .cta-bar__inner {
+    display: flex !important;
+    align-items: center !important;
+  }
+
+  .img-and-text,
+  .cta-bar__message,
+  .cta-bar__inner a {
+    align-self: center !important;
+  }
+}
   }
 
   /* MOBILE (KEEP THIS) */
