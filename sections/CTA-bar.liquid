@@ -37,28 +37,28 @@ class="{% if section.blocks.first.settings.white-button %}global-white-button{% 
 </div>
 
 <style>
+  /* ===== DESKTOP ===== */
   .cta-bar__inner {
-    display: flex !important;
+    display: flex;
     justify-content: space-between;
-    align-items: center !important;
+    align-items: center;
     padding: 15px;
     min-height: 90px;
   }
 
+  /* Force both sides to same height */
   .img-and-text {
-    display: flex !important;
-    align-items: center !important;
+    display: flex;
+    align-items: center;
     gap: 10px;
-    margin: 0 !important;
-    padding: 0 !important;
+    height: 44px;
   }
 
   .cta-bar__message {
     font-size: 24px;
     letter-spacing: 0;
-    margin: 0 !important;
-    padding: 0 !important;
-    line-height: 44px !important;
+    margin: 0;
+    line-height: 44px; /* KEY: aligns with button height */
   }
 
   .img-and-text img {
@@ -68,20 +68,21 @@ class="{% if section.blocks.first.settings.white-button %}global-white-button{% 
 
   .cta-bar__inner a.global-black-button,
   .cta-bar__inner a.global-white-button {
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    height: 44px !important;
-    min-height: 44px !important;
-    line-height: 44px !important;
-    margin: 0 !important;
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+    line-height: 44px;
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
+  /* ===== MOBILE ===== */
   @media screen and (max-width: 749px) {
     .cta-bar__inner {
       flex-direction: column;
+      align-items: center;
       justify-content: center;
       gap: 16px;
       text-align: center;
@@ -91,11 +92,12 @@ class="{% if section.blocks.first.settings.white-button %}global-white-button{% 
     .img-and-text {
       justify-content: center;
       text-align: center;
+      height: auto;
     }
 
     .cta-bar__message {
       font-size: 28px;
-      line-height: 1.1 !important;
+      line-height: 1.1;
       max-width: 280px;
     }
 
