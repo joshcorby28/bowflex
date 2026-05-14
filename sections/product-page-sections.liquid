@@ -365,6 +365,7 @@
 
   #shopify-section-{{ section.id }} .pps__slide {
     min-width: 0;
+    margin: 0;
   }
 
   #shopify-section-{{ section.id }} .pps__slide-image {
@@ -842,10 +843,12 @@
         },
         breakpoints: {
           750: {
-            slidesPerView: 2
+            slidesPerView: 2,
+            spaceBetween: 12
           },
           990: {
-            slidesPerView: 3
+            slidesPerView: 3,
+            spaceBetween: 12
           }
         }
       });
