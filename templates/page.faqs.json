@@ -64,15 +64,6 @@
             "row_content": "<p>Once your order has been dispatched you will receive a tracking email with a link to track your delivery. If you have not received this email or have questions about your delivery, please contact our support team.</p>",
             "page": ""
           }
-        },
-        "collapsible_row_rn7VBP": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Do you offer assembly services?",
-            "icon": "none",
-            "row_content": "<p>Assembly services are available on selected products. This option can be added during the checkout process. Please contact our team if you need more information about assembly for a specific product.</p>",
-            "page": ""
-          }
         }
       },
       "block_order": [
@@ -80,8 +71,7 @@
         "collapsible_row_FhTKTG",
         "collapsible_row_jY4Hcf",
         "collapsible_row_LRUCUw",
-        "collapsible_row_qfMg3N",
-        "collapsible_row_rn7VBP"
+        "collapsible_row_qfMg3N"
       ],
       "settings": {
         "caption": "",
