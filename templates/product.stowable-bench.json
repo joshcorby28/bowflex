@@ -130,13 +130,6 @@
             "content": ""
           }
         },
-        "warranty_metric_dpqTUg": {
-          "type": "warranty_metric",
-          "settings": {
-            "label": "Frame",
-            "value": "30 Years"
-          }
-        },
         "warranty_metric_hFRc3f": {
           "type": "warranty_metric",
           "settings": {
@@ -228,7 +221,6 @@
       },
       "block_order": [
         "specs_accordion_kG6NdJ",
-        "warranty_metric_dpqTUg",
         "warranty_metric_hFRc3f",
         "warranty_metric_gi7wD3",
         "spec_metric_pDfeAt",
