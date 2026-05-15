@@ -888,8 +888,22 @@
         "warranty_metric_97MFyn": {
           "type": "warranty_metric",
           "settings": {
-            "label": "",
-            "value": ""
+            "label": "Frame",
+            "value": "3 years"
+          }
+        },
+        "warranty_metric_r9pAFE": {
+          "type": "warranty_metric",
+          "settings": {
+            "label": "Mechanical Parts",
+            "value": "2 years"
+          }
+        },
+        "warranty_metric_HxHTh9": {
+          "type": "warranty_metric",
+          "settings": {
+            "label": "Labour",
+            "value": "2 Years"
           }
         },
         "jrny_slide_DQ3RGE": {
@@ -1034,6 +1048,8 @@
         "spec_metric_eLhEQK",
         "spec_metric_URpTWb",
         "warranty_metric_97MFyn",
+        "warranty_metric_r9pAFE",
+        "warranty_metric_HxHTh9",
         "jrny_slide_DQ3RGE",
         "jrny_slide_ePAPxC",
         "jrny_slide_QPMg4R",
