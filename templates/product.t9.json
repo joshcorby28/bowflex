@@ -290,22 +290,22 @@
         "warranty_metric_eVpgHt": {
           "type": "warranty_metric",
           "settings": {
-            "label": "Frame & Motor",
-            "value": "Lifetime"
+            "label": "Motor",
+            "value": "3 years"
           }
         },
         "warranty_metric_MqBmA3": {
           "type": "warranty_metric",
           "settings": {
             "label": "Mechanical Parts",
-            "value": "3 Years"
+            "value": "2 Years"
           }
         },
         "warranty_metric_JQ49x9": {
           "type": "warranty_metric",
           "settings": {
             "label": "Labour",
-            "value": "1 Year"
+            "value": "2 Years"
           }
         },
         "jrny_slide_CUn9NW": {
