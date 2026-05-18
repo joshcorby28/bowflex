@@ -146,7 +146,7 @@
           "type": "collection-circle",
           "settings": {
             "collection_image": "shopify://shop_images/m6-feature-transport-wheels-bg-2x.webp",
-            "collection_text": "Stay hydrated evert step of the way - water bottle holder"
+            "collection_text": "Stay hydrated every step of the way - water bottle holder"
           }
         },
         "collection_circle_XaWJbT": {
@@ -567,13 +567,6 @@
             "value": "Low Pedal to High Pedal: 13\"(33 cm)"
           }
         },
-        "warranty_metric_bkQXNb": {
-          "type": "warranty_metric",
-          "settings": {
-            "label": "Frame",
-            "value": "2 Years"
-          }
-        },
         "warranty_metric_NBze8g": {
           "type": "warranty_metric",
           "settings": {
@@ -737,7 +730,6 @@
         "spec_metric_4Umcmj",
         "spec_metric_UAEHfH",
         "spec_metric_zMAdQb",
-        "warranty_metric_bkQXNb",
         "warranty_metric_NBze8g",
         "warranty_metric_79eqi3",
         "specs_accordion_3NT9Vt",
