@@ -17,7 +17,7 @@
           "settings": {
             "icon": "phone",
             "title": "General Sales & Support",
-            "content": "<p><a href=\"tel:01494412420\">01494 412420</a></p><p>Monday–Friday: 9 a.m.–5 p.m. GMT<br/>Saturday & Sunday: Closed</p>"
+            "content": "<p><a href=\"tel:01494412420\">01494 412420</a></p><p>Monday–Friday: 9am –5 pm GMT<br/>Saturday & Sunday and Bank Holidays: Closed</p>"
           }
         },
         "card_support": {
@@ -25,7 +25,7 @@
           "settings": {
             "icon": "phone",
             "title": "Parts & Tech Support",
-            "content": "<p><a href=\"tel:01494412420\">01494 412420</a></p><p><strong>In-Warranty Product Support</strong><br>Monday–Friday: 9 a.m.–5 p.m. GMT<br>Saturday & Sunday: Closed</p><p><strong>Out-of-Warranty Product Support</strong><br>Monday–Friday: 9 a.m.–5 p.m. GMT</p>"
+            "content": "<p><a href=\"tel:01494412420\">01494 412420</a></p><p><strong>In-Warranty Product Support</strong><br/>Monday–Friday: 9am – 4pm GMT<br/>Saturday & Sunday and Bank Holidays: Closed</p><p><strong>Out-of-Warranty Product Support</strong><br/>Monday–Friday: 9am – 4pm GMT</p>"
           }
         },
         "card_facebook": {
@@ -33,7 +33,7 @@
           "settings": {
             "icon": "facebook",
             "title": "Facebook",
-            "content": "<p><a href=\"https://www.facebook.com/BowflexUK\">Bowflex UK</a></p><p>Monday–Friday: 9 a.m.–5 p.m. GMT</p>"
+            "content": "<p><a href=\"https://www.facebook.com/BowflexUK\">Bowflex UK</a></p><p>Monday–Friday: 9 a.m – 4 p.m GMT</p>"
           }
         }
       },
