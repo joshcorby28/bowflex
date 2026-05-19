@@ -242,8 +242,8 @@
         "specs_accordion_PcPNUb": {
           "type": "specs_accordion",
           "settings": {
-            "title": "<b>Frame<b></b></b>",
-            "content": "<p><strong>Folding</strong>- Yes (Fold on Pin)</p><p><strong>Fold Flat</strong> - No</p><p><strong>Transport Wheels</strong> - 2</p><p><strong>Gas Shock</strong> - Yes</p><p><strong>Front Roller Size</strong> - 60 mm</p><p><strong>Rear Roller Size</strong> - 46 mm</p><p><strong>Max User Weight</strong> - 325 lbs. / 147.4 kg</p><p><strong>Cross Bar</strong> - No</p><p><strong>Side Rail Material</strong> - ABS</p><p><strong>End Cap Material </strong>- ABS</p>"
+            "title": "Frame",
+            "content": "<p><strong>Folding - </strong>SoftDrop™ folding design for easy storage<br/><br/><strong>Transport Wheels</strong> - Yes</p><p><strong>Gas Shock</strong> - Yes</p><p><strong>Front Roller Size</strong> - 60 mm</p><p><strong>Rear Roller Size</strong> - 46 mm</p><p><strong>Max User Weight</strong> - 325 lbs. / 147 kg</p><p><strong>Cross Bar</strong> - No</p><p><strong>Side Rail Material</strong> - ABS</p><p><strong>End Cap Material </strong>- ABS</p>"
           }
         },
         "specs_accordion_XMxhxK": {
