@@ -207,22 +207,22 @@
         "warranty_metric_FcVbGp": {
           "type": "warranty_metric",
           "settings": {
-            "label": "Frame & Motor",
-            "value": "Lifetime"
+            "label": "Frame",
+            "value": "3 Years"
           }
         },
         "warranty_metric_J4EyzN": {
           "type": "warranty_metric",
           "settings": {
             "label": "Mechanical Parts",
-            "value": "3 Years"
+            "value": "2 Years"
           }
         },
         "warranty_metric_HA7xjJ": {
           "type": "warranty_metric",
           "settings": {
             "label": "Labour",
-            "value": "1 Year"
+            "value": "2 Years"
           }
         },
         "specs_accordion_6tdp4b": {
@@ -372,7 +372,6 @@
         "jrny_slide_KbWjJT",
         "jrny_slide_A3dWc9"
       ],
-      "disabled": true,
       "settings": {
         "dark_color_scheme": "scheme-1",
         "light_color_scheme": "scheme-1",
@@ -383,7 +382,7 @@
         "fallback_training_video_url": "",
         "fallback_training_tab_title_1": "Explore entertainment",
         "fallback_training_tab_title_2": "Go further with JRNY",
-        "show_fitness": true,
+        "show_fitness": false,
         "fitness_position": 2,
         "fitness_heading": "",
         "fitness_subheading": "",
@@ -495,7 +494,7 @@
         "fitness_right_image": "shopify://shop_images/t6-02-app-2x.webp",
         "fitness_right_title": "Fitness App Flexibility",
         "fitness_right_text": "Keep your options open.  Train with popular fitness apps including JRNY, Peloton and Zwift right from your phone or tablet.",
-        "show_specs": true,
+        "show_specs": false,
         "specs_position": 3,
         "specs_heading": "Specs & Warranty",
         "specs_subheading": "Equipment dimensions and warranty details.",
