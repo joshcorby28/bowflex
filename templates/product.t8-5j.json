@@ -256,8 +256,8 @@
         "spec_metric_4L9LQd": {
           "type": "spec_metric",
           "settings": {
-            "label": "Dimensions (in)",
-            "value": "76\" L x 35\" W x 71\" H"
+            "label": "Dimensions (cm)",
+            "value": "193 × 86.4 × 144.7 cm"
           }
         },
         "spec_metric_xbNqc3": {
@@ -495,13 +495,13 @@
         "fitness_right_image": "shopify://shop_images/t6-02-app-2x.webp",
         "fitness_right_title": "Fitness App Flexibility",
         "fitness_right_text": "Keep your options open.  Train with popular fitness apps including JRNY, Peloton and Zwift right from your phone or tablet.",
-        "show_specs": false,
+        "show_specs": true,
         "specs_position": 3,
         "specs_heading": "Specs & Warranty",
         "specs_subheading": "Equipment dimensions and warranty details.",
-        "spec_image_1": "shopify://shop_images/dimensions-folded-t16-bg-2x.webp",
+        "spec_image_1": "shopify://shop_images/BowFlex_T85J_Treadmill_ATF_3_56a376dd-5485-46b9-b276-78e335c849a2.jpg",
         "spec_image_1_alt": "Open treadmill dimensions",
-        "spec_image_2": "shopify://shop_images/dimensions-folded-t16-bg-2x.webp",
+        "spec_image_2": "shopify://shop_images/T8.5J_Console.png",
         "spec_image_2_alt": "Folded treadmill dimensions",
         "specs_group_heading": "Specs",
         "warranty_group_heading": "Warranty",
