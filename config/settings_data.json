@@ -158,6 +158,17 @@
           "button_vertical_position": "lowest",
           "greeting_message": ""
         }
+      },
+      "3897494563833325693": {
+        "type": "shopify://apps/formsentry/blocks/app-embed/019c77bd-bdb8-75a0-829b-938b504b7131",
+        "disabled": false,
+        "settings": {
+          "smart_detection": true,
+          "show_loading": true,
+          "protect_selectors": "",
+          "exclude_selectors": "",
+          "debug_logging": false
+        }
       }
     },
     "color_schemes": {
