@@ -312,6 +312,43 @@
       {{ 'component-totals.css' | asset_url | stylesheet_tag }}
       {{ 'component-price.css' | asset_url | stylesheet_tag }}
       {{ 'component-discounts.css' | asset_url | stylesheet_tag }}
+
+      <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://www.bowflex.co.uk/#organization",
+  "name": "Bowflex",
+  "url": "https://www.bowflex.co.uk",
+  "logo": "https://www.bowflex.com/on/demandware.static/Sites-bowflex-Site/-/default/dw219dcaf8/images/bowflex-logo.svg",
+  "sameAs": [
+    "https://www.facebook.com/bowflex",
+    "https://www.instagram.com/bowflex",
+    "https://www.youtube.com/@bowflex"
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "High Wycombe",
+    "postalCode": "HP12",
+    "addressCountry": "GB"
+  },
+  "parentOrganization": {
+    "@type": "Organization",
+    "name": "Johnson Health Tech",
+    "url": "https://www.johnsonhealthtech.com/"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "customer service",
+    "url": "https://bowflex.co.uk/pages/contact",
+    "telephone": "+44 1494 412420",
+    "email": "retail@jhtgroup.uk",
+    "areaServed": "GB",
+    "availableLanguage": "English",
+    "openingHours": "Mo-Fr 09:00-17:00"
+  }
+}
+</script>
     {%- endif -%}
 
     {%- unless settings.type_body_font.system? -%}
