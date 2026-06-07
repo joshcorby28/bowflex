@@ -594,26 +594,40 @@ font-size:14px;
 {% endjavascript %}
 
 <script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://www.bowflex.co.uk/#organization",
+  "name": "Bowflex",
+  "url": "https://www.bowflex.co.uk",
+  "logo": "https://www.bowflex.com/on/demandware.static/Sites-bowflex-Site/-/default/dw219dcaf8/images/bowflex-logo.svg",
+  "sameAs": [
+    "https://www.facebook.com/bowflex",
+    "https://www.instagram.com/bowflex",
+    "https://www.youtube.com/@bowflex"
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "High Wycombe",
+    "postalCode": "HP12",
+    "addressCountry": "GB"
+  },
+  "parentOrganization": {
     "@type": "Organization",
-    "name": {{ shop.name | json }},
-    {% if settings.logo %}
-      "logo": {{ settings.logo | image_url: width: 500 | prepend: "https:" | json }},
-    {% endif %}
-    "sameAs": [
-      {{ settings.social_twitter_link | json }},
-      {{ settings.social_facebook_link | json }},
-      {{ settings.social_pinterest_link | json }},
-      {{ settings.social_instagram_link | json }},
-      {{ settings.social_tiktok_link | json }},
-      {{ settings.social_tumblr_link | json }},
-      {{ settings.social_snapchat_link | json }},
-      {{ settings.social_youtube_link | json }},
-      {{ settings.social_vimeo_link | json }}
-    ],
-    "url": {{ request.origin | append: page.url | json }}
+    "name": "Johnson Health Tech",
+    "url": "https://www.johnsonhealthtech.com/"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "customer service",
+    "url": "https://bowflex.co.uk/pages/contact",
+    "telephone": "+44 1494 412420",
+    "email": "retail@jhtgroup.uk",
+    "areaServed": "GB",
+    "availableLanguage": "English",
+    "openingHours": "Mo-Fr 09:00-17:00"
   }
+}
 </script>
 
 {%- if request.page_type == 'index' -%}
