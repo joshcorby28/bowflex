@@ -625,26 +625,35 @@ font-size:14px;
     "email": "retail@jhtgroup.uk",
     "areaServed": "GB",
     "availableLanguage": "English",
-    "openingHours": "Mo-Fr 09:00-17:00"
+     "hoursAvailable": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday"
+    ],
+    "opens": "09:00",
+    "closes": "17:00"
   }
 }
 </script>
 
 {%- if request.page_type == 'index' -%}
-  {% assign potential_action_target = request.origin | append: routes.search_url | append: "?q={search_term_string}" %}
-  <script type="application/ld+json">
-    {
-      "@context": "http://schema.org",
-      "@type": "WebSite",
-      "name": {{ shop.name | json }},
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": {{ potential_action_target | json }},
-        "query-input": "required name=search_term_string"
-      },
-      "url": {{ request.origin | append: page.url | json }}
-    }
-  </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Bowflex",
+  "url": "https://www.bowflex.co.uk",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://www.bowflex.co.uk/search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
 {%- endif -%}
 
 
