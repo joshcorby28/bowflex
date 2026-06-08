@@ -609,6 +609,7 @@ font-size:14px;
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "High Wycombe",
+    "addressRegion": "Buckinghamshire",
     "postalCode": "HP12",
     "addressCountry": "GB"
   },
@@ -623,8 +624,14 @@ font-size:14px;
     "url": "https://bowflex.co.uk/pages/contact",
     "telephone": "+44 1494 412420",
     "email": "retail@jhtgroup.uk",
-    "areaServed": "GB",
-    "availableLanguage": "English",
+    "areaServed": {
+  "@type": "Country",
+  "name": "United Kingdom"
+},
+    "availableLanguage": {
+  "@type": "Language",
+  "name": "English"
+},
     "hoursAvailable": {
       "@type": "OpeningHoursSpecification",
       "dayOfWeek": [
