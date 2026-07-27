@@ -111,21 +111,21 @@
         "collection_circle_WdgdYr": {
           "type": "collection-circle",
           "settings": {
-            "collection_image": "shopify://shop_images/552i.png",
+            "collection_image": "shopify://shop_images/bfx_banner_2.jpg",
             "collection_text": "Replaces 15 sets of dumbbells in one compact system"
           }
         },
         "collection_circle_3PRirC": {
           "type": "collection-circle",
           "settings": {
-            "collection_image": "shopify://shop_images/552i_1.png",
-            "collection_text": "Easy-to-use weight selection dials for fast <br> switching between exercises"
+            "collection_image": "shopify://shop_images/bfx_ban_4.jpg",
+            "collection_text": "Easy-to-use weight selection dials for fast  switching between exercises"
           }
         },
         "collection_circle_HFwqiD": {
           "type": "collection-circle",
           "settings": {
-            "collection_image": "shopify://shop_images/552i_2.png",
+            "collection_image": "shopify://shop_images/bfx_ban_3.jpg",
             "collection_text": "Adjusts from 5 to 52.5 lbs (2 to 24 kg) per dumbbell"
           }
         },
@@ -203,7 +203,7 @@
       "type": "video",
       "name": "Smarte Video Hero",
       "settings": {
-        "video": "shopify://files/videos/Bowflex-SelectTech-552-Product-Video-Cut-Down_International.mp4",
+        "video": "shopify://files/videos/BFX_SelectTech-52-Dumbbells_Demo-Video_INT.mp4",
         "video_mobile": "shopify://files/videos/BowFlex-SelectTech-1090-Product-Video_EN.mp4",
         "no_video_mobile": false,
         "show_overlay": false,
@@ -235,29 +235,29 @@
         "spec_metric_pDfeAt": {
           "type": "spec_metric",
           "settings": {
-            "label": "Dimensions (Per Dumbbell - cm)",
-            "value": "16.9” L × 8.3” W × 9” H"
+            "label": "Dimensions (Per Dumbbell - inches)",
+            "value": "17.4\" L × 8.3\" W × 8.1\" H"
           }
         },
         "spec_metric_3hGeEK": {
           "type": "spec_metric",
           "settings": {
             "label": "Dimensions (Per Dumbbell - cm)",
-            "value": "43 L x 21.2 W x 25.3 x 22.8 H"
+            "value": "44.3 L × 21.1 W × 20.7 H cm"
           }
         },
         "spec_metric_3bE8zY": {
           "type": "spec_metric",
           "settings": {
             "label": "15 Weight Settings (Per Dumbbell - lbs)",
-            "value": "5, 7.5, 10, 12.5, 15, 17.5, 20, 22.5, 25, 30, 35, 40, 45, 50, and 52.5 lbs"
+            "value": "5, 7.5, 10, 12.5, 15, 17.5, 20, 22.5, 25, 30, 35, 40, 45, 50, 52.5 lbs"
           }
         },
         "spec_metric_m6q4dD": {
           "type": "spec_metric",
           "settings": {
             "label": "15 Weight Settings (Per Dumbbell - kg)",
-            "value": "2.3, 3.4, 4.5, 5.7, 6.8, 8.0, 9.0, 10.2, 11.4, 13.6, 15.9, 18.2, 20.5, 22.7, 23.9 kg"
+            "value": "2, 3, 4, 5, 7, 8, 9, 10, 11, 14, 16, 18, 20, 23, 24 kg"
           }
         },
         "jrny_slide_iGPaXL": {
@@ -331,9 +331,9 @@
         "specs_position": 3,
         "specs_heading": "Specs & Warranty",
         "specs_subheading": "Equipment dimensions and warranty details.",
-        "spec_image_1": "shopify://shop_images/BFX_ATF_SelectTech_552_Single_Product_dims_02.jpg",
+        "spec_image_1": "shopify://shop_images/Bowflex52Dumbbell4.jpg",
         "spec_image_1_alt": "Open treadmill dimensions",
-        "spec_image_2": "shopify://shop_images/BFX_ATF_SelectTech_552_Single_Product_dims_01_75b36f9e-7fd1-4e06-a779-b63522cd8767.jpg",
+        "spec_image_2": "shopify://shop_images/bfx_52_single_lifted.jpg",
         "spec_image_2_alt": "Folded treadmill dimensions",
         "specs_group_heading": "Specs",
         "warranty_group_heading": "Warranty",
