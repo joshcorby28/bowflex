@@ -111,19 +111,20 @@
         "collection_circle_WdgdYr": {
           "type": "collection-circle",
           "settings": {
-            "collection_image": "shopify://shop_images/t9-feature-quick-response-2x.webp",
+            "collection_image": "shopify://shop_images/BFX_ATF_ICBikeSE_Product_02_2x_d3125c37-cbec-4caf-8e8f-d525e59c2561.jpg",
             "collection_text": "Change speed and incline in a heartbeat"
           }
         },
         "collection_circle_3PRirC": {
           "type": "collection-circle",
           "settings": {
-            "collection_image": "shopify://shop_images/t9-feature-deck-2x.png",
+            "collection_image": "shopify://shop_images/BFX_ATF_ICBikeSE_Product_01_2x_f048dd93-e1de-45b2-8319-5d0228579889.jpg",
             "collection_text": "Plenty of runway."
           }
         },
         "collection_circle_HFwqiD": {
           "type": "collection-circle",
+          "disabled": true,
           "settings": {
             "collection_image": "shopify://shop_images/t9-feature-apple-watch-2x.webp",
             "collection_text": "Connect to Apple Watch."
@@ -131,6 +132,7 @@
         },
         "collection_circle_GceT4N": {
           "type": "collection-circle",
+          "disabled": true,
           "settings": {
             "collection_image": "shopify://shop_images/t9-feature-incline-deck-2x.webp",
             "collection_text": "Your next peak is just ahead."
@@ -138,6 +140,7 @@
         },
         "collection_circle_H9Exnf": {
           "type": "collection-circle",
+          "disabled": true,
           "settings": {
             "collection_image": "shopify://shop_images/t9-feature-media-shelf-2x.webp",
             "collection_text": "Keep your device in reach."
@@ -145,6 +148,7 @@
         },
         "collection_circle_NX6tQx": {
           "type": "collection-circle",
+          "disabled": true,
           "settings": {
             "collection_image": "shopify://shop_images/t9-feature-console-app-2x.webp",
             "collection_text": "Keep your options open."
@@ -152,6 +156,7 @@
         },
         "collection_circle_MkJ3xp": {
           "type": "collection-circle",
+          "disabled": true,
           "settings": {
             "collection_image": "shopify://shop_images/t9-feature-flex-zone-2x.webp",
             "collection_text": "Support and stability to go the distance."
@@ -159,6 +164,7 @@
         },
         "collection_circle_XaWJbT": {
           "type": "collection-circle",
+          "disabled": true,
           "settings": {
             "collection_image": "shopify://shop_images/t9-feature-fan-2x.png",
             "collection_text": "Undeniably cool."
@@ -166,6 +172,7 @@
         },
         "collection_circle_RKXytw": {
           "type": "collection-circle",
+          "disabled": true,
           "settings": {
             "collection_image": "shopify://shop_images/t9-feature-cup-holder-2x.webp",
             "collection_text": "Stay hydrated every step of the way."
@@ -183,6 +190,7 @@
         "collection_circle_XaWJbT",
         "collection_circle_RKXytw"
       ],
+      "disabled": true,
       "name": "Key Features",
       "settings": {
         "section_heading": "Product Features",
@@ -261,9 +269,9 @@
         "specs_position": 3,
         "specs_heading": "Specs & Warranty",
         "specs_subheading": "Equipment dimensions and warranty details.",
-        "spec_image_1": "shopify://shop_images/dimensions-folded-t16-bg-2x.webp",
+        "spec_image_1": "shopify://shop_images/BFX_ATF_ICBikeSE_Product_04_2x_d3f1468a-70cc-41e7-a644-8c5b42459784.jpg",
         "spec_image_1_alt": "Open treadmill dimensions",
-        "spec_image_2": "shopify://shop_images/dimensions-folded-t16-bg-2x.webp",
+        "spec_image_2": "shopify://shop_images/BFX_ATF_ICBikeSE_Product_01_2x_f048dd93-e1de-45b2-8319-5d0228579889.jpg",
         "spec_image_2_alt": "Folded treadmill dimensions",
         "specs_group_heading": "Specs",
         "warranty_group_heading": "Warranty",
