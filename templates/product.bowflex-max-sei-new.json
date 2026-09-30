@@ -1,0 +1,817 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "caption": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "caption",
+        "price",
+        "variant_picker",
+        "buy_buttons",
+        "description"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "",
+        "media_size": "large",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "thumbnail_slider",
+        "mobile_thumbnails": "hide",
+        "media_position": "left",
+        "image_zoom": "none",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "key_features_wQ7gFE": {
+      "type": "key-features",
+      "blocks": {
+        "collection_circle_WdgdYr": {
+          "type": "collection-circle",
+          "settings": {
+            "collection_image": "shopify://shop_images/m6-feature-transport-wheels-bg-2x.webp",
+            "collection_text": "A new spin on speed and incline controls  QuickDial Controls"
+          }
+        },
+        "collection_circle_3PRirC": {
+          "type": "collection-circle",
+          "settings": {
+            "collection_image": "shopify://shop_images/m6-feature-oversized-pedals-bg-2x.webp",
+            "collection_text": "No lags or delays  Ultra-responsive MaxReact Drive System"
+          }
+        },
+        "collection_circle_HFwqiD": {
+          "type": "collection-circle",
+          "settings": {
+            "collection_image": "shopify://shop_images/m6-feature-resistance-levels-bg-2x.jpg",
+            "collection_text": "Plenty of runway 20\"W x 60\" L running path"
+          }
+        },
+        "collection_circle_GceT4N": {
+          "type": "collection-circle",
+          "settings": {
+            "collection_image": "shopify://shop_images/m6-feature-14-minutes-bg-2x.webp",
+            "collection_text": "Your next peak is just ahead  Up to 15% motorised incline"
+          }
+        },
+        "collection_circle_H9Exnf": {
+          "type": "collection-circle",
+          "settings": {
+            "collection_image": "shopify://shop_images/m6-feature-console-bg-2x.webp",
+            "collection_text": "Support and stability to go the distance  Flex Zone® Deck System"
+          }
+        },
+        "collection_circle_wD6Gar": {
+          "type": "collection-circle",
+          "settings": {
+            "collection_image": "shopify://shop_images/m6-feature-media-rack-tablet-bg-2x_1.webp",
+            "collection_text": "JRNY® hands-free.  Adjustable magnetic media shelf holds your mobile."
+          }
+        },
+        "collection_circle_MkJ3xp": {
+          "type": "collection-circle",
+          "settings": {
+            "collection_image": "shopify://shop_images/m6-feature-transport-wheels-bg-2x.webp",
+            "collection_text": "Stay hydrated every step of the way - water bottle holder"
+          }
+        },
+        "collection_circle_XaWJbT": {
+          "type": "collection-circle",
+          "settings": {
+            "collection_image": "shopify://shop_images/m6-feature-hr-handlebar-bg-2x.webp",
+            "collection_text": "Undeniably cool."
+          }
+        },
+        "collection_circle_NX6tQx": {
+          "type": "collection-circle",
+          "settings": {
+            "collection_image": "shopify://shop_images/m6-feature-handlebars-bg-2x.jpg",
+            "collection_text": "Keep your phone or tablet in reach.  Tilt the media shelf forward or back"
+          }
+        }
+      },
+      "block_order": [
+        "collection_circle_WdgdYr",
+        "collection_circle_3PRirC",
+        "collection_circle_HFwqiD",
+        "collection_circle_GceT4N",
+        "collection_circle_H9Exnf",
+        "collection_circle_wD6Gar",
+        "collection_circle_MkJ3xp",
+        "collection_circle_XaWJbT",
+        "collection_circle_NX6tQx"
+      ],
+      "name": "Key Features",
+      "settings": {
+        "section_heading": "Product Features",
+        "color_scheme": "",
+        "title": "Product Features",
+        "heading_size": "h1",
+        "padding_top": 32,
+        "padding_bottom": 36
+      }
+    },
+    "product_page_sections_nx3K7M": {
+      "type": "product-page-sections",
+      "blocks": {
+        "warranty_metric_FcVbGp": {
+          "type": "warranty_metric",
+          "settings": {
+            "label": "Frame & Motor",
+            "value": "Lifetime"
+          }
+        },
+        "warranty_metric_J4EyzN": {
+          "type": "warranty_metric",
+          "settings": {
+            "label": "Mechanical Parts",
+            "value": "3 Years"
+          }
+        },
+        "warranty_metric_HA7xjJ": {
+          "type": "warranty_metric",
+          "settings": {
+            "label": "Labour",
+            "value": "1 Year"
+          }
+        },
+        "specs_accordion_6tdp4b": {
+          "type": "specs_accordion",
+          "settings": {
+            "title": "<b>Console</b>",
+            "content": "<p><strong>Bluetooth Hardware</strong> - BT 4.0LE</p><p><strong>Bluetooth Capabilities</strong> - FTMS, Speakers and Heart Rate</p><p><strong>Bluetooth FTMS App Compatible</strong> - Yes</p><p><strong>Apple + Samsung Watch Compatible</strong> - Yes</p><p><strong>Heart Rate</strong> - Hand contact grips and Bluetooth heart rate strap compatible</p><p><strong>Bluetooth Media Control Keys </strong>- Volume</p><p><strong>Display Type</strong> - 8.8” x 2” / 224 mm x 53 mm black mask LCD with white backlight + 4 white LED windows</p><p><strong>Display Feedback</strong> - Time, Distance, Calories, Speed, Incline, Pace, Laps, Heart Rate, Split Timer, Segment Time</p><p><strong>Programs</strong> - Manual, Muscle Toner, Calorie Goal, Distance Goal, Rolling Hills, Intervals, Strength Builder, Target Heart Rate</p><p><strong>Energy Saver </strong>- Yes</p><p><strong>One-Button Quick Start</strong> - Yes</p><p><strong>Pause Button</strong> - Yes</p><p><strong>Button Type </strong>- Membrane</p><p><strong>Incline Range</strong> - 0–12%</p><p><strong>Speed Range</strong> - 0.5–12 mph</p><p><strong>Storage Features</strong> - Mobile Device Holder, Accessory Tray</p><p><strong>Reading Rack</strong> - Integrated into console</p><p><strong>Personal Fan</strong> - 1 (3 speed)</p><p><strong>Speakers</strong> - 3 Watt Stereo Speakers</p><p><strong>USB Port</strong> - Yes (USB A)</p>"
+          }
+        },
+        "specs_accordion_F4Xeg8": {
+          "type": "specs_accordion",
+          "settings": {
+            "title": "<b>Deck</b>",
+            "content": "<p><strong>Cushion System </strong>- Supportive 3-zone deck cushioning</p><p><strong>Deck Thickness</strong> - 0.75” / 18 mm</p><p><strong>Running Area</strong> - 20” x 60” / 50.8 cm x 152.4 cm</p><p><strong>Running Belt Thickness</strong> - 1.6 mm</p><p><strong>Step On Height </strong>- 8.7” / 22 cm</p><p><strong>Lubrication System</strong> - Silicone Oil</p><p><strong>Reversible Deck</strong> - No<br/><br/></p>"
+          }
+        },
+        "specs_accordion_PcPNUb": {
+          "type": "specs_accordion",
+          "settings": {
+            "title": "<b>Frame<b></b></b>",
+            "content": "<p><strong>Folding</strong>- Yes (Fold on Pin)</p><p><strong>Fold Flat</strong> - No</p><p><strong>Transport Wheels</strong> - 2</p><p><strong>Gas Shock</strong> - Yes</p><p><strong>Front Roller Size</strong> - 60 mm</p><p><strong>Rear Roller Size</strong> - 46 mm</p><p><strong>Max User Weight</strong> - 325 lbs. / 147.4 kg</p><p><strong>Cross Bar</strong> - No</p><p><strong>Side Rail Material</strong> - ABS</p><p><strong>End Cap Material </strong>- ABS</p>"
+          }
+        },
+        "specs_accordion_XMxhxK": {
+          "type": "specs_accordion",
+          "settings": {
+            "title": "<b>Technical Specs</b>",
+            "content": "<p><strong>Assembled Dimensions</strong> - 76” L x 35” W x 71” H / 196 x 89.7 x 181 cm</p><p><strong>Assembled Weight </strong>- 234 lbs. / 106 kg</p><p><strong>Shipping Weight</strong> - 293 lbs. / 133 kg</p><p><strong>Shipping Dimensions </strong>- 81.5” x 29.9” x 13.4” / 207 x 76 x 34 cm</p><p><strong>Electrical Requirements</strong> - AC 110 volt and 220 volt 50/60 Hz (USA and Europe)<br/><br/></p>"
+          }
+        },
+        "spec_metric_4L9LQd": {
+          "type": "spec_metric",
+          "settings": {
+            "label": "Dimensions (in)",
+            "value": "76\" L x 35\" W x 71\" H"
+          }
+        },
+        "spec_metric_xbNqc3": {
+          "type": "spec_metric",
+          "settings": {
+            "label": "Dimensions (cm)",
+            "value": "193 x 86.6 x 144.7"
+          }
+        },
+        "spec_metric_QfYXfy": {
+          "type": "spec_metric",
+          "settings": {
+            "label": "Stowed Dimensions (in)",
+            "value": "44\" L x 35\" W x 71\" H"
+          }
+        },
+        "spec_metric_WaC3Nd": {
+          "type": "spec_metric",
+          "settings": {
+            "label": "Stowed Dimensions (cm)",
+            "value": "121.9 x 86.4 x 157.5"
+          }
+        },
+        "spec_metric_cwVnMQ": {
+          "type": "spec_metric",
+          "settings": {
+            "label": "Minimum Ceiling Height",
+            "value": "User height + 20.75\" / 52.7cm"
+          }
+        },
+        "spec_metric_mmNyxw": {
+          "type": "spec_metric",
+          "settings": {
+            "label": "Console",
+            "value": "Dual LED/LCD"
+          }
+        },
+        "spec_metric_Yt3Vdq": {
+          "type": "spec_metric",
+          "settings": {
+            "label": "Product Weight",
+            "value": "233.7 lbs (84.8 kg)"
+          }
+        },
+        "spec_metric_9xP8KC": {
+          "type": "spec_metric",
+          "settings": {
+            "label": "Maximum User Weight",
+            "value": "325 lbs (147 kg)"
+          }
+        },
+        "jrny_slide_CUn9NW": {
+          "type": "jrny_slide",
+          "settings": {
+            "image": "shopify://shop_images/t16-jrny-coaching-bg-1x.jpg",
+            "title": "Every day is different.",
+            "text": "Get a custom set of adaptive workouts to freshen up your routine."
+          }
+        },
+        "jrny_slide_iGPaXL": {
+          "type": "jrny_slide",
+          "settings": {
+            "image": "shopify://shop_images/t16-jrny-coaching-bg-1x.jpg",
+            "title": "Every day is different.",
+            "text": "Get a custom set of adaptive workouts to freshen up your routine."
+          }
+        },
+        "jrny_slide_VNnwkh": {
+          "type": "jrny_slide",
+          "settings": {
+            "image": "shopify://shop_images/t16-jrny-coaching-bg-1x.jpg",
+            "title": "Every day is different.",
+            "text": "Get a custom set of adaptive workouts to freshen up your routine."
+          }
+        },
+        "jrny_slide_KbWjJT": {
+          "type": "jrny_slide",
+          "settings": {
+            "image": "shopify://shop_images/t16-jrny-coaching-bg-1x.jpg",
+            "title": "Every day is different.",
+            "text": "Get a custom set of adaptive workouts to freshen up your routine."
+          }
+        },
+        "jrny_slide_A3dWc9": {
+          "type": "jrny_slide",
+          "settings": {
+            "image": "shopify://shop_images/t16-jrny-coaching-bg-1x.jpg",
+            "title": "Every day is different.",
+            "text": "Get a custom set of adaptive workouts to freshen up your routine."
+          }
+        }
+      },
+      "block_order": [
+        "warranty_metric_FcVbGp",
+        "warranty_metric_J4EyzN",
+        "warranty_metric_HA7xjJ",
+        "specs_accordion_6tdp4b",
+        "specs_accordion_F4Xeg8",
+        "specs_accordion_PcPNUb",
+        "specs_accordion_XMxhxK",
+        "spec_metric_4L9LQd",
+        "spec_metric_xbNqc3",
+        "spec_metric_QfYXfy",
+        "spec_metric_WaC3Nd",
+        "spec_metric_cwVnMQ",
+        "spec_metric_mmNyxw",
+        "spec_metric_Yt3Vdq",
+        "spec_metric_9xP8KC",
+        "jrny_slide_CUn9NW",
+        "jrny_slide_iGPaXL",
+        "jrny_slide_VNnwkh",
+        "jrny_slide_KbWjJT",
+        "jrny_slide_A3dWc9"
+      ],
+      "settings": {
+        "dark_color_scheme": "scheme-1",
+        "light_color_scheme": "scheme-1",
+        "show_training": false,
+        "training_position": 1,
+        "training_heading": "The ultimate training experience",
+        "training_subheading": "Watch videos below to learn more.",
+        "fallback_training_video_url": "",
+        "fallback_training_tab_title_1": "Explore entertainment",
+        "fallback_training_tab_title_2": "Go further with JRNY",
+        "show_fitness": true,
+        "fitness_position": 2,
+        "fitness_heading": "",
+        "fitness_subheading": "",
+        "fitness_left_image": "shopify://shop_images/m6-masonry-feature-intensity-2x.webp",
+        "fitness_left_title": "Stepper-Like Intensity",
+        "fitness_left_text": "Agile enough for short Circuit-focused hill sprints and comfortable enough for leisurely hikes.",
+        "fitness_left_pill_1": "",
+        "fitness_left_pill_2": "",
+        "fitness_right_image": "shopify://shop_images/m6-masonry-feature-path-2x.webp",
+        "fitness_right_title": "Vertical Elliptical Path",
+        "fitness_right_text": "A vertically oriented step path makes Max more of an elliptical/stepper hybrid, perfect for HIIT and incline focused training.",
+        "show_specs": false,
+        "specs_position": 3,
+        "specs_heading": "Specs & Warranty",
+        "specs_subheading": "Equipment dimensions and warranty details.",
+        "spec_image_1": "shopify://shop_images/dimensions-t6-bg-xscreen-2x.webp",
+        "spec_image_1_alt": "Open treadmill dimensions",
+        "spec_image_2": "shopify://shop_images/dimensions-folded-t6-bg-2x.webp",
+        "spec_image_2_alt": "Folded treadmill dimensions",
+        "specs_group_heading": "Specs",
+        "warranty_group_heading": "Warranty",
+        "additional_specs_heading": "Additional Specs",
+        "show_membership": false,
+        "membership_position": 4,
+        "membership_heading": "The JRNY adaptive fitness membership keeps you going.",
+        "membership_subheading": "Dummy carousel cards for membership benefits."
+      }
+    },
+    "product_page_sections_7DntQy": {
+      "type": "product-page-sections",
+      "blocks": {
+        "jrny_slide_JrPyYw": {
+          "type": "jrny_slide",
+          "settings": {
+            "image": "shopify://shop_images/t6-jrny-radio-bg-2x.webp",
+            "title": "Find a playlist to power your P.R.",
+            "text": "An ever-fresh line up on JRNY Radio means you can always find a musical mood boost."
+          }
+        },
+        "jrny_slide_XrDExw": {
+          "type": "jrny_slide",
+          "settings": {
+            "image": "shopify://shop_images/t6-jrny-workout-selection-bg-2x.webp",
+            "title": "Every day is different.",
+            "text": "Get a custom set of adaptive workouts to freshen up your routine."
+          }
+        },
+        "jrny_slide_bqG9CR": {
+          "type": "jrny_slide",
+          "settings": {
+            "image": "shopify://shop_images/t6-jrny-coaching-bg-2x.webp",
+            "title": "Go ahead, pick up the pace",
+            "text": "Your virtual coach gives you real-time encouragement and guidance for every run."
+          }
+        },
+        "jrny_slide_eVWJUN": {
+          "type": "jrny_slide",
+          "settings": {
+            "image": "shopify://shop_images/t16-jrny-coaching-bg-1x.jpg",
+            "title": "Roam if you want to",
+            "text": "200+ Explore the World routes gives you a beautiful new place to run each day."
+          }
+        },
+        "jrny_slide_3Bci8p": {
+          "type": "jrny_slide",
+          "settings": {
+            "image": "shopify://shop_images/t9-jrny-whole-body-workouts-bg-2x.webp",
+            "title": "When you want a change of pace",
+            "text": "Work in some whole-body movement with yoa, Pilates and strenth training classes."
+          }
+        },
+        "jrny_slide_tpRRww": {
+          "type": "jrny_slide",
+          "settings": {
+            "image": "shopify://shop_images/t6-jrny-metrics-tracking-bg-2x.webp",
+            "title": "Celebrate your success",
+            "text": "Data and performance tracking shows you just how far you've come"
+          }
+        }
+      },
+      "block_order": [
+        "jrny_slide_JrPyYw",
+        "jrny_slide_XrDExw",
+        "jrny_slide_bqG9CR",
+        "jrny_slide_eVWJUN",
+        "jrny_slide_3Bci8p",
+        "jrny_slide_tpRRww"
+      ],
+      "settings": {
+        "dark_color_scheme": "scheme-1",
+        "light_color_scheme": "scheme-1",
+        "show_training": false,
+        "training_position": 1,
+        "training_heading": "The ultimate training experience",
+        "training_subheading": "Watch videos below to learn more.",
+        "fallback_training_video_url": "",
+        "fallback_training_tab_title_1": "Explore entertainment",
+        "fallback_training_tab_title_2": "Go further with JRNY",
+        "show_fitness": false,
+        "fitness_position": 2,
+        "fitness_heading": "All the essentials for your run, plus total fitness app freedom",
+        "fitness_subheading": "",
+        "fitness_left_image": "shopify://shop_images/t6-01-watch-2x.webp",
+        "fitness_left_title": "Connect to your watch",
+        "fitness_left_text": "Connect to Apple Watch or Samsung Galaxy Watch for a seamless way to keep your metrics in sync.",
+        "fitness_left_pill_1": "Apple Watch",
+        "fitness_left_pill_2": "Galaxy Watch",
+        "fitness_right_image": "shopify://shop_images/t6-02-app-2x.webp",
+        "fitness_right_title": "Fitness App Flexibility",
+        "fitness_right_text": "Keep your options open.  Train with popular fitness apps including JRNY, Peloton and Zwift right from your phone or tablet.",
+        "show_specs": false,
+        "specs_position": 3,
+        "specs_heading": "Specs & Warranty",
+        "specs_subheading": "Equipment dimensions and warranty details.",
+        "spec_image_1": "shopify://shop_images/dimensions-folded-t16-bg-2x.webp",
+        "spec_image_1_alt": "Open treadmill dimensions",
+        "spec_image_2": "shopify://shop_images/dimensions-folded-t16-bg-2x.webp",
+        "spec_image_2_alt": "Folded treadmill dimensions",
+        "specs_group_heading": "Specs",
+        "warranty_group_heading": "Warranty",
+        "additional_specs_heading": "Additional Specs",
+        "show_membership": false,
+        "membership_position": 4,
+        "membership_heading": "The JRNY adaptive fitness membership keeps you going.",
+        "membership_subheading": ""
+      }
+    },
+    "product_page_sections_nagEHM": {
+      "type": "product-page-sections",
+      "blocks": {
+        "training_tab_T4QXT4": {
+          "type": "training_tab",
+          "settings": {
+            "tab_title": "Explore entertainment",
+            "video_embed_url": ""
+          }
+        },
+        "training_tab_RazUDh": {
+          "type": "training_tab",
+          "settings": {
+            "tab_title": "Explore entertainment",
+            "video_embed_url": ""
+          }
+        },
+        "spec_metric_CwT6r4": {
+          "type": "spec_metric",
+          "settings": {
+            "label": "Dimensions (in)",
+            "value": "46\" L x 26\" W x 64.2\" H"
+          }
+        },
+        "spec_metric_9DbkFJ": {
+          "type": "spec_metric",
+          "settings": {
+            "label": "Dimensions (cm)",
+            "value": "117 x 66 x 163 cm"
+          }
+        },
+        "spec_metric_TLGd3Y": {
+          "type": "spec_metric",
+          "settings": {
+            "label": "Minimum Ceiling Height",
+            "value": "User Height + 20.5\" (52 cm)"
+          }
+        },
+        "spec_metric_bktx66": {
+          "type": "spec_metric",
+          "settings": {
+            "label": "Maximum User Weight",
+            "value": "300 lbs (136 kg)"
+          }
+        },
+        "spec_metric_pNfhEP": {
+          "type": "spec_metric",
+          "settings": {
+            "label": "Distance Between Pedals",
+            "value": "Center to Center: 11\"(28 cm)"
+          }
+        },
+        "spec_metric_4Umcmj": {
+          "type": "spec_metric",
+          "settings": {
+            "label": "Product Weight",
+            "value": "136 lbs (61.7 kg)"
+          }
+        },
+        "spec_metric_UAEHfH": {
+          "type": "spec_metric",
+          "settings": {
+            "label": "Step-On Height",
+            "value": "Ground to Low Pedal: 8.5\"(21.6 cm)"
+          }
+        },
+        "spec_metric_zMAdQb": {
+          "type": "spec_metric",
+          "settings": {
+            "label": "Max Step Differential",
+            "value": "Low Pedal to High Pedal: 13\"(33 cm)"
+          }
+        },
+        "warranty_metric_NBze8g": {
+          "type": "warranty_metric",
+          "settings": {
+            "label": "Mechanical Parts",
+            "value": "2 Years"
+          }
+        },
+        "warranty_metric_79eqi3": {
+          "type": "warranty_metric",
+          "settings": {
+            "label": "Labour",
+            "value": "2 years"
+          }
+        },
+        "specs_accordion_3NT9Vt": {
+          "type": "specs_accordion",
+          "settings": {
+            "title": "",
+            "content": "<p>Add your specification details here.</p>"
+          }
+        },
+        "specs_accordion_6x4rAT": {
+          "type": "specs_accordion",
+          "disabled": true,
+          "settings": {
+            "title": "Console",
+            "content": "<p>Add your specification details here.</p>"
+          }
+        },
+        "jrny_slide_cBxYmY": {
+          "type": "jrny_slide",
+          "settings": {
+            "image": "shopify://shop_images/m6-jrny-radio-bg-2x.jpg",
+            "title": "Find your HIIT tracks",
+            "text": "JRNY® Radio has high-energy playlists for your sprints and chill tracks for your recovery."
+          }
+        },
+        "jrny_slide_emWP4L": {
+          "type": "jrny_slide",
+          "settings": {
+            "image": "shopify://shop_images/m6-jrny-workout-selection-bg-2x.jpg",
+            "title": "A new hill every day",
+            "text": "Get a new set of adaptive workouts every time you climb on your Max Trainer."
+          }
+        },
+        "jrny_slide_W4Wd8A": {
+          "type": "jrny_slide",
+          "settings": {
+            "image": "shopify://shop_images/m6-jrny-coaching-bg-2x.jpg",
+            "title": "Rise to new heights",
+            "text": "Your virtual coach keeps you motivated and moving, eery step of the way."
+          }
+        },
+        "jrny_slide_8zWeEK": {
+          "type": "jrny_slide",
+          "settings": {
+            "image": "shopify://shop_images/m6-jrny-etw-bg-2x.jpg",
+            "title": "Climb in every country",
+            "text": "200+ Explore the World routes give you new hills and valleys to climb with every workout."
+          }
+        },
+        "jrny_slide_UnPciK": {
+          "type": "jrny_slide",
+          "settings": {
+            "image": "shopify://shop_images/m6-jrny-fitness-trainer-bg-2x.jpg",
+            "title": "Classes made for Max Trainer",
+            "text": "Find trainer-led workouts developed specifically for Max Trainer ellipticals/."
+          }
+        },
+        "jrny_slide_qjqd87": {
+          "type": "jrny_slide",
+          "settings": {
+            "image": "shopify://shop_images/jrny-full-body-workouts-m-lr-0623-bg-2x.webp",
+            "title": "Add a little floor work in",
+            "text": "Yoga, Pilates and strength training give you options when you want a change of pace."
+          }
+        },
+        "jrny_slide_nQKAdJ": {
+          "type": "jrny_slide",
+          "settings": {
+            "image": "shopify://shop_images/m6-jrny-tracking-metrics-bg-2x.jpg",
+            "title": "Track every new peak",
+            "text": "Data and performance metrics help you visualise your progress."
+          }
+        },
+        "app_icon_GiqWBx": {
+          "type": "app_icon",
+          "settings": {
+            "icon_alt": "App icon"
+          }
+        },
+        "app_icon_xtfGyz": {
+          "type": "app_icon",
+          "settings": {
+            "icon_alt": "App icon"
+          }
+        },
+        "app_icon_fQA36T": {
+          "type": "app_icon",
+          "settings": {
+            "icon_alt": "App icon"
+          }
+        },
+        "app_icon_wFyLVK": {
+          "type": "app_icon",
+          "settings": {
+            "icon_alt": "App icon"
+          }
+        },
+        "app_icon_LFL4BB": {
+          "type": "app_icon",
+          "settings": {
+            "icon_alt": "App icon"
+          }
+        },
+        "app_icon_r7wfzp": {
+          "type": "app_icon",
+          "settings": {
+            "icon_alt": "App icon"
+          }
+        },
+        "app_icon_rReDD9": {
+          "type": "app_icon",
+          "settings": {
+            "icon_alt": "App icon"
+          }
+        },
+        "app_icon_6CQma7": {
+          "type": "app_icon",
+          "settings": {
+            "icon_alt": "App icon"
+          }
+        },
+        "app_icon_rQWEEj": {
+          "type": "app_icon",
+          "settings": {
+            "icon_alt": "App icon"
+          }
+        },
+        "app_icon_CnjbYw": {
+          "type": "app_icon",
+          "settings": {
+            "icon_alt": "App icon"
+          }
+        },
+        "app_icon_6wzpDD": {
+          "type": "app_icon",
+          "settings": {
+            "icon_alt": "App icon"
+          }
+        }
+      },
+      "block_order": [
+        "training_tab_T4QXT4",
+        "training_tab_RazUDh",
+        "spec_metric_CwT6r4",
+        "spec_metric_9DbkFJ",
+        "spec_metric_TLGd3Y",
+        "spec_metric_bktx66",
+        "spec_metric_pNfhEP",
+        "spec_metric_4Umcmj",
+        "spec_metric_UAEHfH",
+        "spec_metric_zMAdQb",
+        "warranty_metric_NBze8g",
+        "warranty_metric_79eqi3",
+        "specs_accordion_3NT9Vt",
+        "specs_accordion_6x4rAT",
+        "jrny_slide_cBxYmY",
+        "jrny_slide_emWP4L",
+        "jrny_slide_W4Wd8A",
+        "jrny_slide_8zWeEK",
+        "jrny_slide_UnPciK",
+        "jrny_slide_qjqd87",
+        "jrny_slide_nQKAdJ",
+        "app_icon_GiqWBx",
+        "app_icon_xtfGyz",
+        "app_icon_fQA36T",
+        "app_icon_wFyLVK",
+        "app_icon_LFL4BB",
+        "app_icon_r7wfzp",
+        "app_icon_rReDD9",
+        "app_icon_6CQma7",
+        "app_icon_rQWEEj",
+        "app_icon_CnjbYw",
+        "app_icon_6wzpDD"
+      ],
+      "name": "Product page sections",
+      "settings": {
+        "dark_color_scheme": "",
+        "light_color_scheme": "",
+        "show_training": false,
+        "training_position": 1,
+        "training_heading": "The ultimate training experience",
+        "training_subheading": "Watch videos below to learn more.",
+        "fallback_training_video_url": "",
+        "fallback_training_tab_title_1": "Explore entertainment",
+        "fallback_training_tab_image_1": "shopify://shop_images/m6-masonry-feature-full-body-2x.webp",
+        "fallback_training_tab_title_2": "Go further with JRNY",
+        "show_fitness": true,
+        "fitness_position": 2,
+        "fitness_heading": "",
+        "fitness_subheading": "",
+        "fitness_left_image": "shopify://shop_images/m6-masonry-feature-full-body-2x.webp",
+        "fitness_left_title": "Connect to your watch",
+        "fitness_left_text": "Connect to Apple Watch® or Samsung Galaxy Watch® for a seamless way to keep your metrics in sync.",
+        "fitness_left_pill_1": "",
+        "fitness_left_pill_2": "",
+        "fitness_right_image": "shopify://shop_images/m6-masonry-feature-compact-2x.webp",
+        "fitness_right_title": "16” HD touchscreen",
+        "fitness_right_text": "Browse the web or access Netflix®, YouTube, Spotify®, JRNY®, and more.",
+        "show_specs": true,
+        "specs_position": 3,
+        "specs_heading": "Specs & Warranty",
+        "specs_subheading": "Equipment dimensions and warranty details.",
+        "spec_image_1": "shopify://shop_images/dimensions-m6-bg-2x.webp",
+        "spec_image_1_alt": "Open treadmill dimensions",
+        "spec_image_2": "shopify://shop_images/dimensions-step-height-m6-bg-2x.jpg",
+        "spec_image_2_alt": "Folded treadmill dimensions",
+        "specs_group_heading": "Specs",
+        "warranty_group_heading": "Warranty",
+        "additional_specs_heading": "",
+        "show_membership": true,
+        "membership_position": 4,
+        "membership_heading": "JRNY® adaptive fitness membership",
+        "membership_subheading": ""
+      }
+    },
+    "custom_liquid_3DHJKU": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "{% comment %}\n  BowFlex Max Trainer FAQ\n  Shopify Custom Liquid\n{% endcomment %}\n\n<section class=\"bowflex-faq-section\">\n  <div class=\"bowflex-faq-container\">\n\n    <div class=\"bowflex-faq-header\">\n      <span class=\"bowflex-faq-eyebrow\">MAX TRAINER</span>\n      <h2>Frequently Asked Questions</h2>\n      <p>\n        Find out more about BowFlex Max Trainer models, training benefits, home use and which model is right for your fitness goals.\n      </p>\n    </div>\n\n    <div class=\"bowflex-faq-group\">\n\n      <h3 class=\"bowflex-faq-category\">Product Fit &amp; Training Experience</h3>\n\n      <details class=\"bowflex-faq-item\">\n        <summary>\n          <span>Why choose a BowFlex Max Trainer instead of a traditional elliptical trainer?</span>\n          <span class=\"bowflex-faq-icon\" aria-hidden=\"true\"></span>\n        </summary>\n\n        <div class=\"bowflex-faq-answer\">\n          <p>\n            A <strong>BowFlex Max Trainer</strong> is a strong choice for users who want more than a traditional elliptical workout. It combines elliptical-style low-impact movement with stepper-style climbing, creating a compact, full-body and higher-intensity cardio experience.\n          </p>\n\n          <p>\n            Compared with a traditional elliptical trainer, which usually focuses on a longer and smoother gliding stride, a BowFlex Max Trainer helps users engage both the lower body and upper body in a more time-efficient workout.\n          </p>\n\n          <p>\n            It is especially suitable for users who want <strong>low-impact training, calorie-burning cardio, interval workouts</strong> and a compact home fitness machine.\n          </p>\n\n          <p>\n            Recommended options include <strong>BowFlex Max Trainer SEi</strong> for compact connected cardio, <strong>BowFlex Max Trainer M6i</strong> for high-intensity home interval training and <strong>BowFlex Max Trainer Total 40</strong> for a more premium connected training experience with a built-in touchscreen.\n          </p>\n        </div>\n      </details>\n\n      <details class=\"bowflex-faq-item\">\n        <summary>\n          <span>Is a BowFlex Max Trainer suitable for apartments or small homes?</span>\n          <span class=\"bowflex-faq-icon\" aria-hidden=\"true\"></span>\n        </summary>\n\n        <div class=\"bowflex-faq-answer\">\n          <p>\n            Yes. BowFlex Max Trainer models are designed with a <strong>compact footprint</strong> compared with many traditional cardio machines.\n          </p>\n\n          <p>\n            They are suitable for home training spaces when placed on a flat, stable surface with enough clearance for safe access and full movement.\n          </p>\n\n          <p>\n            A floor mat is recommended to help protect the floor, improve stability and reduce vibration.\n          </p>\n        </div>\n      </details>\n\n      <details class=\"bowflex-faq-item\">\n        <summary>\n          <span>What muscles does a BowFlex Max Trainer work?</span>\n          <span class=\"bowflex-faq-icon\" aria-hidden=\"true\"></span>\n        </summary>\n\n        <div class=\"bowflex-faq-answer\">\n          <p>\n            A BowFlex Max Trainer can help train the <strong>lower body, upper body and core</strong> when used with proper form.\n          </p>\n\n          <p>\n            The stepper-style climbing motion works the <strong>legs and glutes</strong>, while the moving handlebars help engage the <strong>arms, shoulders, chest and back</strong>.\n          </p>\n\n          <p>\n            Because the feet stay supported on the pedals, it provides a <strong>low-impact cardio workout</strong> while still involving multiple muscle groups.\n          </p>\n        </div>\n      </details>\n\n      <details class=\"bowflex-faq-item\">\n        <summary>\n          <span>Is a BowFlex Max Trainer good for calorie-burning workouts?</span>\n          <span class=\"bowflex-faq-icon\" aria-hidden=\"true\"></span>\n        </summary>\n\n        <div class=\"bowflex-faq-answer\">\n          <p>\n            Yes. BowFlex Max Trainer models are designed for efficient cardio workouts, including <strong>interval training, HIIT, endurance sessions and full-body cardio</strong>.\n          </p>\n\n          <p>\n            Workout results depend on training intensity, duration, resistance level, user fitness level and consistency.\n          </p>\n\n          <p>\n            For users who want shorter, more intense home cardio sessions, Max Trainer models are a strong option.\n          </p>\n        </div>\n      </details>\n\n      <details class=\"bowflex-faq-item\">\n        <summary>\n          <span>Which BowFlex Max Trainer is right for me: SEi, M6 / M6i, or Max Total 40?</span>\n          <span class=\"bowflex-faq-icon\" aria-hidden=\"true\"></span>\n        </summary>\n\n        <div class=\"bowflex-faq-answer\">\n\n          <p>\n            <strong>BowFlex Max Trainer SEi</strong> is suitable for users who want quiet, compact cardio with a <strong>7-inch colour LCD display, 16 resistance levels, Bluetooth heart rate compatibility</strong> and JRNY training through a mobile device.\n          </p>\n\n          <p>\n            <strong>BowFlex Max Trainer M6 / M6i</strong> is a strong choice for users who want compact, high-intensity, low-impact training with <strong>16 resistance levels, a backlit LCD console, 4-grip handlebars, media shelf, USB charging</strong> and JRNY through a smartphone or tablet.\n          </p>\n\n          <p>\n            <strong>BowFlex Max Total 40</strong> is the premium option for users who want a built-in <strong>16-inch adjustable HD touchscreen, 20 resistance levels, 6-grip handlebars, integrated JRNY and Bluetooth speakers</strong> for the most immersive connected training experience.\n          </p>\n\n        </div>\n      </details>\n\n    </div>\n\n  </div>\n</section>\n\n<style>\n  .bowflex-faq-section {\n    width: 100%;\n    padding: 60px 20px;\n    background: #ffffff;\n    color: #161616;\n  }\n\n  .bowflex-faq-container {\n    width: 100%;\n    max-width: 1100px;\n    margin: 0 auto;\n  }\n\n  .bowflex-faq-header {\n    max-width: 760px;\n    margin-bottom: 45px;\n  }\n\n  .bowflex-faq-eyebrow {\n    display: block;\n    margin-bottom: 10px;\n    font-size: 12px;\n    font-weight: 700;\n    letter-spacing: 1.8px;\n    text-transform: uppercase;\n  }\n\n  .bowflex-faq-header h2 {\n    margin: 0 0 14px;\n    padding: 0;\n    font-size: clamp(30px, 4vw, 44px);\n    line-height: 1.1;\n    font-weight: 700;\n    letter-spacing: -0.8px;\n  }\n\n  .bowflex-faq-header p {\n    margin: 0;\n    max-width: 700px;\n    font-size: 16px;\n    line-height: 1.7;\n    color: #555555;\n  }\n\n  .bowflex-faq-group {\n    margin-bottom: 42px;\n  }\n\n  .bowflex-faq-group:last-child {\n    margin-bottom: 0;\n  }\n\n  .bowflex-faq-category {\n    margin: 0 0 14px;\n    padding: 0;\n    font-size: 18px;\n    line-height: 1.3;\n    font-weight: 700;\n  }\n\n  .bowflex-faq-item {\n    border-top: 1px solid #dedede;\n    margin: 0;\n  }\n\n  .bowflex-faq-item:last-child {\n    border-bottom: 1px solid #dedede;\n  }\n\n  .bowflex-faq-item summary {\n    position: relative;\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n    gap: 25px;\n    padding: 23px 5px;\n    list-style: none;\n    cursor: pointer;\n    font-size: 17px;\n    line-height: 1.45;\n    font-weight: 600;\n    transition: opacity 0.2s ease;\n  }\n\n  .bowflex-faq-item summary::-webkit-details-marker {\n    display: none;\n  }\n\n  .bowflex-faq-item summary::marker {\n    content: \"\";\n  }\n\n  .bowflex-faq-item summary:hover {\n    opacity: 0.7;\n  }\n\n  .bowflex-faq-icon {\n    position: relative;\n    display: block;\n    flex: 0 0 18px;\n    width: 18px;\n    height: 18px;\n  }\n\n  .bowflex-faq-icon::before,\n  .bowflex-faq-icon::after {\n    content: \"\";\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    width: 16px;\n    height: 2px;\n    background: currentColor;\n    transform: translate(-50%, -50%);\n    transition: transform 0.25s ease;\n  }\n\n  .bowflex-faq-icon::after {\n    transform: translate(-50%, -50%) rotate(90deg);\n  }\n\n  .bowflex-faq-item[open] .bowflex-faq-icon::after {\n    transform: translate(-50%, -50%) rotate(0deg);\n  }\n\n  .bowflex-faq-answer {\n    max-width: 900px;\n    padding: 0 45px 25px 5px;\n    color: #555555;\n    font-size: 15.5px;\n    line-height: 1.75;\n  }\n\n  .bowflex-faq-answer p {\n    margin: 0 0 14px;\n  }\n\n  .bowflex-faq-answer p:last-child {\n    margin-bottom: 0;\n  }\n\n  .bowflex-faq-answer strong {\n    color: #222222;\n    font-weight: 600;\n  }\n\n  @media screen and (max-width: 749px) {\n    .bowflex-faq-section {\n      padding: 40px 16px;\n    }\n\n    .bowflex-faq-header {\n      margin-bottom: 35px;\n    }\n\n    .bowflex-faq-header h2 {\n      font-size: 30px;\n    }\n\n    .bowflex-faq-header p {\n      font-size: 15px;\n    }\n\n    .bowflex-faq-category {\n      font-size: 17px;\n    }\n\n    .bowflex-faq-item summary {\n      padding: 19px 2px;\n      font-size: 15.5px;\n      gap: 16px;\n    }\n\n    .bowflex-faq-answer {\n      padding: 0 28px 22px 2px;\n      font-size: 14.5px;\n    }\n  }\n</style>\n\n<script type=\"application/ld+json\">\n{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"FAQPage\",\n  \"mainEntity\": [\n    {\n      \"@type\": \"Question\",\n      \"name\": \"Why choose a BowFlex Max Trainer instead of a traditional elliptical trainer?\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"A BowFlex Max Trainer combines elliptical-style low-impact movement with stepper-style climbing to create a compact, full-body and higher-intensity cardio workout. It is suitable for users who want low-impact training, calorie-burning cardio, interval workouts and a compact home fitness machine. Options include BowFlex Max Trainer SEi, BowFlex Max Trainer M6i and BowFlex Max Trainer Total 40.\"\n      }\n    },\n    {\n      \"@type\": \"Question\",\n      \"name\": \"Is a BowFlex Max Trainer suitable for apartments or small homes?\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"Yes. BowFlex Max Trainer models have a compact footprint compared with many traditional cardio machines and can be suitable for apartments and smaller home gyms when positioned on a flat, stable surface with sufficient clearance. A floor mat is recommended to protect flooring, improve stability and reduce vibration.\"\n      }\n    },\n    {\n      \"@type\": \"Question\",\n      \"name\": \"What muscles does a BowFlex Max Trainer work?\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"A BowFlex Max Trainer can train the lower body, upper body and core. The stepper-style movement works the legs and glutes, while the moving handlebars engage the arms, shoulders, chest and back. The supported pedal movement also provides a low-impact cardio workout.\"\n      }\n    },\n    {\n      \"@type\": \"Question\",\n      \"name\": \"Is a BowFlex Max Trainer good for calorie-burning workouts?\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"Yes. BowFlex Max Trainer models support calorie-burning cardio, interval training, HIIT, endurance sessions and full-body workouts. Results depend on factors including intensity, workout duration, resistance level, fitness level and consistency.\"\n      }\n    },\n    {\n      \"@type\": \"Question\",\n      \"name\": \"Which BowFlex Max Trainer is right for me: SEi, M6 / M6i, or Max Total 40?\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"BowFlex Max Trainer SEi offers compact cardio with a 7-inch colour LCD display, 16 resistance levels, Bluetooth heart rate compatibility and JRNY through a mobile device. BowFlex Max Trainer M6 or M6i offers 16 resistance levels, a backlit LCD console, 4-grip handlebars, media shelf, USB charging and JRNY through a smartphone or tablet. BowFlex Max Total 40 is the premium option with a built-in 16-inch adjustable HD touchscreen, 20 resistance levels, 6-grip handlebars, integrated JRNY and Bluetooth speakers.\"\n      }\n    }\n  ]\n}\n</script>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main",
+    "related-products",
+    "key_features_wQ7gFE",
+    "product_page_sections_nx3K7M",
+    "product_page_sections_7DntQy",
+    "product_page_sections_nagEHM",
+    "custom_liquid_3DHJKU"
+  ]
+}
