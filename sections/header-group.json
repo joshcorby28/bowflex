@@ -96,16 +96,15 @@
         },
         "mega_menu_item_LUjAPr": {
           "type": "mega_menu_item",
-          "disabled": true,
           "settings": {
-            "menu_handle": "",
-            "product_1": "",
+            "menu_handle": "Indoor Cycle",
+            "product_1": "bowflex-ic-bike-sei-indoor-cycling-exercise-bike",
             "product_2": "",
             "product_3": "",
             "product_4": "",
             "product_5": "",
             "cta_text": "Shop now",
-            "cta_url": "",
+            "cta_url": "shopify://collections/bikes",
             "compare_link_url": "",
             "hide_compare_link": false
           }
