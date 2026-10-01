@@ -94,6 +94,21 @@
             "hide_compare_link": false
           }
         },
+        "mega_menu_item_p9T78q": {
+          "type": "mega_menu_item",
+          "settings": {
+            "menu_handle": "",
+            "product_1": "",
+            "product_2": "",
+            "product_3": "",
+            "product_4": "",
+            "product_5": "",
+            "cta_text": "Shop Bikes",
+            "cta_url": "",
+            "compare_link_url": "",
+            "hide_compare_link": false
+          }
+        },
         "mega_menu_item_LUjAPr": {
           "type": "mega_menu_item",
           "settings": {
@@ -130,6 +145,7 @@
         "mega_menu_item_wKpfhg",
         "mega_menu_item_AxjBzf",
         "mega_menu_item_JT3fqL",
+        "mega_menu_item_p9T78q",
         "mega_menu_item_LUjAPr",
         "mega_menu_item_z8hACX"
       ],
