@@ -49,6 +49,21 @@
             "hide_compare_link": true
           }
         },
+        "mega_menu_item_HkJiz6": {
+          "type": "mega_menu_item",
+          "settings": {
+            "menu_handle": "Indoor Cycles",
+            "product_1": "bowflex-ic-bike-sei-indoor-cycling-exercise-bike",
+            "product_2": "",
+            "product_3": "",
+            "product_4": "",
+            "product_5": "",
+            "cta_text": "Shop Indoor Cycles",
+            "cta_url": "shopify://collections/indoor-cycles",
+            "compare_link_url": "",
+            "hide_compare_link": true
+          }
+        },
         "mega_menu_item_wKpfhg": {
           "type": "mega_menu_item",
           "settings": {
@@ -94,36 +109,6 @@
             "hide_compare_link": false
           }
         },
-        "mega_menu_item_p9T78q": {
-          "type": "mega_menu_item",
-          "settings": {
-            "menu_handle": "",
-            "product_1": "",
-            "product_2": "",
-            "product_3": "",
-            "product_4": "",
-            "product_5": "",
-            "cta_text": "Shop Bikes",
-            "cta_url": "",
-            "compare_link_url": "",
-            "hide_compare_link": false
-          }
-        },
-        "mega_menu_item_LUjAPr": {
-          "type": "mega_menu_item",
-          "settings": {
-            "menu_handle": "bikes",
-            "product_1": "bowflex-ic-bike-sei-indoor-cycling-exercise-bike",
-            "product_2": "",
-            "product_3": "",
-            "product_4": "",
-            "product_5": "",
-            "cta_text": "Shop now",
-            "cta_url": "shopify://collections/indoor-cycles",
-            "compare_link_url": "",
-            "hide_compare_link": false
-          }
-        },
         "mega_menu_item_z8hACX": {
           "type": "mega_menu_item",
           "settings": {
@@ -142,11 +127,10 @@
       },
       "block_order": [
         "mega_menu_item_KVf3k7",
+        "mega_menu_item_HkJiz6",
         "mega_menu_item_wKpfhg",
         "mega_menu_item_AxjBzf",
         "mega_menu_item_JT3fqL",
-        "mega_menu_item_p9T78q",
-        "mega_menu_item_LUjAPr",
         "mega_menu_item_z8hACX"
       ],
       "settings": {
