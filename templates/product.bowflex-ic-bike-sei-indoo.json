@@ -253,7 +253,7 @@
         "fallback_training_video_url": "",
         "fallback_training_tab_title_1": "Explore entertainment",
         "fallback_training_tab_title_2": "Go further with JRNY",
-        "show_fitness": true,
+        "show_fitness": false,
         "fitness_position": 2,
         "fitness_heading": "Entertainment + fitness at your fingertips.",
         "fitness_subheading": "Dummy content to represent media and app integrations.",
@@ -276,7 +276,7 @@
         "specs_group_heading": "Specs",
         "warranty_group_heading": "Warranty",
         "additional_specs_heading": "Additional Specs",
-        "show_membership": true,
+        "show_membership": false,
         "membership_position": 4,
         "membership_heading": "The JRNY adaptive fitness membership keeps you going.",
         "membership_subheading": "Dummy carousel cards for membership benefits."
