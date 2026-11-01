@@ -20,9 +20,20 @@
     },
     "custom_liquid_AeKEPp": {
       "type": "custom-liquid",
+      "disabled": true,
       "name": "t:sections.custom-liquid.presets.name",
       "settings": {
         "custom_liquid": "<div class=\"apr-message\">\n<div class=\"apr-inner page-width\">\n<h1>  Fresh Start Savings</h1>\n<span> Save up to £1,000! Shop all of our limited-time offers below. </span>\n</div>\n</div>\n\n<style>\n.apr-message {\nbackground:#000;\npadding: 10px;\ncolor:white;\npadding-bottom:40px;\ntext-align:center;\n}\n\n\n\n.apr-message h1 {\ncolor:white;\nmargin-bottom:10px;\ntext-underline-offset: 8px;\n}\n</style>",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "custom_liquid_bjfbTK": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<style>\n  .bf-gift {\n    box-sizing: border-box;\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n    gap: 32px;\n    max-width: 1320px;\n    margin: 24px auto;\n    padding: clamp(24px, 4vw, 48px);\n    background: #080808;\n    color: #fff;\n    border-left: 6px solid #d6ffa6;\n    font-family: inherit;\n  }\n\n  .bf-gift * {\n    box-sizing: border-box;\n  }\n\n  .bf-gift .bf-gift__content {\n    min-width: 0;\n    max-width: 800px;\n  }\n\n  .bf-gift .bf-gift__badge {\n    display: inline-block;\n    margin: 0 0 16px;\n    padding: 6px 12px;\n    border-radius: 30px;\n    background: #ff6266;\n    color: #080808;\n    font-size: 12px;\n    font-weight: 800;\n    line-height: 1.4;\n    letter-spacing: 0.08em;\n  }\n\n  .bf-gift .bf-gift__heading {\n    margin: 0 0 14px;\n    color: #fff;\n    font-family: inherit;\n    font-size: clamp(28px, 3.2vw, 44px);\n    font-weight: 800;\n    line-height: 1.12;\n    letter-spacing: -0.03em;\n    text-transform: none;\n  }\n\n  .bf-gift .bf-gift__heading span {\n    color: #d6ffa6;\n  }\n\n  .bf-gift .bf-gift__text {\n    margin: 0;\n    color: #e5e5e5;\n    font-size: 16px;\n    line-height: 1.6;\n  }\n\n  .bf-gift .bf-gift__text strong {\n    color: #fff;\n  }\n\n  .bf-gift .bf-gift__link {\n    color: #d6ffa6;\n    text-decoration: underline;\n    text-underline-offset: 3px;\n  }\n\n  .bf-gift .bf-gift__button {\n    display: inline-flex;\n    flex-shrink: 0;\n    align-items: center;\n    justify-content: center;\n    gap: 12px;\n    min-height: 50px;\n    padding: 14px 22px;\n    border: 2px solid #d6ffa6;\n    border-radius: 4px;\n    background: #d6ffa6;\n    color: #080808;\n    font-size: 15px;\n    font-weight: 800;\n    line-height: 1.4;\n    text-align: center;\n    text-decoration: none;\n  }\n\n  .bf-gift .bf-gift__button:hover {\n    background: #fff;\n    border-color: #fff;\n    color: #080808;\n  }\n\n  .bf-gift .bf-gift__link:focus-visible,\n  .bf-gift .bf-gift__button:focus-visible {\n    outline: 3px solid #ff6266;\n    outline-offset: 5px;\n  }\n\n  @media (max-width: 800px) {\n    .bf-gift {\n      flex-direction: column;\n      align-items: stretch;\n      gap: 24px;\n    }\n\n    .bf-gift .bf-gift__button {\n      align-self: flex-start;\n    }\n  }\n\n  @media (max-width: 480px) {\n    .bf-gift .bf-gift__button {\n      align-self: stretch;\n      width: 100%;\n    }\n  }\n</style>\n\n<section class=\"bf-gift\" aria-label=\"Black Friday free gift offer\">\n  <div class=\"bf-gift__content\">\n    <p class=\"bf-gift__badge\">BLACK FRIDAY EXCLUSIVE</p>\n\n    <h2 class=\"bf-gift__heading\">\n      <span>FREE</span> BowFlex Heart Rate Band\n    </h2>\n\n    <p class=\"bf-gift__text\">\n      Get a <strong>FREE BowFlex Heart Rate Band</strong>\n      with any compatible cardio product.\n      Simply add your compatible cardio product and the\n      <a class=\"bf-gift__link\"\n         href=\"/products/bowflex-heart-rate-strap\">\n        Heart Rate Band\n      </a>\n      to your basket to claim your free gift.\n    </p>\n  </div>\n\n  <a class=\"bf-gift__button\"\n     href=\"/products/bowflex-heart-rate-strap\">\n    View Heart Rate Band\n    <span aria-hidden=\"true\">&rarr;</span>\n  </a>\n</section>",
         "color_scheme": "",
         "padding_top": 0,
         "padding_bottom": 0
@@ -42,7 +53,7 @@
         "view_all_label": "View All",
         "narrow_width": true,
         "color_scheme": "",
-        "padding_top": 60,
+        "padding_top": 0,
         "padding_bottom": 60
       }
     },
@@ -258,6 +269,7 @@
   "order": [
     "banner",
     "custom_liquid_AeKEPp",
+    "custom_liquid_bjfbTK",
     "collection_grid_jrCrrP",
     "shop_by_category_67MeMw",
     "video_dirrE8",
