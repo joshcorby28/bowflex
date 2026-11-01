@@ -22,6 +22,19 @@
             "subtext": "Dial in the weight from 2-24kg.\n\nSelectTech 52’s",
             "small_text": "Go Flex ",
             "button_label": "Shop Now",
+            "button_link": "shopify://products/bowflex-52s-adjustable-dumbbell-pair"
+          }
+        },
+        "slide_XrwgQY": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/BowFlex_Website_Dumbbell.png",
+            "badge": "New",
+            "badge_color": "#b4ff63",
+            "heading": "Flex your weight. Flex your training.",
+            "subtext": "Dial in the weight from 2-24kg.\n\nSelectTech 52’s",
+            "small_text": "Go Flex ",
+            "button_label": "Shop Now",
             "button_link": "shopify://products/bowflex-max-trainer-m6i"
           }
         },
@@ -41,6 +54,7 @@
       },
       "block_order": [
         "slide_UqYVdX",
+        "slide_XrwgQY",
         "slide_pVaTN4"
       ],
       "name": "Swiper Hero Split",
