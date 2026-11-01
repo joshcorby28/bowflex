@@ -17,10 +17,10 @@
           "settings": {
             "image": "shopify://shop_images/BowFlex_Website_Treadmill.png",
             "badge": "BLACK FRIDAY IS HERE",
-            "badge_color": "#FF6363",
+            "badge_color": "#ff6363",
             "heading": "Flex more.Spend less.",
             "subtext": "Big goals start at home. Shop Black Friday offers on BowFlex equipment and take your training further.",
-            "small_text": "Go Flex ",
+            "small_text": "Get a FREE BowFlex Heart Rate Band with any compatible cardio product. Add both to your basket—the band is free.",
             "button_label": "Shop Black Friday",
             "button_link": "shopify://collections/sale"
           }
