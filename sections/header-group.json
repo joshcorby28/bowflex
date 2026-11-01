@@ -17,9 +17,9 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "Save up to £1,000!",
+            "text": "Black Friday Sale is here! Go Flex",
             "link": "shopify://collections/sale",
-            "button_text": "Shop Sale"
+            "button_text": "Shop Black Friday"
           }
         }
       },
