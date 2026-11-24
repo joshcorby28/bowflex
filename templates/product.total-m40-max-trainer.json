@@ -34,6 +34,16 @@
           "type": "price",
           "settings": {}
         },
+        "klarna_on_site_messaging_app_block_GeMqhP": {
+          "type": "shopify://apps/klarna-on-site-messaging/blocks/app-block/b95936a9-74b6-4a95-8103-6a1b6459c25e",
+          "settings": {
+            "data_key": "credit-promotion-badge",
+            "theme": "default",
+            "topPadding": "0",
+            "bottomPadding": "0",
+            "messagePrefix": ""
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -58,6 +68,7 @@
         "title",
         "caption",
         "price",
+        "klarna_on_site_messaging_app_block_GeMqhP",
         "variant_picker",
         "buy_buttons",
         "description"
