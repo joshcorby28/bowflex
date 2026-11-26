@@ -64,11 +64,10 @@
             "swatch_shape": "circle"
           }
         },
-        "popup_VyRw38": {
-          "type": "popup",
+        "custom_liquid_BXnc4N": {
+          "type": "custom_liquid",
           "settings": {
-            "text": "Shipping and Delivery",
-            "page": "shipping-information"
+            "custom_liquid": "<aside class=\"bf-delivery\" aria-label=\"Delivery information\">\n  <span class=\"bf-delivery__icon\" aria-hidden=\"true\">\n    <svg width=\"26\" height=\"26\" viewBox=\"0 0 24 24\" fill=\"none\" focusable=\"false\">\n      <path d=\"M3 6.5h10.5v11H3v-11Zm10.5 4H18l3 3.5v3.5h-7.5v-7Z\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n      <path d=\"M14 14h6.5\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\"/>\n      <circle cx=\"6.5\" cy=\"17.5\" r=\"2\" fill=\"#fff0f2\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n      <circle cx=\"17.5\" cy=\"17.5\" r=\"2\" fill=\"#fff0f2\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n    </svg>\n  </span>\n\n  <div class=\"bf-delivery__copy\">\n    <p class=\"bf-delivery__title\">Free Delivery</p>\n    <p class=\"bf-delivery__time\">Delivered in <strong>2–7 days</strong></p>\n    <p class=\"bf-delivery__note\">\n      Subject to a booked delivery slot, arranged via SMS.\n    </p>\n  </div>\n</aside>\n\n<style>\n  .bf-delivery {\n    display: flex;\n    align-items: flex-start;\n    gap: 14px;\n    width: 100%;\n    margin: 16px 0;\n    padding: 18px;\n    border: 1px solid #e6e6eb;\n    border-radius: 18px;\n    background: #f8f8fa;\n    color: #1d1d1f;\n    font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif;\n    text-align: left;\n    -webkit-font-smoothing: antialiased;\n  }\n\n  .bf-delivery,\n  .bf-delivery * {\n    box-sizing: border-box;\n  }\n\n  .bf-delivery .bf-delivery__icon {\n    display: grid;\n    place-items: center;\n    flex: 0 0 44px;\n    width: 44px;\n    height: 44px;\n    border: 1px solid #f0dce0;\n    border-radius: 13px;\n    background: #fff0f2;\n    color: #be2730;\n  }\n\n  .bf-delivery .bf-delivery__icon svg {\n    display: block;\n  }\n\n  .bf-delivery .bf-delivery__copy {\n    min-width: 0;\n  }\n\n  .bf-delivery .bf-delivery__title {\n    margin: 0;\n    color: #1d1d1f;\n    font-size: 15px;\n    line-height: 1.4;\n    font-weight: 700;\n    letter-spacing: -.02em;\n    text-transform: none;\n  }\n\n  .bf-delivery .bf-delivery__time {\n    margin: 4px 0 0;\n    color: #414146;\n    font-size: 13px;\n    line-height: 1.5;\n    letter-spacing: -.01em;\n  }\n\n  .bf-delivery .bf-delivery__time strong {\n    color: #1d1d1f;\n    font-weight: 650;\n  }\n\n  .bf-delivery .bf-delivery__note {\n    margin: 8px 0 0;\n    color: #686870;\n    font-size: 11px;\n    line-height: 1.6;\n    letter-spacing: 0;\n  }\n\n  @media (max-width: 480px) {\n    .bf-delivery {\n      gap: 12px;\n      padding: 15px;\n      border-radius: 16px;\n    }\n  }\n</style>"
           }
         },
         "description": {
@@ -85,7 +84,7 @@
         "buy_buttons",
         "custom_liquid_4FeYCr",
         "variant_picker",
-        "popup_VyRw38",
+        "custom_liquid_BXnc4N",
         "description"
       ],
       "settings": {
